@@ -1,0 +1,79 @@
+
+*** Running vivado
+    with args -log design_1_xbar_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_xbar_0.tcl
+
+awk: symbol lookup error: awk: undefined symbol: mpfr_z_sub
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source design_1_xbar_0.tcl -notrace
+awk: symbol lookup error: awk: undefined symbol: mpfr_z_sub
+Starting RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1125.457 ; gain = 188.086 ; free physical = 5926 ; free virtual = 11039
+INFO: [Synth 8-638] synthesizing module 'design_1_xbar_0' [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/synth/design_1_xbar_0.v:59]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_12_axi_crossbar' [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:4882]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_12_crossbar_sasd' [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_12_addr_decoder' [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_carry_and' [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_carry_and' (1#1) [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' (2#1) [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_12_addr_decoder' (3#1) [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_12_decerr_slave' [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:3500]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_12_decerr_slave' (4#1) [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:3500]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_12_addr_arbiter_sasd' [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_12_addr_arbiter_sasd' (5#1) [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_12_splitter' [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:4459]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_12_splitter' (6#1) [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:4459]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_12_splitter__parameterized0' [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:4459]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_12_splitter__parameterized0' (6#1) [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:4459]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' (7#1) [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' (7#1) [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' (7#1) [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' (7#1) [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice' [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice' (8#1) [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized3' [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized3' (8#1) [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_12_crossbar_sasd' (9#1) [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_12_axi_crossbar' (10#1) [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:4882]
+INFO: [Synth 8-256] done synthesizing module 'design_1_xbar_0' (11#1) [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/synth/design_1_xbar_0.v:59]
+Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1245.926 ; gain = 308.555 ; free physical = 5492 ; free virtual = 10606
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1245.926 ; gain = 308.555 ; free physical = 5488 ; free virtual = 10602
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1516.746 ; gain = 0.000 ; free physical = 5288 ; free virtual = 10402
+Finished Constraint Validation : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1516.746 ; gain = 579.375 ; free physical = 5262 ; free virtual = 10376
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1516.746 ; gain = 579.375 ; free physical = 5262 ; free virtual = 10376
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1516.746 ; gain = 579.375 ; free physical = 5262 ; free virtual = 10376
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1516.746 ; gain = 579.375 ; free physical = 5254 ; free virtual = 10368
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1516.746 ; gain = 579.375 ; free physical = 5231 ; free virtual = 10345
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 1516.746 ; gain = 579.375 ; free physical = 5121 ; free virtual = 10235
+Finished Timing Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 1516.746 ; gain = 579.375 ; free physical = 5101 ; free virtual = 10216
+Finished Technology Mapping : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 1516.746 ; gain = 579.375 ; free physical = 5086 ; free virtual = 10202
+Finished IO Insertion : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1516.746 ; gain = 579.375 ; free physical = 5083 ; free virtual = 10200
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1516.746 ; gain = 579.375 ; free physical = 5083 ; free virtual = 10200
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1516.746 ; gain = 579.375 ; free physical = 5080 ; free virtual = 10197
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1516.746 ; gain = 579.375 ; free physical = 5080 ; free virtual = 10197
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1516.746 ; gain = 579.375 ; free physical = 5085 ; free virtual = 10201
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1516.746 ; gain = 579.375 ; free physical = 5084 ; free virtual = 10200
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     3|
+|2     |LUT2 |    13|
+|3     |LUT3 |     6|
+|4     |LUT4 |    79|
+|5     |LUT5 |    11|
+|6     |LUT6 |    55|
+|7     |FDRE |   129|
++------+-----+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1516.746 ; gain = 579.375 ; free physical = 5083 ; free virtual = 10200
+synth_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 1516.754 ; gain = 482.879 ; free physical = 5643 ; free virtual = 10760

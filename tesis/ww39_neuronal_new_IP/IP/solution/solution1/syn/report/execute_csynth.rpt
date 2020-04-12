@@ -1,0 +1,228 @@
+
+
+================================================================
+== Vivado HLS Report for 'execute'
+================================================================
+* Date:           Thu Jan  9 23:44:29 2020
+
+* Version:        2016.4 (Build 1756540 on Mon Jan 23 19:31:01 MST 2017)
+* Project:        solution
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      6.00|        4.00|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+----------+-----+----------+----------+
+    |     Latency    |    Interval    | Pipeline |
+    | min |    max   | min |    max   |   Type   |
+    +-----+----------+-----+----------+----------+
+    |  189|  50245075|  116|  50245002| dataflow |
+    +-----+----------+-----+----------+----------+
+
+    + Detail: 
+        * Instance: 
+        +-------------------------------------------------+----------------------+-----+----------+-----+----------+----------+
+        |                                                 |                      |     Latency    |    Interval    | Pipeline |
+        |                     Instance                    |        Module        | min |    max   | min |    max   |   Type   |
+        +-------------------------------------------------+----------------------+-----+----------+-----+----------+----------+
+        |grp_acc_fu_314                                   |acc                   |   37|  50000029|   37|  50000029|   none   |
+        |grp_calc_fu_362                                  |calc                  |   44|  50000042|   44|  50000042|   none   |
+        |grp_I_calc_fu_398                                |I_calc                |  115|  50245001|  115|  50245001|   none   |
+        |grp_V_read_fu_424                                |V_read                |    6|  25002501|    5|  24997499| dataflow |
+        |grp_blockControl_fu_471                          |blockControl          |   11|  49990003|   11|  49990003|   none   |
+        |StgValue_31_execute_entry206_fu_498              |execute_entry206      |    0|         0|    0|         0|   none   |
+        |size_assign_channel_execute_Block_codeRe_fu_518  |execute_Block_codeRe  |    0|         0|    0|         0|   none   |
+        +-------------------------------------------------+----------------------+-----+----------+-----+----------+----------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      -|       -|      -|
+|Expression       |        -|      -|       0|     14|
+|FIFO             |       58|      -|    1704|   2340|
+|Instance         |       84|     89|   13384|  15462|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|      6|
+|Register         |        -|      -|       6|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |      142|     89|   15094|  17822|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |       50|     40|      14|     33|
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    +-------------------------+----------------------+---------+-------+------+------+
+    |         Instance        |        Module        | BRAM_18K| DSP48E|  FF  |  LUT |
+    +-------------------------+----------------------+---------+-------+------+------+
+    |I_calc_U0                |I_calc                |        4|     27|  3504|  4277|
+    |V_read_U0                |V_read                |       80|      0|  1265|  1864|
+    |acc_U0                   |acc                   |        0|     22|  4977|  3616|
+    |blockControl_U0          |blockControl          |        0|      0|   390|   195|
+    |calc_U0                  |calc                  |        0|     40|  3211|  5468|
+    |execute_Block_codeRe_U0  |execute_Block_codeRe  |        0|      0|    34|    34|
+    |execute_entry206_U0      |execute_entry206      |        0|      0|     3|     8|
+    +-------------------------+----------------------+---------+-------+------+------+
+    |Total                    |                      |       84|     89| 13384| 15462|
+    +-------------------------+----------------------+---------+-------+------+------+
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    +--------------------------+---------+----+----+------+-----+---------+
+    |           Name           | BRAM_18K| FF | LUT| Depth| Bits| Size:D*B|
+    +--------------------------+---------+----+----+------+-----+---------+
+    |C_data_V_data_0_U         |        2|  56|  60|   128|   32|     4096|
+    |C_data_V_data_1_U         |        2|  56|  60|   128|   32|     4096|
+    |C_data_V_data_2_U         |        2|  56|  60|   128|   32|     4096|
+    |C_data_V_data_3_U         |        2|  56|  60|   128|   32|     4096|
+    |F_V_data_0_U              |        2|  56|  60|   128|   32|     4096|
+    |F_V_data_1_U              |        2|  56|  60|   128|   32|     4096|
+    |F_V_data_2_U              |        2|  56|  60|   128|   32|     4096|
+    |F_V_data_3_U              |        2|  56|  60|   128|   32|     4096|
+    |F_acc_V_data_0_U          |        2|  56|  60|   128|   32|     4096|
+    |F_acc_V_data_1_U          |        2|  56|  60|   128|   32|     4096|
+    |F_acc_V_data_2_U          |        2|  56|  60|   128|   32|     4096|
+    |F_acc_V_data_3_U          |        2|  56|  60|   128|   32|     4096|
+    |V_V_data_0_U              |        2|  56|  60|   128|   32|     4096|
+    |V_V_data_1_U              |        2|  56|  60|   128|   32|     4096|
+    |V_V_data_2_U              |        2|  56|  60|   128|   32|     4096|
+    |V_V_data_3_U              |        2|  56|  60|   128|   32|     4096|
+    |V_acc_V_data_0_U          |        2|  56|  60|   128|   32|     4096|
+    |V_acc_V_data_1_U          |        2|  56|  60|   128|   32|     4096|
+    |V_acc_V_data_2_U          |        2|  56|  60|   128|   32|     4096|
+    |V_acc_V_data_3_U          |        2|  56|  60|   128|   32|     4096|
+    |V_data_V_data_0_U         |        2|  56|  60|   128|   32|     4096|
+    |V_data_V_data_1_U         |        2|  56|  60|   128|   32|     4096|
+    |V_data_V_data_2_U         |        2|  56|  60|   128|   32|     4096|
+    |V_data_V_data_3_U         |        2|  56|  60|   128|   32|     4096|
+    |fixedData_V_data_U        |        2|  56|  60|   128|   32|     4096|
+    |fixedData_V_tlast_V_U     |        0|  10|  44|   128|    1|      128|
+    |processedData_V_data_1_U  |        2|  56|  60|   128|   32|     4096|
+    |processedData_V_data_2_U  |        2|  56|  60|   128|   32|     4096|
+    |processedData_V_data_3_U  |        2|  56|  60|   128|   32|     4096|
+    |processedData_V_data_U    |        2|  56|  60|   128|   32|     4096|
+    |simConfig_BLOCK_NUMB_1_U  |        0|   5|  39|     1|   27|       27|
+    |simConfig_BLOCK_NUMB_2_U  |        0|   5|  39|     1|   27|       27|
+    |simConfig_BLOCK_NUMB_3_U  |        0|   5|  39|     1|   27|       27|
+    |simConfig_BLOCK_NUMB_4_U  |        0|   5|  39|     1|   27|       27|
+    |simConfig_BLOCK_NUMB_5_U  |        0|   5|  39|     1|   27|       27|
+    |simConfig_rowBegin_V_1_U  |        0|   5|  39|     2|   27|       54|
+    |simConfig_rowEnd_V_c_U    |        0|   5|  39|     2|   27|       54|
+    |simConfig_rowsToSimu_2_U  |        0|   5|  39|     1|   27|       27|
+    |simConfig_rowsToSimu_3_U  |        0|   5|  39|     1|   27|       27|
+    |simConfig_rowsToSimu_4_U  |        0|   5|  39|     1|   27|       27|
+    |simConfig_rowsToSimu_5_U  |        0|   5|  39|     1|   27|       27|
+    |simConfig_rowsToSimu_6_U  |        0|   5|  39|     1|   27|       27|
+    |size_assign_channel_U     |        0|   0|   0|     2|   32|       64|
+    |size_channel15_U          |        0|   5|  44|     1|   32|       32|
+    |size_channel_U            |        0|   5|  44|     1|   32|       32|
+    +--------------------------+---------+----+----+------+-----+---------+
+    |Total                     |       58|1704|2340|  3858| 1349|   119418|
+    +--------------------------+---------+----+----+------+-----+---------+
+
+    * Expression: 
+    +--------------------------------------+----------+-------+---+----+------------+------------+
+    |             Variable Name            | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------------------------------+----------+-------+---+----+------------+------------+
+    |blockControl_U0_ap_ready_count        |     +    |      0|  0|   2|           2|           1|
+    |execute_entry206_U0_ap_ready_count    |     +    |      0|  0|   2|           2|           1|
+    |blockControl_U0_ap_ready_count        |     -    |      0|  0|   2|           2|           1|
+    |execute_entry206_U0_ap_ready_count    |     -    |      0|  0|   2|           2|           1|
+    |ap_hs_ready                           |    and   |      0|  0|   1|           1|           1|
+    |ap_idle                               |    and   |      0|  0|   1|           1|           1|
+    |ap_sync_blockControl_U0_ap_start      |    and   |      0|  0|   1|           1|           1|
+    |ap_sync_execute_entry206_U0_ap_start  |    and   |      0|  0|   1|           1|           1|
+    |ap_sync_blockControl_U0_ap_ready      |    or    |      0|  0|   1|           1|           1|
+    |ap_sync_execute_entry206_U0_ap_ready  |    or    |      0|  0|   1|           1|           1|
+    +--------------------------------------+----------+-------+---+----+------------+------------+
+    |Total                                 |          |      0|  0|  14|          14|          10|
+    +--------------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +------------------------------------------+----+-----------+-----+-----------+
+    |                   Name                   | LUT| Input Size| Bits| Total Bits|
+    +------------------------------------------+----+-----------+-----+-----------+
+    |ap_sync_reg_blockControl_U0_ap_ready      |   1|          2|    1|          2|
+    |ap_sync_reg_execute_entry206_U0_ap_ready  |   1|          2|    1|          2|
+    |blockControl_U0_ap_ready_count            |   2|          2|    2|          4|
+    |execute_entry206_U0_ap_ready_count        |   2|          2|    2|          4|
+    +------------------------------------------+----+-----------+-----+-----------+
+    |Total                                     |   6|          8|    6|         12|
+    +------------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +------------------------------------------+---+----+-----+-----------+
+    |                   Name                   | FF| LUT| Bits| Const Bits|
+    +------------------------------------------+---+----+-----+-----------+
+    |ap_sync_reg_blockControl_U0_ap_ready      |  1|   0|    1|          0|
+    |ap_sync_reg_execute_entry206_U0_ap_ready  |  1|   0|    1|          0|
+    |blockControl_U0_ap_ready_count            |  2|   0|    2|          0|
+    |execute_entry206_U0_ap_ready_count        |  2|   0|    2|          0|
+    +------------------------------------------+---+----+-----+-----------+
+    |Total                                     |  6|   0|    6|          0|
+    +------------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------------------+-----+-----+------------+----------------------+--------------+
+|          RTL Ports          | Dir | Bits|  Protocol  |     Source Object    |    C Type    |
++-----------------------------+-----+-----+------------+----------------------+--------------+
+|input_V_data_TDATA           |  in |   64|    axis    |     input_V_data     |    pointer   |
+|input_V_data_TVALID          |  in |    1|    axis    |     input_V_data     |    pointer   |
+|input_V_data_TREADY          | out |    1|    axis    |     input_V_data     |    pointer   |
+|output_r_TDATA               | out |   32|    axis    |     output_V_data    |    pointer   |
+|output_r_TLAST               | out |    1|    axis    |   output_V_tlast_V   |    pointer   |
+|output_r_TVALID              | out |    1|    axis    |   output_V_tlast_V   |    pointer   |
+|output_r_TREADY              |  in |    1|    axis    |   output_V_tlast_V   |    pointer   |
+|simConfig_rowBegin_V         |  in |   27|   ap_none  | simConfig_rowBegin_V |    scalar    |
+|simConfig_rowBegin_V_ap_vld  |  in |    1|   ap_none  | simConfig_rowBegin_V |    scalar    |
+|simConfig_rowEnd_V_r         |  in |   27|   ap_none  | simConfig_rowEnd_V_r |    scalar    |
+|simConfig_rowEnd_V_r_ap_vld  |  in |    1|   ap_none  | simConfig_rowEnd_V_r |    scalar    |
+|simConfig_rowsToSimu         |  in |   27|   ap_none  | simConfig_rowsToSimu |    scalar    |
+|simConfig_rowsToSimu_ap_vld  |  in |    1|   ap_none  | simConfig_rowsToSimu |    scalar    |
+|simConfig_BLOCK_NUMB         |  in |   27|   ap_none  | simConfig_BLOCK_NUMB |    scalar    |
+|simConfig_BLOCK_NUMB_ap_vld  |  in |    1|   ap_none  | simConfig_BLOCK_NUMB |    scalar    |
+|size                         |  in |   32|   ap_none  |         size         |    scalar    |
+|size_ap_vld                  |  in |    1|   ap_none  |         size         |    scalar    |
+|ap_clk                       |  in |    1| ap_ctrl_hs |        execute       | return value |
+|ap_rst                       |  in |    1| ap_ctrl_hs |        execute       | return value |
+|ap_done                      | out |    1| ap_ctrl_hs |        execute       | return value |
+|ap_start                     |  in |    1| ap_ctrl_hs |        execute       | return value |
+|ap_ready                     | out |    1| ap_ctrl_hs |        execute       | return value |
+|ap_idle                      | out |    1| ap_ctrl_hs |        execute       | return value |
+|ap_continue                  |  in |    1| ap_ctrl_hs |        execute       | return value |
++-----------------------------+-----+-----+------------+----------------------+--------------+
+

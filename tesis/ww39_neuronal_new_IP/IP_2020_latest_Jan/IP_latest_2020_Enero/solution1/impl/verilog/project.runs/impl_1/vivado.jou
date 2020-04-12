@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Jan 11 17:06:49 2020
+# Process ID: 7172
+# Current directory: /home/marco/Documents/tesis/ww39_neuronal_new_IP/IP_2020_latest_Jan/IP_latest_2020_Enero/solution1/impl/verilog/project.runs/impl_1
+# Command line: vivado -log bd_0_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source bd_0_wrapper.tcl -notrace
+# Log file: /home/marco/Documents/tesis/ww39_neuronal_new_IP/IP_2020_latest_Jan/IP_latest_2020_Enero/solution1/impl/verilog/project.runs/impl_1/bd_0_wrapper.vdi
+# Journal file: /home/marco/Documents/tesis/ww39_neuronal_new_IP/IP_2020_latest_Jan/IP_latest_2020_Enero/solution1/impl/verilog/project.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source bd_0_wrapper.tcl -notrace

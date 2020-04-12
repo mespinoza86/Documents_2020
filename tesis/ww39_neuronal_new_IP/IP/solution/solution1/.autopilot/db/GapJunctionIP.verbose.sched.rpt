@@ -1,0 +1,368 @@
+
+
+================================================================
+== Vivado HLS Report for 'GapJunctionIP'
+================================================================
+* Date:           Thu Jan  9 23:44:25 2020
+
+* Version:        2016.4 (Build 1756540 on Mon Jan 23 19:31:01 MST 2017)
+* Project:        solution
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      6.00|        4.00|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+----------+-----+----------+---------+
+    |     Latency    |    Interval    | Pipeline|
+    | min |    max   | min |    max   |   Type  |
+    +-----+----------+-----+----------+---------+
+    |  193|  50245079|  194|  50245080|   none  |
+    +-----+----------+-----+----------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 2
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 5
+* Pipeline: 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / true
+4 --> 
+	5  / true
+5 --> 
+* FSM state operations: 
+
+ <State 1>: 1.00ns
+ST_1: LastRow_read (90)  [2/2] 1.00ns
+:45  %LastRow_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %LastRow)
+
+ST_1: FirstRow_read (91)  [2/2] 1.00ns
+:46  %FirstRow_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %FirstRow)
+
+ST_1: size_read (92)  [2/2] 1.00ns
+:47  %size_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %size)
+
+
+ <State 2>: 5.88ns
+ST_2: LastRow_read (90)  [1/2] 1.00ns
+:45  %LastRow_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %LastRow)
+
+ST_2: FirstRow_read (91)  [1/2] 1.00ns
+:46  %FirstRow_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %FirstRow)
+
+ST_2: size_read (92)  [1/2] 1.00ns
+:47  %size_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %size)
+
+ST_2: simConfig_rowBegin_V (99)  [1/1] 0.00ns  loc: Stream.cpp:12->Stream.cpp:58
+:54  %simConfig_rowBegin_V = trunc i32 %FirstRow_read to i27
+
+ST_2: simConfig_rowEnd_V (100)  [1/1] 0.00ns  loc: Stream.cpp:13->Stream.cpp:58
+:55  %simConfig_rowEnd_V = trunc i32 %LastRow_read to i27
+
+ST_2: tmp_s (101)  [1/1] 2.44ns  loc: Stream.cpp:14->Stream.cpp:58
+:56  %tmp_s = sub nsw i32 %LastRow_read, %FirstRow_read
+
+ST_2: tmp_10 (102)  [1/1] 0.00ns  loc: Stream.cpp:14->Stream.cpp:58
+:57  %tmp_10 = call i1 @_ssdm_op_BitSelect.i1.i32.i32(i32 %tmp_s, i32 31)
+
+ST_2: p_neg6 (103)  [1/1] 2.44ns  loc: Stream.cpp:14->Stream.cpp:58
+:58  %p_neg6 = sub i32 0, %tmp_s
+
+ST_2: tmp (104)  [1/1] 0.00ns  loc: Stream.cpp:14->Stream.cpp:58
+:59  %tmp = call i27 @_ssdm_op_PartSelect.i27.i32.i32.i32(i32 %p_neg6, i32 2, i32 28)
+
+ST_2: tmp_6 (106)  [1/1] 0.00ns  loc: Stream.cpp:14->Stream.cpp:58
+:61  %tmp_6 = call i27 @_ssdm_op_PartSelect.i27.i32.i32.i32(i32 %tmp_s, i32 2, i32 28)
+
+ST_2: tmp_11 (108)  [1/1] 0.00ns  loc: Stream.cpp:15->Stream.cpp:58
+:63  %tmp_11 = call i1 @_ssdm_op_BitSelect.i1.i32.i32(i32 %size_read, i32 31)
+
+ST_2: p_neg (109)  [1/1] 2.44ns  loc: Stream.cpp:15->Stream.cpp:58
+:64  %p_neg = sub i32 0, %size_read
+
+ST_2: tmp_7 (110)  [1/1] 0.00ns  loc: Stream.cpp:15->Stream.cpp:58
+:65  %tmp_7 = call i27 @_ssdm_op_PartSelect.i27.i32.i32.i32(i32 %p_neg, i32 2, i32 28)
+
+ST_2: tmp_9 (112)  [1/1] 0.00ns  loc: Stream.cpp:15->Stream.cpp:58
+:67  %tmp_9 = call i27 @_ssdm_op_PartSelect.i27.i32.i32.i32(i32 %size_read, i32 2, i32 28)
+
+
+ <State 3>: 3.69ns
+ST_3: tmp_5 (105)  [1/1] 2.32ns  loc: Stream.cpp:14->Stream.cpp:58
+:60  %tmp_5 = sub i27 0, %tmp
+
+ST_3: simConfig_rowsToSimu (107)  [1/1] 1.37ns  loc: Stream.cpp:14->Stream.cpp:58
+:62  %simConfig_rowsToSimu = select i1 %tmp_10, i27 %tmp_5, i27 %tmp_6
+
+ST_3: tmp_8 (111)  [1/1] 2.32ns  loc: Stream.cpp:15->Stream.cpp:58
+:66  %tmp_8 = sub i27 0, %tmp_7
+
+ST_3: simConfig_BLOCK_NUMB (113)  [1/1] 1.37ns  loc: Stream.cpp:15->Stream.cpp:58
+:68  %simConfig_BLOCK_NUMB = select i1 %tmp_11, i27 %tmp_8, i27 %tmp_9
+
+ST_3: StgValue_27 (114)  [2/2] 0.00ns  loc: Stream.cpp:12->Stream.cpp:58
+:69  call fastcc void @execute(i64* %input_V_data, float* %output_V_data, i1* %output_V_tlast_V, i27 %simConfig_rowBegin_V, i27 %simConfig_rowEnd_V, i27 %simConfig_rowsToSimu, i27 %simConfig_BLOCK_NUMB, i32 %size_read)
+
+
+ <State 4>: 0.00ns
+ST_4: StgValue_28 (114)  [1/2] 0.00ns  loc: Stream.cpp:12->Stream.cpp:58
+:69  call fastcc void @execute(i64* %input_V_data, float* %output_V_data, i1* %output_V_tlast_V, i27 %simConfig_rowBegin_V, i27 %simConfig_rowEnd_V, i27 %simConfig_rowsToSimu, i27 %simConfig_BLOCK_NUMB, i32 %size_read)
+
+ST_4: StgValue_29 (115)  [2/2] 0.00ns  loc: Stream.cpp:61
+:70  ret void
+
+
+ <State 5>: 0.00ns
+ST_5: StgValue_30 (45)  [1/1] 0.00ns
+:0  call void (...)* @_ssdm_op_SpecInterface(float* @C_data_V_data_0, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_5: StgValue_31 (46)  [1/1] 0.00ns
+:1  call void (...)* @_ssdm_op_SpecInterface(float* @C_data_V_data_1, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_5: StgValue_32 (47)  [1/1] 0.00ns
+:2  call void (...)* @_ssdm_op_SpecInterface(float* @C_data_V_data_2, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_5: StgValue_33 (48)  [1/1] 0.00ns
+:3  call void (...)* @_ssdm_op_SpecInterface(float* @C_data_V_data_3, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_5: StgValue_34 (49)  [1/1] 0.00ns
+:4  call void (...)* @_ssdm_op_SpecInterface(float* @F_V_data_0, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_5: StgValue_35 (50)  [1/1] 0.00ns
+:5  call void (...)* @_ssdm_op_SpecInterface(float* @F_V_data_1, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_5: StgValue_36 (51)  [1/1] 0.00ns
+:6  call void (...)* @_ssdm_op_SpecInterface(float* @F_V_data_2, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_5: StgValue_37 (52)  [1/1] 0.00ns
+:7  call void (...)* @_ssdm_op_SpecInterface(float* @F_V_data_3, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_5: StgValue_38 (53)  [1/1] 0.00ns
+:8  call void (...)* @_ssdm_op_SpecInterface(float* @F_acc_V_data_0, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_5: StgValue_39 (54)  [1/1] 0.00ns
+:9  call void (...)* @_ssdm_op_SpecInterface(float* @F_acc_V_data_1, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_5: StgValue_40 (55)  [1/1] 0.00ns
+:10  call void (...)* @_ssdm_op_SpecInterface(float* @F_acc_V_data_2, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_5: StgValue_41 (56)  [1/1] 0.00ns
+:11  call void (...)* @_ssdm_op_SpecInterface(float* @F_acc_V_data_3, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_5: StgValue_42 (57)  [1/1] 0.00ns
+:12  call void (...)* @_ssdm_op_SpecInterface(float* @V_V_data_0, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_5: StgValue_43 (58)  [1/1] 0.00ns
+:13  call void (...)* @_ssdm_op_SpecInterface(float* @V_V_data_1, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_5: StgValue_44 (59)  [1/1] 0.00ns
+:14  call void (...)* @_ssdm_op_SpecInterface(float* @V_V_data_2, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_5: StgValue_45 (60)  [1/1] 0.00ns
+:15  call void (...)* @_ssdm_op_SpecInterface(float* @V_V_data_3, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_5: StgValue_46 (61)  [1/1] 0.00ns
+:16  call void (...)* @_ssdm_op_SpecInterface(float* @V_acc_V_data_0, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_5: StgValue_47 (62)  [1/1] 0.00ns
+:17  call void (...)* @_ssdm_op_SpecInterface(float* @V_acc_V_data_1, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_5: StgValue_48 (63)  [1/1] 0.00ns
+:18  call void (...)* @_ssdm_op_SpecInterface(float* @V_acc_V_data_2, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_5: StgValue_49 (64)  [1/1] 0.00ns
+:19  call void (...)* @_ssdm_op_SpecInterface(float* @V_acc_V_data_3, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_5: StgValue_50 (65)  [1/1] 0.00ns
+:20  call void (...)* @_ssdm_op_SpecInterface(float* @V_data_V_data_0, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_5: StgValue_51 (66)  [1/1] 0.00ns
+:21  call void (...)* @_ssdm_op_SpecInterface(float* @V_data_V_data_1, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_5: StgValue_52 (67)  [1/1] 0.00ns
+:22  call void (...)* @_ssdm_op_SpecInterface(float* @V_data_V_data_2, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_5: StgValue_53 (68)  [1/1] 0.00ns
+:23  call void (...)* @_ssdm_op_SpecInterface(float* @V_data_V_data_3, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_5: StgValue_54 (69)  [1/1] 0.00ns
+:24  call void (...)* @_ssdm_op_SpecInterface(i27* @Vi_idx_V_data_V_0, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_5: StgValue_55 (70)  [1/1] 0.00ns
+:25  call void (...)* @_ssdm_op_SpecInterface(i27* @Vi_idx_V_data_V_1, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_5: StgValue_56 (71)  [1/1] 0.00ns
+:26  call void (...)* @_ssdm_op_SpecInterface(i27* @Vi_idx_V_data_V_2, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_5: StgValue_57 (72)  [1/1] 0.00ns
+:27  call void (...)* @_ssdm_op_SpecInterface(i27* @Vi_idx_V_data_V_3, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_5: StgValue_58 (73)  [1/1] 0.00ns
+:28  call void (...)* @_ssdm_op_SpecInterface(i27* @Vj_idx_V_data_V_0, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_5: StgValue_59 (74)  [1/1] 0.00ns
+:29  call void (...)* @_ssdm_op_SpecInterface(i27* @Vj_idx_V_data_V_1, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_5: StgValue_60 (75)  [1/1] 0.00ns
+:30  call void (...)* @_ssdm_op_SpecInterface(i27* @Vj_idx_V_data_V_2, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_5: StgValue_61 (76)  [1/1] 0.00ns
+:31  call void (...)* @_ssdm_op_SpecInterface(i27* @Vj_idx_V_data_V_3, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_5: StgValue_62 (77)  [1/1] 0.00ns
+:32  call void (...)* @_ssdm_op_SpecInterface(float* @fixedData_V_data, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_5: StgValue_63 (78)  [1/1] 0.00ns
+:33  call void (...)* @_ssdm_op_SpecInterface(i1* @fixedData_V_tlast_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_5: StgValue_64 (79)  [1/1] 0.00ns
+:34  call void (...)* @_ssdm_op_SpecInterface(float* @processedData_V_data, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_5: StgValue_65 (80)  [1/1] 0.00ns
+:35  call void (...)* @_ssdm_op_SpecInterface(float* @processedData_V_data_1, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_5: StgValue_66 (81)  [1/1] 0.00ns
+:36  call void (...)* @_ssdm_op_SpecInterface(float* @processedData_V_data_2, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_5: StgValue_67 (82)  [1/1] 0.00ns
+:37  call void (...)* @_ssdm_op_SpecInterface(float* @processedData_V_data_3, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_5: StgValue_68 (83)  [1/1] 0.00ns
+:38  call void (...)* @_ssdm_op_SpecBitsMap(i64* %input_V_data), !map !1421
+
+ST_5: StgValue_69 (84)  [1/1] 0.00ns
+:39  call void (...)* @_ssdm_op_SpecBitsMap(float* %output_V_data), !map !1432
+
+ST_5: StgValue_70 (85)  [1/1] 0.00ns
+:40  call void (...)* @_ssdm_op_SpecBitsMap(i1* %output_V_tlast_V), !map !1436
+
+ST_5: StgValue_71 (86)  [1/1] 0.00ns
+:41  call void (...)* @_ssdm_op_SpecBitsMap(i32 %size), !map !1440
+
+ST_5: StgValue_72 (87)  [1/1] 0.00ns
+:42  call void (...)* @_ssdm_op_SpecBitsMap(i32 %FirstRow), !map !1446
+
+ST_5: StgValue_73 (88)  [1/1] 0.00ns
+:43  call void (...)* @_ssdm_op_SpecBitsMap(i32 %LastRow), !map !1450
+
+ST_5: StgValue_74 (89)  [1/1] 0.00ns
+:44  call void (...)* @_ssdm_op_SpecTopModule([14 x i8]* @GapJunctionIP_str) nounwind
+
+ST_5: StgValue_75 (93)  [1/1] 0.00ns
+:48  call void (...)* @_ssdm_op_SpecInterface(i64* %input_V_data, [5 x i8]* @p_str993, i32 1, i32 1, [5 x i8]* @p_str1094, i32 0, i32 0, [1 x i8]* @p_str286, [1 x i8]* @p_str286, [1 x i8]* @p_str286, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str286, [1 x i8]* @p_str286) nounwind
+
+ST_5: StgValue_76 (94)  [1/1] 0.00ns  loc: Stream.cpp:51
+:49  call void (...)* @_ssdm_op_SpecInterface(float* %output_V_data, i1* %output_V_tlast_V, [5 x i8]* @p_str993, i32 1, i32 1, [5 x i8]* @p_str1094, i32 0, i32 0, [1 x i8]* @p_str286, [1 x i8]* @p_str286, [1 x i8]* @p_str286, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str286, [1 x i8]* @p_str286) nounwind
+
+ST_5: StgValue_77 (95)  [1/1] 0.00ns  loc: Stream.cpp:52
+:50  call void (...)* @_ssdm_op_SpecInterface(i32 %size, [10 x i8]* @p_str1195, i32 1, i32 1, [1 x i8]* @p_str286, i32 0, i32 0, [1 x i8]* @p_str286, [1 x i8]* @p_str286, [1 x i8]* @p_str286, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str286, [1 x i8]* @p_str286) nounwind
+
+ST_5: StgValue_78 (96)  [1/1] 0.00ns  loc: Stream.cpp:53
+:51  call void (...)* @_ssdm_op_SpecInterface(i32 %FirstRow, [10 x i8]* @p_str1195, i32 1, i32 1, [1 x i8]* @p_str286, i32 0, i32 0, [1 x i8]* @p_str286, [1 x i8]* @p_str286, [1 x i8]* @p_str286, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str286, [1 x i8]* @p_str286) nounwind
+
+ST_5: StgValue_79 (97)  [1/1] 0.00ns  loc: Stream.cpp:54
+:52  call void (...)* @_ssdm_op_SpecInterface(i32 %LastRow, [10 x i8]* @p_str1195, i32 1, i32 1, [1 x i8]* @p_str286, i32 0, i32 0, [1 x i8]* @p_str286, [1 x i8]* @p_str286, [1 x i8]* @p_str286, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str286, [1 x i8]* @p_str286) nounwind
+
+ST_5: StgValue_80 (98)  [1/1] 0.00ns  loc: Stream.cpp:55
+:53  call void (...)* @_ssdm_op_SpecInterface(i32 0, [10 x i8]* @p_str1195, i32 1, i32 1, [1 x i8]* @p_str286, i32 0, i32 0, [1 x i8]* @p_str286, [1 x i8]* @p_str286, [1 x i8]* @p_str286, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str286, [1 x i8]* @p_str286) nounwind
+
+ST_5: StgValue_81 (115)  [1/2] 0.00ns  loc: Stream.cpp:61
+:70  ret void
+
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 4ns.
+
+ <State 1>: 1ns
+The critical path consists of the following:
+	s_axi read on port 'LastRow' [90]  (1 ns)
+
+ <State 2>: 5.88ns
+The critical path consists of the following:
+	s_axi read on port 'LastRow' [90]  (1 ns)
+	'sub' operation ('tmp_s', Stream.cpp:14->Stream.cpp:58) [101]  (2.44 ns)
+	'sub' operation ('p_neg6', Stream.cpp:14->Stream.cpp:58) [103]  (2.44 ns)
+
+ <State 3>: 3.69ns
+The critical path consists of the following:
+	'sub' operation ('tmp_5', Stream.cpp:14->Stream.cpp:58) [105]  (2.32 ns)
+	'select' operation ('simConfig.rowsToSimulate.V', Stream.cpp:14->Stream.cpp:58) [107]  (1.37 ns)
+
+ <State 4>: 0ns
+The critical path consists of the following:
+
+ <State 5>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

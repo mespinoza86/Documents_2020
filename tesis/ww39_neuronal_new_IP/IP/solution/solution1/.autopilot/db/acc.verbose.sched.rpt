@@ -1,0 +1,1785 @@
+
+
+================================================================
+== Vivado HLS Report for 'acc'
+================================================================
+* Date:           Thu Jan  9 23:44:23 2020
+
+* Version:        2016.4 (Build 1756540 on Mon Jan 23 19:31:01 MST 2017)
+* Project:        solution
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      6.00|        4.00|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+----------+-----+----------+---------+
+    |     Latency    |    Interval    | Pipeline|
+    | min |    max   | min |    max   |   Type  |
+    +-----+----------+-----+----------+---------+
+    |   37|  50000029|   37|  50000029|   none  |
+    +-----+----------+-----+----------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+-----+----------+----------+-----------+-----------+-------------+----------+
+        |          |     Latency    | Iteration|  Initiation Interval  |     Trip    |          |
+        | Loop Name| min |    max   |  Latency |  achieved |   target  |    Count    | Pipelined|
+        +----------+-----+----------+----------+-----------+-----------+-------------+----------+
+        |- Loop 1  |   29|  50000021|        30|          8|          8| 1 ~ 6250000 |    yes   |
+        +----------+-----+----------+----------+-----------+-----------+-------------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 8, depth = 30
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 38
+* Pipeline: 1
+  Pipeline-0: II = 8, D = 30, States = { 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / true
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+	38  / (exitcond_flatten)
+	9  / (!exitcond_flatten)
+9 --> 
+	10  / true
+10 --> 
+	11  / true
+11 --> 
+	12  / true
+12 --> 
+	13  / true
+13 --> 
+	14  / true
+14 --> 
+	15  / true
+15 --> 
+	16  / true
+16 --> 
+	17  / true
+17 --> 
+	18  / true
+18 --> 
+	19  / true
+19 --> 
+	20  / true
+20 --> 
+	21  / true
+21 --> 
+	22  / true
+22 --> 
+	23  / true
+23 --> 
+	24  / true
+24 --> 
+	25  / true
+25 --> 
+	26  / true
+26 --> 
+	27  / true
+27 --> 
+	28  / true
+28 --> 
+	29  / true
+29 --> 
+	30  / true
+30 --> 
+	31  / true
+31 --> 
+	32  / true
+32 --> 
+	33  / true
+33 --> 
+	34  / true
+34 --> 
+	35  / true
+35 --> 
+	36  / true
+36 --> 
+	37  / true
+37 --> 
+	8  / true
+38 --> 
+* FSM state operations: 
+
+ <State 1>: 6.00ns
+ST_1: simConfig_rowsToSimu (47)  [1/1] 3.00ns
+entry:22  %simConfig_rowsToSimu = call i27 @_ssdm_op_Read.ap_fifo.i27P(i27* %simConfig_rowsToSimulate_V)
+
+ST_1: simConfig_BLOCK_NUMB (48)  [1/1] 3.00ns
+entry:23  %simConfig_BLOCK_NUMB = call i27 @_ssdm_op_Read.ap_fifo.i27P(i27* %simConfig_BLOCK_NUMBERS_V)
+
+ST_1: StgValue_41 (50)  [1/1] 3.00ns
+entry:25  call void @_ssdm_op_Write.ap_fifo.i27P(i27* %simConfig_rowsToSimulate_V_out, i27 %simConfig_rowsToSimu)
+
+ST_1: StgValue_42 (52)  [1/1] 3.00ns
+entry:27  call void @_ssdm_op_Write.ap_fifo.i27P(i27* %simConfig_BLOCK_NUMBERS_V_out, i27 %simConfig_BLOCK_NUMB)
+
+ST_1: cast (73)  [1/1] 0.00ns
+entry:48  %cast = zext i27 %simConfig_rowsToSimu to i54
+
+ST_1: cast1 (74)  [1/1] 0.00ns
+entry:49  %cast1 = zext i27 %simConfig_BLOCK_NUMB to i54
+
+ST_1: bound (75)  [7/7] 2.15ns
+entry:50  %bound = mul i54 %cast1, %cast
+
+
+ <State 2>: 2.15ns
+ST_2: bound (75)  [6/7] 2.15ns
+entry:50  %bound = mul i54 %cast1, %cast
+
+
+ <State 3>: 2.15ns
+ST_3: bound (75)  [5/7] 2.15ns
+entry:50  %bound = mul i54 %cast1, %cast
+
+
+ <State 4>: 2.15ns
+ST_4: bound (75)  [4/7] 2.15ns
+entry:50  %bound = mul i54 %cast1, %cast
+
+
+ <State 5>: 2.15ns
+ST_5: bound (75)  [3/7] 2.15ns
+entry:50  %bound = mul i54 %cast1, %cast
+
+
+ <State 6>: 2.15ns
+ST_6: bound (75)  [2/7] 2.15ns
+entry:50  %bound = mul i54 %cast1, %cast
+
+
+ <State 7>: 2.15ns
+ST_7: StgValue_51 (25)  [1/1] 0.00ns
+entry:0  call void (...)* @_ssdm_op_SpecInterface(float* @F_V_data_0, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_7: StgValue_52 (26)  [1/1] 0.00ns
+entry:1  call void (...)* @_ssdm_op_SpecInterface(float* @V_acc_V_data_0, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_7: StgValue_53 (27)  [1/1] 0.00ns
+entry:2  call void (...)* @_ssdm_op_SpecInterface(float* @V_V_data_0, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_7: StgValue_54 (28)  [1/1] 0.00ns
+entry:3  call void (...)* @_ssdm_op_SpecInterface(float* @C_data_V_data_0, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_7: StgValue_55 (29)  [1/1] 0.00ns
+entry:4  call void (...)* @_ssdm_op_SpecInterface(float* @F_acc_V_data_0, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_7: StgValue_56 (30)  [1/1] 0.00ns
+entry:5  call void (...)* @_ssdm_op_SpecInterface(float* @F_acc_V_data_1, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_7: StgValue_57 (31)  [1/1] 0.00ns
+entry:6  call void (...)* @_ssdm_op_SpecInterface(float* @F_acc_V_data_2, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_7: StgValue_58 (32)  [1/1] 0.00ns
+entry:7  call void (...)* @_ssdm_op_SpecInterface(float* @F_acc_V_data_3, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_7: StgValue_59 (33)  [1/1] 0.00ns
+entry:8  call void (...)* @_ssdm_op_SpecInterface(float* @V_acc_V_data_2, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_7: StgValue_60 (34)  [1/1] 0.00ns
+entry:9  call void (...)* @_ssdm_op_SpecInterface(float* @V_acc_V_data_1, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_7: StgValue_61 (35)  [1/1] 0.00ns
+entry:10  call void (...)* @_ssdm_op_SpecInterface(float* @V_acc_V_data_3, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_7: StgValue_62 (36)  [1/1] 0.00ns
+entry:11  call void (...)* @_ssdm_op_SpecInterface(float* @C_data_V_data_2, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_7: StgValue_63 (37)  [1/1] 0.00ns
+entry:12  call void (...)* @_ssdm_op_SpecInterface(float* @C_data_V_data_1, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_7: StgValue_64 (38)  [1/1] 0.00ns
+entry:13  call void (...)* @_ssdm_op_SpecInterface(float* @C_data_V_data_3, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_7: StgValue_65 (39)  [1/1] 0.00ns
+entry:14  call void (...)* @_ssdm_op_SpecInterface(float* @F_V_data_2, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_7: StgValue_66 (40)  [1/1] 0.00ns
+entry:15  call void (...)* @_ssdm_op_SpecInterface(float* @F_V_data_1, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_7: StgValue_67 (41)  [1/1] 0.00ns
+entry:16  call void (...)* @_ssdm_op_SpecInterface(float* @F_V_data_3, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_7: StgValue_68 (42)  [1/1] 0.00ns
+entry:17  call void (...)* @_ssdm_op_SpecInterface(float* @V_V_data_2, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_7: StgValue_69 (43)  [1/1] 0.00ns
+entry:18  call void (...)* @_ssdm_op_SpecInterface(float* @V_V_data_1, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_7: StgValue_70 (44)  [1/1] 0.00ns
+entry:19  call void (...)* @_ssdm_op_SpecInterface(float* @V_V_data_3, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_7: StgValue_71 (45)  [1/1] 0.00ns
+entry:20  call void (...)* @_ssdm_op_SpecInterface(i27* %simConfig_BLOCK_NUMBERS_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_7: StgValue_72 (46)  [1/1] 0.00ns
+entry:21  call void (...)* @_ssdm_op_SpecInterface(i27* %simConfig_rowsToSimulate_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_7: StgValue_73 (49)  [1/1] 0.00ns
+entry:24  call void (...)* @_ssdm_op_SpecInterface(i27* %simConfig_rowsToSimulate_V_out, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_7: StgValue_74 (51)  [1/1] 0.00ns
+entry:26  call void (...)* @_ssdm_op_SpecInterface(i27* %simConfig_BLOCK_NUMBERS_V_out, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_7: StgValue_75 (53)  [1/1] 0.00ns
+entry:28  call void (...)* @_ssdm_op_SpecInterface(float* @F_V_data_0, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_7: StgValue_76 (54)  [1/1] 0.00ns
+entry:29  call void (...)* @_ssdm_op_SpecInterface(float* @V_acc_V_data_0, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_7: StgValue_77 (55)  [1/1] 0.00ns
+entry:30  call void (...)* @_ssdm_op_SpecInterface(float* @V_V_data_0, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_7: StgValue_78 (56)  [1/1] 0.00ns
+entry:31  call void (...)* @_ssdm_op_SpecInterface(float* @C_data_V_data_0, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_7: StgValue_79 (57)  [1/1] 0.00ns
+entry:32  call void (...)* @_ssdm_op_SpecInterface(float* @F_acc_V_data_0, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_7: StgValue_80 (58)  [1/1] 0.00ns
+entry:33  call void (...)* @_ssdm_op_SpecInterface(float* @F_acc_V_data_1, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_7: StgValue_81 (59)  [1/1] 0.00ns
+entry:34  call void (...)* @_ssdm_op_SpecInterface(float* @F_acc_V_data_2, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_7: StgValue_82 (60)  [1/1] 0.00ns
+entry:35  call void (...)* @_ssdm_op_SpecInterface(float* @F_acc_V_data_3, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_7: StgValue_83 (61)  [1/1] 0.00ns
+entry:36  call void (...)* @_ssdm_op_SpecInterface(float* @V_acc_V_data_2, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_7: StgValue_84 (62)  [1/1] 0.00ns
+entry:37  call void (...)* @_ssdm_op_SpecInterface(float* @V_acc_V_data_1, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_7: StgValue_85 (63)  [1/1] 0.00ns
+entry:38  call void (...)* @_ssdm_op_SpecInterface(float* @V_acc_V_data_3, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_7: StgValue_86 (64)  [1/1] 0.00ns
+entry:39  call void (...)* @_ssdm_op_SpecInterface(float* @C_data_V_data_2, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_7: StgValue_87 (65)  [1/1] 0.00ns
+entry:40  call void (...)* @_ssdm_op_SpecInterface(float* @C_data_V_data_1, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_7: StgValue_88 (66)  [1/1] 0.00ns
+entry:41  call void (...)* @_ssdm_op_SpecInterface(float* @C_data_V_data_3, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_7: StgValue_89 (67)  [1/1] 0.00ns
+entry:42  call void (...)* @_ssdm_op_SpecInterface(float* @F_V_data_2, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_7: StgValue_90 (68)  [1/1] 0.00ns
+entry:43  call void (...)* @_ssdm_op_SpecInterface(float* @F_V_data_1, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_7: StgValue_91 (69)  [1/1] 0.00ns
+entry:44  call void (...)* @_ssdm_op_SpecInterface(float* @F_V_data_3, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_7: StgValue_92 (70)  [1/1] 0.00ns
+entry:45  call void (...)* @_ssdm_op_SpecInterface(float* @V_V_data_2, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_7: StgValue_93 (71)  [1/1] 0.00ns
+entry:46  call void (...)* @_ssdm_op_SpecInterface(float* @V_V_data_1, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_7: StgValue_94 (72)  [1/1] 0.00ns
+entry:47  call void (...)* @_ssdm_op_SpecInterface(float* @V_V_data_3, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_7: bound (75)  [1/7] 2.15ns
+entry:50  %bound = mul i54 %cast1, %cast
+
+ST_7: StgValue_96 (76)  [1/1] 1.57ns  loc: modules/acc/acc.cpp:74
+entry:51  br label %.preheader.i.i
+
+
+ <State 8>: 3.16ns
+ST_8: indvar_flatten (78)  [1/1] 0.00ns
+.preheader.i.i:0  %indvar_flatten = phi i54 [ 0, %entry ], [ %indvar_flatten_next, %.preheader103.i.i ]
+
+ST_8: exitcond_flatten (79)  [1/1] 2.65ns
+.preheader.i.i:1  %exitcond_flatten = icmp eq i54 %indvar_flatten, %bound
+
+ST_8: indvar_flatten_next (80)  [1/1] 3.16ns
+.preheader.i.i:2  %indvar_flatten_next = add i54 %indvar_flatten, 1
+
+ST_8: StgValue_100 (81)  [1/1] 0.00ns
+.preheader.i.i:3  br i1 %exitcond_flatten, label %.exit, label %.preheader103.i.i
+
+
+ <State 9>: 3.00ns
+ST_9: tmp (86)  [1/1] 0.00ns  loc: modules/acc/acc.cpp:82
+.preheader103.i.i:3  %tmp = call fastcc { float, float, float, float, float, float, float, float } @readCalcData()
+
+ST_9: F_vector_data_0 (87)  [1/1] 0.00ns  loc: modules/acc/acc.cpp:82
+.preheader103.i.i:4  %F_vector_data_0 = extractvalue { float, float, float, float, float, float, float, float } %tmp, 0
+
+ST_9: F_vector_data_1 (88)  [1/1] 0.00ns  loc: modules/acc/acc.cpp:82
+.preheader103.i.i:5  %F_vector_data_1 = extractvalue { float, float, float, float, float, float, float, float } %tmp, 1
+
+ST_9: F_vector_data_2 (89)  [1/1] 0.00ns  loc: modules/acc/acc.cpp:82
+.preheader103.i.i:6  %F_vector_data_2 = extractvalue { float, float, float, float, float, float, float, float } %tmp, 2
+
+ST_9: F_vector_data_3 (90)  [1/1] 0.00ns  loc: modules/acc/acc.cpp:82
+.preheader103.i.i:7  %F_vector_data_3 = extractvalue { float, float, float, float, float, float, float, float } %tmp, 3
+
+ST_9: V_vector_data_0 (91)  [1/1] 0.00ns  loc: modules/acc/acc.cpp:82
+.preheader103.i.i:8  %V_vector_data_0 = extractvalue { float, float, float, float, float, float, float, float } %tmp, 4
+
+ST_9: V_vector_data_1 (92)  [1/1] 0.00ns  loc: modules/acc/acc.cpp:82
+.preheader103.i.i:9  %V_vector_data_1 = extractvalue { float, float, float, float, float, float, float, float } %tmp, 5
+
+ST_9: V_vector_data_2 (93)  [1/1] 0.00ns  loc: modules/acc/acc.cpp:82
+.preheader103.i.i:10  %V_vector_data_2 = extractvalue { float, float, float, float, float, float, float, float } %tmp, 6
+
+ST_9: V_vector_data_3 (94)  [1/1] 0.00ns  loc: modules/acc/acc.cpp:82
+.preheader103.i.i:11  %V_vector_data_3 = extractvalue { float, float, float, float, float, float, float, float } %tmp, 7
+
+ST_9: empty (95)  [1/1] 3.00ns  loc: modules/acc/acc.cpp:13->modules/acc/acc.cpp:83
+.preheader103.i.i:12  %empty = call { float, float, float, float } @_ssdm_op_Read.ap_fifo.volatile.floatP.floatP.floatP.floatP(float* @C_data_V_data_0, float* @C_data_V_data_1, float* @C_data_V_data_2, float* @C_data_V_data_3)
+
+ST_9: tmp_data_0_5 (96)  [1/1] 0.00ns  loc: modules/acc/acc.cpp:13->modules/acc/acc.cpp:83
+.preheader103.i.i:13  %tmp_data_0_5 = extractvalue { float, float, float, float } %empty, 0
+
+ST_9: tmp_data_1_5 (97)  [1/1] 0.00ns  loc: modules/acc/acc.cpp:13->modules/acc/acc.cpp:83
+.preheader103.i.i:14  %tmp_data_1_5 = extractvalue { float, float, float, float } %empty, 1
+
+ST_9: tmp_data_2_5 (98)  [1/1] 0.00ns  loc: modules/acc/acc.cpp:13->modules/acc/acc.cpp:83
+.preheader103.i.i:15  %tmp_data_2_5 = extractvalue { float, float, float, float } %empty, 2
+
+ST_9: tmp_data_3_5 (99)  [1/1] 0.00ns  loc: modules/acc/acc.cpp:13->modules/acc/acc.cpp:83
+.preheader103.i.i:16  %tmp_data_3_5 = extractvalue { float, float, float, float } %empty, 3
+
+
+ <State 10>: 5.70ns
+ST_10: tmp_i_i_i (100)  [4/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:17  %tmp_i_i_i = fmul float %F_vector_data_0, %tmp_data_0_5
+
+ST_10: tmp_1_i_i_i (101)  [4/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:18  %tmp_1_i_i_i = fmul float %F_vector_data_1, %tmp_data_1_5
+
+ST_10: tmp_2_i_i_i (102)  [4/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:19  %tmp_2_i_i_i = fmul float %F_vector_data_2, %tmp_data_2_5
+
+ST_10: tmp_3_i_i_i (103)  [4/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:20  %tmp_3_i_i_i = fmul float %F_vector_data_3, %tmp_data_3_5
+
+ST_10: tmp_1 (114)  [1/1] 0.00ns  loc: modules/acc/acc.cpp:82
+.preheader103.i.i:31  %tmp_1 = call fastcc { float, float, float, float, float, float, float, float } @readCalcData()
+
+ST_10: F_vector_data_0_1 (115)  [1/1] 0.00ns  loc: modules/acc/acc.cpp:82
+.preheader103.i.i:32  %F_vector_data_0_1 = extractvalue { float, float, float, float, float, float, float, float } %tmp_1, 0
+
+ST_10: F_vector_data_1_1 (116)  [1/1] 0.00ns  loc: modules/acc/acc.cpp:82
+.preheader103.i.i:33  %F_vector_data_1_1 = extractvalue { float, float, float, float, float, float, float, float } %tmp_1, 1
+
+ST_10: F_vector_data_2_1 (117)  [1/1] 0.00ns  loc: modules/acc/acc.cpp:82
+.preheader103.i.i:34  %F_vector_data_2_1 = extractvalue { float, float, float, float, float, float, float, float } %tmp_1, 2
+
+ST_10: F_vector_data_3_1 (118)  [1/1] 0.00ns  loc: modules/acc/acc.cpp:82
+.preheader103.i.i:35  %F_vector_data_3_1 = extractvalue { float, float, float, float, float, float, float, float } %tmp_1, 3
+
+ST_10: V_vector_data_0_1 (119)  [1/1] 0.00ns  loc: modules/acc/acc.cpp:82
+.preheader103.i.i:36  %V_vector_data_0_1 = extractvalue { float, float, float, float, float, float, float, float } %tmp_1, 4
+
+ST_10: V_vector_data_1_1 (120)  [1/1] 0.00ns  loc: modules/acc/acc.cpp:82
+.preheader103.i.i:37  %V_vector_data_1_1 = extractvalue { float, float, float, float, float, float, float, float } %tmp_1, 5
+
+ST_10: V_vector_data_2_1 (121)  [1/1] 0.00ns  loc: modules/acc/acc.cpp:82
+.preheader103.i.i:38  %V_vector_data_2_1 = extractvalue { float, float, float, float, float, float, float, float } %tmp_1, 6
+
+ST_10: V_vector_data_3_1 (122)  [1/1] 0.00ns  loc: modules/acc/acc.cpp:82
+.preheader103.i.i:39  %V_vector_data_3_1 = extractvalue { float, float, float, float, float, float, float, float } %tmp_1, 7
+
+
+ <State 11>: 5.70ns
+ST_11: tmp_i_i_i (100)  [3/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:17  %tmp_i_i_i = fmul float %F_vector_data_0, %tmp_data_0_5
+
+ST_11: tmp_1_i_i_i (101)  [3/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:18  %tmp_1_i_i_i = fmul float %F_vector_data_1, %tmp_data_1_5
+
+ST_11: tmp_2_i_i_i (102)  [3/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:19  %tmp_2_i_i_i = fmul float %F_vector_data_2, %tmp_data_2_5
+
+ST_11: tmp_3_i_i_i (103)  [3/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:20  %tmp_3_i_i_i = fmul float %F_vector_data_3, %tmp_data_3_5
+
+ST_11: tmp_i204_i_i (107)  [4/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:24  %tmp_i204_i_i = fmul float %V_vector_data_0, %tmp_data_0_5
+
+ST_11: tmp_1_i205_i_i (108)  [4/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:25  %tmp_1_i205_i_i = fmul float %V_vector_data_1, %tmp_data_1_5
+
+ST_11: tmp_2_i206_i_i (109)  [4/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:26  %tmp_2_i206_i_i = fmul float %V_vector_data_2, %tmp_data_2_5
+
+ST_11: tmp_3_i207_i_i (110)  [4/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:27  %tmp_3_i207_i_i = fmul float %V_vector_data_3, %tmp_data_3_5
+
+ST_11: empty_67 (123)  [1/1] 3.00ns  loc: modules/acc/acc.cpp:13->modules/acc/acc.cpp:83
+.preheader103.i.i:40  %empty_67 = call { float, float, float, float } @_ssdm_op_Read.ap_fifo.volatile.floatP.floatP.floatP.floatP(float* @C_data_V_data_0, float* @C_data_V_data_1, float* @C_data_V_data_2, float* @C_data_V_data_3)
+
+ST_11: tmp_data_0_6 (124)  [1/1] 0.00ns  loc: modules/acc/acc.cpp:13->modules/acc/acc.cpp:83
+.preheader103.i.i:41  %tmp_data_0_6 = extractvalue { float, float, float, float } %empty_67, 0
+
+ST_11: tmp_data_1_6 (125)  [1/1] 0.00ns  loc: modules/acc/acc.cpp:13->modules/acc/acc.cpp:83
+.preheader103.i.i:42  %tmp_data_1_6 = extractvalue { float, float, float, float } %empty_67, 1
+
+ST_11: tmp_data_2_6 (126)  [1/1] 0.00ns  loc: modules/acc/acc.cpp:13->modules/acc/acc.cpp:83
+.preheader103.i.i:43  %tmp_data_2_6 = extractvalue { float, float, float, float } %empty_67, 2
+
+ST_11: tmp_data_3_6 (127)  [1/1] 0.00ns  loc: modules/acc/acc.cpp:13->modules/acc/acc.cpp:83
+.preheader103.i.i:44  %tmp_data_3_6 = extractvalue { float, float, float, float } %empty_67, 3
+
+ST_11: tmp_2 (142)  [1/1] 0.00ns  loc: modules/acc/acc.cpp:82
+.preheader103.i.i:59  %tmp_2 = call fastcc { float, float, float, float, float, float, float, float } @readCalcData()
+
+ST_11: F_vector_data_0_2 (143)  [1/1] 0.00ns  loc: modules/acc/acc.cpp:82
+.preheader103.i.i:60  %F_vector_data_0_2 = extractvalue { float, float, float, float, float, float, float, float } %tmp_2, 0
+
+ST_11: F_vector_data_1_2 (144)  [1/1] 0.00ns  loc: modules/acc/acc.cpp:82
+.preheader103.i.i:61  %F_vector_data_1_2 = extractvalue { float, float, float, float, float, float, float, float } %tmp_2, 1
+
+ST_11: F_vector_data_2_2 (145)  [1/1] 0.00ns  loc: modules/acc/acc.cpp:82
+.preheader103.i.i:62  %F_vector_data_2_2 = extractvalue { float, float, float, float, float, float, float, float } %tmp_2, 2
+
+ST_11: F_vector_data_3_2 (146)  [1/1] 0.00ns  loc: modules/acc/acc.cpp:82
+.preheader103.i.i:63  %F_vector_data_3_2 = extractvalue { float, float, float, float, float, float, float, float } %tmp_2, 3
+
+ST_11: V_vector_data_0_2 (147)  [1/1] 0.00ns  loc: modules/acc/acc.cpp:82
+.preheader103.i.i:64  %V_vector_data_0_2 = extractvalue { float, float, float, float, float, float, float, float } %tmp_2, 4
+
+ST_11: V_vector_data_1_2 (148)  [1/1] 0.00ns  loc: modules/acc/acc.cpp:82
+.preheader103.i.i:65  %V_vector_data_1_2 = extractvalue { float, float, float, float, float, float, float, float } %tmp_2, 5
+
+ST_11: V_vector_data_2_2 (149)  [1/1] 0.00ns  loc: modules/acc/acc.cpp:82
+.preheader103.i.i:66  %V_vector_data_2_2 = extractvalue { float, float, float, float, float, float, float, float } %tmp_2, 6
+
+ST_11: V_vector_data_3_2 (150)  [1/1] 0.00ns  loc: modules/acc/acc.cpp:82
+.preheader103.i.i:67  %V_vector_data_3_2 = extractvalue { float, float, float, float, float, float, float, float } %tmp_2, 7
+
+
+ <State 12>: 5.70ns
+ST_12: tmp_i_i_i (100)  [2/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:17  %tmp_i_i_i = fmul float %F_vector_data_0, %tmp_data_0_5
+
+ST_12: tmp_1_i_i_i (101)  [2/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:18  %tmp_1_i_i_i = fmul float %F_vector_data_1, %tmp_data_1_5
+
+ST_12: tmp_2_i_i_i (102)  [2/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:19  %tmp_2_i_i_i = fmul float %F_vector_data_2, %tmp_data_2_5
+
+ST_12: tmp_3_i_i_i (103)  [2/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:20  %tmp_3_i_i_i = fmul float %F_vector_data_3, %tmp_data_3_5
+
+ST_12: tmp_i204_i_i (107)  [3/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:24  %tmp_i204_i_i = fmul float %V_vector_data_0, %tmp_data_0_5
+
+ST_12: tmp_1_i205_i_i (108)  [3/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:25  %tmp_1_i205_i_i = fmul float %V_vector_data_1, %tmp_data_1_5
+
+ST_12: tmp_2_i206_i_i (109)  [3/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:26  %tmp_2_i206_i_i = fmul float %V_vector_data_2, %tmp_data_2_5
+
+ST_12: tmp_3_i207_i_i (110)  [3/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:27  %tmp_3_i207_i_i = fmul float %V_vector_data_3, %tmp_data_3_5
+
+ST_12: tmp_i223_i_i (128)  [4/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:45  %tmp_i223_i_i = fmul float %F_vector_data_0_1, %tmp_data_0_6
+
+ST_12: tmp_1_i224_i_i (129)  [4/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:46  %tmp_1_i224_i_i = fmul float %F_vector_data_1_1, %tmp_data_1_6
+
+ST_12: tmp_2_i225_i_i (130)  [4/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:47  %tmp_2_i225_i_i = fmul float %F_vector_data_2_1, %tmp_data_2_6
+
+ST_12: tmp_3_i226_i_i (131)  [4/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:48  %tmp_3_i226_i_i = fmul float %F_vector_data_3_1, %tmp_data_3_6
+
+ST_12: tmp_3 (170)  [1/1] 0.00ns  loc: modules/acc/acc.cpp:82
+.preheader103.i.i:87  %tmp_3 = call fastcc { float, float, float, float, float, float, float, float } @readCalcData()
+
+ST_12: F_vector_data_0_3 (171)  [1/1] 0.00ns  loc: modules/acc/acc.cpp:82
+.preheader103.i.i:88  %F_vector_data_0_3 = extractvalue { float, float, float, float, float, float, float, float } %tmp_3, 0
+
+ST_12: F_vector_data_1_3 (172)  [1/1] 0.00ns  loc: modules/acc/acc.cpp:82
+.preheader103.i.i:89  %F_vector_data_1_3 = extractvalue { float, float, float, float, float, float, float, float } %tmp_3, 1
+
+ST_12: F_vector_data_2_3 (173)  [1/1] 0.00ns  loc: modules/acc/acc.cpp:82
+.preheader103.i.i:90  %F_vector_data_2_3 = extractvalue { float, float, float, float, float, float, float, float } %tmp_3, 2
+
+ST_12: F_vector_data_3_3 (174)  [1/1] 0.00ns  loc: modules/acc/acc.cpp:82
+.preheader103.i.i:91  %F_vector_data_3_3 = extractvalue { float, float, float, float, float, float, float, float } %tmp_3, 3
+
+ST_12: V_vector_data_0_3 (175)  [1/1] 0.00ns  loc: modules/acc/acc.cpp:82
+.preheader103.i.i:92  %V_vector_data_0_3 = extractvalue { float, float, float, float, float, float, float, float } %tmp_3, 4
+
+ST_12: V_vector_data_1_3 (176)  [1/1] 0.00ns  loc: modules/acc/acc.cpp:82
+.preheader103.i.i:93  %V_vector_data_1_3 = extractvalue { float, float, float, float, float, float, float, float } %tmp_3, 5
+
+ST_12: V_vector_data_2_3 (177)  [1/1] 0.00ns  loc: modules/acc/acc.cpp:82
+.preheader103.i.i:94  %V_vector_data_2_3 = extractvalue { float, float, float, float, float, float, float, float } %tmp_3, 6
+
+ST_12: V_vector_data_3_3 (178)  [1/1] 0.00ns  loc: modules/acc/acc.cpp:82
+.preheader103.i.i:95  %V_vector_data_3_3 = extractvalue { float, float, float, float, float, float, float, float } %tmp_3, 7
+
+
+ <State 13>: 5.70ns
+ST_13: tmp_i_i_i (100)  [1/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:17  %tmp_i_i_i = fmul float %F_vector_data_0, %tmp_data_0_5
+
+ST_13: tmp_1_i_i_i (101)  [1/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:18  %tmp_1_i_i_i = fmul float %F_vector_data_1, %tmp_data_1_5
+
+ST_13: tmp_2_i_i_i (102)  [1/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:19  %tmp_2_i_i_i = fmul float %F_vector_data_2, %tmp_data_2_5
+
+ST_13: tmp_3_i_i_i (103)  [1/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:20  %tmp_3_i_i_i = fmul float %F_vector_data_3, %tmp_data_3_5
+
+ST_13: tmp_i204_i_i (107)  [2/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:24  %tmp_i204_i_i = fmul float %V_vector_data_0, %tmp_data_0_5
+
+ST_13: tmp_1_i205_i_i (108)  [2/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:25  %tmp_1_i205_i_i = fmul float %V_vector_data_1, %tmp_data_1_5
+
+ST_13: tmp_2_i206_i_i (109)  [2/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:26  %tmp_2_i206_i_i = fmul float %V_vector_data_2, %tmp_data_2_5
+
+ST_13: tmp_3_i207_i_i (110)  [2/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:27  %tmp_3_i207_i_i = fmul float %V_vector_data_3, %tmp_data_3_5
+
+ST_13: tmp_i223_i_i (128)  [3/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:45  %tmp_i223_i_i = fmul float %F_vector_data_0_1, %tmp_data_0_6
+
+ST_13: tmp_1_i224_i_i (129)  [3/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:46  %tmp_1_i224_i_i = fmul float %F_vector_data_1_1, %tmp_data_1_6
+
+ST_13: tmp_2_i225_i_i (130)  [3/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:47  %tmp_2_i225_i_i = fmul float %F_vector_data_2_1, %tmp_data_2_6
+
+ST_13: tmp_3_i226_i_i (131)  [3/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:48  %tmp_3_i226_i_i = fmul float %F_vector_data_3_1, %tmp_data_3_6
+
+ST_13: tmp_i230_i_i (135)  [4/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:52  %tmp_i230_i_i = fmul float %V_vector_data_0_1, %tmp_data_0_6
+
+ST_13: tmp_1_i231_i_i (136)  [4/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:53  %tmp_1_i231_i_i = fmul float %V_vector_data_1_1, %tmp_data_1_6
+
+ST_13: tmp_2_i232_i_i (137)  [4/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:54  %tmp_2_i232_i_i = fmul float %V_vector_data_2_1, %tmp_data_2_6
+
+ST_13: tmp_3_i233_i_i (138)  [4/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:55  %tmp_3_i233_i_i = fmul float %V_vector_data_3_1, %tmp_data_3_6
+
+ST_13: empty_68 (151)  [1/1] 3.00ns  loc: modules/acc/acc.cpp:13->modules/acc/acc.cpp:83
+.preheader103.i.i:68  %empty_68 = call { float, float, float, float } @_ssdm_op_Read.ap_fifo.volatile.floatP.floatP.floatP.floatP(float* @C_data_V_data_0, float* @C_data_V_data_1, float* @C_data_V_data_2, float* @C_data_V_data_3)
+
+ST_13: tmp_data_0_7 (152)  [1/1] 0.00ns  loc: modules/acc/acc.cpp:13->modules/acc/acc.cpp:83
+.preheader103.i.i:69  %tmp_data_0_7 = extractvalue { float, float, float, float } %empty_68, 0
+
+ST_13: tmp_data_1_7 (153)  [1/1] 0.00ns  loc: modules/acc/acc.cpp:13->modules/acc/acc.cpp:83
+.preheader103.i.i:70  %tmp_data_1_7 = extractvalue { float, float, float, float } %empty_68, 1
+
+ST_13: tmp_data_2_7 (154)  [1/1] 0.00ns  loc: modules/acc/acc.cpp:13->modules/acc/acc.cpp:83
+.preheader103.i.i:71  %tmp_data_2_7 = extractvalue { float, float, float, float } %empty_68, 2
+
+ST_13: tmp_data_3_7 (155)  [1/1] 0.00ns  loc: modules/acc/acc.cpp:13->modules/acc/acc.cpp:83
+.preheader103.i.i:72  %tmp_data_3_7 = extractvalue { float, float, float, float } %empty_68, 3
+
+
+ <State 14>: 5.70ns
+ST_14: dataTemp1 (104)  [8/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:84
+.preheader103.i.i:21  %dataTemp1 = fadd float %tmp_i_i_i, %tmp_1_i_i_i
+
+ST_14: dataTemp2 (105)  [8/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:84
+.preheader103.i.i:22  %dataTemp2 = fadd float %tmp_2_i_i_i, %tmp_3_i_i_i
+
+ST_14: tmp_i204_i_i (107)  [1/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:24  %tmp_i204_i_i = fmul float %V_vector_data_0, %tmp_data_0_5
+
+ST_14: tmp_1_i205_i_i (108)  [1/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:25  %tmp_1_i205_i_i = fmul float %V_vector_data_1, %tmp_data_1_5
+
+ST_14: tmp_2_i206_i_i (109)  [1/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:26  %tmp_2_i206_i_i = fmul float %V_vector_data_2, %tmp_data_2_5
+
+ST_14: tmp_3_i207_i_i (110)  [1/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:27  %tmp_3_i207_i_i = fmul float %V_vector_data_3, %tmp_data_3_5
+
+ST_14: tmp_i223_i_i (128)  [2/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:45  %tmp_i223_i_i = fmul float %F_vector_data_0_1, %tmp_data_0_6
+
+ST_14: tmp_1_i224_i_i (129)  [2/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:46  %tmp_1_i224_i_i = fmul float %F_vector_data_1_1, %tmp_data_1_6
+
+ST_14: tmp_2_i225_i_i (130)  [2/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:47  %tmp_2_i225_i_i = fmul float %F_vector_data_2_1, %tmp_data_2_6
+
+ST_14: tmp_3_i226_i_i (131)  [2/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:48  %tmp_3_i226_i_i = fmul float %F_vector_data_3_1, %tmp_data_3_6
+
+ST_14: tmp_i230_i_i (135)  [3/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:52  %tmp_i230_i_i = fmul float %V_vector_data_0_1, %tmp_data_0_6
+
+ST_14: tmp_1_i231_i_i (136)  [3/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:53  %tmp_1_i231_i_i = fmul float %V_vector_data_1_1, %tmp_data_1_6
+
+ST_14: tmp_2_i232_i_i (137)  [3/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:54  %tmp_2_i232_i_i = fmul float %V_vector_data_2_1, %tmp_data_2_6
+
+ST_14: tmp_3_i233_i_i (138)  [3/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:55  %tmp_3_i233_i_i = fmul float %V_vector_data_3_1, %tmp_data_3_6
+
+ST_14: tmp_i249_i_i (156)  [4/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:73  %tmp_i249_i_i = fmul float %F_vector_data_0_2, %tmp_data_0_7
+
+ST_14: tmp_1_i250_i_i (157)  [4/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:74  %tmp_1_i250_i_i = fmul float %F_vector_data_1_2, %tmp_data_1_7
+
+ST_14: tmp_2_i251_i_i (158)  [4/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:75  %tmp_2_i251_i_i = fmul float %F_vector_data_2_2, %tmp_data_2_7
+
+ST_14: tmp_3_i252_i_i (159)  [4/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:76  %tmp_3_i252_i_i = fmul float %F_vector_data_3_2, %tmp_data_3_7
+
+ST_14: empty_69 (179)  [1/1] 3.00ns  loc: modules/acc/acc.cpp:13->modules/acc/acc.cpp:83
+.preheader103.i.i:96  %empty_69 = call { float, float, float, float } @_ssdm_op_Read.ap_fifo.volatile.floatP.floatP.floatP.floatP(float* @C_data_V_data_0, float* @C_data_V_data_1, float* @C_data_V_data_2, float* @C_data_V_data_3)
+
+ST_14: tmp_data_0_8 (180)  [1/1] 0.00ns  loc: modules/acc/acc.cpp:13->modules/acc/acc.cpp:83
+.preheader103.i.i:97  %tmp_data_0_8 = extractvalue { float, float, float, float } %empty_69, 0
+
+ST_14: tmp_data_1_8 (181)  [1/1] 0.00ns  loc: modules/acc/acc.cpp:13->modules/acc/acc.cpp:83
+.preheader103.i.i:98  %tmp_data_1_8 = extractvalue { float, float, float, float } %empty_69, 1
+
+ST_14: tmp_data_2_8 (182)  [1/1] 0.00ns  loc: modules/acc/acc.cpp:13->modules/acc/acc.cpp:83
+.preheader103.i.i:99  %tmp_data_2_8 = extractvalue { float, float, float, float } %empty_69, 2
+
+ST_14: tmp_data_3_8 (183)  [1/1] 0.00ns  loc: modules/acc/acc.cpp:13->modules/acc/acc.cpp:83
+.preheader103.i.i:100  %tmp_data_3_8 = extractvalue { float, float, float, float } %empty_69, 3
+
+
+ <State 15>: 5.70ns
+ST_15: dataTemp1 (104)  [7/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:84
+.preheader103.i.i:21  %dataTemp1 = fadd float %tmp_i_i_i, %tmp_1_i_i_i
+
+ST_15: dataTemp2 (105)  [7/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:84
+.preheader103.i.i:22  %dataTemp2 = fadd float %tmp_2_i_i_i, %tmp_3_i_i_i
+
+ST_15: dataTemp1_1 (111)  [8/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:85
+.preheader103.i.i:28  %dataTemp1_1 = fadd float %tmp_i204_i_i, %tmp_1_i205_i_i
+
+ST_15: dataTemp2_1 (112)  [8/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:85
+.preheader103.i.i:29  %dataTemp2_1 = fadd float %tmp_2_i206_i_i, %tmp_3_i207_i_i
+
+ST_15: tmp_i223_i_i (128)  [1/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:45  %tmp_i223_i_i = fmul float %F_vector_data_0_1, %tmp_data_0_6
+
+ST_15: tmp_1_i224_i_i (129)  [1/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:46  %tmp_1_i224_i_i = fmul float %F_vector_data_1_1, %tmp_data_1_6
+
+ST_15: tmp_2_i225_i_i (130)  [1/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:47  %tmp_2_i225_i_i = fmul float %F_vector_data_2_1, %tmp_data_2_6
+
+ST_15: tmp_3_i226_i_i (131)  [1/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:48  %tmp_3_i226_i_i = fmul float %F_vector_data_3_1, %tmp_data_3_6
+
+ST_15: tmp_i230_i_i (135)  [2/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:52  %tmp_i230_i_i = fmul float %V_vector_data_0_1, %tmp_data_0_6
+
+ST_15: tmp_1_i231_i_i (136)  [2/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:53  %tmp_1_i231_i_i = fmul float %V_vector_data_1_1, %tmp_data_1_6
+
+ST_15: tmp_2_i232_i_i (137)  [2/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:54  %tmp_2_i232_i_i = fmul float %V_vector_data_2_1, %tmp_data_2_6
+
+ST_15: tmp_3_i233_i_i (138)  [2/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:55  %tmp_3_i233_i_i = fmul float %V_vector_data_3_1, %tmp_data_3_6
+
+ST_15: tmp_i249_i_i (156)  [3/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:73  %tmp_i249_i_i = fmul float %F_vector_data_0_2, %tmp_data_0_7
+
+ST_15: tmp_1_i250_i_i (157)  [3/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:74  %tmp_1_i250_i_i = fmul float %F_vector_data_1_2, %tmp_data_1_7
+
+ST_15: tmp_2_i251_i_i (158)  [3/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:75  %tmp_2_i251_i_i = fmul float %F_vector_data_2_2, %tmp_data_2_7
+
+ST_15: tmp_3_i252_i_i (159)  [3/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:76  %tmp_3_i252_i_i = fmul float %F_vector_data_3_2, %tmp_data_3_7
+
+ST_15: tmp_i256_i_i (163)  [4/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:80  %tmp_i256_i_i = fmul float %V_vector_data_0_2, %tmp_data_0_7
+
+ST_15: tmp_1_i257_i_i (164)  [4/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:81  %tmp_1_i257_i_i = fmul float %V_vector_data_1_2, %tmp_data_1_7
+
+ST_15: tmp_2_i258_i_i (165)  [4/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:82  %tmp_2_i258_i_i = fmul float %V_vector_data_2_2, %tmp_data_2_7
+
+ST_15: tmp_3_i259_i_i (166)  [4/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:83  %tmp_3_i259_i_i = fmul float %V_vector_data_3_2, %tmp_data_3_7
+
+
+ <State 16>: 5.70ns
+ST_16: dataTemp1 (104)  [6/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:84
+.preheader103.i.i:21  %dataTemp1 = fadd float %tmp_i_i_i, %tmp_1_i_i_i
+
+ST_16: dataTemp2 (105)  [6/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:84
+.preheader103.i.i:22  %dataTemp2 = fadd float %tmp_2_i_i_i, %tmp_3_i_i_i
+
+ST_16: dataTemp1_1 (111)  [7/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:85
+.preheader103.i.i:28  %dataTemp1_1 = fadd float %tmp_i204_i_i, %tmp_1_i205_i_i
+
+ST_16: dataTemp2_1 (112)  [7/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:85
+.preheader103.i.i:29  %dataTemp2_1 = fadd float %tmp_2_i206_i_i, %tmp_3_i207_i_i
+
+ST_16: dataTemp1_2 (132)  [8/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:84
+.preheader103.i.i:49  %dataTemp1_2 = fadd float %tmp_i223_i_i, %tmp_1_i224_i_i
+
+ST_16: dataTemp2_2 (133)  [8/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:84
+.preheader103.i.i:50  %dataTemp2_2 = fadd float %tmp_2_i225_i_i, %tmp_3_i226_i_i
+
+ST_16: tmp_i230_i_i (135)  [1/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:52  %tmp_i230_i_i = fmul float %V_vector_data_0_1, %tmp_data_0_6
+
+ST_16: tmp_1_i231_i_i (136)  [1/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:53  %tmp_1_i231_i_i = fmul float %V_vector_data_1_1, %tmp_data_1_6
+
+ST_16: tmp_2_i232_i_i (137)  [1/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:54  %tmp_2_i232_i_i = fmul float %V_vector_data_2_1, %tmp_data_2_6
+
+ST_16: tmp_3_i233_i_i (138)  [1/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:55  %tmp_3_i233_i_i = fmul float %V_vector_data_3_1, %tmp_data_3_6
+
+ST_16: tmp_i249_i_i (156)  [2/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:73  %tmp_i249_i_i = fmul float %F_vector_data_0_2, %tmp_data_0_7
+
+ST_16: tmp_1_i250_i_i (157)  [2/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:74  %tmp_1_i250_i_i = fmul float %F_vector_data_1_2, %tmp_data_1_7
+
+ST_16: tmp_2_i251_i_i (158)  [2/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:75  %tmp_2_i251_i_i = fmul float %F_vector_data_2_2, %tmp_data_2_7
+
+ST_16: tmp_3_i252_i_i (159)  [2/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:76  %tmp_3_i252_i_i = fmul float %F_vector_data_3_2, %tmp_data_3_7
+
+ST_16: tmp_i256_i_i (163)  [3/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:80  %tmp_i256_i_i = fmul float %V_vector_data_0_2, %tmp_data_0_7
+
+ST_16: tmp_1_i257_i_i (164)  [3/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:81  %tmp_1_i257_i_i = fmul float %V_vector_data_1_2, %tmp_data_1_7
+
+ST_16: tmp_2_i258_i_i (165)  [3/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:82  %tmp_2_i258_i_i = fmul float %V_vector_data_2_2, %tmp_data_2_7
+
+ST_16: tmp_3_i259_i_i (166)  [3/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:83  %tmp_3_i259_i_i = fmul float %V_vector_data_3_2, %tmp_data_3_7
+
+ST_16: tmp_i275_i_i (184)  [4/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:101  %tmp_i275_i_i = fmul float %F_vector_data_0_3, %tmp_data_0_8
+
+ST_16: tmp_1_i276_i_i (185)  [4/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:102  %tmp_1_i276_i_i = fmul float %F_vector_data_1_3, %tmp_data_1_8
+
+ST_16: tmp_2_i277_i_i (186)  [4/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:103  %tmp_2_i277_i_i = fmul float %F_vector_data_2_3, %tmp_data_2_8
+
+ST_16: tmp_3_i278_i_i (187)  [4/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:104  %tmp_3_i278_i_i = fmul float %F_vector_data_3_3, %tmp_data_3_8
+
+
+ <State 17>: 5.70ns
+ST_17: dataTemp1 (104)  [5/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:84
+.preheader103.i.i:21  %dataTemp1 = fadd float %tmp_i_i_i, %tmp_1_i_i_i
+
+ST_17: dataTemp2 (105)  [5/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:84
+.preheader103.i.i:22  %dataTemp2 = fadd float %tmp_2_i_i_i, %tmp_3_i_i_i
+
+ST_17: dataTemp1_1 (111)  [6/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:85
+.preheader103.i.i:28  %dataTemp1_1 = fadd float %tmp_i204_i_i, %tmp_1_i205_i_i
+
+ST_17: dataTemp2_1 (112)  [6/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:85
+.preheader103.i.i:29  %dataTemp2_1 = fadd float %tmp_2_i206_i_i, %tmp_3_i207_i_i
+
+ST_17: dataTemp1_2 (132)  [7/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:84
+.preheader103.i.i:49  %dataTemp1_2 = fadd float %tmp_i223_i_i, %tmp_1_i224_i_i
+
+ST_17: dataTemp2_2 (133)  [7/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:84
+.preheader103.i.i:50  %dataTemp2_2 = fadd float %tmp_2_i225_i_i, %tmp_3_i226_i_i
+
+ST_17: dataTemp1_3 (139)  [8/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:85
+.preheader103.i.i:56  %dataTemp1_3 = fadd float %tmp_i230_i_i, %tmp_1_i231_i_i
+
+ST_17: dataTemp2_3 (140)  [8/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:85
+.preheader103.i.i:57  %dataTemp2_3 = fadd float %tmp_2_i232_i_i, %tmp_3_i233_i_i
+
+ST_17: tmp_i249_i_i (156)  [1/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:73  %tmp_i249_i_i = fmul float %F_vector_data_0_2, %tmp_data_0_7
+
+ST_17: tmp_1_i250_i_i (157)  [1/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:74  %tmp_1_i250_i_i = fmul float %F_vector_data_1_2, %tmp_data_1_7
+
+ST_17: tmp_2_i251_i_i (158)  [1/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:75  %tmp_2_i251_i_i = fmul float %F_vector_data_2_2, %tmp_data_2_7
+
+ST_17: tmp_3_i252_i_i (159)  [1/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:76  %tmp_3_i252_i_i = fmul float %F_vector_data_3_2, %tmp_data_3_7
+
+ST_17: tmp_i256_i_i (163)  [2/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:80  %tmp_i256_i_i = fmul float %V_vector_data_0_2, %tmp_data_0_7
+
+ST_17: tmp_1_i257_i_i (164)  [2/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:81  %tmp_1_i257_i_i = fmul float %V_vector_data_1_2, %tmp_data_1_7
+
+ST_17: tmp_2_i258_i_i (165)  [2/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:82  %tmp_2_i258_i_i = fmul float %V_vector_data_2_2, %tmp_data_2_7
+
+ST_17: tmp_3_i259_i_i (166)  [2/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:83  %tmp_3_i259_i_i = fmul float %V_vector_data_3_2, %tmp_data_3_7
+
+ST_17: tmp_i275_i_i (184)  [3/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:101  %tmp_i275_i_i = fmul float %F_vector_data_0_3, %tmp_data_0_8
+
+ST_17: tmp_1_i276_i_i (185)  [3/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:102  %tmp_1_i276_i_i = fmul float %F_vector_data_1_3, %tmp_data_1_8
+
+ST_17: tmp_2_i277_i_i (186)  [3/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:103  %tmp_2_i277_i_i = fmul float %F_vector_data_2_3, %tmp_data_2_8
+
+ST_17: tmp_3_i278_i_i (187)  [3/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:104  %tmp_3_i278_i_i = fmul float %F_vector_data_3_3, %tmp_data_3_8
+
+ST_17: tmp_i282_i_i (191)  [4/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:108  %tmp_i282_i_i = fmul float %V_vector_data_0_3, %tmp_data_0_8
+
+ST_17: tmp_1_i283_i_i (192)  [4/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:109  %tmp_1_i283_i_i = fmul float %V_vector_data_1_3, %tmp_data_1_8
+
+ST_17: tmp_2_i284_i_i (193)  [4/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:110  %tmp_2_i284_i_i = fmul float %V_vector_data_2_3, %tmp_data_2_8
+
+ST_17: tmp_3_i285_i_i (194)  [4/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:111  %tmp_3_i285_i_i = fmul float %V_vector_data_3_3, %tmp_data_3_8
+
+
+ <State 18>: 5.70ns
+ST_18: dataTemp1 (104)  [4/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:84
+.preheader103.i.i:21  %dataTemp1 = fadd float %tmp_i_i_i, %tmp_1_i_i_i
+
+ST_18: dataTemp2 (105)  [4/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:84
+.preheader103.i.i:22  %dataTemp2 = fadd float %tmp_2_i_i_i, %tmp_3_i_i_i
+
+ST_18: dataTemp1_1 (111)  [5/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:85
+.preheader103.i.i:28  %dataTemp1_1 = fadd float %tmp_i204_i_i, %tmp_1_i205_i_i
+
+ST_18: dataTemp2_1 (112)  [5/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:85
+.preheader103.i.i:29  %dataTemp2_1 = fadd float %tmp_2_i206_i_i, %tmp_3_i207_i_i
+
+ST_18: dataTemp1_2 (132)  [6/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:84
+.preheader103.i.i:49  %dataTemp1_2 = fadd float %tmp_i223_i_i, %tmp_1_i224_i_i
+
+ST_18: dataTemp2_2 (133)  [6/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:84
+.preheader103.i.i:50  %dataTemp2_2 = fadd float %tmp_2_i225_i_i, %tmp_3_i226_i_i
+
+ST_18: dataTemp1_3 (139)  [7/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:85
+.preheader103.i.i:56  %dataTemp1_3 = fadd float %tmp_i230_i_i, %tmp_1_i231_i_i
+
+ST_18: dataTemp2_3 (140)  [7/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:85
+.preheader103.i.i:57  %dataTemp2_3 = fadd float %tmp_2_i232_i_i, %tmp_3_i233_i_i
+
+ST_18: dataTemp1_4 (160)  [8/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:84
+.preheader103.i.i:77  %dataTemp1_4 = fadd float %tmp_i249_i_i, %tmp_1_i250_i_i
+
+ST_18: dataTemp2_4 (161)  [8/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:84
+.preheader103.i.i:78  %dataTemp2_4 = fadd float %tmp_2_i251_i_i, %tmp_3_i252_i_i
+
+ST_18: tmp_i256_i_i (163)  [1/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:80  %tmp_i256_i_i = fmul float %V_vector_data_0_2, %tmp_data_0_7
+
+ST_18: tmp_1_i257_i_i (164)  [1/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:81  %tmp_1_i257_i_i = fmul float %V_vector_data_1_2, %tmp_data_1_7
+
+ST_18: tmp_2_i258_i_i (165)  [1/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:82  %tmp_2_i258_i_i = fmul float %V_vector_data_2_2, %tmp_data_2_7
+
+ST_18: tmp_3_i259_i_i (166)  [1/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:83  %tmp_3_i259_i_i = fmul float %V_vector_data_3_2, %tmp_data_3_7
+
+ST_18: tmp_i275_i_i (184)  [2/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:101  %tmp_i275_i_i = fmul float %F_vector_data_0_3, %tmp_data_0_8
+
+ST_18: tmp_1_i276_i_i (185)  [2/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:102  %tmp_1_i276_i_i = fmul float %F_vector_data_1_3, %tmp_data_1_8
+
+ST_18: tmp_2_i277_i_i (186)  [2/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:103  %tmp_2_i277_i_i = fmul float %F_vector_data_2_3, %tmp_data_2_8
+
+ST_18: tmp_3_i278_i_i (187)  [2/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:104  %tmp_3_i278_i_i = fmul float %F_vector_data_3_3, %tmp_data_3_8
+
+ST_18: tmp_i282_i_i (191)  [3/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:108  %tmp_i282_i_i = fmul float %V_vector_data_0_3, %tmp_data_0_8
+
+ST_18: tmp_1_i283_i_i (192)  [3/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:109  %tmp_1_i283_i_i = fmul float %V_vector_data_1_3, %tmp_data_1_8
+
+ST_18: tmp_2_i284_i_i (193)  [3/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:110  %tmp_2_i284_i_i = fmul float %V_vector_data_2_3, %tmp_data_2_8
+
+ST_18: tmp_3_i285_i_i (194)  [3/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:111  %tmp_3_i285_i_i = fmul float %V_vector_data_3_3, %tmp_data_3_8
+
+
+ <State 19>: 5.70ns
+ST_19: dataTemp1 (104)  [3/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:84
+.preheader103.i.i:21  %dataTemp1 = fadd float %tmp_i_i_i, %tmp_1_i_i_i
+
+ST_19: dataTemp2 (105)  [3/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:84
+.preheader103.i.i:22  %dataTemp2 = fadd float %tmp_2_i_i_i, %tmp_3_i_i_i
+
+ST_19: dataTemp1_1 (111)  [4/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:85
+.preheader103.i.i:28  %dataTemp1_1 = fadd float %tmp_i204_i_i, %tmp_1_i205_i_i
+
+ST_19: dataTemp2_1 (112)  [4/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:85
+.preheader103.i.i:29  %dataTemp2_1 = fadd float %tmp_2_i206_i_i, %tmp_3_i207_i_i
+
+ST_19: dataTemp1_2 (132)  [5/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:84
+.preheader103.i.i:49  %dataTemp1_2 = fadd float %tmp_i223_i_i, %tmp_1_i224_i_i
+
+ST_19: dataTemp2_2 (133)  [5/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:84
+.preheader103.i.i:50  %dataTemp2_2 = fadd float %tmp_2_i225_i_i, %tmp_3_i226_i_i
+
+ST_19: dataTemp1_3 (139)  [6/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:85
+.preheader103.i.i:56  %dataTemp1_3 = fadd float %tmp_i230_i_i, %tmp_1_i231_i_i
+
+ST_19: dataTemp2_3 (140)  [6/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:85
+.preheader103.i.i:57  %dataTemp2_3 = fadd float %tmp_2_i232_i_i, %tmp_3_i233_i_i
+
+ST_19: dataTemp1_4 (160)  [7/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:84
+.preheader103.i.i:77  %dataTemp1_4 = fadd float %tmp_i249_i_i, %tmp_1_i250_i_i
+
+ST_19: dataTemp2_4 (161)  [7/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:84
+.preheader103.i.i:78  %dataTemp2_4 = fadd float %tmp_2_i251_i_i, %tmp_3_i252_i_i
+
+ST_19: dataTemp1_5 (167)  [8/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:85
+.preheader103.i.i:84  %dataTemp1_5 = fadd float %tmp_i256_i_i, %tmp_1_i257_i_i
+
+ST_19: dataTemp2_5 (168)  [8/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:85
+.preheader103.i.i:85  %dataTemp2_5 = fadd float %tmp_2_i258_i_i, %tmp_3_i259_i_i
+
+ST_19: tmp_i275_i_i (184)  [1/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:101  %tmp_i275_i_i = fmul float %F_vector_data_0_3, %tmp_data_0_8
+
+ST_19: tmp_1_i276_i_i (185)  [1/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:102  %tmp_1_i276_i_i = fmul float %F_vector_data_1_3, %tmp_data_1_8
+
+ST_19: tmp_2_i277_i_i (186)  [1/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:103  %tmp_2_i277_i_i = fmul float %F_vector_data_2_3, %tmp_data_2_8
+
+ST_19: tmp_3_i278_i_i (187)  [1/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:84
+.preheader103.i.i:104  %tmp_3_i278_i_i = fmul float %F_vector_data_3_3, %tmp_data_3_8
+
+ST_19: tmp_i282_i_i (191)  [2/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:108  %tmp_i282_i_i = fmul float %V_vector_data_0_3, %tmp_data_0_8
+
+ST_19: tmp_1_i283_i_i (192)  [2/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:109  %tmp_1_i283_i_i = fmul float %V_vector_data_1_3, %tmp_data_1_8
+
+ST_19: tmp_2_i284_i_i (193)  [2/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:110  %tmp_2_i284_i_i = fmul float %V_vector_data_2_3, %tmp_data_2_8
+
+ST_19: tmp_3_i285_i_i (194)  [2/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:111  %tmp_3_i285_i_i = fmul float %V_vector_data_3_3, %tmp_data_3_8
+
+
+ <State 20>: 5.70ns
+ST_20: dataTemp1 (104)  [2/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:84
+.preheader103.i.i:21  %dataTemp1 = fadd float %tmp_i_i_i, %tmp_1_i_i_i
+
+ST_20: dataTemp2 (105)  [2/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:84
+.preheader103.i.i:22  %dataTemp2 = fadd float %tmp_2_i_i_i, %tmp_3_i_i_i
+
+ST_20: dataTemp1_1 (111)  [3/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:85
+.preheader103.i.i:28  %dataTemp1_1 = fadd float %tmp_i204_i_i, %tmp_1_i205_i_i
+
+ST_20: dataTemp2_1 (112)  [3/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:85
+.preheader103.i.i:29  %dataTemp2_1 = fadd float %tmp_2_i206_i_i, %tmp_3_i207_i_i
+
+ST_20: dataTemp1_2 (132)  [4/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:84
+.preheader103.i.i:49  %dataTemp1_2 = fadd float %tmp_i223_i_i, %tmp_1_i224_i_i
+
+ST_20: dataTemp2_2 (133)  [4/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:84
+.preheader103.i.i:50  %dataTemp2_2 = fadd float %tmp_2_i225_i_i, %tmp_3_i226_i_i
+
+ST_20: dataTemp1_3 (139)  [5/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:85
+.preheader103.i.i:56  %dataTemp1_3 = fadd float %tmp_i230_i_i, %tmp_1_i231_i_i
+
+ST_20: dataTemp2_3 (140)  [5/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:85
+.preheader103.i.i:57  %dataTemp2_3 = fadd float %tmp_2_i232_i_i, %tmp_3_i233_i_i
+
+ST_20: dataTemp1_4 (160)  [6/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:84
+.preheader103.i.i:77  %dataTemp1_4 = fadd float %tmp_i249_i_i, %tmp_1_i250_i_i
+
+ST_20: dataTemp2_4 (161)  [6/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:84
+.preheader103.i.i:78  %dataTemp2_4 = fadd float %tmp_2_i251_i_i, %tmp_3_i252_i_i
+
+ST_20: dataTemp1_5 (167)  [7/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:85
+.preheader103.i.i:84  %dataTemp1_5 = fadd float %tmp_i256_i_i, %tmp_1_i257_i_i
+
+ST_20: dataTemp2_5 (168)  [7/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:85
+.preheader103.i.i:85  %dataTemp2_5 = fadd float %tmp_2_i258_i_i, %tmp_3_i259_i_i
+
+ST_20: dataTemp1_6 (188)  [8/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:84
+.preheader103.i.i:105  %dataTemp1_6 = fadd float %tmp_i275_i_i, %tmp_1_i276_i_i
+
+ST_20: dataTemp2_6 (189)  [8/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:84
+.preheader103.i.i:106  %dataTemp2_6 = fadd float %tmp_2_i277_i_i, %tmp_3_i278_i_i
+
+ST_20: tmp_i282_i_i (191)  [1/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:108  %tmp_i282_i_i = fmul float %V_vector_data_0_3, %tmp_data_0_8
+
+ST_20: tmp_1_i283_i_i (192)  [1/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:109  %tmp_1_i283_i_i = fmul float %V_vector_data_1_3, %tmp_data_1_8
+
+ST_20: tmp_2_i284_i_i (193)  [1/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:110  %tmp_2_i284_i_i = fmul float %V_vector_data_2_3, %tmp_data_2_8
+
+ST_20: tmp_3_i285_i_i (194)  [1/4] 5.70ns  loc: modules/acc/acc.cpp:27->modules/acc/acc.cpp:85
+.preheader103.i.i:111  %tmp_3_i285_i_i = fmul float %V_vector_data_3_3, %tmp_data_3_8
+
+
+ <State 21>: 5.39ns
+ST_21: dataTemp1 (104)  [1/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:84
+.preheader103.i.i:21  %dataTemp1 = fadd float %tmp_i_i_i, %tmp_1_i_i_i
+
+ST_21: dataTemp2 (105)  [1/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:84
+.preheader103.i.i:22  %dataTemp2 = fadd float %tmp_2_i_i_i, %tmp_3_i_i_i
+
+ST_21: dataTemp1_1 (111)  [2/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:85
+.preheader103.i.i:28  %dataTemp1_1 = fadd float %tmp_i204_i_i, %tmp_1_i205_i_i
+
+ST_21: dataTemp2_1 (112)  [2/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:85
+.preheader103.i.i:29  %dataTemp2_1 = fadd float %tmp_2_i206_i_i, %tmp_3_i207_i_i
+
+ST_21: dataTemp1_2 (132)  [3/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:84
+.preheader103.i.i:49  %dataTemp1_2 = fadd float %tmp_i223_i_i, %tmp_1_i224_i_i
+
+ST_21: dataTemp2_2 (133)  [3/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:84
+.preheader103.i.i:50  %dataTemp2_2 = fadd float %tmp_2_i225_i_i, %tmp_3_i226_i_i
+
+ST_21: dataTemp1_3 (139)  [4/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:85
+.preheader103.i.i:56  %dataTemp1_3 = fadd float %tmp_i230_i_i, %tmp_1_i231_i_i
+
+ST_21: dataTemp2_3 (140)  [4/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:85
+.preheader103.i.i:57  %dataTemp2_3 = fadd float %tmp_2_i232_i_i, %tmp_3_i233_i_i
+
+ST_21: dataTemp1_4 (160)  [5/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:84
+.preheader103.i.i:77  %dataTemp1_4 = fadd float %tmp_i249_i_i, %tmp_1_i250_i_i
+
+ST_21: dataTemp2_4 (161)  [5/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:84
+.preheader103.i.i:78  %dataTemp2_4 = fadd float %tmp_2_i251_i_i, %tmp_3_i252_i_i
+
+ST_21: dataTemp1_5 (167)  [6/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:85
+.preheader103.i.i:84  %dataTemp1_5 = fadd float %tmp_i256_i_i, %tmp_1_i257_i_i
+
+ST_21: dataTemp2_5 (168)  [6/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:85
+.preheader103.i.i:85  %dataTemp2_5 = fadd float %tmp_2_i258_i_i, %tmp_3_i259_i_i
+
+ST_21: dataTemp1_6 (188)  [7/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:84
+.preheader103.i.i:105  %dataTemp1_6 = fadd float %tmp_i275_i_i, %tmp_1_i276_i_i
+
+ST_21: dataTemp2_6 (189)  [7/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:84
+.preheader103.i.i:106  %dataTemp2_6 = fadd float %tmp_2_i277_i_i, %tmp_3_i278_i_i
+
+ST_21: dataTemp1_7 (195)  [8/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:85
+.preheader103.i.i:112  %dataTemp1_7 = fadd float %tmp_i282_i_i, %tmp_1_i283_i_i
+
+ST_21: dataTemp2_7 (196)  [8/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:85
+.preheader103.i.i:113  %dataTemp2_7 = fadd float %tmp_2_i284_i_i, %tmp_3_i285_i_i
+
+
+ <State 22>: 5.39ns
+ST_22: tmp_data_0 (106)  [8/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:84
+.preheader103.i.i:23  %tmp_data_0 = fadd float %dataTemp1, %dataTemp2
+
+ST_22: dataTemp1_1 (111)  [1/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:85
+.preheader103.i.i:28  %dataTemp1_1 = fadd float %tmp_i204_i_i, %tmp_1_i205_i_i
+
+ST_22: dataTemp2_1 (112)  [1/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:85
+.preheader103.i.i:29  %dataTemp2_1 = fadd float %tmp_2_i206_i_i, %tmp_3_i207_i_i
+
+ST_22: dataTemp1_2 (132)  [2/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:84
+.preheader103.i.i:49  %dataTemp1_2 = fadd float %tmp_i223_i_i, %tmp_1_i224_i_i
+
+ST_22: dataTemp2_2 (133)  [2/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:84
+.preheader103.i.i:50  %dataTemp2_2 = fadd float %tmp_2_i225_i_i, %tmp_3_i226_i_i
+
+ST_22: dataTemp1_3 (139)  [3/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:85
+.preheader103.i.i:56  %dataTemp1_3 = fadd float %tmp_i230_i_i, %tmp_1_i231_i_i
+
+ST_22: dataTemp2_3 (140)  [3/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:85
+.preheader103.i.i:57  %dataTemp2_3 = fadd float %tmp_2_i232_i_i, %tmp_3_i233_i_i
+
+ST_22: dataTemp1_4 (160)  [4/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:84
+.preheader103.i.i:77  %dataTemp1_4 = fadd float %tmp_i249_i_i, %tmp_1_i250_i_i
+
+ST_22: dataTemp2_4 (161)  [4/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:84
+.preheader103.i.i:78  %dataTemp2_4 = fadd float %tmp_2_i251_i_i, %tmp_3_i252_i_i
+
+ST_22: dataTemp1_5 (167)  [5/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:85
+.preheader103.i.i:84  %dataTemp1_5 = fadd float %tmp_i256_i_i, %tmp_1_i257_i_i
+
+ST_22: dataTemp2_5 (168)  [5/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:85
+.preheader103.i.i:85  %dataTemp2_5 = fadd float %tmp_2_i258_i_i, %tmp_3_i259_i_i
+
+ST_22: dataTemp1_6 (188)  [6/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:84
+.preheader103.i.i:105  %dataTemp1_6 = fadd float %tmp_i275_i_i, %tmp_1_i276_i_i
+
+ST_22: dataTemp2_6 (189)  [6/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:84
+.preheader103.i.i:106  %dataTemp2_6 = fadd float %tmp_2_i277_i_i, %tmp_3_i278_i_i
+
+ST_22: dataTemp1_7 (195)  [7/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:85
+.preheader103.i.i:112  %dataTemp1_7 = fadd float %tmp_i282_i_i, %tmp_1_i283_i_i
+
+ST_22: dataTemp2_7 (196)  [7/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:85
+.preheader103.i.i:113  %dataTemp2_7 = fadd float %tmp_2_i284_i_i, %tmp_3_i285_i_i
+
+
+ <State 23>: 5.39ns
+ST_23: tmp_data_0 (106)  [7/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:84
+.preheader103.i.i:23  %tmp_data_0 = fadd float %dataTemp1, %dataTemp2
+
+ST_23: tmp_data_0_4 (113)  [8/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:85
+.preheader103.i.i:30  %tmp_data_0_4 = fadd float %dataTemp1_1, %dataTemp2_1
+
+ST_23: dataTemp1_2 (132)  [1/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:84
+.preheader103.i.i:49  %dataTemp1_2 = fadd float %tmp_i223_i_i, %tmp_1_i224_i_i
+
+ST_23: dataTemp2_2 (133)  [1/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:84
+.preheader103.i.i:50  %dataTemp2_2 = fadd float %tmp_2_i225_i_i, %tmp_3_i226_i_i
+
+ST_23: dataTemp1_3 (139)  [2/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:85
+.preheader103.i.i:56  %dataTemp1_3 = fadd float %tmp_i230_i_i, %tmp_1_i231_i_i
+
+ST_23: dataTemp2_3 (140)  [2/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:85
+.preheader103.i.i:57  %dataTemp2_3 = fadd float %tmp_2_i232_i_i, %tmp_3_i233_i_i
+
+ST_23: dataTemp1_4 (160)  [3/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:84
+.preheader103.i.i:77  %dataTemp1_4 = fadd float %tmp_i249_i_i, %tmp_1_i250_i_i
+
+ST_23: dataTemp2_4 (161)  [3/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:84
+.preheader103.i.i:78  %dataTemp2_4 = fadd float %tmp_2_i251_i_i, %tmp_3_i252_i_i
+
+ST_23: dataTemp1_5 (167)  [4/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:85
+.preheader103.i.i:84  %dataTemp1_5 = fadd float %tmp_i256_i_i, %tmp_1_i257_i_i
+
+ST_23: dataTemp2_5 (168)  [4/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:85
+.preheader103.i.i:85  %dataTemp2_5 = fadd float %tmp_2_i258_i_i, %tmp_3_i259_i_i
+
+ST_23: dataTemp1_6 (188)  [5/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:84
+.preheader103.i.i:105  %dataTemp1_6 = fadd float %tmp_i275_i_i, %tmp_1_i276_i_i
+
+ST_23: dataTemp2_6 (189)  [5/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:84
+.preheader103.i.i:106  %dataTemp2_6 = fadd float %tmp_2_i277_i_i, %tmp_3_i278_i_i
+
+ST_23: dataTemp1_7 (195)  [6/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:85
+.preheader103.i.i:112  %dataTemp1_7 = fadd float %tmp_i282_i_i, %tmp_1_i283_i_i
+
+ST_23: dataTemp2_7 (196)  [6/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:85
+.preheader103.i.i:113  %dataTemp2_7 = fadd float %tmp_2_i284_i_i, %tmp_3_i285_i_i
+
+
+ <State 24>: 5.39ns
+ST_24: tmp_data_0 (106)  [6/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:84
+.preheader103.i.i:23  %tmp_data_0 = fadd float %dataTemp1, %dataTemp2
+
+ST_24: tmp_data_0_4 (113)  [7/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:85
+.preheader103.i.i:30  %tmp_data_0_4 = fadd float %dataTemp1_1, %dataTemp2_1
+
+ST_24: tmp_data_1 (134)  [8/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:84
+.preheader103.i.i:51  %tmp_data_1 = fadd float %dataTemp1_2, %dataTemp2_2
+
+ST_24: dataTemp1_3 (139)  [1/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:85
+.preheader103.i.i:56  %dataTemp1_3 = fadd float %tmp_i230_i_i, %tmp_1_i231_i_i
+
+ST_24: dataTemp2_3 (140)  [1/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:85
+.preheader103.i.i:57  %dataTemp2_3 = fadd float %tmp_2_i232_i_i, %tmp_3_i233_i_i
+
+ST_24: dataTemp1_4 (160)  [2/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:84
+.preheader103.i.i:77  %dataTemp1_4 = fadd float %tmp_i249_i_i, %tmp_1_i250_i_i
+
+ST_24: dataTemp2_4 (161)  [2/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:84
+.preheader103.i.i:78  %dataTemp2_4 = fadd float %tmp_2_i251_i_i, %tmp_3_i252_i_i
+
+ST_24: dataTemp1_5 (167)  [3/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:85
+.preheader103.i.i:84  %dataTemp1_5 = fadd float %tmp_i256_i_i, %tmp_1_i257_i_i
+
+ST_24: dataTemp2_5 (168)  [3/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:85
+.preheader103.i.i:85  %dataTemp2_5 = fadd float %tmp_2_i258_i_i, %tmp_3_i259_i_i
+
+ST_24: dataTemp1_6 (188)  [4/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:84
+.preheader103.i.i:105  %dataTemp1_6 = fadd float %tmp_i275_i_i, %tmp_1_i276_i_i
+
+ST_24: dataTemp2_6 (189)  [4/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:84
+.preheader103.i.i:106  %dataTemp2_6 = fadd float %tmp_2_i277_i_i, %tmp_3_i278_i_i
+
+ST_24: dataTemp1_7 (195)  [5/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:85
+.preheader103.i.i:112  %dataTemp1_7 = fadd float %tmp_i282_i_i, %tmp_1_i283_i_i
+
+ST_24: dataTemp2_7 (196)  [5/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:85
+.preheader103.i.i:113  %dataTemp2_7 = fadd float %tmp_2_i284_i_i, %tmp_3_i285_i_i
+
+
+ <State 25>: 5.39ns
+ST_25: tmp_data_0 (106)  [5/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:84
+.preheader103.i.i:23  %tmp_data_0 = fadd float %dataTemp1, %dataTemp2
+
+ST_25: tmp_data_0_4 (113)  [6/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:85
+.preheader103.i.i:30  %tmp_data_0_4 = fadd float %dataTemp1_1, %dataTemp2_1
+
+ST_25: tmp_data_1 (134)  [7/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:84
+.preheader103.i.i:51  %tmp_data_1 = fadd float %dataTemp1_2, %dataTemp2_2
+
+ST_25: tmp_data_1_4 (141)  [8/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:85
+.preheader103.i.i:58  %tmp_data_1_4 = fadd float %dataTemp1_3, %dataTemp2_3
+
+ST_25: dataTemp1_4 (160)  [1/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:84
+.preheader103.i.i:77  %dataTemp1_4 = fadd float %tmp_i249_i_i, %tmp_1_i250_i_i
+
+ST_25: dataTemp2_4 (161)  [1/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:84
+.preheader103.i.i:78  %dataTemp2_4 = fadd float %tmp_2_i251_i_i, %tmp_3_i252_i_i
+
+ST_25: dataTemp1_5 (167)  [2/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:85
+.preheader103.i.i:84  %dataTemp1_5 = fadd float %tmp_i256_i_i, %tmp_1_i257_i_i
+
+ST_25: dataTemp2_5 (168)  [2/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:85
+.preheader103.i.i:85  %dataTemp2_5 = fadd float %tmp_2_i258_i_i, %tmp_3_i259_i_i
+
+ST_25: dataTemp1_6 (188)  [3/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:84
+.preheader103.i.i:105  %dataTemp1_6 = fadd float %tmp_i275_i_i, %tmp_1_i276_i_i
+
+ST_25: dataTemp2_6 (189)  [3/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:84
+.preheader103.i.i:106  %dataTemp2_6 = fadd float %tmp_2_i277_i_i, %tmp_3_i278_i_i
+
+ST_25: dataTemp1_7 (195)  [4/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:85
+.preheader103.i.i:112  %dataTemp1_7 = fadd float %tmp_i282_i_i, %tmp_1_i283_i_i
+
+ST_25: dataTemp2_7 (196)  [4/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:85
+.preheader103.i.i:113  %dataTemp2_7 = fadd float %tmp_2_i284_i_i, %tmp_3_i285_i_i
+
+
+ <State 26>: 5.39ns
+ST_26: tmp_data_0 (106)  [4/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:84
+.preheader103.i.i:23  %tmp_data_0 = fadd float %dataTemp1, %dataTemp2
+
+ST_26: tmp_data_0_4 (113)  [5/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:85
+.preheader103.i.i:30  %tmp_data_0_4 = fadd float %dataTemp1_1, %dataTemp2_1
+
+ST_26: tmp_data_1 (134)  [6/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:84
+.preheader103.i.i:51  %tmp_data_1 = fadd float %dataTemp1_2, %dataTemp2_2
+
+ST_26: tmp_data_1_4 (141)  [7/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:85
+.preheader103.i.i:58  %tmp_data_1_4 = fadd float %dataTemp1_3, %dataTemp2_3
+
+ST_26: tmp_data_2 (162)  [8/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:84
+.preheader103.i.i:79  %tmp_data_2 = fadd float %dataTemp1_4, %dataTemp2_4
+
+ST_26: dataTemp1_5 (167)  [1/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:85
+.preheader103.i.i:84  %dataTemp1_5 = fadd float %tmp_i256_i_i, %tmp_1_i257_i_i
+
+ST_26: dataTemp2_5 (168)  [1/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:85
+.preheader103.i.i:85  %dataTemp2_5 = fadd float %tmp_2_i258_i_i, %tmp_3_i259_i_i
+
+ST_26: dataTemp1_6 (188)  [2/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:84
+.preheader103.i.i:105  %dataTemp1_6 = fadd float %tmp_i275_i_i, %tmp_1_i276_i_i
+
+ST_26: dataTemp2_6 (189)  [2/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:84
+.preheader103.i.i:106  %dataTemp2_6 = fadd float %tmp_2_i277_i_i, %tmp_3_i278_i_i
+
+ST_26: dataTemp1_7 (195)  [3/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:85
+.preheader103.i.i:112  %dataTemp1_7 = fadd float %tmp_i282_i_i, %tmp_1_i283_i_i
+
+ST_26: dataTemp2_7 (196)  [3/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:85
+.preheader103.i.i:113  %dataTemp2_7 = fadd float %tmp_2_i284_i_i, %tmp_3_i285_i_i
+
+
+ <State 27>: 5.39ns
+ST_27: tmp_data_0 (106)  [3/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:84
+.preheader103.i.i:23  %tmp_data_0 = fadd float %dataTemp1, %dataTemp2
+
+ST_27: tmp_data_0_4 (113)  [4/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:85
+.preheader103.i.i:30  %tmp_data_0_4 = fadd float %dataTemp1_1, %dataTemp2_1
+
+ST_27: tmp_data_1 (134)  [5/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:84
+.preheader103.i.i:51  %tmp_data_1 = fadd float %dataTemp1_2, %dataTemp2_2
+
+ST_27: tmp_data_1_4 (141)  [6/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:85
+.preheader103.i.i:58  %tmp_data_1_4 = fadd float %dataTemp1_3, %dataTemp2_3
+
+ST_27: tmp_data_2 (162)  [7/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:84
+.preheader103.i.i:79  %tmp_data_2 = fadd float %dataTemp1_4, %dataTemp2_4
+
+ST_27: tmp_data_2_4 (169)  [8/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:85
+.preheader103.i.i:86  %tmp_data_2_4 = fadd float %dataTemp1_5, %dataTemp2_5
+
+ST_27: dataTemp1_6 (188)  [1/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:84
+.preheader103.i.i:105  %dataTemp1_6 = fadd float %tmp_i275_i_i, %tmp_1_i276_i_i
+
+ST_27: dataTemp2_6 (189)  [1/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:84
+.preheader103.i.i:106  %dataTemp2_6 = fadd float %tmp_2_i277_i_i, %tmp_3_i278_i_i
+
+ST_27: dataTemp1_7 (195)  [2/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:85
+.preheader103.i.i:112  %dataTemp1_7 = fadd float %tmp_i282_i_i, %tmp_1_i283_i_i
+
+ST_27: dataTemp2_7 (196)  [2/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:85
+.preheader103.i.i:113  %dataTemp2_7 = fadd float %tmp_2_i284_i_i, %tmp_3_i285_i_i
+
+
+ <State 28>: 5.39ns
+ST_28: tmp_data_0 (106)  [2/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:84
+.preheader103.i.i:23  %tmp_data_0 = fadd float %dataTemp1, %dataTemp2
+
+ST_28: tmp_data_0_4 (113)  [3/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:85
+.preheader103.i.i:30  %tmp_data_0_4 = fadd float %dataTemp1_1, %dataTemp2_1
+
+ST_28: tmp_data_1 (134)  [4/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:84
+.preheader103.i.i:51  %tmp_data_1 = fadd float %dataTemp1_2, %dataTemp2_2
+
+ST_28: tmp_data_1_4 (141)  [5/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:85
+.preheader103.i.i:58  %tmp_data_1_4 = fadd float %dataTemp1_3, %dataTemp2_3
+
+ST_28: tmp_data_2 (162)  [6/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:84
+.preheader103.i.i:79  %tmp_data_2 = fadd float %dataTemp1_4, %dataTemp2_4
+
+ST_28: tmp_data_2_4 (169)  [7/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:85
+.preheader103.i.i:86  %tmp_data_2_4 = fadd float %dataTemp1_5, %dataTemp2_5
+
+ST_28: tmp_data_3 (190)  [8/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:84
+.preheader103.i.i:107  %tmp_data_3 = fadd float %dataTemp1_6, %dataTemp2_6
+
+ST_28: dataTemp1_7 (195)  [1/8] 5.39ns  loc: modules/acc/acc.cpp:29->modules/acc/acc.cpp:85
+.preheader103.i.i:112  %dataTemp1_7 = fadd float %tmp_i282_i_i, %tmp_1_i283_i_i
+
+ST_28: dataTemp2_7 (196)  [1/8] 5.39ns  loc: modules/acc/acc.cpp:30->modules/acc/acc.cpp:85
+.preheader103.i.i:113  %dataTemp2_7 = fadd float %tmp_2_i284_i_i, %tmp_3_i285_i_i
+
+
+ <State 29>: 5.39ns
+ST_29: tmp_data_0 (106)  [1/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:84
+.preheader103.i.i:23  %tmp_data_0 = fadd float %dataTemp1, %dataTemp2
+
+ST_29: tmp_data_0_4 (113)  [2/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:85
+.preheader103.i.i:30  %tmp_data_0_4 = fadd float %dataTemp1_1, %dataTemp2_1
+
+ST_29: tmp_data_1 (134)  [3/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:84
+.preheader103.i.i:51  %tmp_data_1 = fadd float %dataTemp1_2, %dataTemp2_2
+
+ST_29: tmp_data_1_4 (141)  [4/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:85
+.preheader103.i.i:58  %tmp_data_1_4 = fadd float %dataTemp1_3, %dataTemp2_3
+
+ST_29: tmp_data_2 (162)  [5/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:84
+.preheader103.i.i:79  %tmp_data_2 = fadd float %dataTemp1_4, %dataTemp2_4
+
+ST_29: tmp_data_2_4 (169)  [6/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:85
+.preheader103.i.i:86  %tmp_data_2_4 = fadd float %dataTemp1_5, %dataTemp2_5
+
+ST_29: tmp_data_3 (190)  [7/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:84
+.preheader103.i.i:107  %tmp_data_3 = fadd float %dataTemp1_6, %dataTemp2_6
+
+ST_29: tmp_data_3_4 (197)  [8/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:85
+.preheader103.i.i:114  %tmp_data_3_4 = fadd float %dataTemp1_7, %dataTemp2_7
+
+
+ <State 30>: 5.39ns
+ST_30: tmp_data_0_4 (113)  [1/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:85
+.preheader103.i.i:30  %tmp_data_0_4 = fadd float %dataTemp1_1, %dataTemp2_1
+
+ST_30: tmp_data_1 (134)  [2/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:84
+.preheader103.i.i:51  %tmp_data_1 = fadd float %dataTemp1_2, %dataTemp2_2
+
+ST_30: tmp_data_1_4 (141)  [3/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:85
+.preheader103.i.i:58  %tmp_data_1_4 = fadd float %dataTemp1_3, %dataTemp2_3
+
+ST_30: tmp_data_2 (162)  [4/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:84
+.preheader103.i.i:79  %tmp_data_2 = fadd float %dataTemp1_4, %dataTemp2_4
+
+ST_30: tmp_data_2_4 (169)  [5/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:85
+.preheader103.i.i:86  %tmp_data_2_4 = fadd float %dataTemp1_5, %dataTemp2_5
+
+ST_30: tmp_data_3 (190)  [6/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:84
+.preheader103.i.i:107  %tmp_data_3 = fadd float %dataTemp1_6, %dataTemp2_6
+
+ST_30: tmp_data_3_4 (197)  [7/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:85
+.preheader103.i.i:114  %tmp_data_3_4 = fadd float %dataTemp1_7, %dataTemp2_7
+
+
+ <State 31>: 5.39ns
+ST_31: tmp_data_1 (134)  [1/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:84
+.preheader103.i.i:51  %tmp_data_1 = fadd float %dataTemp1_2, %dataTemp2_2
+
+ST_31: tmp_data_1_4 (141)  [2/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:85
+.preheader103.i.i:58  %tmp_data_1_4 = fadd float %dataTemp1_3, %dataTemp2_3
+
+ST_31: tmp_data_2 (162)  [3/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:84
+.preheader103.i.i:79  %tmp_data_2 = fadd float %dataTemp1_4, %dataTemp2_4
+
+ST_31: tmp_data_2_4 (169)  [4/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:85
+.preheader103.i.i:86  %tmp_data_2_4 = fadd float %dataTemp1_5, %dataTemp2_5
+
+ST_31: tmp_data_3 (190)  [5/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:84
+.preheader103.i.i:107  %tmp_data_3 = fadd float %dataTemp1_6, %dataTemp2_6
+
+ST_31: tmp_data_3_4 (197)  [6/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:85
+.preheader103.i.i:114  %tmp_data_3_4 = fadd float %dataTemp1_7, %dataTemp2_7
+
+
+ <State 32>: 5.39ns
+ST_32: tmp_data_1_4 (141)  [1/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:85
+.preheader103.i.i:58  %tmp_data_1_4 = fadd float %dataTemp1_3, %dataTemp2_3
+
+ST_32: tmp_data_2 (162)  [2/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:84
+.preheader103.i.i:79  %tmp_data_2 = fadd float %dataTemp1_4, %dataTemp2_4
+
+ST_32: tmp_data_2_4 (169)  [3/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:85
+.preheader103.i.i:86  %tmp_data_2_4 = fadd float %dataTemp1_5, %dataTemp2_5
+
+ST_32: tmp_data_3 (190)  [4/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:84
+.preheader103.i.i:107  %tmp_data_3 = fadd float %dataTemp1_6, %dataTemp2_6
+
+ST_32: tmp_data_3_4 (197)  [5/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:85
+.preheader103.i.i:114  %tmp_data_3_4 = fadd float %dataTemp1_7, %dataTemp2_7
+
+
+ <State 33>: 5.39ns
+ST_33: tmp_data_2 (162)  [1/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:84
+.preheader103.i.i:79  %tmp_data_2 = fadd float %dataTemp1_4, %dataTemp2_4
+
+ST_33: tmp_data_2_4 (169)  [2/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:85
+.preheader103.i.i:86  %tmp_data_2_4 = fadd float %dataTemp1_5, %dataTemp2_5
+
+ST_33: tmp_data_3 (190)  [3/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:84
+.preheader103.i.i:107  %tmp_data_3 = fadd float %dataTemp1_6, %dataTemp2_6
+
+ST_33: tmp_data_3_4 (197)  [4/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:85
+.preheader103.i.i:114  %tmp_data_3_4 = fadd float %dataTemp1_7, %dataTemp2_7
+
+
+ <State 34>: 5.39ns
+ST_34: tmp_data_2_4 (169)  [1/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:85
+.preheader103.i.i:86  %tmp_data_2_4 = fadd float %dataTemp1_5, %dataTemp2_5
+
+ST_34: tmp_data_3 (190)  [2/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:84
+.preheader103.i.i:107  %tmp_data_3 = fadd float %dataTemp1_6, %dataTemp2_6
+
+ST_34: tmp_data_3_4 (197)  [3/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:85
+.preheader103.i.i:114  %tmp_data_3_4 = fadd float %dataTemp1_7, %dataTemp2_7
+
+
+ <State 35>: 5.39ns
+ST_35: tmp_data_3 (190)  [1/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:84
+.preheader103.i.i:107  %tmp_data_3 = fadd float %dataTemp1_6, %dataTemp2_6
+
+ST_35: tmp_data_3_4 (197)  [2/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:85
+.preheader103.i.i:114  %tmp_data_3_4 = fadd float %dataTemp1_7, %dataTemp2_7
+
+
+ <State 36>: 5.39ns
+ST_36: tmp_data_3_4 (197)  [1/8] 5.39ns  loc: modules/acc/acc.cpp:31->modules/acc/acc.cpp:85
+.preheader103.i.i:114  %tmp_data_3_4 = fadd float %dataTemp1_7, %dataTemp2_7
+
+
+ <State 37>: 3.00ns
+ST_37: StgValue_477 (83)  [1/1] 0.00ns
+.preheader103.i.i:0  call void (...)* @_ssdm_op_SpecLoopTripCount(i64 1, i64 6250000, i64 1562500)
+
+ST_37: tmp_19_i_i (84)  [1/1] 0.00ns  loc: modules/acc/acc.cpp:78
+.preheader103.i.i:1  %tmp_19_i_i = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str546)
+
+ST_37: StgValue_479 (85)  [1/1] 0.00ns  loc: modules/acc/acc.cpp:80
+.preheader103.i.i:2  call void (...)* @_ssdm_op_SpecPipeline(i32 8, i32 1, i32 1, i32 0, [1 x i8]* @p_str344) nounwind
+
+ST_37: StgValue_480 (198)  [1/1] 3.00ns  loc: modules/acc/acc.cpp:44->modules/acc/acc.cpp:88
+.preheader103.i.i:115  call void @_ssdm_op_Write.ap_fifo.volatile.floatP.floatP.floatP.floatP(float* @F_acc_V_data_0, float* @F_acc_V_data_1, float* @F_acc_V_data_2, float* @F_acc_V_data_3, float %tmp_data_0, float %tmp_data_1, float %tmp_data_2, float %tmp_data_3)
+
+ST_37: StgValue_481 (199)  [1/1] 3.00ns  loc: modules/acc/acc.cpp:44->modules/acc/acc.cpp:89
+.preheader103.i.i:116  call void @_ssdm_op_Write.ap_fifo.volatile.floatP.floatP.floatP.floatP(float* @V_acc_V_data_0, float* @V_acc_V_data_1, float* @V_acc_V_data_2, float* @V_acc_V_data_3, float %tmp_data_0_4, float %tmp_data_1_4, float %tmp_data_2_4, float %tmp_data_3_4)
+
+ST_37: empty_70 (200)  [1/1] 0.00ns  loc: modules/acc/acc.cpp:90
+.preheader103.i.i:117  %empty_70 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str546, i32 %tmp_19_i_i)
+
+ST_37: StgValue_483 (201)  [1/1] 0.00ns  loc: modules/acc/acc.cpp:78
+.preheader103.i.i:118  br label %.preheader.i.i
+
+
+ <State 38>: 0.00ns
+ST_38: StgValue_484 (203)  [1/1] 0.00ns
+.exit:0  ret void
+
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 4ns.
+
+ <State 1>: 6ns
+The critical path consists of the following:
+	fifo read on port 'simConfig_rowsToSimulate_V' [47]  (3 ns)
+	fifo write on port 'simConfig_rowsToSimulate_V_out' [50]  (3 ns)
+
+ <State 2>: 2.15ns
+The critical path consists of the following:
+	'mul' operation ('bound') [75]  (2.15 ns)
+
+ <State 3>: 2.15ns
+The critical path consists of the following:
+	'mul' operation ('bound') [75]  (2.15 ns)
+
+ <State 4>: 2.15ns
+The critical path consists of the following:
+	'mul' operation ('bound') [75]  (2.15 ns)
+
+ <State 5>: 2.15ns
+The critical path consists of the following:
+	'mul' operation ('bound') [75]  (2.15 ns)
+
+ <State 6>: 2.15ns
+The critical path consists of the following:
+	'mul' operation ('bound') [75]  (2.15 ns)
+
+ <State 7>: 2.15ns
+The critical path consists of the following:
+	'mul' operation ('bound') [75]  (2.15 ns)
+
+ <State 8>: 3.16ns
+The critical path consists of the following:
+	'phi' operation ('indvar_flatten') with incoming values : ('indvar_flatten_next') [78]  (0 ns)
+	'add' operation ('indvar_flatten_next') [80]  (3.16 ns)
+
+ <State 9>: 3ns
+The critical path consists of the following:
+	fifo read on port 'C_data_V_data_0' (modules/acc/acc.cpp:13->modules/acc/acc.cpp:83) [95]  (3 ns)
+
+ <State 10>: 5.7ns
+The critical path consists of the following:
+	'fmul' operation ('tmp_i_i_i', modules/acc/acc.cpp:27->modules/acc/acc.cpp:84) [100]  (5.7 ns)
+
+ <State 11>: 5.7ns
+The critical path consists of the following:
+	'fmul' operation ('tmp_i_i_i', modules/acc/acc.cpp:27->modules/acc/acc.cpp:84) [100]  (5.7 ns)
+
+ <State 12>: 5.7ns
+The critical path consists of the following:
+	'fmul' operation ('tmp_i_i_i', modules/acc/acc.cpp:27->modules/acc/acc.cpp:84) [100]  (5.7 ns)
+
+ <State 13>: 5.7ns
+The critical path consists of the following:
+	'fmul' operation ('tmp_i_i_i', modules/acc/acc.cpp:27->modules/acc/acc.cpp:84) [100]  (5.7 ns)
+
+ <State 14>: 5.7ns
+The critical path consists of the following:
+	'fmul' operation ('tmp_i204_i_i', modules/acc/acc.cpp:27->modules/acc/acc.cpp:85) [107]  (5.7 ns)
+
+ <State 15>: 5.7ns
+The critical path consists of the following:
+	'fmul' operation ('tmp_i223_i_i', modules/acc/acc.cpp:27->modules/acc/acc.cpp:84) [128]  (5.7 ns)
+
+ <State 16>: 5.7ns
+The critical path consists of the following:
+	'fmul' operation ('tmp_i230_i_i', modules/acc/acc.cpp:27->modules/acc/acc.cpp:85) [135]  (5.7 ns)
+
+ <State 17>: 5.7ns
+The critical path consists of the following:
+	'fmul' operation ('tmp_i249_i_i', modules/acc/acc.cpp:27->modules/acc/acc.cpp:84) [156]  (5.7 ns)
+
+ <State 18>: 5.7ns
+The critical path consists of the following:
+	'fmul' operation ('tmp_i256_i_i', modules/acc/acc.cpp:27->modules/acc/acc.cpp:85) [163]  (5.7 ns)
+
+ <State 19>: 5.7ns
+The critical path consists of the following:
+	'fmul' operation ('tmp_i275_i_i', modules/acc/acc.cpp:27->modules/acc/acc.cpp:84) [184]  (5.7 ns)
+
+ <State 20>: 5.7ns
+The critical path consists of the following:
+	'fmul' operation ('tmp_i282_i_i', modules/acc/acc.cpp:27->modules/acc/acc.cpp:85) [191]  (5.7 ns)
+
+ <State 21>: 5.39ns
+The critical path consists of the following:
+	'fadd' operation ('dataTemp1', modules/acc/acc.cpp:29->modules/acc/acc.cpp:84) [104]  (5.39 ns)
+
+ <State 22>: 5.39ns
+The critical path consists of the following:
+	'fadd' operation ('acc', modules/acc/acc.cpp:31->modules/acc/acc.cpp:84) [106]  (5.39 ns)
+
+ <State 23>: 5.39ns
+The critical path consists of the following:
+	'fadd' operation ('acc', modules/acc/acc.cpp:31->modules/acc/acc.cpp:84) [106]  (5.39 ns)
+
+ <State 24>: 5.39ns
+The critical path consists of the following:
+	'fadd' operation ('acc', modules/acc/acc.cpp:31->modules/acc/acc.cpp:84) [106]  (5.39 ns)
+
+ <State 25>: 5.39ns
+The critical path consists of the following:
+	'fadd' operation ('acc', modules/acc/acc.cpp:31->modules/acc/acc.cpp:84) [106]  (5.39 ns)
+
+ <State 26>: 5.39ns
+The critical path consists of the following:
+	'fadd' operation ('acc', modules/acc/acc.cpp:31->modules/acc/acc.cpp:84) [106]  (5.39 ns)
+
+ <State 27>: 5.39ns
+The critical path consists of the following:
+	'fadd' operation ('acc', modules/acc/acc.cpp:31->modules/acc/acc.cpp:84) [106]  (5.39 ns)
+
+ <State 28>: 5.39ns
+The critical path consists of the following:
+	'fadd' operation ('acc', modules/acc/acc.cpp:31->modules/acc/acc.cpp:84) [106]  (5.39 ns)
+
+ <State 29>: 5.39ns
+The critical path consists of the following:
+	'fadd' operation ('acc', modules/acc/acc.cpp:31->modules/acc/acc.cpp:84) [106]  (5.39 ns)
+
+ <State 30>: 5.39ns
+The critical path consists of the following:
+	'fadd' operation ('acc', modules/acc/acc.cpp:31->modules/acc/acc.cpp:85) [113]  (5.39 ns)
+
+ <State 31>: 5.39ns
+The critical path consists of the following:
+	'fadd' operation ('acc', modules/acc/acc.cpp:31->modules/acc/acc.cpp:84) [134]  (5.39 ns)
+
+ <State 32>: 5.39ns
+The critical path consists of the following:
+	'fadd' operation ('acc', modules/acc/acc.cpp:31->modules/acc/acc.cpp:85) [141]  (5.39 ns)
+
+ <State 33>: 5.39ns
+The critical path consists of the following:
+	'fadd' operation ('acc', modules/acc/acc.cpp:31->modules/acc/acc.cpp:84) [162]  (5.39 ns)
+
+ <State 34>: 5.39ns
+The critical path consists of the following:
+	'fadd' operation ('acc', modules/acc/acc.cpp:31->modules/acc/acc.cpp:85) [169]  (5.39 ns)
+
+ <State 35>: 5.39ns
+The critical path consists of the following:
+	'fadd' operation ('acc', modules/acc/acc.cpp:31->modules/acc/acc.cpp:84) [190]  (5.39 ns)
+
+ <State 36>: 5.39ns
+The critical path consists of the following:
+	'fadd' operation ('acc', modules/acc/acc.cpp:31->modules/acc/acc.cpp:85) [197]  (5.39 ns)
+
+ <State 37>: 3ns
+The critical path consists of the following:
+	fifo write on port 'F_acc_V_data_0' (modules/acc/acc.cpp:44->modules/acc/acc.cpp:88) [198]  (3 ns)
+
+ <State 38>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+	State 28
+	State 29
+	State 30
+	State 31
+	State 32
+	State 33
+	State 34
+	State 35
+	State 36
+	State 37
+	State 38
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

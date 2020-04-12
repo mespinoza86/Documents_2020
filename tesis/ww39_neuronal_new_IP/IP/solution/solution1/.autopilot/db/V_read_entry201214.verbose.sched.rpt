@@ -1,0 +1,254 @@
+
+
+================================================================
+== Vivado HLS Report for 'V_read_entry201214'
+================================================================
+* Date:           Thu Jan  9 23:44:21 2020
+
+* Version:        2016.4 (Build 1756540 on Mon Jan 23 19:31:01 MST 2017)
+* Project:        solution
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      6.00|        4.00|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    0|    0|    0|    0|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 0
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 1
+* Pipeline: 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+* FSM state operations: 
+
+ <State 1>: 6.00ns
+ST_1: StgValue_2 (14)  [1/1] 0.00ns
+entry:0  call void (...)* @_ssdm_op_SpecInterface(i27* %simConfig_rowEnd_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_3 (15)  [1/1] 0.00ns
+entry:1  call void (...)* @_ssdm_op_SpecInterface(i27* %simConfig_rowBegin_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_4 (16)  [1/1] 0.00ns
+entry:2  call void (...)* @_ssdm_op_SpecInterface(i27* %simConfig_BLOCK_NUMBERS_V_out, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_5 (17)  [1/1] 0.00ns
+entry:3  call void (...)* @_ssdm_op_SpecInterface(i27* %simConfig_BLOCK_NUMBERS_V_out, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_6 (18)  [1/1] 0.00ns
+entry:4  call void (...)* @_ssdm_op_SpecInterface(i27* %simConfig_rowsToSimulate_V_out, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_7 (19)  [1/1] 0.00ns
+entry:5  call void (...)* @_ssdm_op_SpecInterface(i27* %simConfig_rowsToSimulate_V_out, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_8 (20)  [1/1] 0.00ns
+entry:6  call void (...)* @_ssdm_op_SpecInterface(i27* %simConfig_rowBegin_V_channel_i, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_9 (21)  [1/1] 0.00ns
+entry:7  call void (...)* @_ssdm_op_SpecInterface(i27* %simConfig_rowBegin_V_channel_i, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_10 (22)  [1/1] 0.00ns
+entry:8  call void (...)* @_ssdm_op_SpecInterface(i27* %simConfig_rowEnd_V_channel_i, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_11 (23)  [1/1] 0.00ns
+entry:9  call void (...)* @_ssdm_op_SpecInterface(i27* %simConfig_rowEnd_V_channel_i, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_12 (24)  [1/1] 0.00ns
+entry:10  call void (...)* @_ssdm_op_SpecInterface(i27* %simConfig_rowsToSimulate_V_channel_i, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_13 (25)  [1/1] 0.00ns
+entry:11  call void (...)* @_ssdm_op_SpecInterface(i27* %simConfig_rowsToSimulate_V_channel_i, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_14 (26)  [1/1] 0.00ns
+entry:12  call void (...)* @_ssdm_op_SpecInterface(i27* %simConfig_BLOCK_NUMBERS_V_channel_i, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_15 (27)  [1/1] 0.00ns
+entry:13  call void (...)* @_ssdm_op_SpecInterface(i27* %simConfig_BLOCK_NUMBERS_V_channel_i, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_16 (28)  [1/1] 0.00ns
+entry:14  call void (...)* @_ssdm_op_SpecInterface(i27* %simConfig_BLOCK_NUMBERS_V_channel1_i, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_17 (29)  [1/1] 0.00ns
+entry:15  call void (...)* @_ssdm_op_SpecInterface(i27* %simConfig_BLOCK_NUMBERS_V_channel1_i, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_18 (30)  [1/1] 0.00ns
+entry:16  call void (...)* @_ssdm_op_SpecInterface(i32* %V_SIZE_channel_i, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_19 (31)  [1/1] 0.00ns
+entry:17  call void (...)* @_ssdm_op_SpecInterface(i32* %V_SIZE_channel_i, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_20 (32)  [1/1] 0.00ns
+entry:18  call void (...)* @_ssdm_op_SpecInterface(i27* %scalar_simConfig_rowsToSimulate_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_21 (33)  [1/1] 0.00ns
+entry:19  call void (...)* @_ssdm_op_SpecInterface(i27* %scalar_simConfig_BLOCK_NUMBERS_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: p_read_5 (34)  [1/1] 0.00ns
+entry:20  %p_read_5 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %p_read)
+
+ST_1: scalar_simConfig_BLO (35)  [1/1] 3.00ns
+entry:21  %scalar_simConfig_BLO = call i27 @_ssdm_op_Read.ap_fifo.i27P(i27* %scalar_simConfig_BLOCK_NUMBERS_V)
+
+ST_1: scalar_simConfig_row (36)  [1/1] 3.00ns
+entry:22  %scalar_simConfig_row = call i27 @_ssdm_op_Read.ap_fifo.i27P(i27* %scalar_simConfig_rowsToSimulate_V)
+
+ST_1: StgValue_25 (37)  [1/1] 0.00ns
+entry:23  call void (...)* @_ssdm_op_SpecInterface(i27* %simConfig_rowBegin_V_channel_i, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_26 (38)  [1/1] 0.00ns
+entry:24  call void (...)* @_ssdm_op_SpecInterface(i27* %simConfig_rowEnd_V_channel_i, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_27 (39)  [1/1] 0.00ns
+entry:25  call void (...)* @_ssdm_op_SpecInterface(i27* %simConfig_rowsToSimulate_V_channel_i, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_28 (40)  [1/1] 0.00ns
+entry:26  call void (...)* @_ssdm_op_SpecInterface(i27* %simConfig_BLOCK_NUMBERS_V_channel_i, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_29 (41)  [1/1] 0.00ns
+entry:27  call void (...)* @_ssdm_op_SpecInterface(i27* %simConfig_BLOCK_NUMBERS_V_channel1_i, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_30 (42)  [1/1] 0.00ns
+entry:28  call void (...)* @_ssdm_op_SpecInterface(i32* %V_SIZE_channel_i, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_31 (43)  [1/1] 0.00ns
+entry:29  call void (...)* @_ssdm_op_SpecInterface(i27* %simConfig_rowsToSimulate_V_out, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_32 (44)  [1/1] 0.00ns
+entry:30  call void (...)* @_ssdm_op_SpecInterface(i27* %simConfig_BLOCK_NUMBERS_V_out, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_33 (45)  [1/1] 0.00ns
+entry:31  call void (...)* @_ssdm_op_SpecInterface(i27* %simConfig_BLOCK_NUMBERS_V_out, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_34 (46)  [1/1] 3.00ns
+entry:32  call void @_ssdm_op_Write.ap_fifo.i27P(i27* %simConfig_BLOCK_NUMBERS_V_out, i27 %scalar_simConfig_BLO)
+
+ST_1: StgValue_35 (47)  [1/1] 0.00ns
+entry:33  call void (...)* @_ssdm_op_SpecInterface(i27* %simConfig_rowsToSimulate_V_out, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_36 (48)  [1/1] 3.00ns
+entry:34  call void @_ssdm_op_Write.ap_fifo.i27P(i27* %simConfig_rowsToSimulate_V_out, i27 %scalar_simConfig_row)
+
+ST_1: simConfig_rowBegin_V_3 (49)  [1/1] 3.00ns
+entry:35  %simConfig_rowBegin_V_3 = call i27 @_ssdm_op_Read.ap_fifo.i27P(i27* %simConfig_rowBegin_V)
+
+ST_1: StgValue_38 (50)  [1/1] 0.00ns
+entry:36  call void (...)* @_ssdm_op_SpecInterface(i27* %simConfig_rowBegin_V_channel_i, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_39 (51)  [1/1] 3.00ns
+entry:37  call void @_ssdm_op_Write.ap_fifo.i27P(i27* %simConfig_rowBegin_V_channel_i, i27 %simConfig_rowBegin_V_3)
+
+ST_1: simConfig_rowEnd_V_r (52)  [1/1] 3.00ns
+entry:38  %simConfig_rowEnd_V_r = call i27 @_ssdm_op_Read.ap_fifo.i27P(i27* %simConfig_rowEnd_V)
+
+ST_1: StgValue_41 (53)  [1/1] 0.00ns
+entry:39  call void (...)* @_ssdm_op_SpecInterface(i27* %simConfig_rowEnd_V_channel_i, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_42 (54)  [1/1] 3.00ns
+entry:40  call void @_ssdm_op_Write.ap_fifo.i27P(i27* %simConfig_rowEnd_V_channel_i, i27 %simConfig_rowEnd_V_r)
+
+ST_1: StgValue_43 (55)  [1/1] 0.00ns
+entry:41  call void (...)* @_ssdm_op_SpecInterface(i27* %simConfig_rowsToSimulate_V_channel_i, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_44 (56)  [1/1] 3.00ns
+entry:42  call void @_ssdm_op_Write.ap_fifo.i27P(i27* %simConfig_rowsToSimulate_V_channel_i, i27 %scalar_simConfig_row)
+
+ST_1: StgValue_45 (57)  [1/1] 0.00ns
+entry:43  call void (...)* @_ssdm_op_SpecInterface(i27* %simConfig_BLOCK_NUMBERS_V_channel_i, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_46 (58)  [1/1] 3.00ns
+entry:44  call void @_ssdm_op_Write.ap_fifo.i27P(i27* %simConfig_BLOCK_NUMBERS_V_channel_i, i27 %scalar_simConfig_BLO)
+
+ST_1: StgValue_47 (59)  [1/1] 0.00ns
+entry:45  call void (...)* @_ssdm_op_SpecInterface(i27* %simConfig_BLOCK_NUMBERS_V_channel1_i, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_48 (60)  [1/1] 3.00ns
+entry:46  call void @_ssdm_op_Write.ap_fifo.i27P(i27* %simConfig_BLOCK_NUMBERS_V_channel1_i, i27 %scalar_simConfig_BLO)
+
+ST_1: StgValue_49 (61)  [1/1] 0.00ns
+entry:47  call void (...)* @_ssdm_op_SpecInterface(i32* %V_SIZE_channel_i, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_50 (62)  [1/1] 3.00ns
+entry:48  call void @_ssdm_op_Write.ap_fifo.i32P(i32* %V_SIZE_channel_i, i32 %p_read_5)
+
+ST_1: StgValue_51 (63)  [1/1] 0.00ns
+entry:49  ret void
+
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 4ns.
+
+ <State 1>: 6ns
+The critical path consists of the following:
+	fifo read on port 'scalar_simConfig_BLOCK_NUMBERS_V' [35]  (3 ns)
+	fifo write on port 'simConfig_BLOCK_NUMBERS_V_out' [46]  (3 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

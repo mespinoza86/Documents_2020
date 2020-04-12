@@ -1,0 +1,528 @@
+
+
+================================================================
+== Vivado HLS Report for 'writeV2calc'
+================================================================
+* Date:           Thu Jan  9 23:44:22 2020
+
+* Version:        2016.4 (Build 1756540 on Mon Jan 23 19:31:01 MST 2017)
+* Project:        solution
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      5.71|        4.00|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+----------+-----+----------+---------+
+    |     Latency    |    Interval    | Pipeline|
+    | min |    max   | min |    max   |   Type  |
+    +-----+----------+-----+----------+---------+
+    |    1|  24997498|    1|  24997498|   none  |
+    +-----+----------+-----+----------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------+-----+----------+-----------+-----------+-----------+----------+----------+
+        |             |     Latency    | Iteration |  Initiation Interval  |   Trip   |          |
+        |  Loop Name  | min |    max   |  Latency  |  achieved |   target  |   Count  | Pipelined|
+        +-------------+-----+----------+-----------+-----------+-----------+----------+----------+
+        |- Loop 1     |    0|  24997497| 5 ~ 10003 |          -|          -| 0 ~ 2499 |    no    |
+        | + Loop 1.1  |    0|      9998|          7|          4|          1| 0 ~ 2499 |    yes   |
+        +-------------+-----+----------+-----------+-----------+-----------+----------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 4, depth = 7
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 12
+* Pipeline: 1
+  Pipeline-0: II = 4, D = 7, States = { 5 6 7 8 9 10 11 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / (tmp_3_i_i)
+3 --> 
+	4  / true
+4 --> 
+	5  / true
+5 --> 
+	12  / (!tmp_9_i_i)
+	6  / (tmp_9_i_i)
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+	9  / true
+9 --> 
+	10  / true
+10 --> 
+	11  / true
+11 --> 
+	5  / true
+12 --> 
+	2  / true
+* FSM state operations: 
+
+ <State 1>: 3.00ns
+ST_1: StgValue_13 (18)  [1/1] 0.00ns
+entry:0  call void (...)* @_ssdm_op_SpecInterface(i27* @Vj_idx_V_data_V_0, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_14 (19)  [1/1] 0.00ns
+entry:1  call void (...)* @_ssdm_op_SpecInterface(float* @processedData_V_data, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_15 (20)  [1/1] 0.00ns
+entry:2  call void (...)* @_ssdm_op_SpecInterface(i27* @Vi_idx_V_data_V_0, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_16 (21)  [1/1] 0.00ns
+entry:3  call void (...)* @_ssdm_op_SpecInterface(i27* @Vj_idx_V_data_V_1, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_17 (22)  [1/1] 0.00ns
+entry:4  call void (...)* @_ssdm_op_SpecInterface(i27* @Vj_idx_V_data_V_2, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_18 (23)  [1/1] 0.00ns
+entry:5  call void (...)* @_ssdm_op_SpecInterface(i27* @Vj_idx_V_data_V_3, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_19 (24)  [1/1] 0.00ns
+entry:6  call void (...)* @_ssdm_op_SpecInterface(i27* @Vi_idx_V_data_V_2, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_20 (25)  [1/1] 0.00ns
+entry:7  call void (...)* @_ssdm_op_SpecInterface(i27* @Vi_idx_V_data_V_1, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_21 (26)  [1/1] 0.00ns
+entry:8  call void (...)* @_ssdm_op_SpecInterface(i27* @Vi_idx_V_data_V_3, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_22 (27)  [1/1] 0.00ns
+entry:9  call void (...)* @_ssdm_op_SpecInterface(float* @processedData_V_data_2, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_23 (28)  [1/1] 0.00ns
+entry:10  call void (...)* @_ssdm_op_SpecInterface(float* @processedData_V_data_1, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_24 (29)  [1/1] 0.00ns
+entry:11  call void (...)* @_ssdm_op_SpecInterface(float* @processedData_V_data_3, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_25 (30)  [1/1] 0.00ns
+entry:12  call void (...)* @_ssdm_op_SpecInterface(i1* @fixedData_V_tlast_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_26 (31)  [1/1] 0.00ns
+entry:13  call void (...)* @_ssdm_op_SpecInterface(float* @fixedData_V_data, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_27 (32)  [1/1] 0.00ns
+entry:14  call void (...)* @_ssdm_op_SpecInterface(i27* %simConfig_BLOCK_NUMBERS_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_28 (33)  [1/1] 0.00ns
+entry:15  call void (...)* @_ssdm_op_SpecInterface(i27* %simConfig_rowsToSimu, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: simConfig_BLOCK_NUMB (34)  [1/1] 3.00ns
+entry:16  %simConfig_BLOCK_NUMB = call i27 @_ssdm_op_Read.ap_fifo.i27P(i27* %simConfig_BLOCK_NUMBERS_V)
+
+ST_1: StgValue_30 (35)  [1/1] 0.00ns
+entry:17  call void (...)* @_ssdm_op_SpecInterface(i27* @Vj_idx_V_data_V_0, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_31 (36)  [1/1] 0.00ns
+entry:18  call void (...)* @_ssdm_op_SpecInterface(float* @processedData_V_data, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_32 (37)  [1/1] 0.00ns
+entry:19  call void (...)* @_ssdm_op_SpecInterface(i27* @Vi_idx_V_data_V_0, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_33 (38)  [1/1] 0.00ns
+entry:20  call void (...)* @_ssdm_op_SpecInterface(i27* @Vj_idx_V_data_V_1, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_34 (39)  [1/1] 0.00ns
+entry:21  call void (...)* @_ssdm_op_SpecInterface(i27* @Vj_idx_V_data_V_2, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_35 (40)  [1/1] 0.00ns
+entry:22  call void (...)* @_ssdm_op_SpecInterface(i27* @Vj_idx_V_data_V_3, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_36 (41)  [1/1] 0.00ns
+entry:23  call void (...)* @_ssdm_op_SpecInterface(i27* @Vi_idx_V_data_V_2, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_37 (42)  [1/1] 0.00ns
+entry:24  call void (...)* @_ssdm_op_SpecInterface(i27* @Vi_idx_V_data_V_1, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_38 (43)  [1/1] 0.00ns
+entry:25  call void (...)* @_ssdm_op_SpecInterface(i27* @Vi_idx_V_data_V_3, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_39 (44)  [1/1] 0.00ns
+entry:26  call void (...)* @_ssdm_op_SpecInterface(float* @processedData_V_data_2, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_40 (45)  [1/1] 0.00ns
+entry:27  call void (...)* @_ssdm_op_SpecInterface(float* @processedData_V_data_1, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_41 (46)  [1/1] 0.00ns
+entry:28  call void (...)* @_ssdm_op_SpecInterface(float* @processedData_V_data_3, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_42 (47)  [1/1] 0.00ns
+entry:29  call void (...)* @_ssdm_op_SpecInterface(i1* @fixedData_V_tlast_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_43 (48)  [1/1] 0.00ns
+entry:30  call void (...)* @_ssdm_op_SpecInterface(float* @fixedData_V_data, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_44 (49)  [1/1] 0.00ns
+entry:31  call void (...)* @_ssdm_op_SpecMemCore([10000 x float]* %voltagesBackup, [1 x i8]* @p_str466, [13 x i8]* @p_str567, [1 x i8]* @p_str466, i32 -1, [1 x i8]* @p_str466, [1 x i8]* @p_str466, [1 x i8]* @p_str466, [1 x i8]* @p_str466, [1 x i8]* @p_str466)
+
+ST_1: simConfig_rowsToSimu_1 (50)  [1/1] 3.00ns  loc: modules/V_read/V_read.cpp:69
+entry:32  %simConfig_rowsToSimu_1 = call i27 @_ssdm_op_Read.ap_fifo.i27P(i27* %simConfig_rowsToSimu)
+
+ST_1: StgValue_46 (51)  [1/1] 1.57ns  loc: modules/V_read/V_read.cpp:70
+entry:33  br label %.preheader69.i.i
+
+
+ <State 2>: 5.71ns
+ST_2: p_i_i (53)  [1/1] 0.00ns  loc: modules/V_read/V_read.cpp:70
+.preheader69.i.i:0  %p_i_i = phi i12 [ 0, %entry ], [ %i_V, %.preheader69.i.i.loopexit ]
+
+ST_2: p_i_i_cast (54)  [1/1] 0.00ns  loc: modules/V_read/V_read.cpp:70
+.preheader69.i.i:1  %p_i_i_cast = zext i12 %p_i_i to i27
+
+ST_2: tmp_3_i_i (55)  [1/1] 2.44ns  loc: modules/V_read/V_read.cpp:70
+.preheader69.i.i:2  %tmp_3_i_i = icmp slt i27 %p_i_i_cast, %simConfig_rowsToSimu_1
+
+ST_2: i_V (56)  [1/1] 1.84ns  loc: modules/V_read/V_read.cpp:70
+.preheader69.i.i:3  %i_V = add i12 %p_i_i, 1
+
+ST_2: StgValue_51 (57)  [1/1] 0.00ns  loc: modules/V_read/V_read.cpp:70
+.preheader69.i.i:4  br i1 %tmp_3_i_i, label %0, label %.exit
+
+ST_2: empty (60)  [1/1] 3.00ns  loc: modules/V_read/V_read.cpp:71
+:1  %empty = call { i27, i27, i27, i27 } @_ssdm_op_Read.ap_fifo.volatile.i27P.i27P.i27P.i27P(i27* @Vi_idx_V_data_V_0, i27* @Vi_idx_V_data_V_1, i27* @Vi_idx_V_data_V_2, i27* @Vi_idx_V_data_V_3)
+
+ST_2: tmp_data_0_V (61)  [1/1] 0.00ns  loc: modules/V_read/V_read.cpp:71
+:2  %tmp_data_0_V = extractvalue { i27, i27, i27, i27 } %empty, 0
+
+ST_2: tmp_data_1_V (62)  [1/1] 0.00ns  loc: modules/V_read/V_read.cpp:71
+:3  %tmp_data_1_V = extractvalue { i27, i27, i27, i27 } %empty, 1
+
+ST_2: tmp_data_2_V (63)  [1/1] 0.00ns  loc: modules/V_read/V_read.cpp:71
+:4  %tmp_data_2_V = extractvalue { i27, i27, i27, i27 } %empty, 2
+
+ST_2: tmp_data_3_V (64)  [1/1] 0.00ns  loc: modules/V_read/V_read.cpp:71
+:5  %tmp_data_3_V = extractvalue { i27, i27, i27, i27 } %empty, 3
+
+ST_2: tmp_5_i_i (65)  [1/1] 0.00ns  loc: modules/V_read/V_read.cpp:73
+:6  %tmp_5_i_i = zext i27 %tmp_data_0_V to i64
+
+ST_2: voltagesBackup_addr (66)  [1/1] 0.00ns  loc: modules/V_read/V_read.cpp:73
+:7  %voltagesBackup_addr = getelementptr [10000 x float]* %voltagesBackup, i64 0, i64 %tmp_5_i_i
+
+ST_2: tmp_data (67)  [2/2] 2.71ns  loc: modules/V_read/V_read.cpp:73
+:8  %tmp_data = load float* %voltagesBackup_addr, align 4
+
+ST_2: tmp_6_i_i (68)  [1/1] 0.00ns  loc: modules/V_read/V_read.cpp:74
+:9  %tmp_6_i_i = zext i27 %tmp_data_1_V to i64
+
+ST_2: voltagesBackup_addr_1 (69)  [1/1] 0.00ns  loc: modules/V_read/V_read.cpp:74
+:10  %voltagesBackup_addr_1 = getelementptr [10000 x float]* %voltagesBackup, i64 0, i64 %tmp_6_i_i
+
+ST_2: tmp_data_1 (70)  [2/2] 2.71ns  loc: modules/V_read/V_read.cpp:74
+:11  %tmp_data_1 = load float* %voltagesBackup_addr_1, align 4
+
+ST_2: StgValue_63 (118)  [1/1] 0.00ns
+.exit:0  ret void
+
+
+ <State 3>: 2.71ns
+ST_3: tmp_data (67)  [1/2] 2.71ns  loc: modules/V_read/V_read.cpp:73
+:8  %tmp_data = load float* %voltagesBackup_addr, align 4
+
+ST_3: tmp_data_1 (70)  [1/2] 2.71ns  loc: modules/V_read/V_read.cpp:74
+:11  %tmp_data_1 = load float* %voltagesBackup_addr_1, align 4
+
+ST_3: tmp_7_i_i (71)  [1/1] 0.00ns  loc: modules/V_read/V_read.cpp:75
+:12  %tmp_7_i_i = zext i27 %tmp_data_2_V to i64
+
+ST_3: voltagesBackup_addr_2 (72)  [1/1] 0.00ns  loc: modules/V_read/V_read.cpp:75
+:13  %voltagesBackup_addr_2 = getelementptr [10000 x float]* %voltagesBackup, i64 0, i64 %tmp_7_i_i
+
+ST_3: tmp_data_2 (73)  [2/2] 2.71ns  loc: modules/V_read/V_read.cpp:75
+:14  %tmp_data_2 = load float* %voltagesBackup_addr_2, align 4
+
+ST_3: tmp_8_i_i (74)  [1/1] 0.00ns  loc: modules/V_read/V_read.cpp:76
+:15  %tmp_8_i_i = zext i27 %tmp_data_3_V to i64
+
+ST_3: voltagesBackup_addr_3 (75)  [1/1] 0.00ns  loc: modules/V_read/V_read.cpp:76
+:16  %voltagesBackup_addr_3 = getelementptr [10000 x float]* %voltagesBackup, i64 0, i64 %tmp_8_i_i
+
+ST_3: tmp_data_3 (76)  [2/2] 2.71ns  loc: modules/V_read/V_read.cpp:76
+:17  %tmp_data_3 = load float* %voltagesBackup_addr_3, align 4
+
+
+ <State 4>: 2.71ns
+ST_4: StgValue_72 (59)  [1/1] 0.00ns
+:0  call void (...)* @_ssdm_op_SpecLoopTripCount(i64 0, i64 2499, i64 0)
+
+ST_4: tmp_data_2 (73)  [1/2] 2.71ns  loc: modules/V_read/V_read.cpp:75
+:14  %tmp_data_2 = load float* %voltagesBackup_addr_2, align 4
+
+ST_4: tmp_data_3 (76)  [1/2] 2.71ns  loc: modules/V_read/V_read.cpp:76
+:17  %tmp_data_3 = load float* %voltagesBackup_addr_3, align 4
+
+ST_4: StgValue_75 (77)  [1/1] 1.57ns  loc: modules/V_read/V_read.cpp:77
+:18  br label %.preheader.i.i
+
+
+ <State 5>: 2.44ns
+ST_5: p_1_i_i (79)  [1/1] 0.00ns  loc: modules/V_read/V_read.cpp:78
+.preheader.i.i:0  %p_1_i_i = phi i26 [ %j_V, %"operator=.exit.i.preheader.i.i" ], [ 0, %0 ]
+
+ST_5: p_1_i_i_cast (80)  [1/1] 0.00ns  loc: modules/V_read/V_read.cpp:78
+.preheader.i.i:1  %p_1_i_i_cast = zext i26 %p_1_i_i to i27
+
+ST_5: tmp_9_i_i (81)  [1/1] 2.44ns  loc: modules/V_read/V_read.cpp:78
+.preheader.i.i:2  %tmp_9_i_i = icmp slt i27 %p_1_i_i_cast, %simConfig_BLOCK_NUMB
+
+ST_5: j_V (82)  [1/1] 2.32ns  loc: modules/V_read/V_read.cpp:78
+.preheader.i.i:3  %j_V = add i26 %p_1_i_i, 1
+
+ST_5: StgValue_80 (83)  [1/1] 0.00ns  loc: modules/V_read/V_read.cpp:78
+.preheader.i.i:4  br i1 %tmp_9_i_i, label %"operator=.exit.i.preheader.i.i", label %.preheader69.i.i.loopexit
+
+
+ <State 6>: 5.71ns
+ST_6: empty_11 (92)  [1/1] 3.00ns  loc: modules/V_read/V_read.cpp:48->modules/V_read/V_read.cpp:84
+operator=.exit.i.preheader.i.i:7  %empty_11 = call { i27, i27, i27, i27 } @_ssdm_op_Read.ap_fifo.volatile.i27P.i27P.i27P.i27P(i27* @Vj_idx_V_data_V_0, i27* @Vj_idx_V_data_V_1, i27* @Vj_idx_V_data_V_2, i27* @Vj_idx_V_data_V_3)
+
+ST_6: tmp_data_0_V_1 (93)  [1/1] 0.00ns  loc: modules/V_read/V_read.cpp:48->modules/V_read/V_read.cpp:84
+operator=.exit.i.preheader.i.i:8  %tmp_data_0_V_1 = extractvalue { i27, i27, i27, i27 } %empty_11, 0
+
+ST_6: tmp_data_1_V_1 (94)  [1/1] 0.00ns  loc: modules/V_read/V_read.cpp:48->modules/V_read/V_read.cpp:84
+operator=.exit.i.preheader.i.i:9  %tmp_data_1_V_1 = extractvalue { i27, i27, i27, i27 } %empty_11, 1
+
+ST_6: tmp_data_2_V_1 (95)  [1/1] 0.00ns  loc: modules/V_read/V_read.cpp:48->modules/V_read/V_read.cpp:84
+operator=.exit.i.preheader.i.i:10  %tmp_data_2_V_1 = extractvalue { i27, i27, i27, i27 } %empty_11, 2
+
+ST_6: tmp_data_3_V_1 (96)  [1/1] 0.00ns  loc: modules/V_read/V_read.cpp:48->modules/V_read/V_read.cpp:84
+operator=.exit.i.preheader.i.i:11  %tmp_data_3_V_1 = extractvalue { i27, i27, i27, i27 } %empty_11, 3
+
+ST_6: tmp_13_i_i (97)  [1/1] 0.00ns  loc: modules/V_read/V_read.cpp:51->modules/V_read/V_read.cpp:84
+operator=.exit.i.preheader.i.i:12  %tmp_13_i_i = zext i27 %tmp_data_0_V_1 to i64
+
+ST_6: voltagesBackup_addr_4 (98)  [1/1] 0.00ns  loc: modules/V_read/V_read.cpp:51->modules/V_read/V_read.cpp:84
+operator=.exit.i.preheader.i.i:13  %voltagesBackup_addr_4 = getelementptr [10000 x float]* %voltagesBackup, i64 0, i64 %tmp_13_i_i
+
+ST_6: tmp_data_0 (99)  [2/2] 2.71ns  loc: modules/V_read/V_read.cpp:51->modules/V_read/V_read.cpp:84
+operator=.exit.i.preheader.i.i:14  %tmp_data_0 = load float* %voltagesBackup_addr_4, align 4
+
+ST_6: tmp_13_1_i_i (100)  [1/1] 0.00ns  loc: modules/V_read/V_read.cpp:51->modules/V_read/V_read.cpp:84
+operator=.exit.i.preheader.i.i:15  %tmp_13_1_i_i = zext i27 %tmp_data_1_V_1 to i64
+
+ST_6: voltagesBackup_addr_5 (101)  [1/1] 0.00ns  loc: modules/V_read/V_read.cpp:51->modules/V_read/V_read.cpp:84
+operator=.exit.i.preheader.i.i:16  %voltagesBackup_addr_5 = getelementptr [10000 x float]* %voltagesBackup, i64 0, i64 %tmp_13_1_i_i
+
+ST_6: tmp_data_1_12 (102)  [2/2] 2.71ns  loc: modules/V_read/V_read.cpp:51->modules/V_read/V_read.cpp:84
+operator=.exit.i.preheader.i.i:17  %tmp_data_1_12 = load float* %voltagesBackup_addr_5, align 4
+
+
+ <State 7>: 2.71ns
+ST_7: tmp_data_0 (99)  [1/2] 2.71ns  loc: modules/V_read/V_read.cpp:51->modules/V_read/V_read.cpp:84
+operator=.exit.i.preheader.i.i:14  %tmp_data_0 = load float* %voltagesBackup_addr_4, align 4
+
+ST_7: tmp_data_1_12 (102)  [1/2] 2.71ns  loc: modules/V_read/V_read.cpp:51->modules/V_read/V_read.cpp:84
+operator=.exit.i.preheader.i.i:17  %tmp_data_1_12 = load float* %voltagesBackup_addr_5, align 4
+
+ST_7: tmp_13_2_i_i (103)  [1/1] 0.00ns  loc: modules/V_read/V_read.cpp:51->modules/V_read/V_read.cpp:84
+operator=.exit.i.preheader.i.i:18  %tmp_13_2_i_i = zext i27 %tmp_data_2_V_1 to i64
+
+ST_7: voltagesBackup_addr_6 (104)  [1/1] 0.00ns  loc: modules/V_read/V_read.cpp:51->modules/V_read/V_read.cpp:84
+operator=.exit.i.preheader.i.i:19  %voltagesBackup_addr_6 = getelementptr [10000 x float]* %voltagesBackup, i64 0, i64 %tmp_13_2_i_i
+
+ST_7: tmp_data_2_13 (105)  [2/2] 2.71ns  loc: modules/V_read/V_read.cpp:51->modules/V_read/V_read.cpp:84
+operator=.exit.i.preheader.i.i:20  %tmp_data_2_13 = load float* %voltagesBackup_addr_6, align 4
+
+ST_7: tmp_13_3_i_i (106)  [1/1] 0.00ns  loc: modules/V_read/V_read.cpp:51->modules/V_read/V_read.cpp:84
+operator=.exit.i.preheader.i.i:21  %tmp_13_3_i_i = zext i27 %tmp_data_3_V_1 to i64
+
+ST_7: voltagesBackup_addr_7 (107)  [1/1] 0.00ns  loc: modules/V_read/V_read.cpp:51->modules/V_read/V_read.cpp:84
+operator=.exit.i.preheader.i.i:22  %voltagesBackup_addr_7 = getelementptr [10000 x float]* %voltagesBackup, i64 0, i64 %tmp_13_3_i_i
+
+ST_7: tmp_data_3_14 (108)  [2/2] 2.71ns  loc: modules/V_read/V_read.cpp:51->modules/V_read/V_read.cpp:84
+operator=.exit.i.preheader.i.i:23  %tmp_data_3_14 = load float* %voltagesBackup_addr_7, align 4
+
+
+ <State 8>: 5.71ns
+ST_8: StgValue_100 (88)  [1/1] 3.00ns  loc: modules/V_read/V_read.cpp:80
+operator=.exit.i.preheader.i.i:3  call void @_ssdm_op_Write.ap_fifo.volatile.floatP.i1P(float* @fixedData_V_data, i1* @fixedData_V_tlast_V, float %tmp_data, i1 undef)
+
+ST_8: tmp_data_2_13 (105)  [1/2] 2.71ns  loc: modules/V_read/V_read.cpp:51->modules/V_read/V_read.cpp:84
+operator=.exit.i.preheader.i.i:20  %tmp_data_2_13 = load float* %voltagesBackup_addr_6, align 4
+
+ST_8: tmp_data_3_14 (108)  [1/2] 2.71ns  loc: modules/V_read/V_read.cpp:51->modules/V_read/V_read.cpp:84
+operator=.exit.i.preheader.i.i:23  %tmp_data_3_14 = load float* %voltagesBackup_addr_7, align 4
+
+ST_8: StgValue_103 (109)  [1/1] 3.00ns  loc: modules/V_read/V_read.cpp:53->modules/V_read/V_read.cpp:84
+operator=.exit.i.preheader.i.i:24  call void @_ssdm_op_Write.ap_fifo.volatile.floatP.floatP.floatP.floatP(float* @processedData_V_data, float* @processedData_V_data_1, float* @processedData_V_data_2, float* @processedData_V_data_3, float %tmp_data_0, float %tmp_data_1_12, float %tmp_data_2_13, float %tmp_data_3_14)
+
+
+ <State 9>: 3.00ns
+ST_9: StgValue_104 (89)  [1/1] 3.00ns  loc: modules/V_read/V_read.cpp:81
+operator=.exit.i.preheader.i.i:4  call void @_ssdm_op_Write.ap_fifo.volatile.floatP.i1P(float* @fixedData_V_data, i1* @fixedData_V_tlast_V, float %tmp_data_1, i1 undef)
+
+ST_9: StgValue_105 (110)  [1/1] 3.00ns  loc: modules/V_read/V_read.cpp:54->modules/V_read/V_read.cpp:84
+operator=.exit.i.preheader.i.i:25  call void @_ssdm_op_Write.ap_fifo.volatile.floatP.floatP.floatP.floatP(float* @processedData_V_data, float* @processedData_V_data_1, float* @processedData_V_data_2, float* @processedData_V_data_3, float %tmp_data_0, float %tmp_data_1_12, float %tmp_data_2_13, float %tmp_data_3_14)
+
+
+ <State 10>: 3.00ns
+ST_10: StgValue_106 (90)  [1/1] 3.00ns  loc: modules/V_read/V_read.cpp:82
+operator=.exit.i.preheader.i.i:5  call void @_ssdm_op_Write.ap_fifo.volatile.floatP.i1P(float* @fixedData_V_data, i1* @fixedData_V_tlast_V, float %tmp_data_2, i1 undef)
+
+ST_10: StgValue_107 (111)  [1/1] 3.00ns  loc: modules/V_read/V_read.cpp:55->modules/V_read/V_read.cpp:84
+operator=.exit.i.preheader.i.i:26  call void @_ssdm_op_Write.ap_fifo.volatile.floatP.floatP.floatP.floatP(float* @processedData_V_data, float* @processedData_V_data_1, float* @processedData_V_data_2, float* @processedData_V_data_3, float %tmp_data_0, float %tmp_data_1_12, float %tmp_data_2_13, float %tmp_data_3_14)
+
+
+ <State 11>: 3.00ns
+ST_11: StgValue_108 (85)  [1/1] 0.00ns
+operator=.exit.i.preheader.i.i:0  call void (...)* @_ssdm_op_SpecLoopTripCount(i64 0, i64 2499, i64 0)
+
+ST_11: tmp_i_i (86)  [1/1] 0.00ns  loc: modules/V_read/V_read.cpp:78
+operator=.exit.i.preheader.i.i:1  %tmp_i_i = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str365)
+
+ST_11: StgValue_110 (87)  [1/1] 0.00ns  loc: modules/V_read/V_read.cpp:79
+operator=.exit.i.preheader.i.i:2  call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str466) nounwind
+
+ST_11: StgValue_111 (91)  [1/1] 3.00ns  loc: modules/V_read/V_read.cpp:83
+operator=.exit.i.preheader.i.i:6  call void @_ssdm_op_Write.ap_fifo.volatile.floatP.i1P(float* @fixedData_V_data, i1* @fixedData_V_tlast_V, float %tmp_data_3, i1 undef)
+
+ST_11: StgValue_112 (112)  [1/1] 3.00ns  loc: modules/V_read/V_read.cpp:56->modules/V_read/V_read.cpp:84
+operator=.exit.i.preheader.i.i:27  call void @_ssdm_op_Write.ap_fifo.volatile.floatP.floatP.floatP.floatP(float* @processedData_V_data, float* @processedData_V_data_1, float* @processedData_V_data_2, float* @processedData_V_data_3, float %tmp_data_0, float %tmp_data_1_12, float %tmp_data_2_13, float %tmp_data_3_14)
+
+ST_11: empty_15 (113)  [1/1] 0.00ns  loc: modules/V_read/V_read.cpp:86
+operator=.exit.i.preheader.i.i:28  %empty_15 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str365, i32 %tmp_i_i)
+
+ST_11: StgValue_114 (114)  [1/1] 0.00ns  loc: modules/V_read/V_read.cpp:78
+operator=.exit.i.preheader.i.i:29  br label %.preheader.i.i
+
+
+ <State 12>: 0.00ns
+ST_12: StgValue_115 (116)  [1/1] 0.00ns
+.preheader69.i.i.loopexit:0  br label %.preheader69.i.i
+
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 4ns.
+
+ <State 1>: 3ns
+The critical path consists of the following:
+	fifo read on port 'simConfig_BLOCK_NUMBERS_V' [34]  (3 ns)
+
+ <State 2>: 5.71ns
+The critical path consists of the following:
+	fifo read on port 'Vi_idx_V_data_V_0' (modules/V_read/V_read.cpp:71) [60]  (3 ns)
+	'getelementptr' operation ('voltagesBackup_addr', modules/V_read/V_read.cpp:73) [66]  (0 ns)
+	'load' operation ('tmp.data', modules/V_read/V_read.cpp:73) on array 'voltagesBackup' [67]  (2.71 ns)
+
+ <State 3>: 2.71ns
+The critical path consists of the following:
+	'load' operation ('tmp.data', modules/V_read/V_read.cpp:73) on array 'voltagesBackup' [67]  (2.71 ns)
+
+ <State 4>: 2.71ns
+The critical path consists of the following:
+	'load' operation ('tmp.data', modules/V_read/V_read.cpp:75) on array 'voltagesBackup' [73]  (2.71 ns)
+
+ <State 5>: 2.44ns
+The critical path consists of the following:
+	'phi' operation ('p_1_i_i', modules/V_read/V_read.cpp:78) with incoming values : ('j_V', modules/V_read/V_read.cpp:78) [79]  (0 ns)
+	'icmp' operation ('tmp_9_i_i', modules/V_read/V_read.cpp:78) [81]  (2.44 ns)
+
+ <State 6>: 5.71ns
+The critical path consists of the following:
+	fifo read on port 'Vj_idx_V_data_V_0' (modules/V_read/V_read.cpp:48->modules/V_read/V_read.cpp:84) [92]  (3 ns)
+	'getelementptr' operation ('voltagesBackup_addr_4', modules/V_read/V_read.cpp:51->modules/V_read/V_read.cpp:84) [98]  (0 ns)
+	'load' operation ('tmp.data[0]', modules/V_read/V_read.cpp:51->modules/V_read/V_read.cpp:84) on array 'voltagesBackup' [99]  (2.71 ns)
+
+ <State 7>: 2.71ns
+The critical path consists of the following:
+	'load' operation ('tmp.data[0]', modules/V_read/V_read.cpp:51->modules/V_read/V_read.cpp:84) on array 'voltagesBackup' [99]  (2.71 ns)
+
+ <State 8>: 5.71ns
+The critical path consists of the following:
+	'load' operation ('tmp.data[2]', modules/V_read/V_read.cpp:51->modules/V_read/V_read.cpp:84) on array 'voltagesBackup' [105]  (2.71 ns)
+	fifo write on port 'processedData_V_data' (modules/V_read/V_read.cpp:53->modules/V_read/V_read.cpp:84) [109]  (3 ns)
+
+ <State 9>: 3ns
+The critical path consists of the following:
+	fifo write on port 'fixedData_V_data' (modules/V_read/V_read.cpp:81) [89]  (3 ns)
+
+ <State 10>: 3ns
+The critical path consists of the following:
+	fifo write on port 'fixedData_V_data' (modules/V_read/V_read.cpp:82) [90]  (3 ns)
+
+ <State 11>: 3ns
+The critical path consists of the following:
+	fifo write on port 'fixedData_V_data' (modules/V_read/V_read.cpp:83) [91]  (3 ns)
+
+ <State 12>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

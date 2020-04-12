@@ -1,0 +1,158 @@
+
+
+================================================================
+== Vivado HLS Report for 'getTotalCurrent'
+================================================================
+* Date:           Sat Jan 11 14:24:38 2020
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        IP_latest_2020_Enero
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     5.844|        4.00|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |   21|   21|   21|   21|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      -|       -|      -|
+|Expression       |        -|      -|       0|     64|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        -|     25|    1847|   2822|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|    118|
+|Register         |        -|      -|     407|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        0|     25|    2254|   3004|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        0|     11|       2|      5|
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    +---------------------------------------------------+----------------------------------------------+---------+-------+-----+------+
+    |                      Instance                     |                    Module                    | BRAM_18K| DSP48E|  FF |  LUT |
+    +---------------------------------------------------+----------------------------------------------+---------+-------+-----+------+
+    |GapJunctionIP_dadd_64ns_64ns_64_8_full_dsp_1_U198  |GapJunctionIP_dadd_64ns_64ns_64_8_full_dsp_1  |        0|      3|  687|  1071|
+    |GapJunctionIP_dmul_64ns_64ns_64_9_max_dsp_1_U199   |GapJunctionIP_dmul_64ns_64ns_64_9_max_dsp_1   |        0|     11|  416|   599|
+    |GapJunctionIP_dmul_64ns_64ns_64_9_max_dsp_1_U200   |GapJunctionIP_dmul_64ns_64ns_64_9_max_dsp_1   |        0|     11|  416|   599|
+    |GapJunctionIP_fpext_32ns_64_1_1_U196               |GapJunctionIP_fpext_32ns_64_1_1               |        0|      0|  100|   138|
+    |GapJunctionIP_fpext_32ns_64_1_1_U197               |GapJunctionIP_fpext_32ns_64_1_1               |        0|      0|  100|   138|
+    |GapJunctionIP_fptrunc_64ns_32_2_1_U195             |GapJunctionIP_fptrunc_64ns_32_2_1             |        0|      0|  128|   277|
+    +---------------------------------------------------+----------------------------------------------+---------+-------+-----+------+
+    |Total                                              |                                              |        0|     25| 1847|  2822|
+    +---------------------------------------------------+----------------------------------------------+---------+-------+-----+------+
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +--------------------+----------+-------+---+----+------------+------------+
+    |    Variable Name   | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------------+----------+-------+---+----+------------+------------+
+    |ret_V_fu_136_p2     |     +    |      0|  0|  35|          28|           2|
+    |output_r_TLAST      |    and   |      0|  0|   2|           1|           1|
+    |tmp_10_i_fu_146_p2  |   icmp   |      0|  0|  18|          28|          28|
+    |tmp_i_fu_126_p2     |   icmp   |      0|  0|   9|           3|           2|
+    +--------------------+----------+-------+---+----+------------+------------+
+    |Total               |          |      0|  0|  64|          60|          33|
+    +--------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------+-----+-----------+-----+-----------+
+    |         Name         | LUT | Input Size| Bits| Total Bits|
+    +----------------------+-----+-----------+-----+-----------+
+    |ap_NS_fsm             |  109|         23|    1|         23|
+    |output_r_TDATA_blk_n  |    9|          2|    1|          2|
+    +----------------------+-----+-----------+-----+-----------+
+    |Total                 |  118|         25|    2|         25|
+    +----------------------+-----+-----------+-----+-----------+
+
+    * Register: 
+    +--------------------------+----+----+-----+-----------+
+    |           Name           | FF | LUT| Bits| Const Bits|
+    +--------------------------+----+----+-----+-----------+
+    |F_temp_data_load_reg_173  |  32|   0|   32|          0|
+    |V_temp_data_load_reg_178  |  32|   0|   32|          0|
+    |ap_CS_fsm                 |  22|   0|   22|          0|
+    |tmp_1_reg_193             |  64|   0|   64|          0|
+    |tmp_2_reg_188             |  64|   0|   64|          0|
+    |tmp_3_reg_198             |  64|   0|   64|          0|
+    |tmp_4_reg_203             |  64|   0|   64|          0|
+    |tmp_i_reg_168             |   1|   0|    1|          0|
+    |tmp_s_reg_183             |  64|   0|   64|          0|
+    +--------------------------+----+----+-----+-----------+
+    |Total                     | 407|   0|  407|          0|
+    +--------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------------------+-----+-----+------------+---------------------------------+--------------+
+|            RTL Ports            | Dir | Bits|  Protocol  |          Source Object          |    C Type    |
++---------------------------------+-----+-----+------------+---------------------------------+--------------+
+|ap_clk                           |  in |    1| ap_ctrl_hs |         getTotalCurrent         | return value |
+|ap_rst                           |  in |    1| ap_ctrl_hs |         getTotalCurrent         | return value |
+|ap_start                         |  in |    1| ap_ctrl_hs |         getTotalCurrent         | return value |
+|ap_done                          | out |    1| ap_ctrl_hs |         getTotalCurrent         | return value |
+|ap_idle                          | out |    1| ap_ctrl_hs |         getTotalCurrent         | return value |
+|ap_ready                         | out |    1| ap_ctrl_hs |         getTotalCurrent         | return value |
+|row_V                            |  in |    3|   ap_none  |              row_V              |    scalar    |
+|output_r_TDATA                   | out |   32|    axis    |             I_V_data            |    pointer   |
+|output_r_TREADY                  |  in |    1|    axis    |             I_V_data            |    pointer   |
+|output_r_TVALID                  | out |    1|    axis    |           I_V_tlast_V           |    pointer   |
+|output_r_TLAST                   | out |    1|    axis    |           I_V_tlast_V           |    pointer   |
+|RowOfBlocks_V_read               |  in |   26|   ap_none  |        RowOfBlocks_V_read       |    scalar    |
+|simConfig_rowsToSimulate_V_read  |  in |   27|   ap_none  | simConfig_rowsToSimulate_V_read |    scalar    |
+|F_temp_data_address0             | out |    2|  ap_memory |           F_temp_data           |     array    |
+|F_temp_data_ce0                  | out |    1|  ap_memory |           F_temp_data           |     array    |
+|F_temp_data_q0                   |  in |   32|  ap_memory |           F_temp_data           |     array    |
+|V_temp_data_address0             | out |    2|  ap_memory |           V_temp_data           |     array    |
+|V_temp_data_ce0                  | out |    1|  ap_memory |           V_temp_data           |     array    |
+|V_temp_data_q0                   |  in |   32|  ap_memory |           V_temp_data           |     array    |
++---------------------------------+-----+-----+------------+---------------------------------+--------------+
+

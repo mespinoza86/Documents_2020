@@ -1,0 +1,10 @@
+INFO: [COSIM-47] Using XSIM for RTL simulation.
+INFO: [COSIM-14] Instrumenting C test bench ...
+   Build using "/opt/vivado2018/Vivado/2018.3/tps/lnx64/gcc-6.2.0/bin/g++"
+   Compiling StreamTest.cpp_pre.cpp.tb.cpp
+   Compiling calc.cpp_pre.cpp.tb.cpp
+cosim.tv.mk:68: recipe for target 'obj/calc.cpp_pre.cpp.tb.o' failed
+ERROR: [COSIM-317] C++ compile error.
+ERROR: [COSIM-321] EXE file generate failed.
+ERROR: [COSIM-321] EXE file generate failed.
+ERROR: [COSIM-331] Aborting co-simulation: C simulation failed, compilation errors.

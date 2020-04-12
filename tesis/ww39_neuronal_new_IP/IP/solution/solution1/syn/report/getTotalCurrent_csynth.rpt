@@ -1,0 +1,161 @@
+
+
+================================================================
+== Vivado HLS Report for 'getTotalCurrent'
+================================================================
+* Date:           Thu Jan  9 23:44:28 2020
+
+* Version:        2016.4 (Build 1756540 on Mon Jan 23 19:31:01 MST 2017)
+* Project:        solution
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      5.76|        4.00|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |   21|   21|   21|   21|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      -|       -|      -|
+|Expression       |        -|      -|       0|     41|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        -|     25|    1847|   2822|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|     20|
+|Register         |        -|      -|     409|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        0|     25|    2256|   2883|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        0|     11|       2|      5|
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    +---------------------------+----------------------+---------+-------+-----+------+
+    |          Instance         |        Module        | BRAM_18K| DSP48E|  FF |  LUT |
+    +---------------------------+----------------------+---------+-------+-----+------+
+    |GapJunctionIP_dadzec_U191  |GapJunctionIP_dadzec  |        0|      3|  687|  1071|
+    |GapJunctionIP_dmuAem_U192  |GapJunctionIP_dmuAem  |        0|     11|  416|   599|
+    |GapJunctionIP_dmuAem_U193  |GapJunctionIP_dmuAem  |        0|     11|  416|   599|
+    |GapJunctionIP_fpeyd2_U189  |GapJunctionIP_fpeyd2  |        0|      0|  100|   138|
+    |GapJunctionIP_fpeyd2_U190  |GapJunctionIP_fpeyd2  |        0|      0|  100|   138|
+    |GapJunctionIP_fptxdS_U188  |GapJunctionIP_fptxdS  |        0|      0|  128|   277|
+    +---------------------------+----------------------+---------+-------+-----+------+
+    |Total                      |                      |        0|     25| 1847|  2822|
+    +---------------------------+----------------------+---------+-------+-----+------+
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +--------------------+----------+-------+---+----+------------+------------+
+    |    Variable Name   | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------------+----------+-------+---+----+------------+------------+
+    |r_V_fu_134_p2       |     +    |      0|  0|  28|          28|           2|
+    |output_r_TLAST      |    and   |      0|  0|   1|           1|           1|
+    |tmp_10_i_fu_144_p2  |   icmp   |      0|  0|  10|          28|          28|
+    |tmp_i_fu_124_p2     |   icmp   |      0|  0|   2|           3|           2|
+    +--------------------+----------+-------+---+----+------------+------------+
+    |Total               |          |      0|  0|  41|          60|          33|
+    +--------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +--------------------------------+----+-----------+-----+-----------+
+    |              Name              | LUT| Input Size| Bits| Total Bits|
+    +--------------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                       |  18|         23|    1|         23|
+    |ap_sig_ioackin_output_r_TREADY  |   1|          2|    1|          2|
+    |output_r_TDATA_blk_n            |   1|          2|    1|          2|
+    +--------------------------------+----+-----------+-----+-----------+
+    |Total                           |  20|         27|    3|         27|
+    +--------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +--------------------------------+----+----+-----+-----------+
+    |              Name              | FF | LUT| Bits| Const Bits|
+    +--------------------------------+----+----+-----+-----------+
+    |F_temp_data_load_reg_170        |  32|   0|   32|          0|
+    |V_temp_data_load_reg_175        |  32|   0|   32|          0|
+    |ap_CS_fsm                       |  22|   0|   22|          0|
+    |ap_reg_ioackin_output_r_TREADY  |   1|   0|    1|          0|
+    |tmp_10_i_reg_205                |   1|   0|    1|          0|
+    |tmp_1_reg_190                   |  64|   0|   64|          0|
+    |tmp_2_reg_185                   |  64|   0|   64|          0|
+    |tmp_3_reg_195                   |  64|   0|   64|          0|
+    |tmp_4_reg_200                   |  64|   0|   64|          0|
+    |tmp_i_reg_165                   |   1|   0|    1|          0|
+    |tmp_s_reg_180                   |  64|   0|   64|          0|
+    +--------------------------------+----+----+-----+-----------+
+    |Total                           | 409|   0|  409|          0|
+    +--------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------------------+-----+-----+------------+---------------------------------+--------------+
+|            RTL Ports            | Dir | Bits|  Protocol  |          Source Object          |    C Type    |
++---------------------------------+-----+-----+------------+---------------------------------+--------------+
+|ap_clk                           |  in |    1| ap_ctrl_hs |         getTotalCurrent         | return value |
+|ap_rst                           |  in |    1| ap_ctrl_hs |         getTotalCurrent         | return value |
+|ap_start                         |  in |    1| ap_ctrl_hs |         getTotalCurrent         | return value |
+|ap_done                          | out |    1| ap_ctrl_hs |         getTotalCurrent         | return value |
+|ap_idle                          | out |    1| ap_ctrl_hs |         getTotalCurrent         | return value |
+|ap_ready                         | out |    1| ap_ctrl_hs |         getTotalCurrent         | return value |
+|row_V                            |  in |    3|   ap_none  |              row_V              |    scalar    |
+|output_r_TDATA                   | out |   32|    axis    |             I_V_data            |    pointer   |
+|output_r_TVALID                  | out |    1|    axis    |           I_V_tlast_V           |    pointer   |
+|output_r_TREADY                  |  in |    1|    axis    |           I_V_tlast_V           |    pointer   |
+|output_r_TLAST                   | out |    1|    axis    |           I_V_tlast_V           |    pointer   |
+|RowOfBlocks_V_read               |  in |   26|   ap_none  |        RowOfBlocks_V_read       |    scalar    |
+|simConfig_rowsToSimulate_V_read  |  in |   27|   ap_none  | simConfig_rowsToSimulate_V_read |    scalar    |
+|F_temp_data_address0             | out |    2|  ap_memory |           F_temp_data           |     array    |
+|F_temp_data_ce0                  | out |    1|  ap_memory |           F_temp_data           |     array    |
+|F_temp_data_q0                   |  in |   32|  ap_memory |           F_temp_data           |     array    |
+|V_temp_data_address0             | out |    2|  ap_memory |           V_temp_data           |     array    |
+|V_temp_data_ce0                  | out |    1|  ap_memory |           V_temp_data           |     array    |
+|V_temp_data_q0                   |  in |   32|  ap_memory |           V_temp_data           |     array    |
++---------------------------------+-----+-----+------------+---------------------------------+--------------+
+

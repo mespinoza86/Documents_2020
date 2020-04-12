@@ -1,0 +1,34 @@
+In file included from /opt/vivado2018/Vivado/2018.3/include/etc/ap_private.h:119:0,
+                 from /opt/vivado2018/Vivado/2018.3/include/ap_common.h:641,
+                 from /opt/vivado2018/Vivado/2018.3/include/ap_int.h:54,
+                 from /home/marco/Documents/tesis/ww39_neuronal_new_IP/IP_2020_latest_Jan/modules/calc/../../Stream.h:13,
+                 from /home/marco/Documents/tesis/ww39_neuronal_new_IP/IP_2020_latest_Jan/modules/calc/calc.cpp:1:
+/opt/vivado2018/Vivado/2018.3/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/iomanip:462:65: error: ‘quoted’ function uses ‘auto’ type specifier without trailing return type
+     _CharT __delim = _CharT('"'), _CharT __escape = _CharT('\\'))
+                                                                 ^
+/opt/vivado2018/Vivado/2018.3/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/iomanip:462:65: note: deduced return type only available with -std=c++14 or -std=gnu++14
+/opt/vivado2018/Vivado/2018.3/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/iomanip:471:65: error: ‘quoted’ function uses ‘auto’ type specifier without trailing return type
+     _CharT __delim = _CharT('"'), _CharT __escape = _CharT('\\'))
+                                                                 ^
+/opt/vivado2018/Vivado/2018.3/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/iomanip:471:65: note: deduced return type only available with -std=c++14 or -std=gnu++14
+/opt/vivado2018/Vivado/2018.3/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/iomanip:481:65: error: ‘quoted’ function uses ‘auto’ type specifier without trailing return type
+     _CharT __delim = _CharT('"'), _CharT __escape = _CharT('\\'))
+                                                                 ^
+/opt/vivado2018/Vivado/2018.3/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/iomanip:481:65: note: deduced return type only available with -std=c++14 or -std=gnu++14
+In file included from /opt/vivado2018/Vivado/2018.3/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/deque:60:0,
+                 from /opt/vivado2018/Vivado/2018.3/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/queue:60,
+                 from /opt/vivado2018/Vivado/2018.3/include/hls_stream.h:79,
+                 from /home/marco/Documents/tesis/ww39_neuronal_new_IP/IP_2020_latest_Jan/modules/calc/../../Stream.h:8,
+                 from /home/marco/Documents/tesis/ww39_neuronal_new_IP/IP_2020_latest_Jan/modules/calc/calc.cpp:1:
+/opt/vivado2018/Vivado/2018.3/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_algobase.h: In instantiation of ‘constexpr const _Tp& std::max(const _Tp&, const _Tp&) [with _Tp = long unsigned int]’:
+/opt/vivado2018/Vivado/2018.3/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/deque.tcc:926:41:   required from ‘void std::deque<_Tp, _Alloc>::_M_reallocate_map(std::deque<_Tp, _Alloc>::size_type, bool) [with _Tp = dataPackage<float, 4>; _Alloc = std::allocator<dataPackage<float, 4> >; std::deque<_Tp, _Alloc>::size_type = long unsigned int]’
+/opt/vivado2018/Vivado/2018.3/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_deque.h:2116:21:   required from ‘void std::deque<_Tp, _Alloc>::_M_reserve_map_at_back(std::deque<_Tp, _Alloc>::size_type) [with _Tp = dataPackage<float, 4>; _Alloc = std::allocator<dataPackage<float, 4> >; std::deque<_Tp, _Alloc>::size_type = long unsigned int]’
+/opt/vivado2018/Vivado/2018.3/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/deque.tcc:470:24:   required from ‘void std::deque<_Tp, _Alloc>::_M_push_back_aux(_Args&& ...) [with _Args = {const dataPackage<float, 4>&}; _Tp = dataPackage<float, 4>; _Alloc = std::allocator<dataPackage<float, 4> >]’
+/opt/vivado2018/Vivado/2018.3/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_deque.h:1527:4:   required from ‘void std::deque<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = dataPackage<float, 4>; _Alloc = std::allocator<dataPackage<float, 4> >; std::deque<_Tp, _Alloc>::value_type = dataPackage<float, 4>]’
+/opt/vivado2018/Vivado/2018.3/include/hls_stream.h:228:9:   required from ‘void hls::stream<__STREAM_T__>::write(const __STREAM_T__&) [with __STREAM_T__ = dataPackage<float, 4>]’
+/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP_2020_latest_Jan/modules/calc/calc.cpp:18:9:   required from ‘void V_calculation(fixedDataType&, dataType&, dataType&, streamType&) [with dataType = dataPackage<float, 4>; streamType = hls::stream<dataPackage<float, 4> >; fixedDataType = dataPackage32<float>; int PackageDataQuantity = 4]’
+/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP_2020_latest_Jan/modules/calc/calc.cpp:45:80:   required from here
+/opt/vivado2018/Vivado/2018.3/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/bits/stl_algobase.h:227:5: error: body of constexpr function ‘constexpr const _Tp& std::max(const _Tp&, const _Tp&) [with _Tp = long unsigned int]’ not a return-statement
+     }
+     ^
+make: *** [obj/calc.cpp_pre.cpp.tb.o] Error 1

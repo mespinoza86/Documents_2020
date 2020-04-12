@@ -1,0 +1,347 @@
+
+
+================================================================
+== Vivado HLS Report for 'getTotalCurrent'
+================================================================
+* Date:           Sat Jan 11 14:24:34 2020
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        IP_latest_2020_Enero
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     5.844|        4.00|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |   21|   21|   21|   21|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 22
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / true
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+	9  / true
+9 --> 
+	10  / true
+10 --> 
+	11  / true
+11 --> 
+	12  / true
+12 --> 
+	13  / true
+13 --> 
+	14  / true
+14 --> 
+	15  / true
+15 --> 
+	16  / true
+16 --> 
+	17  / true
+17 --> 
+	18  / true
+18 --> 
+	19  / true
+19 --> 
+	20  / true
+20 --> 
+	21  / true
+21 --> 
+	22  / true
+22 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 2.32>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%row_V_read = call i3 @_ssdm_op_Read.ap_auto.i3(i3 %row_V)"   --->   Operation 23 'read' 'row_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%tmp = zext i3 %row_V_read to i64" [modules/I_calc/I_calc.cpp:43]   --->   Operation 24 'zext' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%F_temp_data_addr = getelementptr [4 x float]* %F_temp_data, i64 0, i64 %tmp" [modules/I_calc/I_calc.cpp:43]   --->   Operation 25 'getelementptr' 'F_temp_data_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [2/2] (2.32ns)   --->   "%F_temp_data_load = load float* %F_temp_data_addr, align 4" [modules/I_calc/I_calc.cpp:43]   --->   Operation 26 'load' 'F_temp_data_load' <Predicate = true> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 4> <RAM>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%V_temp_data_addr = getelementptr [4 x float]* %V_temp_data, i64 0, i64 %tmp" [modules/I_calc/I_calc.cpp:43]   --->   Operation 27 'getelementptr' 'V_temp_data_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [2/2] (2.32ns)   --->   "%V_temp_data_load = load float* %V_temp_data_addr, align 4" [modules/I_calc/I_calc.cpp:43]   --->   Operation 28 'load' 'V_temp_data_load' <Predicate = true> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 4> <RAM>
+ST_1 : Operation 29 [1/1] (1.13ns)   --->   "%tmp_i = icmp eq i3 %row_V_read, 3" [modules/I_calc/I_calc.cpp:34->modules/I_calc/I_calc.cpp:44]   --->   Operation 29 'icmp' 'tmp_i' <Predicate = true> <Delay = 1.13> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.46> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+
+State 2 <SV = 1> <Delay = 2.32>
+ST_2 : Operation 30 [1/2] (2.32ns)   --->   "%F_temp_data_load = load float* %F_temp_data_addr, align 4" [modules/I_calc/I_calc.cpp:43]   --->   Operation 30 'load' 'F_temp_data_load' <Predicate = true> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 4> <RAM>
+ST_2 : Operation 31 [1/2] (2.32ns)   --->   "%V_temp_data_load = load float* %V_temp_data_addr, align 4" [modules/I_calc/I_calc.cpp:43]   --->   Operation 31 'load' 'V_temp_data_load' <Predicate = true> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 4> <RAM>
+
+State 3 <SV = 2> <Delay = 5.54>
+ST_3 : Operation 32 [1/1] (5.54ns)   --->   "%tmp_s = fpext float %F_temp_data_load to double" [modules/I_calc/I_calc.cpp:43]   --->   Operation 32 'fpext' 'tmp_s' <Predicate = true> <Delay = 5.54> <Core = "Float2Double">   --->   Core 113 'Float2Double' <Latency = 0> <II = 1> <Delay = 5.54> <FuncUnit> <Opcode : 'fpext'> <InPorts = 1> <OutPorts = 1>
+ST_3 : Operation 33 [1/1] (5.54ns)   --->   "%tmp_2 = fpext float %V_temp_data_load to double" [modules/I_calc/I_calc.cpp:43]   --->   Operation 33 'fpext' 'tmp_2' <Predicate = true> <Delay = 5.54> <Core = "Float2Double">   --->   Core 113 'Float2Double' <Latency = 0> <II = 1> <Delay = 5.54> <FuncUnit> <Opcode : 'fpext'> <InPorts = 1> <OutPorts = 1>
+
+State 4 <SV = 3> <Delay = 5.39>
+ST_4 : Operation 34 [9/9] (5.39ns)   --->   "%tmp_1 = fmul double %tmp_s, 8.000000e-01" [modules/I_calc/I_calc.cpp:43]   --->   Operation 34 'dmul' 'tmp_1' <Predicate = true> <Delay = 5.39> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 8> <II = 1> <Delay = 5.39> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 35 [9/9] (5.39ns)   --->   "%tmp_3 = fmul double %tmp_2, 2.000000e-01" [modules/I_calc/I_calc.cpp:43]   --->   Operation 35 'dmul' 'tmp_3' <Predicate = true> <Delay = 5.39> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 8> <II = 1> <Delay = 5.39> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 5 <SV = 4> <Delay = 5.39>
+ST_5 : Operation 36 [8/9] (5.39ns)   --->   "%tmp_1 = fmul double %tmp_s, 8.000000e-01" [modules/I_calc/I_calc.cpp:43]   --->   Operation 36 'dmul' 'tmp_1' <Predicate = true> <Delay = 5.39> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 8> <II = 1> <Delay = 5.39> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 37 [8/9] (5.39ns)   --->   "%tmp_3 = fmul double %tmp_2, 2.000000e-01" [modules/I_calc/I_calc.cpp:43]   --->   Operation 37 'dmul' 'tmp_3' <Predicate = true> <Delay = 5.39> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 8> <II = 1> <Delay = 5.39> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 6 <SV = 5> <Delay = 5.39>
+ST_6 : Operation 38 [7/9] (5.39ns)   --->   "%tmp_1 = fmul double %tmp_s, 8.000000e-01" [modules/I_calc/I_calc.cpp:43]   --->   Operation 38 'dmul' 'tmp_1' <Predicate = true> <Delay = 5.39> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 8> <II = 1> <Delay = 5.39> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 39 [7/9] (5.39ns)   --->   "%tmp_3 = fmul double %tmp_2, 2.000000e-01" [modules/I_calc/I_calc.cpp:43]   --->   Operation 39 'dmul' 'tmp_3' <Predicate = true> <Delay = 5.39> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 8> <II = 1> <Delay = 5.39> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 7 <SV = 6> <Delay = 5.39>
+ST_7 : Operation 40 [6/9] (5.39ns)   --->   "%tmp_1 = fmul double %tmp_s, 8.000000e-01" [modules/I_calc/I_calc.cpp:43]   --->   Operation 40 'dmul' 'tmp_1' <Predicate = true> <Delay = 5.39> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 8> <II = 1> <Delay = 5.39> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 41 [6/9] (5.39ns)   --->   "%tmp_3 = fmul double %tmp_2, 2.000000e-01" [modules/I_calc/I_calc.cpp:43]   --->   Operation 41 'dmul' 'tmp_3' <Predicate = true> <Delay = 5.39> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 8> <II = 1> <Delay = 5.39> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 8 <SV = 7> <Delay = 5.39>
+ST_8 : Operation 42 [5/9] (5.39ns)   --->   "%tmp_1 = fmul double %tmp_s, 8.000000e-01" [modules/I_calc/I_calc.cpp:43]   --->   Operation 42 'dmul' 'tmp_1' <Predicate = true> <Delay = 5.39> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 8> <II = 1> <Delay = 5.39> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 43 [5/9] (5.39ns)   --->   "%tmp_3 = fmul double %tmp_2, 2.000000e-01" [modules/I_calc/I_calc.cpp:43]   --->   Operation 43 'dmul' 'tmp_3' <Predicate = true> <Delay = 5.39> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 8> <II = 1> <Delay = 5.39> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 9 <SV = 8> <Delay = 5.39>
+ST_9 : Operation 44 [4/9] (5.39ns)   --->   "%tmp_1 = fmul double %tmp_s, 8.000000e-01" [modules/I_calc/I_calc.cpp:43]   --->   Operation 44 'dmul' 'tmp_1' <Predicate = true> <Delay = 5.39> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 8> <II = 1> <Delay = 5.39> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 45 [4/9] (5.39ns)   --->   "%tmp_3 = fmul double %tmp_2, 2.000000e-01" [modules/I_calc/I_calc.cpp:43]   --->   Operation 45 'dmul' 'tmp_3' <Predicate = true> <Delay = 5.39> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 8> <II = 1> <Delay = 5.39> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 10 <SV = 9> <Delay = 5.39>
+ST_10 : Operation 46 [3/9] (5.39ns)   --->   "%tmp_1 = fmul double %tmp_s, 8.000000e-01" [modules/I_calc/I_calc.cpp:43]   --->   Operation 46 'dmul' 'tmp_1' <Predicate = true> <Delay = 5.39> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 8> <II = 1> <Delay = 5.39> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 47 [3/9] (5.39ns)   --->   "%tmp_3 = fmul double %tmp_2, 2.000000e-01" [modules/I_calc/I_calc.cpp:43]   --->   Operation 47 'dmul' 'tmp_3' <Predicate = true> <Delay = 5.39> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 8> <II = 1> <Delay = 5.39> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 11 <SV = 10> <Delay = 5.39>
+ST_11 : Operation 48 [2/9] (5.39ns)   --->   "%tmp_1 = fmul double %tmp_s, 8.000000e-01" [modules/I_calc/I_calc.cpp:43]   --->   Operation 48 'dmul' 'tmp_1' <Predicate = true> <Delay = 5.39> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 8> <II = 1> <Delay = 5.39> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 49 [2/9] (5.39ns)   --->   "%tmp_3 = fmul double %tmp_2, 2.000000e-01" [modules/I_calc/I_calc.cpp:43]   --->   Operation 49 'dmul' 'tmp_3' <Predicate = true> <Delay = 5.39> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 8> <II = 1> <Delay = 5.39> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 12 <SV = 11> <Delay = 5.39>
+ST_12 : Operation 50 [1/9] (5.39ns)   --->   "%tmp_1 = fmul double %tmp_s, 8.000000e-01" [modules/I_calc/I_calc.cpp:43]   --->   Operation 50 'dmul' 'tmp_1' <Predicate = true> <Delay = 5.39> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 8> <II = 1> <Delay = 5.39> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 51 [1/9] (5.39ns)   --->   "%tmp_3 = fmul double %tmp_2, 2.000000e-01" [modules/I_calc/I_calc.cpp:43]   --->   Operation 51 'dmul' 'tmp_3' <Predicate = true> <Delay = 5.39> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 8> <II = 1> <Delay = 5.39> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 13 <SV = 12> <Delay = 5.76>
+ST_13 : Operation 52 [8/8] (5.76ns)   --->   "%tmp_4 = fadd double %tmp_1, %tmp_3" [modules/I_calc/I_calc.cpp:43]   --->   Operation 52 'dadd' 'tmp_4' <Predicate = true> <Delay = 5.76> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 7> <II = 1> <Delay = 5.76> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 14 <SV = 13> <Delay = 5.76>
+ST_14 : Operation 53 [7/8] (5.76ns)   --->   "%tmp_4 = fadd double %tmp_1, %tmp_3" [modules/I_calc/I_calc.cpp:43]   --->   Operation 53 'dadd' 'tmp_4' <Predicate = true> <Delay = 5.76> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 7> <II = 1> <Delay = 5.76> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 15 <SV = 14> <Delay = 5.76>
+ST_15 : Operation 54 [6/8] (5.76ns)   --->   "%tmp_4 = fadd double %tmp_1, %tmp_3" [modules/I_calc/I_calc.cpp:43]   --->   Operation 54 'dadd' 'tmp_4' <Predicate = true> <Delay = 5.76> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 7> <II = 1> <Delay = 5.76> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 16 <SV = 15> <Delay = 5.76>
+ST_16 : Operation 55 [5/8] (5.76ns)   --->   "%tmp_4 = fadd double %tmp_1, %tmp_3" [modules/I_calc/I_calc.cpp:43]   --->   Operation 55 'dadd' 'tmp_4' <Predicate = true> <Delay = 5.76> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 7> <II = 1> <Delay = 5.76> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 17 <SV = 16> <Delay = 5.76>
+ST_17 : Operation 56 [4/8] (5.76ns)   --->   "%tmp_4 = fadd double %tmp_1, %tmp_3" [modules/I_calc/I_calc.cpp:43]   --->   Operation 56 'dadd' 'tmp_4' <Predicate = true> <Delay = 5.76> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 7> <II = 1> <Delay = 5.76> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 18 <SV = 17> <Delay = 5.76>
+ST_18 : Operation 57 [3/8] (5.76ns)   --->   "%tmp_4 = fadd double %tmp_1, %tmp_3" [modules/I_calc/I_calc.cpp:43]   --->   Operation 57 'dadd' 'tmp_4' <Predicate = true> <Delay = 5.76> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 7> <II = 1> <Delay = 5.76> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 19 <SV = 18> <Delay = 5.76>
+ST_19 : Operation 58 [2/8] (5.76ns)   --->   "%tmp_4 = fadd double %tmp_1, %tmp_3" [modules/I_calc/I_calc.cpp:43]   --->   Operation 58 'dadd' 'tmp_4' <Predicate = true> <Delay = 5.76> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 7> <II = 1> <Delay = 5.76> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 20 <SV = 19> <Delay = 5.76>
+ST_20 : Operation 59 [1/8] (5.76ns)   --->   "%tmp_4 = fadd double %tmp_1, %tmp_3" [modules/I_calc/I_calc.cpp:43]   --->   Operation 59 'dadd' 'tmp_4' <Predicate = true> <Delay = 5.76> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 7> <II = 1> <Delay = 5.76> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 21 <SV = 20> <Delay = 5.20>
+ST_21 : Operation 60 [2/2] (5.20ns)   --->   "%tmp_data = fptrunc double %tmp_4 to float" [modules/I_calc/I_calc.cpp:43]   --->   Operation 60 'fptrunc' 'tmp_data' <Predicate = true> <Delay = 5.20> <Core = "Double2Float">   --->   Core 122 'Double2Float' <Latency = 1> <II = 1> <Delay = 5.20> <FuncUnit> <Opcode : 'fptrunc'> <InPorts = 1> <OutPorts = 1>
+
+State 22 <SV = 21> <Delay = 5.84>
+ST_22 : Operation 61 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %I_V_data, i1* %I_V_tlast_V, [5 x i8]* @p_str918, i32 0, i32 0, [5 x i8]* @p_str10, i32 0, i32 0, [1 x i8]* @p_str211, [1 x i8]* @p_str211, [1 x i8]* @p_str211, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str211, [1 x i8]* @p_str211) nounwind"   --->   Operation 61 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 62 [1/1] (0.00ns)   --->   "%simConfig_rowsToSimu = call i27 @_ssdm_op_Read.ap_auto.i27(i27 %simConfig_rowsToSimulate_V_read)"   --->   Operation 62 'read' 'simConfig_rowsToSimu' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 63 [1/1] (0.00ns)   --->   "%RowOfBlocks_V_read_1 = call i26 @_ssdm_op_Read.ap_auto.i26(i26 %RowOfBlocks_V_read)"   --->   Operation 63 'read' 'RowOfBlocks_V_read_1' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 64 [1/2] (5.20ns)   --->   "%tmp_data = fptrunc double %tmp_4 to float" [modules/I_calc/I_calc.cpp:43]   --->   Operation 64 'fptrunc' 'tmp_data' <Predicate = true> <Delay = 5.20> <Core = "Double2Float">   --->   Core 122 'Double2Float' <Latency = 1> <II = 1> <Delay = 5.20> <FuncUnit> <Opcode : 'fptrunc'> <InPorts = 1> <OutPorts = 1>
+ST_22 : Operation 65 [1/1] (0.00ns)   --->   "%lhs_V_i_cast = sext i27 %simConfig_rowsToSimu to i28" [modules/I_calc/I_calc.cpp:35->modules/I_calc/I_calc.cpp:44]   --->   Operation 65 'sext' 'lhs_V_i_cast' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 66 [1/1] (2.40ns)   --->   "%ret_V = add i28 %lhs_V_i_cast, -1" [modules/I_calc/I_calc.cpp:35->modules/I_calc/I_calc.cpp:44]   --->   Operation 66 'add' 'ret_V' <Predicate = true> <Delay = 2.40> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.40> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_22 : Operation 67 [1/1] (0.00ns)   --->   "%tmp_i_cast = zext i26 %RowOfBlocks_V_read_1 to i28" [modules/I_calc/I_calc.cpp:35->modules/I_calc/I_calc.cpp:44]   --->   Operation 67 'zext' 'tmp_i_cast' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 68 [1/1] (2.46ns)   --->   "%tmp_10_i = icmp eq i28 %tmp_i_cast, %ret_V" [modules/I_calc/I_calc.cpp:35->modules/I_calc/I_calc.cpp:44]   --->   Operation 68 'icmp' 'tmp_10_i' <Predicate = true> <Delay = 2.46> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.46> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_22 : Operation 69 [1/1] (0.97ns)   --->   "%tmp_tlast_V = and i1 %tmp_i, %tmp_10_i" [modules/I_calc/I_calc.cpp:34->modules/I_calc/I_calc.cpp:44]   --->   Operation 69 'and' 'tmp_tlast_V' <Predicate = true> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_22 : Operation 70 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.floatP.i1P(float* %I_V_data, i1* %I_V_tlast_V, float %tmp_data, i1 %tmp_tlast_V)" [modules/I_calc/I_calc.cpp:45]   --->   Operation 70 'write' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_22 : Operation 71 [1/1] (0.00ns)   --->   "ret void"   --->   Operation 71 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 4ns.
+
+ <State 1>: 2.32ns
+The critical path consists of the following:
+	wire read on port 'row_V' [11]  (0 ns)
+	'getelementptr' operation ('F_temp_data_addr', modules/I_calc/I_calc.cpp:43) [13]  (0 ns)
+	'load' operation ('F_temp_data_load', modules/I_calc/I_calc.cpp:43) on array 'F_temp_data' [14]  (2.32 ns)
+
+ <State 2>: 2.32ns
+The critical path consists of the following:
+	'load' operation ('F_temp_data_load', modules/I_calc/I_calc.cpp:43) on array 'F_temp_data' [14]  (2.32 ns)
+
+ <State 3>: 5.55ns
+The critical path consists of the following:
+	'fpext' operation ('tmp_s', modules/I_calc/I_calc.cpp:43) [15]  (5.55 ns)
+
+ <State 4>: 5.39ns
+The critical path consists of the following:
+	'dmul' operation ('tmp_1', modules/I_calc/I_calc.cpp:43) [16]  (5.39 ns)
+
+ <State 5>: 5.39ns
+The critical path consists of the following:
+	'dmul' operation ('tmp_1', modules/I_calc/I_calc.cpp:43) [16]  (5.39 ns)
+
+ <State 6>: 5.39ns
+The critical path consists of the following:
+	'dmul' operation ('tmp_1', modules/I_calc/I_calc.cpp:43) [16]  (5.39 ns)
+
+ <State 7>: 5.39ns
+The critical path consists of the following:
+	'dmul' operation ('tmp_1', modules/I_calc/I_calc.cpp:43) [16]  (5.39 ns)
+
+ <State 8>: 5.39ns
+The critical path consists of the following:
+	'dmul' operation ('tmp_1', modules/I_calc/I_calc.cpp:43) [16]  (5.39 ns)
+
+ <State 9>: 5.39ns
+The critical path consists of the following:
+	'dmul' operation ('tmp_1', modules/I_calc/I_calc.cpp:43) [16]  (5.39 ns)
+
+ <State 10>: 5.39ns
+The critical path consists of the following:
+	'dmul' operation ('tmp_1', modules/I_calc/I_calc.cpp:43) [16]  (5.39 ns)
+
+ <State 11>: 5.39ns
+The critical path consists of the following:
+	'dmul' operation ('tmp_1', modules/I_calc/I_calc.cpp:43) [16]  (5.39 ns)
+
+ <State 12>: 5.39ns
+The critical path consists of the following:
+	'dmul' operation ('tmp_1', modules/I_calc/I_calc.cpp:43) [16]  (5.39 ns)
+
+ <State 13>: 5.76ns
+The critical path consists of the following:
+	'dadd' operation ('tmp_4', modules/I_calc/I_calc.cpp:43) [21]  (5.76 ns)
+
+ <State 14>: 5.76ns
+The critical path consists of the following:
+	'dadd' operation ('tmp_4', modules/I_calc/I_calc.cpp:43) [21]  (5.76 ns)
+
+ <State 15>: 5.76ns
+The critical path consists of the following:
+	'dadd' operation ('tmp_4', modules/I_calc/I_calc.cpp:43) [21]  (5.76 ns)
+
+ <State 16>: 5.76ns
+The critical path consists of the following:
+	'dadd' operation ('tmp_4', modules/I_calc/I_calc.cpp:43) [21]  (5.76 ns)
+
+ <State 17>: 5.76ns
+The critical path consists of the following:
+	'dadd' operation ('tmp_4', modules/I_calc/I_calc.cpp:43) [21]  (5.76 ns)
+
+ <State 18>: 5.76ns
+The critical path consists of the following:
+	'dadd' operation ('tmp_4', modules/I_calc/I_calc.cpp:43) [21]  (5.76 ns)
+
+ <State 19>: 5.76ns
+The critical path consists of the following:
+	'dadd' operation ('tmp_4', modules/I_calc/I_calc.cpp:43) [21]  (5.76 ns)
+
+ <State 20>: 5.76ns
+The critical path consists of the following:
+	'dadd' operation ('tmp_4', modules/I_calc/I_calc.cpp:43) [21]  (5.76 ns)
+
+ <State 21>: 5.2ns
+The critical path consists of the following:
+	'fptrunc' operation ('tmp.data', modules/I_calc/I_calc.cpp:43) [22]  (5.2 ns)
+
+ <State 22>: 5.84ns
+The critical path consists of the following:
+	wire read on port 'simConfig_rowsToSimulate_V_read' [9]  (0 ns)
+	'add' operation ('ret.V', modules/I_calc/I_calc.cpp:35->modules/I_calc/I_calc.cpp:44) [25]  (2.4 ns)
+	'icmp' operation ('tmp_10_i', modules/I_calc/I_calc.cpp:35->modules/I_calc/I_calc.cpp:44) [27]  (2.46 ns)
+	'and' operation ('I_calc.tlast.V', modules/I_calc/I_calc.cpp:34->modules/I_calc/I_calc.cpp:44) [28]  (0.978 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,254 @@
+
+
+================================================================
+== Vivado HLS Report for 'getConductances'
+================================================================
+* Date:           Thu Jan  9 23:44:21 2020
+
+* Version:        2016.4 (Build 1756540 on Mon Jan 23 19:31:01 MST 2017)
+* Project:        solution
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      3.00|        4.00|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+----------+-----+----------+---------+
+    |     Latency    |    Interval    | Pipeline|
+    | min |    max   | min |    max   |   Type  |
+    +-----+----------+-----+----------+---------+
+    |    5|  49984999|    5|  49984999|   none  |
+    +-----+----------+-----+----------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------+-----+----------+-----------+-----------+-----------+-----------+----------+
+        |             |     Latency    | Iteration |  Initiation Interval  |    Trip   |          |
+        |  Loop Name  | min |    max   |  Latency  |  achieved |   target  |   Count   | Pipelined|
+        +-------------+-----+----------+-----------+-----------+-----------+-----------+----------+
+        |- Loop 1     |    4|  49984998| 4 ~ 20002 |          -|          -|  1 ~ 2499 |    no    |
+        | + Loop 1.1  |    2|     20000|          2|          -|          -| 1 ~ 10000 |    no    |
+        +-------------+-----+----------+-----------+-----------+-----------+-----------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 4
+* Pipeline: 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / (tmp_i)
+3 --> 
+	4  / (tmp_28_i)
+	2  / (!tmp_28_i)
+4 --> 
+	3  / true
+* FSM state operations: 
+
+ <State 1>: 1.57ns
+ST_1: simConfig_BLOCK_NUMB (8)  [1/1] 0.00ns
+entry:0  %simConfig_BLOCK_NUMB = call i27 @_ssdm_op_Read.ap_auto.i27(i27 %simConfig_BLOCK_NUMBERS_V_read)
+
+ST_1: simConfig_rowsToSimu (9)  [1/1] 0.00ns
+entry:1  %simConfig_rowsToSimu = call i27 @_ssdm_op_Read.ap_auto.i27(i27 %simConfig_rowsToSimulate_V_read)
+
+ST_1: StgValue_7 (10)  [1/1] 0.00ns
+entry:2  call void (...)* @_ssdm_op_SpecInterface(float* @C_data_V_data_0, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_8 (11)  [1/1] 0.00ns
+entry:3  call void (...)* @_ssdm_op_SpecInterface(float* @C_data_V_data_2, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_9 (12)  [1/1] 0.00ns
+entry:4  call void (...)* @_ssdm_op_SpecInterface(float* @C_data_V_data_1, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_10 (13)  [1/1] 0.00ns
+entry:5  call void (...)* @_ssdm_op_SpecInterface(float* @C_data_V_data_3, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_11 (14)  [1/1] 0.00ns
+entry:6  call void (...)* @_ssdm_op_SpecInterface(i64* %input_V_data, [5 x i8]* @p_str993, i32 0, i32 0, [5 x i8]* @p_str1094, i32 0, i32 0, [1 x i8]* @p_str286, [1 x i8]* @p_str286, [1 x i8]* @p_str286, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str286, [1 x i8]* @p_str286) nounwind
+
+ST_1: r_V (15)  [1/1] 0.00ns  loc: modules/blockControl/blockControl.cpp:45
+entry:7  %r_V = call i31 @_ssdm_op_BitConcatenate.i31.i27.i4(i27 %simConfig_BLOCK_NUMB, i4 0)
+
+ST_1: StgValue_13 (16)  [1/1] 1.57ns  loc: modules/blockControl/blockControl.cpp:42
+entry:8  br label %.preheader111.i
+
+
+ <State 2>: 2.44ns
+ST_2: p_i (18)  [1/1] 0.00ns
+.preheader111.i:0  %p_i = phi i12 [ 0, %entry ], [ %RowOfBlocks_V, %.preheader111.i.loopexit ]
+
+ST_2: p_cast_i (19)  [1/1] 0.00ns  loc: modules/blockControl/blockControl.cpp:42
+.preheader111.i:1  %p_cast_i = zext i12 %p_i to i27
+
+ST_2: tmp_i (20)  [1/1] 2.44ns  loc: modules/blockControl/blockControl.cpp:42
+.preheader111.i:2  %tmp_i = icmp slt i27 %p_cast_i, %simConfig_rowsToSimu
+
+ST_2: StgValue_17 (21)  [1/1] 0.00ns
+.preheader111.i:3  call void (...)* @_ssdm_op_SpecLoopTripCount(i64 1, i64 2499, i64 1250)
+
+ST_2: RowOfBlocks_V (22)  [1/1] 1.84ns  loc: modules/blockControl/blockControl.cpp:42
+.preheader111.i:4  %RowOfBlocks_V = add i12 %p_i, 1
+
+ST_2: StgValue_19 (23)  [1/1] 0.00ns  loc: modules/blockControl/blockControl.cpp:42
+.preheader111.i:5  br i1 %tmp_i, label %.preheader.i.preheader, label %"getConductances<dataPackage<float, 2>, dataPackage<float, 4>, 27, 4>.exit"
+
+ST_2: StgValue_20 (25)  [1/1] 1.57ns  loc: modules/blockControl/blockControl.cpp:46
+.preheader.i.preheader:0  br label %.preheader.i
+
+ST_2: StgValue_21 (51)  [1/1] 0.00ns
+getConductances<dataPackage<float, 2>, dataPackage<float, 4>, 27, 4>.exit:0  ret void
+
+
+ <State 3>: 2.50ns
+ST_3: p_4_i (27)  [1/1] 0.00ns
+.preheader.i:0  %p_4_i = phi i27 [ %i_V, %0 ], [ 0, %.preheader.i.preheader ]
+
+ST_3: tmp_27_cast_cast_i (28)  [1/1] 0.00ns  loc: modules/blockControl/blockControl.cpp:46
+.preheader.i:1  %tmp_27_cast_cast_i = sext i27 %p_4_i to i31
+
+ST_3: tmp_28_i (29)  [1/1] 2.50ns  loc: modules/blockControl/blockControl.cpp:46
+.preheader.i:2  %tmp_28_i = icmp slt i31 %tmp_27_cast_cast_i, %r_V
+
+ST_3: StgValue_25 (30)  [1/1] 0.00ns  loc: modules/blockControl/blockControl.cpp:46
+.preheader.i:3  br i1 %tmp_28_i, label %0, label %.preheader111.i.loopexit
+
+ST_3: tmp_data (34)  [1/1] 0.00ns
+:2  %tmp_data = call i64 @_ssdm_op_Read.axis.volatile.i64P(i64* %input_V_data)
+
+ST_3: tmp (35)  [1/1] 0.00ns  loc: modules/blockControl/blockControl.cpp:49
+:3  %tmp = trunc i64 %tmp_data to i32
+
+ST_3: tmp_12_i (37)  [1/1] 0.00ns  loc: modules/blockControl/blockControl.cpp:49
+:5  %tmp_12_i = call i32 @_ssdm_op_PartSelect.i32.i64.i32.i32(i64 %tmp_data, i32 32, i32 63)
+
+ST_3: i_V (46)  [1/1] 2.32ns  loc: modules/blockControl/blockControl.cpp:46
+:14  %i_V = add i27 4, %p_4_i
+
+ST_3: StgValue_30 (49)  [1/1] 0.00ns
+.preheader111.i.loopexit:0  br label %.preheader111.i
+
+
+ <State 4>: 3.00ns
+ST_4: tmp_i_21 (32)  [1/1] 0.00ns  loc: modules/blockControl/blockControl.cpp:46
+:0  %tmp_i_21 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str611)
+
+ST_4: StgValue_32 (33)  [1/1] 0.00ns  loc: modules/blockControl/blockControl.cpp:47
+:1  call void (...)* @_ssdm_op_SpecLoopTripCount(i32 1, i32 10000, i32 0, [1 x i8]* @p_str49) nounwind
+
+ST_4: tmp_data_0 (36)  [1/1] 0.00ns  loc: modules/blockControl/blockControl.cpp:49
+:4  %tmp_data_0 = bitcast i32 %tmp to float
+
+ST_4: tmp_data_1 (38)  [1/1] 0.00ns  loc: modules/blockControl/blockControl.cpp:49
+:6  %tmp_data_1 = bitcast i32 %tmp_12_i to float
+
+ST_4: tmp_data_5 (39)  [1/1] 0.00ns
+:7  %tmp_data_5 = call i64 @_ssdm_op_Read.axis.volatile.i64P(i64* %input_V_data)
+
+ST_4: tmp_2 (40)  [1/1] 0.00ns  loc: modules/blockControl/blockControl.cpp:53
+:8  %tmp_2 = trunc i64 %tmp_data_5 to i32
+
+ST_4: tmp_data_2 (41)  [1/1] 0.00ns  loc: modules/blockControl/blockControl.cpp:53
+:9  %tmp_data_2 = bitcast i32 %tmp_2 to float
+
+ST_4: tmp_16_i (42)  [1/1] 0.00ns  loc: modules/blockControl/blockControl.cpp:53
+:10  %tmp_16_i = call i32 @_ssdm_op_PartSelect.i32.i64.i32.i32(i64 %tmp_data_5, i32 32, i32 63)
+
+ST_4: tmp_data_3 (43)  [1/1] 0.00ns  loc: modules/blockControl/blockControl.cpp:53
+:11  %tmp_data_3 = bitcast i32 %tmp_16_i to float
+
+ST_4: StgValue_40 (44)  [1/1] 3.00ns  loc: modules/blockControl/blockControl.cpp:56
+:12  call void @_ssdm_op_Write.ap_fifo.volatile.floatP.floatP.floatP.floatP(float* @C_data_V_data_0, float* @C_data_V_data_1, float* @C_data_V_data_2, float* @C_data_V_data_3, float %tmp_data_0, float %tmp_data_1, float %tmp_data_2, float %tmp_data_3)
+
+ST_4: empty (45)  [1/1] 0.00ns  loc: modules/blockControl/blockControl.cpp:57
+:13  %empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str611, i32 %tmp_i_21)
+
+ST_4: StgValue_42 (47)  [1/1] 0.00ns  loc: modules/blockControl/blockControl.cpp:46
+:15  br label %.preheader.i
+
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 4ns.
+
+ <State 1>: 1.57ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('RowOfBlocks.V') with incoming values : ('RowOfBlocks.V', modules/blockControl/blockControl.cpp:42) [18]  (1.57 ns)
+
+ <State 2>: 2.44ns
+The critical path consists of the following:
+	'phi' operation ('RowOfBlocks.V') with incoming values : ('RowOfBlocks.V', modules/blockControl/blockControl.cpp:42) [18]  (0 ns)
+	'icmp' operation ('tmp_i', modules/blockControl/blockControl.cpp:42) [20]  (2.44 ns)
+
+ <State 3>: 2.5ns
+The critical path consists of the following:
+	'phi' operation ('i.V') with incoming values : ('i.V', modules/blockControl/blockControl.cpp:46) [27]  (0 ns)
+	'icmp' operation ('tmp_28_i', modules/blockControl/blockControl.cpp:46) [29]  (2.5 ns)
+
+ <State 4>: 3ns
+The critical path consists of the following:
+	fifo write on port 'C_data_V_data_0' (modules/blockControl/blockControl.cpp:56) [44]  (3 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

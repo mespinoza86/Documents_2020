@@ -1,0 +1,159 @@
+
+
+================================================================
+== Vivado HLS Report for 'blockControl'
+================================================================
+* Date:           Sat Jan 11 14:24:31 2020
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        IP_latest_2020_Enero
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     6.000|        4.00|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+----------+-----+----------+---------+
+    |     Latency    |    Interval    | Pipeline|
+    | min |    max   | min |    max   |   Type  |
+    +-----+----------+-----+----------+---------+
+    |   11|  49990003|   11|  49990003|   none  |
+    +-----+----------+-----+----------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / true
+4 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 6.00>
+ST_1 : Operation 5 [1/1] (3.00ns)   --->   "%V_SIZE_read = call i32 @_ssdm_op_Read.ap_fifo.i32P(i32* %V_SIZE)"   --->   Operation 5 'read' 'V_SIZE_read' <Predicate = true> <Delay = 3.00> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 27> <Depth = 2> <FIFO>
+ST_1 : Operation 6 [2/2] (3.00ns)   --->   "call fastcc void @getVoltages(i64* %input_V_data, i32 %V_SIZE_read)"   --->   Operation 6 'call' <Predicate = true> <Delay = 3.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 7 [1/1] (3.00ns)   --->   "%simConfig_rowsToSimu = call i27 @_ssdm_op_Read.ap_fifo.i27P(i27* %simConfig_rowsToSimulate_V)" [modules/blockControl/blockControl.cpp:67]   --->   Operation 7 'read' 'simConfig_rowsToSimu' <Predicate = true> <Delay = 3.00> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 27> <Depth = 2> <FIFO>
+ST_1 : Operation 8 [1/1] (3.00ns)   --->   "%simConfig_BLOCK_NUMB = call i27 @_ssdm_op_Read.ap_fifo.i27P(i27* %simConfig_BLOCK_NUMBERS_V)" [modules/blockControl/blockControl.cpp:67]   --->   Operation 8 'read' 'simConfig_BLOCK_NUMB' <Predicate = true> <Delay = 3.00> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 27> <Depth = 2> <FIFO>
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 9 [1/2] (0.00ns)   --->   "call fastcc void @getVoltages(i64* %input_V_data, i32 %V_SIZE_read)"   --->   Operation 9 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 3.00>
+ST_3 : Operation 10 [2/2] (3.00ns)   --->   "call fastcc void @getConductances(i64* %input_V_data, i27 %simConfig_rowsToSimu, i27 %simConfig_BLOCK_NUMB)" [modules/blockControl/blockControl.cpp:67]   --->   Operation 10 'call' <Predicate = true> <Delay = 3.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 11 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i64* %input_V_data, [5 x i8]* @p_str918, i32 0, i32 0, [5 x i8]* @p_str10, i32 0, i32 0, [1 x i8]* @p_str211, [1 x i8]* @p_str211, [1 x i8]* @p_str211, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str211, [1 x i8]* @p_str211) nounwind"   --->   Operation 11 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 12 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* @C_data_V_data_0, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 12 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 13 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* @C_data_V_data_1, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 13 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 14 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* @C_data_V_data_2, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 14 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 15 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* @C_data_V_data_3, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 15 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 16 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* @V_data_V_data_0, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 16 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 17 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* @V_data_V_data_1, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 17 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 18 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* @V_data_V_data_2, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 18 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 19 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* @V_data_V_data_3, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 19 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 20 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %V_SIZE, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [11 x i8]* @ScalarProp_str)"   --->   Operation 20 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 21 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i27* %simConfig_rowsToSimulate_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [11 x i8]* @ScalarProp_str)"   --->   Operation 21 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 22 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i27* %simConfig_BLOCK_NUMBERS_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [11 x i8]* @ScalarProp_str)"   --->   Operation 22 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 23 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* @C_data_V_data_0, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 23 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 24 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* @C_data_V_data_1, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 24 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 25 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* @C_data_V_data_2, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 25 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 26 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* @C_data_V_data_3, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 26 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 27 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* @V_data_V_data_0, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 27 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 28 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* @V_data_V_data_1, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 28 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 29 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* @V_data_V_data_2, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 29 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 30 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* @V_data_V_data_3, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 30 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 31 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i64* %input_V_data, [5 x i8]* @p_str918, i32 0, i32 0, [5 x i8]* @p_str10, i32 0, i32 0, [1 x i8]* @p_str211, [1 x i8]* @p_str211, [1 x i8]* @p_str211, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str211, [1 x i8]* @p_str211) nounwind"   --->   Operation 31 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 32 [1/2] (0.00ns)   --->   "call fastcc void @getConductances(i64* %input_V_data, i27 %simConfig_rowsToSimu, i27 %simConfig_BLOCK_NUMB)" [modules/blockControl/blockControl.cpp:67]   --->   Operation 32 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_4 : Operation 33 [1/1] (0.00ns)   --->   "ret void"   --->   Operation 33 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 4ns.
+
+ <State 1>: 6ns
+The critical path consists of the following:
+	fifo read on port 'V_SIZE' [25]  (3 ns)
+	'call' operation to 'getVoltages' [35]  (3 ns)
+
+ <State 2>: 0ns
+The critical path consists of the following:
+
+ <State 3>: 3ns
+The critical path consists of the following:
+	'call' operation (modules/blockControl/blockControl.cpp:67) to 'getConductances' [38]  (3 ns)
+
+ <State 4>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

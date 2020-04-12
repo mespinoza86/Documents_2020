@@ -1,0 +1,7 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.sdk/FSBL/Debug/FSBL.elf
+	/home/marco/Documents/2020/tesis/buildroot_network_newversion_release_11_2019/hw_vivado/IP/hardware_for_IP/hardware_for_IP.runs/impl_1/design_1_wrapper.bit
+	/home/marco/Documents/2020/tesis/buildroot_network_newversion_release_11_2019/buildroot-2019.11/output/images/u-boot.elf
+}

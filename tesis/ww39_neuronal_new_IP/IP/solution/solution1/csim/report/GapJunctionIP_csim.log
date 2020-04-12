@@ -1,0 +1,49 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../test/StreamTest.cpp in debug mode
+csim.mk:73: recipe for target 'obj/StreamTest.o' failed
+../../../../test/StreamTest.cpp: In function ‘void Simulate_SW(float*, float*, hls::stream<float>&)’:
+../../../../test/StreamTest.cpp:22:18: error: ‘V_SIZE’ was not declared in this scope
+../../../../test/StreamTest.cpp: In function ‘void Generate_Data(float*, float*)’:
+../../../../test/StreamTest.cpp:41:18: error: ‘V_SIZE’ was not declared in this scope
+../../../../test/StreamTest.cpp:44:22: error: ‘V_SIZE’ was not declared in this scope
+../../../../test/StreamTest.cpp: At global scope:
+../../../../test/StreamTest.cpp:50:68: error: ‘data_t’ was not declared in this scope
+../../../../test/StreamTest.cpp:50:74: error: template argument 1 is invalid
+../../../../test/StreamTest.cpp: In function ‘void Check_Results(hls::stream<float>&, int&)’:
+../../../../test/StreamTest.cpp:56:31: error: request for member ‘read’ in ‘output_Hardware’, which is of non-class type ‘int’
+../../../../test/StreamTest.cpp: At global scope:
+../../../../test/StreamTest.cpp:74:9: error: ‘V_SIZE’ was not declared in this scope
+../../../../test/StreamTest.cpp:75:9: error: ‘V_SIZE’ was not declared in this scope
+../../../../test/StreamTest.cpp:75:18: error: ‘V_SIZE’ was not declared in this scope
+../../../../test/StreamTest.cpp:77:13: error: ‘data_t’ was not declared in this scope
+../../../../test/StreamTest.cpp:77:19: error: template argument 1 is invalid
+../../../../test/StreamTest.cpp:77:26: error: invalid type in declaration before ‘(’ token
+../../../../test/StreamTest.cpp:77:34: error: invalid conversion from ‘const char*’ to ‘int’ [-fpermissive]
+../../../../test/StreamTest.cpp:78:10: error: ‘V_SIZE’ was not declared in this scope
+../../../../test/StreamTest.cpp:79:1: error: ‘stream’ does not name a type
+../../../../test/StreamTest.cpp:80:1: error: ‘stream’ does not name a type
+../../../../test/StreamTest.cpp: In function ‘int main()’:
+../../../../test/StreamTest.cpp:91:2: error: ‘data_t’ was not declared in this scope
+../../../../test/StreamTest.cpp:91:9: error: expected ‘;’ before ‘in’
+../../../../test/StreamTest.cpp:130:8: error: expected ‘;’ before ‘voltage’
+../../../../test/StreamTest.cpp:131:8: error: expected ‘;’ before ‘conductance’
+../../../../test/StreamTest.cpp:136:16: error: ‘C’ was not declared in this scope
+../../../../test/StreamTest.cpp:136:18: error: ‘V’ was not declared in this scope
+../../../../test/StreamTest.cpp:141:23: error: ‘V_SIZE’ was not declared in this scope
+../../../../test/StreamTest.cpp:159:8: error: ‘voltage’ was not declared in this scope
+../../../../test/StreamTest.cpp:162:14: error: request for member ‘write’ in ‘input’, which is of non-class type ‘int’
+../../../../test/StreamTest.cpp:167:8: error: ‘voltage’ was not declared in this scope
+../../../../test/StreamTest.cpp:170:14: error: request for member ‘write’ in ‘input’, which is of non-class type ‘int’
+../../../../test/StreamTest.cpp:194:9: error: ‘conductance’ was not declared in this scope
+../../../../test/StreamTest.cpp:197:15: error: request for member ‘write’ in ‘input’, which is of non-class type ‘int’
+../../../../test/StreamTest.cpp:200:9: error: ‘conductance’ was not declared in this scope
+../../../../test/StreamTest.cpp:203:15: error: request for member ‘write’ in ‘input’, which is of non-class type ‘int’
+../../../../test/StreamTest.cpp:216:25: error: ‘output_Hardware’ was not declared in this scope
+../../../../test/StreamTest.cpp:216:45: error: ‘Simulate_HW’ was not declared in this scope
+../../../../test/StreamTest.cpp:218:20: error: ‘output_Software’ was not declared in this scope
+../../../../test/StreamTest.cpp:229:18: error: ‘output_Software’ was not declared in this scope
+../../../../test/StreamTest.cpp:229:34: error: ‘output_Hardware’ was not declared in this scope
+make: *** [obj/StreamTest.o] Error 1
+CRITICAL WARNING: [SIM 100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 3] *************** CSIM finish ***************

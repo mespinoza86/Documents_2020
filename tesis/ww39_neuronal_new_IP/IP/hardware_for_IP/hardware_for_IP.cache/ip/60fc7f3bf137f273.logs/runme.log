@@ -1,0 +1,123 @@
+
+*** Running vivado
+    with args -log design_1_auto_ds_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_auto_ds_0.tcl
+
+awk: symbol lookup error: awk: undefined symbol: mpfr_z_sub
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source design_1_auto_ds_0.tcl -notrace
+awk: symbol lookup error: awk: undefined symbol: mpfr_z_sub
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1122.461 ; gain = 185.086 ; free physical = 5968 ; free virtual = 11197
+INFO: [Synth 8-638] synthesizing module 'design_1_auto_ds_0' [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_0/synth/design_1_auto_ds_0.v:58]
+INFO: [Synth 8-638] synthesizing module 'axi_dwidth_converter_v2_1_11_top' [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/a4c8/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:14452]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_11_axi_protocol_converter' [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4806]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_11_axi3_conv' [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:954]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_11_b_downsizer' [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2276]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_11_b_downsizer' (1#1) [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2276]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_11_a_axi3_conv' [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_10_axic_fifo' [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/39ba/hdl/axi_data_fifo_v2_1_vl_rfs.v:64]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_10_fifo_gen' [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/39ba/hdl/axi_data_fifo_v2_1_vl_rfs.v:168]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_10_fifo_gen' (20#1) [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/39ba/hdl/axi_data_fifo_v2_1_vl_rfs.v:168]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_10_axic_fifo' (21#1) [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/39ba/hdl/axi_data_fifo_v2_1_vl_rfs.v:64]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_11_a_axi3_conv' (22#1) [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_11_w_axi3_conv' [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2004]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_11_w_axi3_conv' (23#1) [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2004]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_11_a_axi3_conv__parameterized0' [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_10_axic_fifo__parameterized0' [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/39ba/hdl/axi_data_fifo_v2_1_vl_rfs.v:64]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_10_fifo_gen__parameterized0' [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/39ba/hdl/axi_data_fifo_v2_1_vl_rfs.v:168]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_10_fifo_gen__parameterized0' (23#1) [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/39ba/hdl/axi_data_fifo_v2_1_vl_rfs.v:168]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_10_axic_fifo__parameterized0' (23#1) [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/39ba/hdl/axi_data_fifo_v2_1_vl_rfs.v:64]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_11_a_axi3_conv__parameterized0' (23#1) [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_11_r_axi3_conv' [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:1789]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_11_r_axi3_conv' (24#1) [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:1789]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_11_axi3_conv' (25#1) [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:954]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_11_axi_protocol_converter' (26#1) [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4806]
+INFO: [Synth 8-638] synthesizing module 'axi_dwidth_converter_v2_1_11_axi_downsizer' [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/a4c8/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:2380]
+INFO: [Synth 8-638] synthesizing module 'axi_dwidth_converter_v2_1_11_b_downsizer' [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/a4c8/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1251]
+INFO: [Synth 8-256] done synthesizing module 'axi_dwidth_converter_v2_1_11_b_downsizer' (27#1) [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/a4c8/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1251]
+INFO: [Synth 8-638] synthesizing module 'axi_dwidth_converter_v2_1_11_a_downsizer' [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/a4c8/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:64]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_10_axic_fifo__parameterized1' [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/39ba/hdl/axi_data_fifo_v2_1_vl_rfs.v:64]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_10_fifo_gen__parameterized1' [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/39ba/hdl/axi_data_fifo_v2_1_vl_rfs.v:168]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_10_fifo_gen__parameterized1' (27#1) [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/39ba/hdl/axi_data_fifo_v2_1_vl_rfs.v:168]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_10_axic_fifo__parameterized1' (27#1) [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/39ba/hdl/axi_data_fifo_v2_1_vl_rfs.v:64]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_10_axic_fifo__parameterized2' [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/39ba/hdl/axi_data_fifo_v2_1_vl_rfs.v:64]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_10_fifo_gen__parameterized2' [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/39ba/hdl/axi_data_fifo_v2_1_vl_rfs.v:168]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_10_fifo_gen__parameterized2' (27#1) [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/39ba/hdl/axi_data_fifo_v2_1_vl_rfs.v:168]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_10_axic_fifo__parameterized2' (27#1) [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/39ba/hdl/axi_data_fifo_v2_1_vl_rfs.v:64]
+INFO: [Synth 8-256] done synthesizing module 'axi_dwidth_converter_v2_1_11_a_downsizer' (28#1) [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/a4c8/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:64]
+INFO: [Synth 8-638] synthesizing module 'axi_dwidth_converter_v2_1_11_w_downsizer' [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/a4c8/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:2016]
+INFO: [Synth 8-256] done synthesizing module 'axi_dwidth_converter_v2_1_11_w_downsizer' (29#1) [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/a4c8/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:2016]
+INFO: [Synth 8-638] synthesizing module 'axi_dwidth_converter_v2_1_11_a_downsizer__parameterized0' [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/a4c8/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:64]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_10_axic_fifo__parameterized3' [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/39ba/hdl/axi_data_fifo_v2_1_vl_rfs.v:64]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_10_fifo_gen__parameterized3' [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/39ba/hdl/axi_data_fifo_v2_1_vl_rfs.v:168]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_10_fifo_gen__parameterized3' (29#1) [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/39ba/hdl/axi_data_fifo_v2_1_vl_rfs.v:168]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_10_axic_fifo__parameterized3' (29#1) [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/39ba/hdl/axi_data_fifo_v2_1_vl_rfs.v:64]
+INFO: [Synth 8-256] done synthesizing module 'axi_dwidth_converter_v2_1_11_a_downsizer__parameterized0' (29#1) [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/a4c8/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:64]
+INFO: [Synth 8-638] synthesizing module 'axi_dwidth_converter_v2_1_11_r_downsizer' [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/a4c8/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1533]
+INFO: [Synth 8-256] done synthesizing module 'axi_dwidth_converter_v2_1_11_r_downsizer' (30#1) [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/a4c8/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1533]
+INFO: [Synth 8-256] done synthesizing module 'axi_dwidth_converter_v2_1_11_axi_downsizer' (31#1) [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/a4c8/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:2380]
+INFO: [Synth 8-256] done synthesizing module 'axi_dwidth_converter_v2_1_11_top' (32#1) [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ipshared/a4c8/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:14452]
+INFO: [Synth 8-256] done synthesizing module 'design_1_auto_ds_0' (33#1) [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_0/synth/design_1_auto_ds_0.v:58]
+Finished RTL Elaboration : Time (s): cpu = 00:01:09 ; elapsed = 00:01:11 . Memory (MB): peak = 1259.930 ; gain = 322.555 ; free physical = 6365 ; free virtual = 11600
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:09 ; elapsed = 00:01:11 . Memory (MB): peak = 1259.930 ; gain = 322.555 ; free physical = 6365 ; free virtual = 11600
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.04 . Memory (MB): peak = 1534.750 ; gain = 1.000 ; free physical = 6252 ; free virtual = 11488
+Finished Constraint Validation : Time (s): cpu = 00:01:17 ; elapsed = 00:01:20 . Memory (MB): peak = 1534.750 ; gain = 597.375 ; free physical = 6252 ; free virtual = 11487
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:17 ; elapsed = 00:01:20 . Memory (MB): peak = 1534.750 ; gain = 597.375 ; free physical = 6252 ; free virtual = 11487
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:17 ; elapsed = 00:01:20 . Memory (MB): peak = 1534.750 ; gain = 597.375 ; free physical = 6252 ; free virtual = 11487
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:19 ; elapsed = 00:01:21 . Memory (MB): peak = 1534.750 ; gain = 597.375 ; free physical = 6237 ; free virtual = 11472
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:23 ; elapsed = 00:01:25 . Memory (MB): peak = 1534.750 ; gain = 597.375 ; free physical = 6200 ; free virtual = 11434
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++-----------------------+-------------------------------------------------------------------------------+----------------+----------------------+----------------+
+|Module Name            | RTL Object                                                                    | Inference      | Size (Depth x Width) | Primitives     | 
++-----------------------+-------------------------------------------------------------------------------+----------------+----------------------+----------------+
+|fifo_generator_v13_1_3 | inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 32 x 5               | RAM32M x 1     | 
+|fifo_generator_v13_1_3 | inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 32 x 5               | RAM32M x 1     | 
+|fifo_generator_v13_1_3 | inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 32 x 1               | RAM32X1D x 1   | 
+|fifo_generator_v13_1_3 | inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 32 x 9               | RAM32M x 2     | 
+|fifo_generator_v13_1_3 | inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 32 x 26              | RAM32M x 5     | 
+|fifo_generator_v13_1_3 | inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 32 x 26              | RAM32M x 5     | 
++-----------------------+-------------------------------------------------------------------------------+----------------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:29 ; elapsed = 00:01:32 . Memory (MB): peak = 1534.750 ; gain = 597.375 ; free physical = 6173 ; free virtual = 11409
+Finished Timing Optimization : Time (s): cpu = 00:01:32 ; elapsed = 00:01:34 . Memory (MB): peak = 1580.742 ; gain = 643.367 ; free physical = 6097 ; free virtual = 11333
+Finished Technology Mapping : Time (s): cpu = 00:01:32 ; elapsed = 00:01:35 . Memory (MB): peak = 1588.750 ; gain = 651.375 ; free physical = 6090 ; free virtual = 11325
+Finished IO Insertion : Time (s): cpu = 00:01:33 ; elapsed = 00:01:35 . Memory (MB): peak = 1588.750 ; gain = 651.375 ; free physical = 6089 ; free virtual = 11325
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:33 ; elapsed = 00:01:35 . Memory (MB): peak = 1588.750 ; gain = 651.375 ; free physical = 6089 ; free virtual = 11325
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:33 ; elapsed = 00:01:36 . Memory (MB): peak = 1588.750 ; gain = 651.375 ; free physical = 6082 ; free virtual = 11317
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:33 ; elapsed = 00:01:36 . Memory (MB): peak = 1588.750 ; gain = 651.375 ; free physical = 6082 ; free virtual = 11317
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:33 ; elapsed = 00:01:36 . Memory (MB): peak = 1588.750 ; gain = 651.375 ; free physical = 6082 ; free virtual = 11317
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:33 ; elapsed = 00:01:36 . Memory (MB): peak = 1588.750 ; gain = 651.375 ; free physical = 6082 ; free virtual = 11317
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |    34|
+|2     |LUT1     |    36|
+|3     |LUT2     |   117|
+|4     |LUT3     |   137|
+|5     |LUT4     |   241|
+|6     |LUT5     |   267|
+|7     |LUT6     |   350|
+|8     |RAM32M   |    14|
+|9     |RAM32X1D |     1|
+|10    |FDCE     |   138|
+|11    |FDPE     |   126|
+|12    |FDRE     |   934|
+|13    |FDSE     |     7|
++------+---------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:33 ; elapsed = 00:01:36 . Memory (MB): peak = 1588.750 ; gain = 651.375 ; free physical = 6082 ; free virtual = 11317
+synth_design: Time (s): cpu = 00:01:30 ; elapsed = 00:01:31 . Memory (MB): peak = 1588.758 ; gain = 559.879 ; free physical = 6076 ; free virtual = 11311

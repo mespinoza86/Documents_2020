@@ -1,0 +1,822 @@
+
+
+================================================================
+== Vivado HLS Report for 'I_calc'
+================================================================
+* Date:           Thu Jan  9 23:44:24 2020
+
+* Version:        2016.4 (Build 1756540 on Mon Jan 23 19:31:01 MST 2017)
+* Project:        solution
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      5.76|        4.00|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+----------+-----+----------+---------+
+    |     Latency    |    Interval    | Pipeline|
+    | min |    max   | min |    max   |   Type  |
+    +-----+----------+-----+----------+---------+
+    |  115|  50245001|  115|  50245001|   none  |
+    +-----+----------+-----+----------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------------+-----+----------+-------------+-----------+-----------+----------+----------+
+        |                         |     Latency    |  Iteration  |  Initiation Interval  |   Trip   |          |
+        |        Loop Name        | min |    max   |   Latency   |  achieved |   target  |   Count  | Pipelined|
+        +-------------------------+-----+----------+-------------+-----------+-----------+----------+----------+
+        |- RowOfBlocks_Loop       |  114|  50245000| 114 ~ 20098 |          -|          -| 1 ~ 2500 |    no    |
+        | + Blocks_Loop           |   17|     20001|           18|          8|          1| 1 ~ 2499 |    yes   |
+        | + getTotalCurrent_Loop  |   92|        92|           23|          -|          -|         4|    no    |
+        +-------------------------+-----+----------+-------------+-----------+-----------+----------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 8, depth = 18
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 24
+* Pipeline: 1
+  Pipeline-0: II = 8, D = 18, States = { 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / (tmp_i_i)
+3 --> 
+	4  / true
+4 --> 
+	22  / (!tmp_35_i_i)
+	5  / (tmp_35_i_i)
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+	9  / true
+9 --> 
+	10  / true
+10 --> 
+	11  / true
+11 --> 
+	12  / true
+12 --> 
+	13  / true
+13 --> 
+	14  / true
+14 --> 
+	15  / true
+15 --> 
+	16  / true
+16 --> 
+	17  / true
+17 --> 
+	18  / true
+18 --> 
+	19  / true
+19 --> 
+	20  / true
+20 --> 
+	21  / true
+21 --> 
+	4  / true
+22 --> 
+	23  / true
+23 --> 
+	24  / (!exitcond_i_i)
+	2  / (exitcond_i_i)
+24 --> 
+	23  / true
+* FSM state operations: 
+
+ <State 1>: 3.00ns
+ST_1: F_temp_data (13)  [1/1] 0.00ns  loc: modules/I_calc/I_calc.cpp:60
+entry:0  %F_temp_data = alloca [4 x float], align 4
+
+ST_1: V_temp_data (14)  [1/1] 0.00ns  loc: modules/I_calc/I_calc.cpp:61
+entry:1  %V_temp_data = alloca [4 x float], align 4
+
+ST_1: StgValue_27 (15)  [1/1] 0.00ns
+entry:2  call void (...)* @_ssdm_op_SpecInterface(float* %I_V_data, i1* %I_V_tlast_V, [5 x i8]* @p_str993, i32 0, i32 0, [5 x i8]* @p_str1094, i32 0, i32 0, [1 x i8]* @p_str286, [1 x i8]* @p_str286, [1 x i8]* @p_str286, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str286, [1 x i8]* @p_str286) nounwind
+
+ST_1: StgValue_28 (16)  [1/1] 0.00ns
+entry:3  call void (...)* @_ssdm_op_SpecInterface(float* %I_V_data, i1* %I_V_tlast_V, [5 x i8]* @p_str993, i32 0, i32 0, [5 x i8]* @p_str1094, i32 0, i32 0, [1 x i8]* @p_str286, [1 x i8]* @p_str286, [1 x i8]* @p_str286, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str286, [1 x i8]* @p_str286) nounwind
+
+ST_1: StgValue_29 (17)  [1/1] 0.00ns
+entry:4  call void (...)* @_ssdm_op_SpecInterface(float* @V_acc_V_data_0, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_30 (18)  [1/1] 0.00ns
+entry:5  call void (...)* @_ssdm_op_SpecInterface(float* @F_acc_V_data_0, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_31 (19)  [1/1] 0.00ns
+entry:6  call void (...)* @_ssdm_op_SpecInterface(float* @F_acc_V_data_1, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_32 (20)  [1/1] 0.00ns
+entry:7  call void (...)* @_ssdm_op_SpecInterface(float* @F_acc_V_data_2, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_33 (21)  [1/1] 0.00ns
+entry:8  call void (...)* @_ssdm_op_SpecInterface(float* @F_acc_V_data_3, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_34 (22)  [1/1] 0.00ns
+entry:9  call void (...)* @_ssdm_op_SpecInterface(float* @V_acc_V_data_2, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_35 (23)  [1/1] 0.00ns
+entry:10  call void (...)* @_ssdm_op_SpecInterface(float* @V_acc_V_data_1, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_36 (24)  [1/1] 0.00ns
+entry:11  call void (...)* @_ssdm_op_SpecInterface(float* @V_acc_V_data_3, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_37 (25)  [1/1] 0.00ns
+entry:12  call void (...)* @_ssdm_op_SpecInterface(i27* %simConfig_BLOCK_NUMBERS_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_38 (26)  [1/1] 0.00ns
+entry:13  call void (...)* @_ssdm_op_SpecInterface(i27* %simConfig_rowsToSimu, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: simConfig_BLOCK_NUMB (27)  [1/1] 3.00ns
+entry:14  %simConfig_BLOCK_NUMB = call i27 @_ssdm_op_Read.ap_fifo.i27P(i27* %simConfig_BLOCK_NUMBERS_V)
+
+ST_1: StgValue_40 (28)  [1/1] 0.00ns
+entry:15  call void (...)* @_ssdm_op_SpecInterface(float* @V_acc_V_data_0, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_41 (29)  [1/1] 0.00ns
+entry:16  call void (...)* @_ssdm_op_SpecInterface(float* @F_acc_V_data_0, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_42 (30)  [1/1] 0.00ns
+entry:17  call void (...)* @_ssdm_op_SpecInterface(float* @F_acc_V_data_1, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_43 (31)  [1/1] 0.00ns
+entry:18  call void (...)* @_ssdm_op_SpecInterface(float* @F_acc_V_data_2, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_44 (32)  [1/1] 0.00ns
+entry:19  call void (...)* @_ssdm_op_SpecInterface(float* @F_acc_V_data_3, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_45 (33)  [1/1] 0.00ns
+entry:20  call void (...)* @_ssdm_op_SpecInterface(float* @V_acc_V_data_2, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_46 (34)  [1/1] 0.00ns
+entry:21  call void (...)* @_ssdm_op_SpecInterface(float* @V_acc_V_data_1, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_47 (35)  [1/1] 0.00ns
+entry:22  call void (...)* @_ssdm_op_SpecInterface(float* @V_acc_V_data_3, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_48 (36)  [1/1] 0.00ns
+entry:23  call void (...)* @_ssdm_op_SpecInterface(float* %I_V_data, i1* %I_V_tlast_V, [5 x i8]* @p_str993, i32 0, i32 0, [5 x i8]* @p_str1094, i32 0, i32 0, [1 x i8]* @p_str286, [1 x i8]* @p_str286, [1 x i8]* @p_str286, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str286, [1 x i8]* @p_str286) nounwind
+
+ST_1: simConfig_rowsToSimu_8 (37)  [1/1] 3.00ns  loc: modules/I_calc/I_calc.cpp:58
+entry:24  %simConfig_rowsToSimu_8 = call i27 @_ssdm_op_Read.ap_fifo.i27P(i27* %simConfig_rowsToSimu)
+
+ST_1: F_temp_data_addr (38)  [1/1] 0.00ns  loc: modules/I_calc/I_calc.cpp:8->modules/I_calc/I_calc.cpp:62
+entry:25  %F_temp_data_addr = getelementptr [4 x float]* %F_temp_data, i64 0, i64 0
+
+ST_1: V_temp_data_addr (39)  [1/1] 0.00ns  loc: modules/I_calc/I_calc.cpp:9->modules/I_calc/I_calc.cpp:62
+entry:26  %V_temp_data_addr = getelementptr [4 x float]* %V_temp_data, i64 0, i64 0
+
+ST_1: F_temp_data_addr_1 (40)  [1/1] 0.00ns  loc: modules/I_calc/I_calc.cpp:8->modules/I_calc/I_calc.cpp:62
+entry:27  %F_temp_data_addr_1 = getelementptr [4 x float]* %F_temp_data, i64 0, i64 1
+
+ST_1: V_temp_data_addr_1 (41)  [1/1] 0.00ns  loc: modules/I_calc/I_calc.cpp:9->modules/I_calc/I_calc.cpp:62
+entry:28  %V_temp_data_addr_1 = getelementptr [4 x float]* %V_temp_data, i64 0, i64 1
+
+ST_1: F_temp_data_addr_2 (42)  [1/1] 0.00ns  loc: modules/I_calc/I_calc.cpp:8->modules/I_calc/I_calc.cpp:62
+entry:29  %F_temp_data_addr_2 = getelementptr [4 x float]* %F_temp_data, i64 0, i64 2
+
+ST_1: V_temp_data_addr_2 (43)  [1/1] 0.00ns  loc: modules/I_calc/I_calc.cpp:9->modules/I_calc/I_calc.cpp:62
+entry:30  %V_temp_data_addr_2 = getelementptr [4 x float]* %V_temp_data, i64 0, i64 2
+
+ST_1: F_temp_data_addr_3 (44)  [1/1] 0.00ns  loc: modules/I_calc/I_calc.cpp:8->modules/I_calc/I_calc.cpp:62
+entry:31  %F_temp_data_addr_3 = getelementptr [4 x float]* %F_temp_data, i64 0, i64 3
+
+ST_1: V_temp_data_addr_3 (45)  [1/1] 0.00ns  loc: modules/I_calc/I_calc.cpp:9->modules/I_calc/I_calc.cpp:62
+entry:32  %V_temp_data_addr_3 = getelementptr [4 x float]* %V_temp_data, i64 0, i64 3
+
+ST_1: StgValue_58 (46)  [1/1] 1.57ns  loc: modules/I_calc/I_calc.cpp:57
+entry:33  br label %.preheader11.i.i
+
+
+ <State 2>: 2.44ns
+ST_2: RowOfBlocks_V (48)  [1/1] 0.00ns
+.preheader11.i.i:0  %RowOfBlocks_V = phi i26 [ %RowOfBlocks_V_1, %2 ], [ 0, %entry ]
+
+ST_2: RowOfBlocks_V_cast_i (49)  [1/1] 0.00ns  loc: modules/I_calc/I_calc.cpp:58
+.preheader11.i.i:1  %RowOfBlocks_V_cast_i = zext i26 %RowOfBlocks_V to i27
+
+ST_2: tmp_i_i (50)  [1/1] 2.44ns  loc: modules/I_calc/I_calc.cpp:58
+.preheader11.i.i:2  %tmp_i_i = icmp slt i27 %RowOfBlocks_V_cast_i, %simConfig_rowsToSimu_8
+
+ST_2: RowOfBlocks_V_1 (51)  [1/1] 2.32ns  loc: modules/I_calc/I_calc.cpp:58
+.preheader11.i.i:3  %RowOfBlocks_V_1 = add i26 %RowOfBlocks_V, 1
+
+ST_2: StgValue_63 (52)  [1/1] 0.00ns  loc: modules/I_calc/I_calc.cpp:58
+.preheader11.i.i:4  br i1 %tmp_i_i, label %0, label %.exit
+
+ST_2: StgValue_64 (57)  [1/1] 2.39ns  loc: modules/I_calc/I_calc.cpp:8->modules/I_calc/I_calc.cpp:62
+:3  store float 0.000000e+00, float* %F_temp_data_addr, align 4
+
+ST_2: StgValue_65 (58)  [1/1] 2.39ns  loc: modules/I_calc/I_calc.cpp:9->modules/I_calc/I_calc.cpp:62
+:4  store float 0.000000e+00, float* %V_temp_data_addr, align 4
+
+ST_2: StgValue_66 (59)  [1/1] 2.39ns  loc: modules/I_calc/I_calc.cpp:8->modules/I_calc/I_calc.cpp:62
+:5  store float 0.000000e+00, float* %F_temp_data_addr_1, align 4
+
+ST_2: StgValue_67 (60)  [1/1] 2.39ns  loc: modules/I_calc/I_calc.cpp:9->modules/I_calc/I_calc.cpp:62
+:6  store float 0.000000e+00, float* %V_temp_data_addr_1, align 4
+
+ST_2: StgValue_68 (129)  [1/1] 0.00ns
+.exit:0  ret void
+
+
+ <State 3>: 2.39ns
+ST_3: StgValue_69 (54)  [1/1] 0.00ns  loc: modules/I_calc/I_calc.cpp:58
+:0  call void (...)* @_ssdm_op_SpecLoopName([17 x i8]* @p_str2111) nounwind
+
+ST_3: tmp_i_i_111 (55)  [1/1] 0.00ns  loc: modules/I_calc/I_calc.cpp:58
+:1  %tmp_i_i_111 = call i32 (...)* @_ssdm_op_SpecRegionBegin([17 x i8]* @p_str2111)
+
+ST_3: StgValue_71 (56)  [1/1] 0.00ns  loc: modules/I_calc/I_calc.cpp:59
+:2  call void (...)* @_ssdm_op_SpecLoopTripCount(i32 1, i32 2500, i32 1250, [1 x i8]* @p_str3112) nounwind
+
+ST_3: StgValue_72 (61)  [1/1] 2.39ns  loc: modules/I_calc/I_calc.cpp:8->modules/I_calc/I_calc.cpp:62
+:7  store float 0.000000e+00, float* %F_temp_data_addr_2, align 4
+
+ST_3: StgValue_73 (62)  [1/1] 2.39ns  loc: modules/I_calc/I_calc.cpp:9->modules/I_calc/I_calc.cpp:62
+:8  store float 0.000000e+00, float* %V_temp_data_addr_2, align 4
+
+ST_3: StgValue_74 (63)  [1/1] 2.39ns  loc: modules/I_calc/I_calc.cpp:8->modules/I_calc/I_calc.cpp:62
+:9  store float 0.000000e+00, float* %F_temp_data_addr_3, align 4
+
+ST_3: StgValue_75 (64)  [1/1] 2.39ns  loc: modules/I_calc/I_calc.cpp:9->modules/I_calc/I_calc.cpp:62
+:10  store float 0.000000e+00, float* %V_temp_data_addr_3, align 4
+
+ST_3: StgValue_76 (65)  [1/1] 1.57ns  loc: modules/I_calc/I_calc.cpp:64
+:11  br label %.preheader32.i.i
+
+
+ <State 4>: 2.44ns
+ST_4: V_temp_data_i_i_load_3 (67)  [1/1] 0.00ns  loc: modules/I_calc/I_calc.cpp:24->modules/I_calc/I_calc.cpp:68
+.preheader32.i.i:0  %V_temp_data_i_i_load_3 = phi float [ %tmp_54_3_i_i, %"accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i" ], [ 0.000000e+00, %0 ]
+
+ST_4: F_temp_data_i_i_load_3 (68)  [1/1] 0.00ns  loc: modules/I_calc/I_calc.cpp:23->modules/I_calc/I_calc.cpp:68
+.preheader32.i.i:1  %F_temp_data_i_i_load_3 = phi float [ %tmp_53_3_i_i, %"accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i" ], [ 0.000000e+00, %0 ]
+
+ST_4: V_temp_data_i_i_load_2 (69)  [1/1] 0.00ns  loc: modules/I_calc/I_calc.cpp:24->modules/I_calc/I_calc.cpp:68
+.preheader32.i.i:2  %V_temp_data_i_i_load_2 = phi float [ %tmp_54_2_i_i, %"accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i" ], [ 0.000000e+00, %0 ]
+
+ST_4: F_temp_data_i_i_load_2 (70)  [1/1] 0.00ns  loc: modules/I_calc/I_calc.cpp:23->modules/I_calc/I_calc.cpp:68
+.preheader32.i.i:3  %F_temp_data_i_i_load_2 = phi float [ %tmp_53_2_i_i, %"accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i" ], [ 0.000000e+00, %0 ]
+
+ST_4: V_temp_data_i_i_load_1 (71)  [1/1] 0.00ns  loc: modules/I_calc/I_calc.cpp:24->modules/I_calc/I_calc.cpp:68
+.preheader32.i.i:4  %V_temp_data_i_i_load_1 = phi float [ %tmp_54_1_i_i, %"accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i" ], [ 0.000000e+00, %0 ]
+
+ST_4: F_temp_data_i_i_load_1 (72)  [1/1] 0.00ns  loc: modules/I_calc/I_calc.cpp:23->modules/I_calc/I_calc.cpp:68
+.preheader32.i.i:5  %F_temp_data_i_i_load_1 = phi float [ %tmp_53_1_i_i, %"accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i" ], [ 0.000000e+00, %0 ]
+
+ST_4: V_temp_data_i_i_load (73)  [1/1] 0.00ns  loc: modules/I_calc/I_calc.cpp:24->modules/I_calc/I_calc.cpp:68
+.preheader32.i.i:6  %V_temp_data_i_i_load = phi float [ %tmp_54_i_i, %"accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i" ], [ 0.000000e+00, %0 ]
+
+ST_4: F_temp_data_i_i_load (74)  [1/1] 0.00ns  loc: modules/I_calc/I_calc.cpp:23->modules/I_calc/I_calc.cpp:68
+.preheader32.i.i:7  %F_temp_data_i_i_load = phi float [ %tmp_53_i_i, %"accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i" ], [ 0.000000e+00, %0 ]
+
+ST_4: block_i_i (75)  [1/1] 0.00ns  loc: modules/I_calc/I_calc.cpp:65
+.preheader32.i.i:8  %block_i_i = phi i26 [ %block, %"accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i" ], [ 0, %0 ]
+
+ST_4: block_i_i_cast (76)  [1/1] 0.00ns  loc: modules/I_calc/I_calc.cpp:65
+.preheader32.i.i:9  %block_i_i_cast = zext i26 %block_i_i to i27
+
+ST_4: tmp_35_i_i (77)  [1/1] 2.44ns  loc: modules/I_calc/I_calc.cpp:65
+.preheader32.i.i:10  %tmp_35_i_i = icmp slt i27 %block_i_i_cast, %simConfig_BLOCK_NUMB
+
+ST_4: block (78)  [1/1] 2.32ns  loc: modules/I_calc/I_calc.cpp:65
+.preheader32.i.i:11  %block = add i26 %block_i_i, 1
+
+ST_4: StgValue_89 (79)  [1/1] 0.00ns  loc: modules/I_calc/I_calc.cpp:65
+.preheader32.i.i:12  br i1 %tmp_35_i_i, label %"accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i", label %.preheader.i.i.preheader
+
+
+ <State 5>: 3.00ns
+ST_5: empty (85)  [1/1] 3.00ns  loc: modules/I_calc/I_calc.cpp:18->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:4  %empty = call { float, float, float, float } @_ssdm_op_Read.ap_fifo.volatile.floatP.floatP.floatP.floatP(float* @F_acc_V_data_0, float* @F_acc_V_data_1, float* @F_acc_V_data_2, float* @F_acc_V_data_3)
+
+ST_5: tmp_data_0 (86)  [1/1] 0.00ns  loc: modules/I_calc/I_calc.cpp:18->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:5  %tmp_data_0 = extractvalue { float, float, float, float } %empty, 0
+
+ST_5: tmp_data_1 (87)  [1/1] 0.00ns  loc: modules/I_calc/I_calc.cpp:18->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:6  %tmp_data_1 = extractvalue { float, float, float, float } %empty, 1
+
+ST_5: tmp_data_2 (88)  [1/1] 0.00ns  loc: modules/I_calc/I_calc.cpp:18->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:7  %tmp_data_2 = extractvalue { float, float, float, float } %empty, 2
+
+ST_5: tmp_data_3 (89)  [1/1] 0.00ns  loc: modules/I_calc/I_calc.cpp:18->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:8  %tmp_data_3 = extractvalue { float, float, float, float } %empty, 3
+
+ST_5: empty_112 (90)  [1/1] 3.00ns  loc: modules/I_calc/I_calc.cpp:19->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:9  %empty_112 = call { float, float, float, float } @_ssdm_op_Read.ap_fifo.volatile.floatP.floatP.floatP.floatP(float* @V_acc_V_data_0, float* @V_acc_V_data_1, float* @V_acc_V_data_2, float* @V_acc_V_data_3)
+
+ST_5: tmp_data_0_9 (91)  [1/1] 0.00ns  loc: modules/I_calc/I_calc.cpp:19->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:10  %tmp_data_0_9 = extractvalue { float, float, float, float } %empty_112, 0
+
+ST_5: tmp_data_1_9 (92)  [1/1] 0.00ns  loc: modules/I_calc/I_calc.cpp:19->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:11  %tmp_data_1_9 = extractvalue { float, float, float, float } %empty_112, 1
+
+ST_5: tmp_data_2_9 (93)  [1/1] 0.00ns  loc: modules/I_calc/I_calc.cpp:19->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:12  %tmp_data_2_9 = extractvalue { float, float, float, float } %empty_112, 2
+
+ST_5: tmp_data_3_9 (94)  [1/1] 0.00ns  loc: modules/I_calc/I_calc.cpp:19->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:13  %tmp_data_3_9 = extractvalue { float, float, float, float } %empty_112, 3
+
+
+ <State 6>: 5.39ns
+ST_6: tmp_53_i_i (95)  [8/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:23->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:14  %tmp_53_i_i = fadd float %F_temp_data_i_i_load, %tmp_data_0
+
+
+ <State 7>: 5.39ns
+ST_7: tmp_53_i_i (95)  [7/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:23->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:14  %tmp_53_i_i = fadd float %F_temp_data_i_i_load, %tmp_data_0
+
+ST_7: tmp_54_i_i (97)  [8/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:24->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:16  %tmp_54_i_i = fadd float %V_temp_data_i_i_load, %tmp_data_0_9
+
+
+ <State 8>: 5.39ns
+ST_8: tmp_53_i_i (95)  [6/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:23->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:14  %tmp_53_i_i = fadd float %F_temp_data_i_i_load, %tmp_data_0
+
+ST_8: tmp_54_i_i (97)  [7/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:24->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:16  %tmp_54_i_i = fadd float %V_temp_data_i_i_load, %tmp_data_0_9
+
+ST_8: tmp_53_1_i_i (99)  [8/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:23->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:18  %tmp_53_1_i_i = fadd float %F_temp_data_i_i_load_1, %tmp_data_1
+
+
+ <State 9>: 5.39ns
+ST_9: tmp_53_i_i (95)  [5/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:23->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:14  %tmp_53_i_i = fadd float %F_temp_data_i_i_load, %tmp_data_0
+
+ST_9: tmp_54_i_i (97)  [6/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:24->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:16  %tmp_54_i_i = fadd float %V_temp_data_i_i_load, %tmp_data_0_9
+
+ST_9: tmp_53_1_i_i (99)  [7/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:23->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:18  %tmp_53_1_i_i = fadd float %F_temp_data_i_i_load_1, %tmp_data_1
+
+ST_9: tmp_54_1_i_i (101)  [8/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:24->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:20  %tmp_54_1_i_i = fadd float %V_temp_data_i_i_load_1, %tmp_data_1_9
+
+
+ <State 10>: 5.39ns
+ST_10: tmp_53_i_i (95)  [4/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:23->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:14  %tmp_53_i_i = fadd float %F_temp_data_i_i_load, %tmp_data_0
+
+ST_10: tmp_54_i_i (97)  [5/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:24->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:16  %tmp_54_i_i = fadd float %V_temp_data_i_i_load, %tmp_data_0_9
+
+ST_10: tmp_53_1_i_i (99)  [6/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:23->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:18  %tmp_53_1_i_i = fadd float %F_temp_data_i_i_load_1, %tmp_data_1
+
+ST_10: tmp_54_1_i_i (101)  [7/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:24->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:20  %tmp_54_1_i_i = fadd float %V_temp_data_i_i_load_1, %tmp_data_1_9
+
+ST_10: tmp_53_2_i_i (103)  [8/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:23->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:22  %tmp_53_2_i_i = fadd float %F_temp_data_i_i_load_2, %tmp_data_2
+
+
+ <State 11>: 5.39ns
+ST_11: tmp_53_i_i (95)  [3/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:23->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:14  %tmp_53_i_i = fadd float %F_temp_data_i_i_load, %tmp_data_0
+
+ST_11: tmp_54_i_i (97)  [4/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:24->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:16  %tmp_54_i_i = fadd float %V_temp_data_i_i_load, %tmp_data_0_9
+
+ST_11: tmp_53_1_i_i (99)  [5/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:23->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:18  %tmp_53_1_i_i = fadd float %F_temp_data_i_i_load_1, %tmp_data_1
+
+ST_11: tmp_54_1_i_i (101)  [6/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:24->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:20  %tmp_54_1_i_i = fadd float %V_temp_data_i_i_load_1, %tmp_data_1_9
+
+ST_11: tmp_53_2_i_i (103)  [7/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:23->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:22  %tmp_53_2_i_i = fadd float %F_temp_data_i_i_load_2, %tmp_data_2
+
+ST_11: tmp_54_2_i_i (105)  [8/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:24->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:24  %tmp_54_2_i_i = fadd float %V_temp_data_i_i_load_2, %tmp_data_2_9
+
+
+ <State 12>: 5.39ns
+ST_12: tmp_53_i_i (95)  [2/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:23->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:14  %tmp_53_i_i = fadd float %F_temp_data_i_i_load, %tmp_data_0
+
+ST_12: tmp_54_i_i (97)  [3/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:24->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:16  %tmp_54_i_i = fadd float %V_temp_data_i_i_load, %tmp_data_0_9
+
+ST_12: tmp_53_1_i_i (99)  [4/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:23->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:18  %tmp_53_1_i_i = fadd float %F_temp_data_i_i_load_1, %tmp_data_1
+
+ST_12: tmp_54_1_i_i (101)  [5/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:24->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:20  %tmp_54_1_i_i = fadd float %V_temp_data_i_i_load_1, %tmp_data_1_9
+
+ST_12: tmp_53_2_i_i (103)  [6/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:23->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:22  %tmp_53_2_i_i = fadd float %F_temp_data_i_i_load_2, %tmp_data_2
+
+ST_12: tmp_54_2_i_i (105)  [7/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:24->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:24  %tmp_54_2_i_i = fadd float %V_temp_data_i_i_load_2, %tmp_data_2_9
+
+ST_12: tmp_53_3_i_i (107)  [8/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:23->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:26  %tmp_53_3_i_i = fadd float %F_temp_data_i_i_load_3, %tmp_data_3
+
+
+ <State 13>: 5.39ns
+ST_13: tmp_53_i_i (95)  [1/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:23->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:14  %tmp_53_i_i = fadd float %F_temp_data_i_i_load, %tmp_data_0
+
+ST_13: tmp_54_i_i (97)  [2/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:24->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:16  %tmp_54_i_i = fadd float %V_temp_data_i_i_load, %tmp_data_0_9
+
+ST_13: tmp_53_1_i_i (99)  [3/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:23->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:18  %tmp_53_1_i_i = fadd float %F_temp_data_i_i_load_1, %tmp_data_1
+
+ST_13: tmp_54_1_i_i (101)  [4/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:24->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:20  %tmp_54_1_i_i = fadd float %V_temp_data_i_i_load_1, %tmp_data_1_9
+
+ST_13: tmp_53_2_i_i (103)  [5/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:23->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:22  %tmp_53_2_i_i = fadd float %F_temp_data_i_i_load_2, %tmp_data_2
+
+ST_13: tmp_54_2_i_i (105)  [6/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:24->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:24  %tmp_54_2_i_i = fadd float %V_temp_data_i_i_load_2, %tmp_data_2_9
+
+ST_13: tmp_53_3_i_i (107)  [7/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:23->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:26  %tmp_53_3_i_i = fadd float %F_temp_data_i_i_load_3, %tmp_data_3
+
+ST_13: tmp_54_3_i_i (109)  [8/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:24->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:28  %tmp_54_3_i_i = fadd float %V_temp_data_i_i_load_3, %tmp_data_3_9
+
+
+ <State 14>: 5.39ns
+ST_14: StgValue_136 (96)  [1/1] 2.39ns  loc: modules/I_calc/I_calc.cpp:23->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:15  store float %tmp_53_i_i, float* %F_temp_data_addr, align 4
+
+ST_14: tmp_54_i_i (97)  [1/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:24->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:16  %tmp_54_i_i = fadd float %V_temp_data_i_i_load, %tmp_data_0_9
+
+ST_14: tmp_53_1_i_i (99)  [2/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:23->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:18  %tmp_53_1_i_i = fadd float %F_temp_data_i_i_load_1, %tmp_data_1
+
+ST_14: tmp_54_1_i_i (101)  [3/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:24->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:20  %tmp_54_1_i_i = fadd float %V_temp_data_i_i_load_1, %tmp_data_1_9
+
+ST_14: tmp_53_2_i_i (103)  [4/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:23->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:22  %tmp_53_2_i_i = fadd float %F_temp_data_i_i_load_2, %tmp_data_2
+
+ST_14: tmp_54_2_i_i (105)  [5/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:24->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:24  %tmp_54_2_i_i = fadd float %V_temp_data_i_i_load_2, %tmp_data_2_9
+
+ST_14: tmp_53_3_i_i (107)  [6/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:23->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:26  %tmp_53_3_i_i = fadd float %F_temp_data_i_i_load_3, %tmp_data_3
+
+ST_14: tmp_54_3_i_i (109)  [7/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:24->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:28  %tmp_54_3_i_i = fadd float %V_temp_data_i_i_load_3, %tmp_data_3_9
+
+
+ <State 15>: 5.39ns
+ST_15: StgValue_144 (98)  [1/1] 2.39ns  loc: modules/I_calc/I_calc.cpp:24->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:17  store float %tmp_54_i_i, float* %V_temp_data_addr, align 4
+
+ST_15: tmp_53_1_i_i (99)  [1/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:23->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:18  %tmp_53_1_i_i = fadd float %F_temp_data_i_i_load_1, %tmp_data_1
+
+ST_15: tmp_54_1_i_i (101)  [2/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:24->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:20  %tmp_54_1_i_i = fadd float %V_temp_data_i_i_load_1, %tmp_data_1_9
+
+ST_15: tmp_53_2_i_i (103)  [3/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:23->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:22  %tmp_53_2_i_i = fadd float %F_temp_data_i_i_load_2, %tmp_data_2
+
+ST_15: tmp_54_2_i_i (105)  [4/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:24->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:24  %tmp_54_2_i_i = fadd float %V_temp_data_i_i_load_2, %tmp_data_2_9
+
+ST_15: tmp_53_3_i_i (107)  [5/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:23->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:26  %tmp_53_3_i_i = fadd float %F_temp_data_i_i_load_3, %tmp_data_3
+
+ST_15: tmp_54_3_i_i (109)  [6/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:24->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:28  %tmp_54_3_i_i = fadd float %V_temp_data_i_i_load_3, %tmp_data_3_9
+
+
+ <State 16>: 5.39ns
+ST_16: StgValue_151 (100)  [1/1] 2.39ns  loc: modules/I_calc/I_calc.cpp:23->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:19  store float %tmp_53_1_i_i, float* %F_temp_data_addr_1, align 4
+
+ST_16: tmp_54_1_i_i (101)  [1/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:24->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:20  %tmp_54_1_i_i = fadd float %V_temp_data_i_i_load_1, %tmp_data_1_9
+
+ST_16: tmp_53_2_i_i (103)  [2/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:23->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:22  %tmp_53_2_i_i = fadd float %F_temp_data_i_i_load_2, %tmp_data_2
+
+ST_16: tmp_54_2_i_i (105)  [3/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:24->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:24  %tmp_54_2_i_i = fadd float %V_temp_data_i_i_load_2, %tmp_data_2_9
+
+ST_16: tmp_53_3_i_i (107)  [4/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:23->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:26  %tmp_53_3_i_i = fadd float %F_temp_data_i_i_load_3, %tmp_data_3
+
+ST_16: tmp_54_3_i_i (109)  [5/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:24->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:28  %tmp_54_3_i_i = fadd float %V_temp_data_i_i_load_3, %tmp_data_3_9
+
+
+ <State 17>: 5.39ns
+ST_17: StgValue_157 (102)  [1/1] 2.39ns  loc: modules/I_calc/I_calc.cpp:24->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:21  store float %tmp_54_1_i_i, float* %V_temp_data_addr_1, align 4
+
+ST_17: tmp_53_2_i_i (103)  [1/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:23->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:22  %tmp_53_2_i_i = fadd float %F_temp_data_i_i_load_2, %tmp_data_2
+
+ST_17: tmp_54_2_i_i (105)  [2/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:24->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:24  %tmp_54_2_i_i = fadd float %V_temp_data_i_i_load_2, %tmp_data_2_9
+
+ST_17: tmp_53_3_i_i (107)  [3/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:23->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:26  %tmp_53_3_i_i = fadd float %F_temp_data_i_i_load_3, %tmp_data_3
+
+ST_17: tmp_54_3_i_i (109)  [4/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:24->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:28  %tmp_54_3_i_i = fadd float %V_temp_data_i_i_load_3, %tmp_data_3_9
+
+
+ <State 18>: 5.39ns
+ST_18: StgValue_162 (104)  [1/1] 2.39ns  loc: modules/I_calc/I_calc.cpp:23->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:23  store float %tmp_53_2_i_i, float* %F_temp_data_addr_2, align 4
+
+ST_18: tmp_54_2_i_i (105)  [1/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:24->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:24  %tmp_54_2_i_i = fadd float %V_temp_data_i_i_load_2, %tmp_data_2_9
+
+ST_18: tmp_53_3_i_i (107)  [2/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:23->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:26  %tmp_53_3_i_i = fadd float %F_temp_data_i_i_load_3, %tmp_data_3
+
+ST_18: tmp_54_3_i_i (109)  [3/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:24->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:28  %tmp_54_3_i_i = fadd float %V_temp_data_i_i_load_3, %tmp_data_3_9
+
+
+ <State 19>: 5.39ns
+ST_19: StgValue_166 (106)  [1/1] 2.39ns  loc: modules/I_calc/I_calc.cpp:24->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:25  store float %tmp_54_2_i_i, float* %V_temp_data_addr_2, align 4
+
+ST_19: tmp_53_3_i_i (107)  [1/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:23->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:26  %tmp_53_3_i_i = fadd float %F_temp_data_i_i_load_3, %tmp_data_3
+
+ST_19: tmp_54_3_i_i (109)  [2/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:24->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:28  %tmp_54_3_i_i = fadd float %V_temp_data_i_i_load_3, %tmp_data_3_9
+
+
+ <State 20>: 5.39ns
+ST_20: StgValue_169 (108)  [1/1] 2.39ns  loc: modules/I_calc/I_calc.cpp:23->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:27  store float %tmp_53_3_i_i, float* %F_temp_data_addr_3, align 4
+
+ST_20: tmp_54_3_i_i (109)  [1/8] 5.39ns  loc: modules/I_calc/I_calc.cpp:24->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:28  %tmp_54_3_i_i = fadd float %V_temp_data_i_i_load_3, %tmp_data_3_9
+
+
+ <State 21>: 2.39ns
+ST_21: StgValue_171 (81)  [1/1] 0.00ns
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:0  call void (...)* @_ssdm_op_SpecLoopTripCount(i64 1, i64 2499, i64 1250)
+
+ST_21: StgValue_172 (82)  [1/1] 0.00ns  loc: modules/I_calc/I_calc.cpp:65
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:1  call void (...)* @_ssdm_op_SpecLoopName([12 x i8]* @p_str5114) nounwind
+
+ST_21: tmp_20_i_i (83)  [1/1] 0.00ns  loc: modules/I_calc/I_calc.cpp:65
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:2  %tmp_20_i_i = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str5114)
+
+ST_21: StgValue_174 (84)  [1/1] 0.00ns  loc: modules/I_calc/I_calc.cpp:67
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:3  call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str3112) nounwind
+
+ST_21: StgValue_175 (110)  [1/1] 2.39ns  loc: modules/I_calc/I_calc.cpp:24->modules/I_calc/I_calc.cpp:68
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:29  store float %tmp_54_3_i_i, float* %V_temp_data_addr_3, align 4
+
+ST_21: empty_113 (111)  [1/1] 0.00ns  loc: modules/I_calc/I_calc.cpp:70
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:30  %empty_113 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str5114, i32 %tmp_20_i_i)
+
+ST_21: StgValue_177 (112)  [1/1] 0.00ns  loc: modules/I_calc/I_calc.cpp:65
+accBlockCurrents<dataPackage<float, 4>, stream<dataPackage<float, 4> >, 14, 4>.exit.i.i:31  br label %.preheader32.i.i
+
+
+ <State 22>: 1.57ns
+ST_22: StgValue_178 (114)  [1/1] 1.57ns  loc: modules/I_calc/I_calc.cpp:72
+.preheader.i.i.preheader:0  br label %.preheader.i.i
+
+
+ <State 23>: 4.78ns
+ST_23: val_assign (116)  [1/1] 0.00ns
+.preheader.i.i:0  %val_assign = phi i3 [ %row, %1 ], [ 0, %.preheader.i.i.preheader ]
+
+ST_23: exitcond_i_i (117)  [1/1] 1.62ns  loc: modules/I_calc/I_calc.cpp:72
+.preheader.i.i:1  %exitcond_i_i = icmp eq i3 %val_assign, -4
+
+ST_23: StgValue_181 (118)  [1/1] 0.00ns
+.preheader.i.i:2  call void (...)* @_ssdm_op_SpecLoopTripCount(i64 4, i64 4, i64 4)
+
+ST_23: row (119)  [1/1] 0.80ns  loc: modules/I_calc/I_calc.cpp:72
+.preheader.i.i:3  %row = add i3 %val_assign, 1
+
+ST_23: StgValue_183 (120)  [1/1] 0.00ns  loc: modules/I_calc/I_calc.cpp:72
+.preheader.i.i:4  br i1 %exitcond_i_i, label %2, label %1
+
+ST_23: StgValue_184 (123)  [2/2] 4.78ns  loc: modules/I_calc/I_calc.cpp:73
+:1  call fastcc void @getTotalCurrent(i3 %val_assign, float* %I_V_data, i1* %I_V_tlast_V, i26 %RowOfBlocks_V, i27 %simConfig_rowsToSimu_8, [4 x float]* %F_temp_data, [4 x float]* %V_temp_data)
+
+ST_23: empty_114 (126)  [1/1] 0.00ns  loc: modules/I_calc/I_calc.cpp:75
+:0  %empty_114 = call i32 (...)* @_ssdm_op_SpecRegionEnd([17 x i8]* @p_str2111, i32 %tmp_i_i_111)
+
+ST_23: StgValue_186 (127)  [1/1] 0.00ns  loc: modules/I_calc/I_calc.cpp:58
+:1  br label %.preheader11.i.i
+
+
+ <State 24>: 5.20ns
+ST_24: StgValue_187 (122)  [1/1] 0.00ns  loc: modules/I_calc/I_calc.cpp:72
+:0  call void (...)* @_ssdm_op_SpecLoopName([21 x i8]* @p_str6115) nounwind
+
+ST_24: StgValue_188 (123)  [1/2] 5.20ns  loc: modules/I_calc/I_calc.cpp:73
+:1  call fastcc void @getTotalCurrent(i3 %val_assign, float* %I_V_data, i1* %I_V_tlast_V, i26 %RowOfBlocks_V, i27 %simConfig_rowsToSimu_8, [4 x float]* %F_temp_data, [4 x float]* %V_temp_data)
+
+ST_24: StgValue_189 (124)  [1/1] 0.00ns  loc: modules/I_calc/I_calc.cpp:72
+:2  br label %.preheader.i.i
+
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 4ns.
+
+ <State 1>: 3ns
+The critical path consists of the following:
+	fifo read on port 'simConfig_BLOCK_NUMBERS_V' [27]  (3 ns)
+
+ <State 2>: 2.44ns
+The critical path consists of the following:
+	'phi' operation ('RowOfBlocks.V') with incoming values : ('RowOfBlocks.V', modules/I_calc/I_calc.cpp:58) [48]  (0 ns)
+	'icmp' operation ('tmp_i_i', modules/I_calc/I_calc.cpp:58) [50]  (2.44 ns)
+
+ <State 3>: 2.39ns
+The critical path consists of the following:
+	'store' operation (modules/I_calc/I_calc.cpp:8->modules/I_calc/I_calc.cpp:62) of constant 0 on array 'F_temp.data', modules/I_calc/I_calc.cpp:60 [61]  (2.39 ns)
+
+ <State 4>: 2.44ns
+The critical path consists of the following:
+	'phi' operation ('block_i_i', modules/I_calc/I_calc.cpp:65) with incoming values : ('block', modules/I_calc/I_calc.cpp:65) [75]  (0 ns)
+	'icmp' operation ('tmp_35_i_i', modules/I_calc/I_calc.cpp:65) [77]  (2.44 ns)
+
+ <State 5>: 3ns
+The critical path consists of the following:
+	fifo read on port 'F_acc_V_data_0' (modules/I_calc/I_calc.cpp:18->modules/I_calc/I_calc.cpp:68) [85]  (3 ns)
+
+ <State 6>: 5.39ns
+The critical path consists of the following:
+	'fadd' operation ('tmp_53_i_i', modules/I_calc/I_calc.cpp:23->modules/I_calc/I_calc.cpp:68) [95]  (5.39 ns)
+
+ <State 7>: 5.39ns
+The critical path consists of the following:
+	'fadd' operation ('tmp_53_i_i', modules/I_calc/I_calc.cpp:23->modules/I_calc/I_calc.cpp:68) [95]  (5.39 ns)
+
+ <State 8>: 5.39ns
+The critical path consists of the following:
+	'fadd' operation ('tmp_53_i_i', modules/I_calc/I_calc.cpp:23->modules/I_calc/I_calc.cpp:68) [95]  (5.39 ns)
+
+ <State 9>: 5.39ns
+The critical path consists of the following:
+	'fadd' operation ('tmp_53_i_i', modules/I_calc/I_calc.cpp:23->modules/I_calc/I_calc.cpp:68) [95]  (5.39 ns)
+
+ <State 10>: 5.39ns
+The critical path consists of the following:
+	'fadd' operation ('tmp_53_i_i', modules/I_calc/I_calc.cpp:23->modules/I_calc/I_calc.cpp:68) [95]  (5.39 ns)
+
+ <State 11>: 5.39ns
+The critical path consists of the following:
+	'fadd' operation ('tmp_53_i_i', modules/I_calc/I_calc.cpp:23->modules/I_calc/I_calc.cpp:68) [95]  (5.39 ns)
+
+ <State 12>: 5.39ns
+The critical path consists of the following:
+	'fadd' operation ('tmp_53_i_i', modules/I_calc/I_calc.cpp:23->modules/I_calc/I_calc.cpp:68) [95]  (5.39 ns)
+
+ <State 13>: 5.39ns
+The critical path consists of the following:
+	'fadd' operation ('tmp_53_i_i', modules/I_calc/I_calc.cpp:23->modules/I_calc/I_calc.cpp:68) [95]  (5.39 ns)
+
+ <State 14>: 5.39ns
+The critical path consists of the following:
+	'fadd' operation ('tmp_54_i_i', modules/I_calc/I_calc.cpp:24->modules/I_calc/I_calc.cpp:68) [97]  (5.39 ns)
+
+ <State 15>: 5.39ns
+The critical path consists of the following:
+	'fadd' operation ('tmp_53_1_i_i', modules/I_calc/I_calc.cpp:23->modules/I_calc/I_calc.cpp:68) [99]  (5.39 ns)
+
+ <State 16>: 5.39ns
+The critical path consists of the following:
+	'fadd' operation ('tmp_54_1_i_i', modules/I_calc/I_calc.cpp:24->modules/I_calc/I_calc.cpp:68) [101]  (5.39 ns)
+
+ <State 17>: 5.39ns
+The critical path consists of the following:
+	'fadd' operation ('tmp_53_2_i_i', modules/I_calc/I_calc.cpp:23->modules/I_calc/I_calc.cpp:68) [103]  (5.39 ns)
+
+ <State 18>: 5.39ns
+The critical path consists of the following:
+	'fadd' operation ('tmp_54_2_i_i', modules/I_calc/I_calc.cpp:24->modules/I_calc/I_calc.cpp:68) [105]  (5.39 ns)
+
+ <State 19>: 5.39ns
+The critical path consists of the following:
+	'fadd' operation ('tmp_53_3_i_i', modules/I_calc/I_calc.cpp:23->modules/I_calc/I_calc.cpp:68) [107]  (5.39 ns)
+
+ <State 20>: 5.39ns
+The critical path consists of the following:
+	'fadd' operation ('tmp_54_3_i_i', modules/I_calc/I_calc.cpp:24->modules/I_calc/I_calc.cpp:68) [109]  (5.39 ns)
+
+ <State 21>: 2.39ns
+The critical path consists of the following:
+	'store' operation (modules/I_calc/I_calc.cpp:24->modules/I_calc/I_calc.cpp:68) of variable 'tmp_54_3_i_i', modules/I_calc/I_calc.cpp:24->modules/I_calc/I_calc.cpp:68 on array 'V_temp.data', modules/I_calc/I_calc.cpp:61 [110]  (2.39 ns)
+
+ <State 22>: 1.57ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('row') with incoming values : ('row', modules/I_calc/I_calc.cpp:72) [116]  (1.57 ns)
+
+ <State 23>: 4.78ns
+The critical path consists of the following:
+	'phi' operation ('row') with incoming values : ('row', modules/I_calc/I_calc.cpp:72) [116]  (0 ns)
+	'call' operation (modules/I_calc/I_calc.cpp:73) to 'getTotalCurrent' [123]  (4.78 ns)
+
+ <State 24>: 5.2ns
+The critical path consists of the following:
+	'call' operation (modules/I_calc/I_calc.cpp:73) to 'getTotalCurrent' [123]  (5.2 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

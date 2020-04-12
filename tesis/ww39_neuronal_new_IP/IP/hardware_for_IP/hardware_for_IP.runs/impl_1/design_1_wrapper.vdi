@@ -1,0 +1,715 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sat Jan  4 18:46:55 2020
+# Process ID: 30777
+# Current directory: /home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.runs/impl_1
+# Command line: vivado -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+# Log file: /home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.runs/impl_1/design_1_wrapper.vdi
+# Journal file: /home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint '/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ip/design_1_GapJunctionIP_0_0/design_1_GapJunctionIP_0_0.dcp' for cell 'design_1_i/GapJunctionIP_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0.dcp' for cell 'design_1_i/axi_dma_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.dcp' for cell 'design_1_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.dcp' for cell 'design_1_i/rst_ps7_0_100M'
+INFO: [Project 1-454] Reading design checkpoint '/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/design_1_xlconcat_0_0.dcp' for cell 'design_1_i/xlconcat_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ip/design_1_xbar_1/design_1_xbar_1.dcp' for cell 'design_1_i/axi_mem_intercon/xbar'
+INFO: [Project 1-454] Reading design checkpoint '/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0.dcp' for cell 'design_1_i/axi_mem_intercon/m00_couplers/auto_ds'
+INFO: [Project 1-454] Reading design checkpoint '/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1.dcp' for cell 'design_1_i/axi_mem_intercon/m00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint '/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0.dcp' for cell 'design_1_i/axi_mem_intercon/s01_couplers/auto_us'
+INFO: [Project 1-454] Reading design checkpoint '/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0.dcp' for cell 'design_1_i/ps7_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint '/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.dcp' for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+INFO: [Netlist 29-17] Analyzing 860 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
+Finished Parsing XDC File [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
+Parsing XDC File [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Parsing XDC File [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Parsing XDC File [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0.xdc] for cell 'design_1_i/axi_dma_0/U0'
+Finished Parsing XDC File [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0.xdc] for cell 'design_1_i/axi_dma_0/U0'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ip/design_1_xbar_1/design_1_xbar_1.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ip/design_1_GapJunctionIP_0_0/design_1_GapJunctionIP_0_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0.dcp'
+Parsing XDC File [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0_clocks.xdc] for cell 'design_1_i/axi_dma_0/U0'
+Finished Parsing XDC File [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0_clocks.xdc] for cell 'design_1_i/axi_dma_0/U0'
+Parsing XDC File [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc] for cell 'design_1_i/axi_mem_intercon/m00_couplers/auto_ds/inst'
+Finished Parsing XDC File [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc] for cell 'design_1_i/axi_mem_intercon/m00_couplers/auto_ds/inst'
+Parsing XDC File [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_clocks.xdc] for cell 'design_1_i/axi_mem_intercon/s01_couplers/auto_us/inst'
+Finished Parsing XDC File [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.srcs/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_clocks.xdc] for cell 'design_1_i/axi_mem_intercon/s01_couplers/auto_us/inst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 19 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 18 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 1 instances
+
+link_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1445.527 ; gain = 427.648 ; free physical = 5620 ; free virtual = 10048
+Command: opt_design -directive Explore
+INFO: [Vivado_Tcl 4-136] Directive used for opt_design is: Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.91 . Memory (MB): peak = 1488.543 ; gain = 43.016 ; free physical = 5606 ; free virtual = 10035
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+Implement Debug Cores | Checksum: 1c5eb18fe
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 14 inverter(s) to 119 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 1bc75779d
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1976.035 ; gain = 0.000 ; free physical = 5194 ; free virtual = 9623
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 19 inverter(s) to 33 load pin(s).
+INFO: [Opt 31-10] Eliminated 921 cells.
+Phase 2 Constant propagation | Checksum: 1b5af6dd0
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1976.035 ; gain = 0.000 ; free physical = 5188 ; free virtual = 9618
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 9910 unconnected nets.
+INFO: [Opt 31-11] Eliminated 988 unconnected cells.
+Phase 3 Sweep | Checksum: 1538d8bde
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 1976.035 ; gain = 0.000 ; free physical = 5187 ; free virtual = 9618
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-12] Eliminated 0 unconnected nets.
+INFO: [Opt 31-11] Eliminated 0 unconnected cells.
+Phase 4 BUFG optimization | Checksum: 12fcb4815
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1976.035 ; gain = 0.000 ; free physical = 5177 ; free virtual = 9608
+
+Phase 5 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 1 cells.
+Phase 5 Constant propagation | Checksum: 1b6de9f3b
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1976.035 ; gain = 0.000 ; free physical = 5184 ; free virtual = 9603
+
+Phase 6 Sweep
+INFO: [Opt 31-12] Eliminated 0 unconnected nets.
+INFO: [Opt 31-11] Eliminated 0 unconnected cells.
+Phase 6 Sweep | Checksum: 1b6de9f3b
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:22 . Memory (MB): peak = 1976.035 ; gain = 0.000 ; free physical = 5183 ; free virtual = 9602
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.13 . Memory (MB): peak = 1976.035 ; gain = 0.000 ; free physical = 5183 ; free virtual = 9602
+Ending Logic Optimization Task | Checksum: 1b6de9f3b
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1976.035 ; gain = 0.000 ; free physical = 5184 ; free virtual = 9603
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 3 BRAM(s) out of a total of 47 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 8 WE to EN ports
+Number of BRAM Ports augmented: 8 newly gated: 16 Total Ports: 94
+Ending PowerOpt Patch Enables Task | Checksum: 1dc7fc8ba
+
+Time (s): cpu = 00:00:00.16 ; elapsed = 00:00:00.15 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4766 ; free virtual = 9191
+Ending Power Optimization Task | Checksum: 1dc7fc8ba
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:16 . Memory (MB): peak = 2478.746 ; gain = 502.711 ; free physical = 4766 ; free virtual = 9191
+INFO: [Common 17-83] Releasing license: Implementation
+53 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:01:11 ; elapsed = 00:00:53 . Memory (MB): peak = 2478.746 ; gain = 1033.219 ; free physical = 4766 ; free virtual = 9191
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.20 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4763 ; free virtual = 9191
+INFO: [Common 17-1381] The checkpoint '/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.runs/impl_1/design_1_wrapper_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4762 ; free virtual = 9199
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.runs/impl_1/design_1_wrapper_drc_opted.rpt.
+report_drc: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4757 ; free virtual = 9192
+INFO: [Chipscope 16-241] No debug cores found in the current design.
+Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
+or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
+Command: place_design -directive Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [DRC 23-20] Rule violation (REQP-1725) DSP_Abus_sign_bit_alert - design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/I_calc_U0/GapJunctionIP_fadvdy_x_U201/GapJunctionIP_ap_fadd_6_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+INFO: [DRC 23-20] Rule violation (REQP-1725) DSP_Abus_sign_bit_alert - design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/acc_U0/GapJunctionIP_fadvdy_U156/GapJunctionIP_ap_fadd_6_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+INFO: [DRC 23-20] Rule violation (REQP-1725) DSP_Abus_sign_bit_alert - design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/acc_U0/GapJunctionIP_fadvdy_U157/GapJunctionIP_ap_fadd_6_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+INFO: [DRC 23-20] Rule violation (REQP-1725) DSP_Abus_sign_bit_alert - design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/acc_U0/GapJunctionIP_fadvdy_U158/GapJunctionIP_ap_fadd_6_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+INFO: [DRC 23-20] Rule violation (REQP-1725) DSP_Abus_sign_bit_alert - design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fsurcU_U119/GapJunctionIP_ap_fsub_6_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+INFO: [DRC 23-20] Rule violation (REQP-1725) DSP_Abus_sign_bit_alert - design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fsurcU_U120/GapJunctionIP_ap_fsub_6_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 6 Advisories
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 46-5] The placer was invoked with the 'Explore' directive.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 4 CPUs
+
+Phase 1 Placer Initialization
+Netlist sorting complete. Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.14 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4755 ; free virtual = 9191
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.07 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4742 ; free virtual = 9178
+
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: bf4d53a5
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:17 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4734 ; free virtual = 9171
+
+Phase 1.2 Build Placer Netlist Model
+Phase 1.2 Build Placer Netlist Model | Checksum: 919dbe35
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:32 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4736 ; free virtual = 9175
+
+Phase 1.3 Constrain Clocks/Macros
+Phase 1.3 Constrain Clocks/Macros | Checksum: 919dbe35
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:32 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4736 ; free virtual = 9175
+Phase 1 Placer Initialization | Checksum: 919dbe35
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:32 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4736 ; free virtual = 9175
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: cb81af86
+
+Time (s): cpu = 00:01:57 ; elapsed = 00:01:10 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4700 ; free virtual = 9142
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: cb81af86
+
+Time (s): cpu = 00:01:58 ; elapsed = 00:01:10 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4700 ; free virtual = 9142
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 20eeabe9e
+
+Time (s): cpu = 00:02:19 ; elapsed = 00:01:23 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4701 ; free virtual = 9144
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1d4268860
+
+Time (s): cpu = 00:02:20 ; elapsed = 00:01:24 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4700 ; free virtual = 9144
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 199628e72
+
+Time (s): cpu = 00:02:21 ; elapsed = 00:01:24 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4700 ; free virtual = 9144
+
+Phase 3.5 Timing Path Optimizer
+Phase 3.5 Timing Path Optimizer | Checksum: 1dee79f35
+
+Time (s): cpu = 00:02:26 ; elapsed = 00:01:27 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4697 ; free virtual = 9141
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 8d383ea0
+
+Time (s): cpu = 00:02:40 ; elapsed = 00:01:40 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4705 ; free virtual = 9150
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 1036f853c
+
+Time (s): cpu = 00:02:41 ; elapsed = 00:01:42 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4703 ; free virtual = 9148
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 93df0962
+
+Time (s): cpu = 00:02:42 ; elapsed = 00:01:42 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4702 ; free virtual = 9148
+Phase 3 Detail Placement | Checksum: 93df0962
+
+Time (s): cpu = 00:02:43 ; elapsed = 00:01:43 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4701 ; free virtual = 9146
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.875. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: d95cc47f
+
+Time (s): cpu = 00:03:09 ; elapsed = 00:01:56 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4685 ; free virtual = 9131
+Phase 4.1 Post Commit Optimization | Checksum: d95cc47f
+
+Time (s): cpu = 00:03:10 ; elapsed = 00:01:57 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4684 ; free virtual = 9131
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: d95cc47f
+
+Time (s): cpu = 00:03:11 ; elapsed = 00:01:58 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4684 ; free virtual = 9130
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: d95cc47f
+
+Time (s): cpu = 00:03:11 ; elapsed = 00:01:58 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4684 ; free virtual = 9130
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: c16eaa62
+
+Time (s): cpu = 00:03:11 ; elapsed = 00:01:58 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4684 ; free virtual = 9130
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: c16eaa62
+
+Time (s): cpu = 00:03:12 ; elapsed = 00:01:59 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4684 ; free virtual = 9130
+Ending Placer Task | Checksum: aba8cd4d
+
+Time (s): cpu = 00:03:12 ; elapsed = 00:01:59 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4683 ; free virtual = 9129
+INFO: [Common 17-83] Releasing license: Implementation
+78 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:03:23 ; elapsed = 00:02:05 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4683 ; free virtual = 9129
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4617 ; free virtual = 9127
+INFO: [Common 17-1381] The checkpoint '/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.runs/impl_1/design_1_wrapper_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:21 ; elapsed = 00:00:12 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4659 ; free virtual = 9121
+report_io: Time (s): cpu = 00:00:00.17 ; elapsed = 00:00:00.18 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4658 ; free virtual = 9121
+report_utilization: Time (s): cpu = 00:00:00.51 ; elapsed = 00:00:00.55 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4658 ; free virtual = 9121
+report_control_sets: Time (s): cpu = 00:00:00.21 ; elapsed = 00:00:00.26 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4657 ; free virtual = 9121
+Command: phys_opt_design -directive Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Vivado_Tcl 4-137] Directive used for phys_opt_design is: Explore
+Netlist sorting complete. Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4658 ; free virtual = 9121
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 4 CPUs
+Phase 1 Physical Synthesis Initialization | Checksum: 25386000f
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:08 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4647 ; free virtual = 9109
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.500 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+Ending Physical Synthesis Task | Checksum: 1d4c02eb1
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:10 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4647 ; free virtual = 9109
+INFO: [Common 17-83] Releasing license: Implementation
+85 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:11 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4647 ; free virtual = 9109
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:12 ; elapsed = 00:00:04 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4607 ; free virtual = 9129
+INFO: [Common 17-1381] The checkpoint '/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.runs/impl_1/design_1_wrapper_physopt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:19 ; elapsed = 00:00:10 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4657 ; free virtual = 9135
+Command: route_design -directive Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-270] Using Router directive 'Explore'.
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 4 CPUs
+Checksum: PlaceDB: a68cc986 ConstDB: 0 ShapeSum: 31c85bac RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 7acbe347
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:23 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4658 ; free virtual = 9136
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 7acbe347
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:24 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4657 ; free virtual = 9135
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 7acbe347
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:25 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4656 ; free virtual = 9135
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 7acbe347
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:25 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4656 ; free virtual = 9135
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 22ad2ef50
+
+Time (s): cpu = 00:01:06 ; elapsed = 00:00:39 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4569 ; free virtual = 9049
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.952  | TNS=0.000  | WHS=-0.355 | THS=-658.764|
+
+Phase 2 Router Initialization | Checksum: 1cced68ea
+
+Time (s): cpu = 00:01:19 ; elapsed = 00:00:44 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4553 ; free virtual = 9033
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 19b6f43a4
+
+Time (s): cpu = 00:02:02 ; elapsed = 00:00:59 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4517 ; free virtual = 8998
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 2889
+ Number of Nodes with overlaps = 232
+ Number of Nodes with overlaps = 36
+ Number of Nodes with overlaps = 13
+ Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+
+Phase 4.1.1 Update Timing
+Phase 4.1.1 Update Timing | Checksum: 1aab6a8e0
+
+Time (s): cpu = 00:03:09 ; elapsed = 00:01:26 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4508 ; free virtual = 8990
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.560  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 13f5e29f4
+
+Time (s): cpu = 00:03:10 ; elapsed = 00:01:27 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4508 ; free virtual = 8990
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 9
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+
+Phase 4.2.1 Update Timing
+Phase 4.2.1 Update Timing | Checksum: 168161a73
+
+Time (s): cpu = 00:03:14 ; elapsed = 00:01:29 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4504 ; free virtual = 8987
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.560  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 1b55ecea4
+
+Time (s): cpu = 00:03:15 ; elapsed = 00:01:30 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4503 ; free virtual = 8986
+Phase 4 Rip-up And Reroute | Checksum: 1b55ecea4
+
+Time (s): cpu = 00:03:15 ; elapsed = 00:01:31 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4503 ; free virtual = 8986
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 1c483684a
+
+Time (s): cpu = 00:03:19 ; elapsed = 00:01:32 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4501 ; free virtual = 8985
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.560  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 5.1 Delay CleanUp | Checksum: 1c483684a
+
+Time (s): cpu = 00:03:19 ; elapsed = 00:01:32 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4501 ; free virtual = 8985
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 1c483684a
+
+Time (s): cpu = 00:03:19 ; elapsed = 00:01:32 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4501 ; free virtual = 8985
+Phase 5 Delay and Skew Optimization | Checksum: 1c483684a
+
+Time (s): cpu = 00:03:19 ; elapsed = 00:01:32 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4501 ; free virtual = 8985
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 1dbde8a47
+
+Time (s): cpu = 00:03:25 ; elapsed = 00:01:35 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4496 ; free virtual = 8979
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.560  | TNS=0.000  | WHS=0.007  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 1ad1af561
+
+Time (s): cpu = 00:03:25 ; elapsed = 00:01:35 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4495 ; free virtual = 8979
+Phase 6 Post Hold Fix | Checksum: 1ad1af561
+
+Time (s): cpu = 00:03:25 ; elapsed = 00:01:36 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4495 ; free virtual = 8979
+
+Phase 7 Timing Verification
+
+Phase 7.1 Update Timing
+Phase 7.1 Update Timing | Checksum: 26cbfc68b
+
+Time (s): cpu = 00:03:34 ; elapsed = 00:01:39 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4498 ; free virtual = 8982
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.560  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 7 Timing Verification | Checksum: 26cbfc68b
+
+Time (s): cpu = 00:03:34 ; elapsed = 00:01:39 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4497 ; free virtual = 8980
+
+Phase 8 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 10.8587 %
+  Global Horizontal Routing Utilization  = 12.865 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 8 Route finalize | Checksum: 26cbfc68b
+
+Time (s): cpu = 00:03:35 ; elapsed = 00:01:40 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4497 ; free virtual = 8981
+
+Phase 9 Verifying routed nets
+
+ Verification completed successfully
+Phase 9 Verifying routed nets | Checksum: 26cbfc68b
+
+Time (s): cpu = 00:03:35 ; elapsed = 00:01:40 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4497 ; free virtual = 8980
+
+Phase 10 Depositing Routes
+Phase 10 Depositing Routes | Checksum: 2df4f0202
+
+Time (s): cpu = 00:03:38 ; elapsed = 00:01:43 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4493 ; free virtual = 8977
+
+Phase 11 Post Router Timing
+INFO: [Route 35-20] Post Routing Timing Summary | WNS=0.562  | TNS=0.000  | WHS=0.009  | THS=0.000  |
+
+INFO: [Route 35-61] The design met the timing requirement.
+Phase 11 Post Router Timing | Checksum: 22373509a
+
+Time (s): cpu = 00:04:06 ; elapsed = 00:01:54 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4499 ; free virtual = 8983
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:04:06 ; elapsed = 00:01:54 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4498 ; free virtual = 8982
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+102 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:04:17 ; elapsed = 00:02:00 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4498 ; free virtual = 8982
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:15 ; elapsed = 00:00:06 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4421 ; free virtual = 8981
+INFO: [Common 17-1381] The checkpoint '/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.runs/impl_1/design_1_wrapper_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:22 ; elapsed = 00:00:11 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4476 ; free virtual = 8979
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.runs/impl_1/design_1_wrapper_drc_routed.rpt.
+report_drc: Time (s): cpu = 00:00:22 ; elapsed = 00:00:09 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4472 ; free virtual = 8975
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 4 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file /home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.runs/impl_1/design_1_wrapper_methodology_drc_routed.rpt.
+report_methodology: Time (s): cpu = 00:00:39 ; elapsed = 00:00:17 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4473 ; free virtual = 8975
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+report_timing_summary: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 2478.746 ; gain = 0.000 ; free physical = 4477 ; free virtual = 8980
+Command: report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+112 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:24 ; elapsed = 00:00:13 . Memory (MB): peak = 2495.781 ; gain = 17.035 ; free physical = 4425 ; free virtual = 8941
+INFO: [Common 17-206] Exiting Vivado at Sat Jan  4 18:54:14 2020...
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sat Jan  4 18:56:44 2020
+# Process ID: 442
+# Current directory: /home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.runs/impl_1
+# Command line: vivado -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+# Log file: /home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.runs/impl_1/design_1_wrapper.vdi
+# Journal file: /home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
+Command: open_checkpoint design_1_wrapper_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1002.855 ; gain = 0.000 ; free physical = 5672 ; free virtual = 10193
+INFO: [Netlist 29-17] Analyzing 858 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.runs/impl_1/.Xil/Vivado-442-marco-HP-Notebook/dcp/design_1_wrapper_early.xdc]
+Finished Parsing XDC File [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.runs/impl_1/.Xil/Vivado-442-marco-HP-Notebook/dcp/design_1_wrapper_early.xdc]
+Parsing XDC File [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.runs/impl_1/.Xil/Vivado-442-marco-HP-Notebook/dcp/design_1_wrapper_late.xdc]
+Finished Parsing XDC File [/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/hardware_for_IP/hardware_for_IP.runs/impl_1/.Xil/Vivado-442-marco-HP-Notebook/dcp/design_1_wrapper_late.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1478.047 ; gain = 64.070 ; free physical = 5065 ; free virtual = 9667
+Restored from archive | CPU: 2.740000 secs | Memory: 48.136971 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1478.047 ; gain = 64.070 ; free physical = 5065 ; free virtual = 9667
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 19 instances were transformed.
+  RAM32M => RAM32M (RAMS32, RAMS32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32): 18 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 1 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2016.4 (64-bit) build 1756540
+open_checkpoint: Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1478.047 ; gain = 475.191 ; free physical = 5130 ; free virtual = 9651
+Command: write_bitstream -force -no_partial_bitfile design_1_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 4 threads
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/I_calc_U0/GapJunctionIP_fadvdy_x_U201/GapJunctionIP_ap_fadd_6_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/I_calc_U0/GapJunctionIP_fadvdy_x_U201/GapJunctionIP_ap_fadd_6_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/I_calc_U0/GapJunctionIP_fadvdy_x_U201/GapJunctionIP_ap_fadd_6_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/I_calc_U0/GapJunctionIP_fadvdy_x_U201/GapJunctionIP_ap_fadd_6_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/I_calc_U0/GapJunctionIP_fadvdy_x_U201/GapJunctionIP_ap_fadd_6_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/I_calc_U0/GapJunctionIP_fadvdy_x_U201/GapJunctionIP_ap_fadd_6_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/I_calc_U0/grp_getTotalCurrent_fu_357/GapJunctionIP_dadzec_U191/GapJunctionIP_ap_dadd_6_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_ADD.DSP48E1_ADD/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/I_calc_U0/grp_getTotalCurrent_fu_357/GapJunctionIP_dadzec_U191/GapJunctionIP_ap_dadd_6_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_ADD.DSP48E1_ADD/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/I_calc_U0/grp_getTotalCurrent_fu_357/GapJunctionIP_dadzec_U191/GapJunctionIP_ap_dadd_6_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_ADD.DSP48E1_ADD/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/I_calc_U0/grp_getTotalCurrent_fu_357/GapJunctionIP_dadzec_U191/GapJunctionIP_ap_dadd_6_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_ADD.DSP48E1_ADD/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/I_calc_U0/grp_getTotalCurrent_fu_357/GapJunctionIP_dadzec_U191/GapJunctionIP_ap_dadd_6_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_ADD.DSP48E1_ADD/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/I_calc_U0/grp_getTotalCurrent_fu_357/GapJunctionIP_dadzec_U191/GapJunctionIP_ap_dadd_6_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_ADD.DSP48E1_ADD/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/I_calc_U0/grp_getTotalCurrent_fu_357/GapJunctionIP_dadzec_U191/GapJunctionIP_ap_dadd_6_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/I_calc_U0/grp_getTotalCurrent_fu_357/GapJunctionIP_dadzec_U191/GapJunctionIP_ap_dadd_6_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/I_calc_U0/grp_getTotalCurrent_fu_357/GapJunctionIP_dadzec_U191/GapJunctionIP_ap_dadd_6_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/I_calc_U0/grp_getTotalCurrent_fu_357/GapJunctionIP_dadzec_U191/GapJunctionIP_ap_dadd_6_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/I_calc_U0/grp_getTotalCurrent_fu_357/GapJunctionIP_dmuAem_U192/GapJunctionIP_ap_dmul_7_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP1/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/I_calc_U0/grp_getTotalCurrent_fu_357/GapJunctionIP_dmuAem_U192/GapJunctionIP_ap_dmul_7_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP1/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/I_calc_U0/grp_getTotalCurrent_fu_357/GapJunctionIP_dmuAem_U192/GapJunctionIP_ap_dmul_7_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/I_calc_U0/grp_getTotalCurrent_fu_357/GapJunctionIP_dmuAem_U192/GapJunctionIP_ap_dmul_7_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/I_calc_U0/grp_getTotalCurrent_fu_357/GapJunctionIP_dmuAem_U192/GapJunctionIP_ap_dmul_7_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/I_calc_U0/grp_getTotalCurrent_fu_357/GapJunctionIP_dmuAem_U192/GapJunctionIP_ap_dmul_7_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/I_calc_U0/grp_getTotalCurrent_fu_357/GapJunctionIP_dmuAem_U193/GapJunctionIP_ap_dmul_7_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP1/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/I_calc_U0/grp_getTotalCurrent_fu_357/GapJunctionIP_dmuAem_U193/GapJunctionIP_ap_dmul_7_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP1/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/I_calc_U0/grp_getTotalCurrent_fu_357/GapJunctionIP_dmuAem_U193/GapJunctionIP_ap_dmul_7_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/I_calc_U0/grp_getTotalCurrent_fu_357/GapJunctionIP_dmuAem_U193/GapJunctionIP_ap_dmul_7_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/I_calc_U0/grp_getTotalCurrent_fu_357/GapJunctionIP_dmuAem_U193/GapJunctionIP_ap_dmul_7_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/I_calc_U0/grp_getTotalCurrent_fu_357/GapJunctionIP_dmuAem_U193/GapJunctionIP_ap_dmul_7_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/acc_U0/GapJunctionIP_fadvdy_U156/GapJunctionIP_ap_fadd_6_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/acc_U0/GapJunctionIP_fadvdy_U156/GapJunctionIP_ap_fadd_6_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/acc_U0/GapJunctionIP_fadvdy_U156/GapJunctionIP_ap_fadd_6_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/acc_U0/GapJunctionIP_fadvdy_U156/GapJunctionIP_ap_fadd_6_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/acc_U0/GapJunctionIP_fadvdy_U156/GapJunctionIP_ap_fadd_6_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/acc_U0/GapJunctionIP_fadvdy_U156/GapJunctionIP_ap_fadd_6_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/acc_U0/GapJunctionIP_fadvdy_U157/GapJunctionIP_ap_fadd_6_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/acc_U0/GapJunctionIP_fadvdy_U157/GapJunctionIP_ap_fadd_6_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/acc_U0/GapJunctionIP_fadvdy_U157/GapJunctionIP_ap_fadd_6_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/acc_U0/GapJunctionIP_fadvdy_U157/GapJunctionIP_ap_fadd_6_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/acc_U0/GapJunctionIP_fadvdy_U157/GapJunctionIP_ap_fadd_6_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/acc_U0/GapJunctionIP_fadvdy_U157/GapJunctionIP_ap_fadd_6_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/acc_U0/GapJunctionIP_fadvdy_U158/GapJunctionIP_ap_fadd_6_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/acc_U0/GapJunctionIP_fadvdy_U158/GapJunctionIP_ap_fadd_6_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/acc_U0/GapJunctionIP_fadvdy_U158/GapJunctionIP_ap_fadd_6_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/acc_U0/GapJunctionIP_fadvdy_U158/GapJunctionIP_ap_fadd_6_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/acc_U0/GapJunctionIP_fadvdy_U158/GapJunctionIP_ap_fadd_6_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/acc_U0/GapJunctionIP_fadvdy_U158/GapJunctionIP_ap_fadd_6_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/acc_U0/GapJunctionIP_fmusc4_x_U159/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/acc_U0/GapJunctionIP_fmusc4_x_U159/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/acc_U0/GapJunctionIP_fmusc4_x_U159/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/acc_U0/GapJunctionIP_fmusc4_x_U159/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/acc_U0/GapJunctionIP_fmusc4_x_U159/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/acc_U0/GapJunctionIP_fmusc4_x_U159/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/acc_U0/GapJunctionIP_fmusc4_x_U159/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/acc_U0/GapJunctionIP_fmusc4_x_U159/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/acc_U0/GapJunctionIP_fmusc4_x_U160/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/acc_U0/GapJunctionIP_fmusc4_x_U160/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/acc_U0/GapJunctionIP_fmusc4_x_U160/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/acc_U0/GapJunctionIP_fmusc4_x_U160/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/acc_U0/GapJunctionIP_fmusc4_x_U160/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/acc_U0/GapJunctionIP_fmusc4_x_U160/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/acc_U0/GapJunctionIP_fmusc4_x_U160/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/acc_U0/GapJunctionIP_fmusc4_x_U160/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/acc_U0/GapJunctionIP_fmusc4_x_U161/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/acc_U0/GapJunctionIP_fmusc4_x_U161/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/acc_U0/GapJunctionIP_fmusc4_x_U161/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/acc_U0/GapJunctionIP_fmusc4_x_U161/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/acc_U0/GapJunctionIP_fmusc4_x_U161/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/acc_U0/GapJunctionIP_fmusc4_x_U161/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/acc_U0/GapJunctionIP_fmusc4_x_U161/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/acc_U0/GapJunctionIP_fmusc4_x_U161/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/acc_U0/GapJunctionIP_fmusc4_x_U162/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/acc_U0/GapJunctionIP_fmusc4_x_U162/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/acc_U0/GapJunctionIP_fmusc4_x_U162/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/acc_U0/GapJunctionIP_fmusc4_x_U162/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/acc_U0/GapJunctionIP_fmusc4_x_U162/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/acc_U0/GapJunctionIP_fmusc4_x_U162/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/acc_U0/GapJunctionIP_fmusc4_x_U162/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/acc_U0/GapJunctionIP_fmusc4_x_U162/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fextde_U127/GapJunctionIP_ap_fexp_11_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_Xf/dsp.one.dsp48e1_add/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fextde_U127/GapJunctionIP_ap_fexp_11_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_Xf/dsp.one.dsp48e1_add/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fextde_U127/GapJunctionIP_ap_fexp_11_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_Xf/dsp.one.dsp48e1_add/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fextde_U127/GapJunctionIP_ap_fexp_11_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_Xf/dsp.one.dsp48e1_add/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fextde_U127/GapJunctionIP_ap_fexp_11_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_Xf/dsp.one.dsp48e1_add/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fextde_U127/GapJunctionIP_ap_fexp_11_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_Xf/dsp.one.dsp48e1_add/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fextde_U127/GapJunctionIP_ap_fexp_11_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.one.dsp48e1_add/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fextde_U127/GapJunctionIP_ap_fexp_11_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.one.dsp48e1_add/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fextde_U127/GapJunctionIP_ap_fexp_11_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.one.dsp48e1_add/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fextde_U127/GapJunctionIP_ap_fexp_11_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.one.dsp48e1_add/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fextde_U127/GapJunctionIP_ap_fexp_11_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fextde_U127/GapJunctionIP_ap_fexp_11_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fextde_U127/GapJunctionIP_ap_fexp_11_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fextde_U127/GapJunctionIP_ap_fexp_11_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fextde_U127/GapJunctionIP_ap_fexp_11_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fextde_U127/GapJunctionIP_ap_fexp_11_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fextde_U127/GapJunctionIP_ap_fexp_11_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[0].i_addsub/dsp.one.dsp48e1_add/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fextde_U127/GapJunctionIP_ap_fexp_11_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[0].i_addsub/dsp.one.dsp48e1_add/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fextde_U127/GapJunctionIP_ap_fexp_11_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fextde_U127/GapJunctionIP_ap_fexp_11_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fextde_U127/GapJunctionIP_ap_fexp_11_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fextde_U127/GapJunctionIP_ap_fexp_11_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fextde_U127/GapJunctionIP_ap_fexp_11_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fextde_U127/GapJunctionIP_ap_fexp_11_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fextde_U128/GapJunctionIP_ap_fexp_11_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_Xf/dsp.one.dsp48e1_add/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fextde_U128/GapJunctionIP_ap_fexp_11_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_Xf/dsp.one.dsp48e1_add/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fextde_U128/GapJunctionIP_ap_fexp_11_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_Xf/dsp.one.dsp48e1_add/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fextde_U128/GapJunctionIP_ap_fexp_11_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_Xf/dsp.one.dsp48e1_add/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fextde_U128/GapJunctionIP_ap_fexp_11_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_Xf/dsp.one.dsp48e1_add/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fextde_U128/GapJunctionIP_ap_fexp_11_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_Xf/dsp.one.dsp48e1_add/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fextde_U128/GapJunctionIP_ap_fexp_11_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.one.dsp48e1_add/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fextde_U128/GapJunctionIP_ap_fexp_11_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.one.dsp48e1_add/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fextde_U128/GapJunctionIP_ap_fexp_11_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.one.dsp48e1_add/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fextde_U128/GapJunctionIP_ap_fexp_11_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.one.dsp48e1_add/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fextde_U128/GapJunctionIP_ap_fexp_11_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fextde_U128/GapJunctionIP_ap_fexp_11_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fextde_U128/GapJunctionIP_ap_fexp_11_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fextde_U128/GapJunctionIP_ap_fexp_11_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fextde_U128/GapJunctionIP_ap_fexp_11_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fextde_U128/GapJunctionIP_ap_fexp_11_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fextde_U128/GapJunctionIP_ap_fexp_11_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[0].i_addsub/dsp.one.dsp48e1_add/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fextde_U128/GapJunctionIP_ap_fexp_11_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[0].i_addsub/dsp.one.dsp48e1_add/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fextde_U128/GapJunctionIP_ap_fexp_11_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fextde_U128/GapJunctionIP_ap_fexp_11_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fextde_U128/GapJunctionIP_ap_fexp_11_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fextde_U128/GapJunctionIP_ap_fexp_11_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fextde_U128/GapJunctionIP_ap_fexp_11_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fextde_U128/GapJunctionIP_ap_fexp_11_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fmusc4_U121/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fmusc4_U121/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fmusc4_U121/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fmusc4_U121/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fmusc4_U121/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fmusc4_U121/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fmusc4_U121/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fmusc4_U121/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fmusc4_U122/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fmusc4_U122/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fmusc4_U122/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fmusc4_U122/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fmusc4_U122/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fmusc4_U122/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fmusc4_U122/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fmusc4_U122/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fmusc4_U123/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fmusc4_U123/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fmusc4_U123/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fmusc4_U123/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fmusc4_U124/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fmusc4_U124/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fmusc4_U124/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fmusc4_U124/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fmusc4_U125/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fmusc4_U125/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fmusc4_U125/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fmusc4_U125/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fmusc4_U125/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fmusc4_U125/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fmusc4_U125/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fmusc4_U125/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fmusc4_U126/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fmusc4_U126/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fmusc4_U126/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fmusc4_U126/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fmusc4_U126/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fmusc4_U126/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fmusc4_U126/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fmusc4_U126/GapJunctionIP_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fsurcU_U119/GapJunctionIP_ap_fsub_6_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fsurcU_U119/GapJunctionIP_ap_fsub_6_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fsurcU_U119/GapJunctionIP_ap_fsub_6_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fsurcU_U119/GapJunctionIP_ap_fsub_6_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fsurcU_U119/GapJunctionIP_ap_fsub_6_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fsurcU_U119/GapJunctionIP_ap_fsub_6_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fsurcU_U120/GapJunctionIP_ap_fsub_6_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fsurcU_U120/GapJunctionIP_ap_fsub_6_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fsurcU_U120/GapJunctionIP_ap_fsub_6_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fsurcU_U120/GapJunctionIP_ap_fsub_6_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fsurcU_U120/GapJunctionIP_ap_fsub_6_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP input design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/calc_U0/GapJunctionIP_fsurcU_U120/GapJunctionIP_ap_fsub_6_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/I_calc_U0/GapJunctionIP_fadvdy_x_U201/GapJunctionIP_ap_fadd_6_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP output design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/I_calc_U0/GapJunctionIP_fadvdy_x_U201/GapJunctionIP_ap_fadd_6_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/PATTERNDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/I_calc_U0/GapJunctionIP_fadvdy_x_U201/GapJunctionIP_ap_fadd_6_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP output design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/I_calc_U0/GapJunctionIP_fadvdy_x_U201/GapJunctionIP_ap_fadd_6_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/I_calc_U0/GapJunctionIP_fadvdy_x_U201/GapJunctionIP_ap_fadd_6_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP output design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/I_calc_U0/GapJunctionIP_fadvdy_x_U201/GapJunctionIP_ap_fadd_6_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/I_calc_U0/grp_getTotalCurrent_fu_357/GapJunctionIP_dadzec_U191/GapJunctionIP_ap_dadd_6_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP output design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/I_calc_U0/grp_getTotalCurrent_fu_357/GapJunctionIP_dadzec_U191/GapJunctionIP_ap_dadd_6_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/I_calc_U0/grp_getTotalCurrent_fu_357/GapJunctionIP_dmuAem_U192/GapJunctionIP_ap_dmul_7_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP5/DSP output design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/I_calc_U0/grp_getTotalCurrent_fu_357/GapJunctionIP_dmuAem_U192/GapJunctionIP_ap_dmul_7_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP5/DSP/PATTERNDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/I_calc_U0/grp_getTotalCurrent_fu_357/GapJunctionIP_dmuAem_U192/GapJunctionIP_ap_dmul_7_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP7/DSP output design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/I_calc_U0/grp_getTotalCurrent_fu_357/GapJunctionIP_dmuAem_U192/GapJunctionIP_ap_dmul_7_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP7/DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/I_calc_U0/grp_getTotalCurrent_fu_357/GapJunctionIP_dmuAem_U192/GapJunctionIP_ap_dmul_7_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/FULL_MAX_USAGE.DSP9/DSP output design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/I_calc_U0/grp_getTotalCurrent_fu_357/GapJunctionIP_dmuAem_U192/GapJunctionIP_ap_dmul_7_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/FULL_MAX_USAGE.DSP9/DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/I_calc_U0/grp_getTotalCurrent_fu_357/GapJunctionIP_dmuAem_U192/GapJunctionIP_ap_dmul_7_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP output design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/I_calc_U0/grp_getTotalCurrent_fu_357/GapJunctionIP_dmuAem_U192/GapJunctionIP_ap_dmul_7_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/I_calc_U0/grp_getTotalCurrent_fu_357/GapJunctionIP_dmuAem_U193/GapJunctionIP_ap_dmul_7_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP5/DSP output design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/I_calc_U0/grp_getTotalCurrent_fu_357/GapJunctionIP_dmuAem_U193/GapJunctionIP_ap_dmul_7_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP5/DSP/PATTERNDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/I_calc_U0/grp_getTotalCurrent_fu_357/GapJunctionIP_dmuAem_U193/GapJunctionIP_ap_dmul_7_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP7/DSP output design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/I_calc_U0/grp_getTotalCurrent_fu_357/GapJunctionIP_dmuAem_U193/GapJunctionIP_ap_dmul_7_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP7/DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/I_calc_U0/grp_getTotalCurrent_fu_357/GapJunctionIP_dmuAem_U193/GapJunctionIP_ap_dmul_7_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/FULL_MAX_USAGE.DSP9/DSP output design_1_i/GapJunctionIP_0/inst/grp_execute_fu_148/I_calc_U0/grp_getTotalCurrent_fu_357/GapJunctionIP_dmuAem_U193/GapJunctionIP_ap_dmul_7_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/FULL_MAX_USAGE.DSP9/DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+INFO: [Common 17-14] Message 'DRC 23-20' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 183 Warnings, 106 Advisories
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./design_1_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+15 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:59 ; elapsed = 00:00:52 . Memory (MB): peak = 1947.758 ; gain = 469.711 ; free physical = 4680 ; free virtual = 9229
+INFO: [Common 17-206] Exiting Vivado at Sat Jan  4 18:58:05 2020...

@@ -1,0 +1,22 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+<sourceFile name="">
+<directive functionLabel="" functionName="getVoltages" label="">
+<pragma name="LOOP_TRIPCOUNT">
+<option name="min" value="1"/>
+<option name="max" value="MAX_V_SIZE/4"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="getConductances" label="">
+<pragma name="LOOP_TRIPCOUNT">
+<option name="min" value="1"/>
+<option name="max" value="2500"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="getConductances" label="">
+<pragma name="LOOP_TRIPCOUNT">
+<option name="min" value="1"/>
+<option name="max" value="2500*4"/>
+</pragma>
+</directive>
+</sourceFile>
+</AutoPilot:ProjectResources>

@@ -1,0 +1,111 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+<sourceFile name="">
+<directive functionLabel="" functionName="simulationConfig" label="">
+<pragma name="INLINE"/>
+</directive>
+<directive functionLabel="" functionName="execute" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="C_data"/>
+<option name="depth" value="128"/>
+<option name="dim" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="execute" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="V_data"/>
+<option name="depth" value="128"/>
+<option name="dim" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="execute" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="processedData"/>
+<option name="depth" value="128"/>
+<option name="dim" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="execute" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="fixedData"/>
+<option name="depth" value="128"/>
+<option name="dim" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="execute" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="F"/>
+<option name="depth" value="128"/>
+<option name="dim" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="execute" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="V"/>
+<option name="depth" value="128"/>
+<option name="dim" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="execute" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="F_acc"/>
+<option name="depth" value="128"/>
+<option name="dim" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="execute" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="V_acc"/>
+<option name="depth" value="128"/>
+<option name="dim" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="execute" label="">
+<pragma name="DATAFLOW"/>
+</directive>
+<directive functionLabel="" functionName="GapJunctionIP" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="input"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GapJunctionIP" label="">
+<pragma name="INTERFACE">
+<option name="axis" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="input"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GapJunctionIP" label="">
+<pragma name="INTERFACE">
+<option name="axis" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="output"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GapJunctionIP" label="">
+<pragma name="INTERFACE">
+<option name="s_axilite" positionalBoolean="mode" value=""/>
+<option name="register" positionalBoolean="register" value=""/>
+<option name="port" positionalBoolean="4" value="size"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GapJunctionIP" label="">
+<pragma name="INTERFACE">
+<option name="s_axilite" positionalBoolean="mode" value=""/>
+<option name="register" positionalBoolean="register" value=""/>
+<option name="port" positionalBoolean="4" value="FirstRow"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GapJunctionIP" label="">
+<pragma name="INTERFACE">
+<option name="s_axilite" positionalBoolean="mode" value=""/>
+<option name="register" positionalBoolean="register" value=""/>
+<option name="port" positionalBoolean="4" value="LastRow"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GapJunctionIP" label="">
+<pragma name="INTERFACE">
+<option name="s_axilite" positionalBoolean="mode" value=""/>
+<option name="register" positionalBoolean="register" value=""/>
+<option name="port" positionalBoolean="4" value="return"/>
+</pragma>
+</directive>
+</sourceFile>
+</AutoPilot:ProjectResources>

@@ -1,0 +1,814 @@
+
+
+================================================================
+== Vivado HLS Report for 'blockControl'
+================================================================
+* Date:           Sat Jan 11 14:24:36 2020
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        IP_latest_2020_Enero
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     6.000|        4.00|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+----------+-----+----------+---------+
+    |     Latency    |    Interval    | Pipeline|
+    | min |    max   | min |    max   |   Type  |
+    +-----+----------+-----+----------+---------+
+    |   11|  49990003|   11|  49990003|   none  |
+    +-----+----------+-----+----------+---------+
+
+    + Detail: 
+        * Instance: 
+        +---------------------------+-----------------+-----+----------+-----+----------+---------+
+        |                           |                 |     Latency    |    Interval    | Pipeline|
+        |          Instance         |      Module     | min |    max   | min |    max   |   Type  |
+        +---------------------------+-----------------+-----+----------+-----+----------+---------+
+        |grp_getConductances_fu_70  |getConductances  |    5|  49984999|    5|  49984999|   none  |
+        |grp_getVoltages_fu_86      |getVoltages      |    3|      5001|    3|      5001|   none  |
+        +---------------------------+-----------------+-----+----------+-----+----------+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      -|       -|      -|
+|Expression       |        -|      -|       0|      2|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        -|      -|     294|    311|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|    159|
+|Register         |        -|      -|      94|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        0|      0|     388|    472|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        0|      0|   ~0   |   ~0  |
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    +---------------------------+-----------------+---------+-------+-----+-----+
+    |          Instance         |      Module     | BRAM_18K| DSP48E|  FF | LUT |
+    +---------------------------+-----------------+---------+-------+-----+-----+
+    |grp_getConductances_fu_70  |getConductances  |        0|      0|  173|  178|
+    |grp_getVoltages_fu_86      |getVoltages      |        0|      0|  121|  133|
+    +---------------------------+-----------------+---------+-------+-----+-----+
+    |Total                      |                 |        0|      0|  294|  311|
+    +---------------------------+-----------------+---------+-------+-----+-----+
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------+----------+-------+---+----+------------+------------+
+    |  Variable Name  | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------+----------+-------+---+----+------------+------------+
+    |ap_block_state1  |    or    |      0|  0|   2|           1|           1|
+    +-----------------+----------+-------+---+----+------------+------------+
+    |Total            |          |      0|  0|   2|           1|           1|
+    +-----------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------------------+----+-----------+-----+-----------+
+    |               Name               | LUT| Input Size| Bits| Total Bits|
+    +----------------------------------+----+-----------+-----+-----------+
+    |C_data_V_data_0_write             |   9|          2|    1|          2|
+    |C_data_V_data_1_write             |   9|          2|    1|          2|
+    |C_data_V_data_2_write             |   9|          2|    1|          2|
+    |C_data_V_data_3_write             |   9|          2|    1|          2|
+    |V_SIZE_blk_n                      |   9|          2|    1|          2|
+    |V_data_V_data_0_write             |   9|          2|    1|          2|
+    |V_data_V_data_1_write             |   9|          2|    1|          2|
+    |V_data_V_data_2_write             |   9|          2|    1|          2|
+    |V_data_V_data_3_write             |   9|          2|    1|          2|
+    |ap_NS_fsm                         |  27|          5|    1|          5|
+    |ap_done                           |   9|          2|    1|          2|
+    |input_V_data_TREADY               |  15|          3|    1|          3|
+    |real_start                        |   9|          2|    1|          2|
+    |simConfig_BLOCK_NUMBERS_V_blk_n   |   9|          2|    1|          2|
+    |simConfig_rowsToSimulate_V_blk_n  |   9|          2|    1|          2|
+    +----------------------------------+----+-----------+-----+-----------+
+    |Total                             | 159|         34|   15|         34|
+    +----------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------------+----+----+-----+-----------+
+    |                  Name                  | FF | LUT| Bits| Const Bits|
+    +----------------------------------------+----+----+-----+-----------+
+    |V_SIZE_read_reg_102                     |  32|   0|   32|          0|
+    |ap_CS_fsm                               |   4|   0|    4|          0|
+    |ap_done_reg                             |   1|   0|    1|          0|
+    |grp_getConductances_fu_70_ap_start_reg  |   1|   0|    1|          0|
+    |grp_getVoltages_fu_86_ap_start_reg      |   1|   0|    1|          0|
+    |simConfig_BLOCK_NUMB_reg_112            |  27|   0|   27|          0|
+    |simConfig_rowsToSimu_reg_107            |  27|   0|   27|          0|
+    |start_once_reg                          |   1|   0|    1|          0|
+    +----------------------------------------+----+----+-----+-----------+
+    |Total                                   |  94|   0|   94|          0|
+    +----------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------------------+-----+-----+------------+----------------------------+--------------+
+|              RTL Ports             | Dir | Bits|  Protocol  |        Source Object       |    C Type    |
++------------------------------------+-----+-----+------------+----------------------------+--------------+
+|ap_clk                              |  in |    1| ap_ctrl_hs |        blockControl        | return value |
+|ap_rst                              |  in |    1| ap_ctrl_hs |        blockControl        | return value |
+|ap_start                            |  in |    1| ap_ctrl_hs |        blockControl        | return value |
+|start_full_n                        |  in |    1| ap_ctrl_hs |        blockControl        | return value |
+|ap_done                             | out |    1| ap_ctrl_hs |        blockControl        | return value |
+|ap_continue                         |  in |    1| ap_ctrl_hs |        blockControl        | return value |
+|ap_idle                             | out |    1| ap_ctrl_hs |        blockControl        | return value |
+|ap_ready                            | out |    1| ap_ctrl_hs |        blockControl        | return value |
+|start_out                           | out |    1| ap_ctrl_hs |        blockControl        | return value |
+|start_write                         | out |    1| ap_ctrl_hs |        blockControl        | return value |
+|input_V_data_TDATA                  |  in |   64|    axis    |        input_V_data        |    pointer   |
+|input_V_data_TVALID                 |  in |    1|    axis    |        input_V_data        |    pointer   |
+|input_V_data_TREADY                 | out |    1|    axis    |        input_V_data        |    pointer   |
+|simConfig_rowsToSimulate_V_dout     |  in |   27|   ap_fifo  | simConfig_rowsToSimulate_V |    pointer   |
+|simConfig_rowsToSimulate_V_empty_n  |  in |    1|   ap_fifo  | simConfig_rowsToSimulate_V |    pointer   |
+|simConfig_rowsToSimulate_V_read     | out |    1|   ap_fifo  | simConfig_rowsToSimulate_V |    pointer   |
+|simConfig_BLOCK_NUMBERS_V_dout      |  in |   27|   ap_fifo  |  simConfig_BLOCK_NUMBERS_V |    pointer   |
+|simConfig_BLOCK_NUMBERS_V_empty_n   |  in |    1|   ap_fifo  |  simConfig_BLOCK_NUMBERS_V |    pointer   |
+|simConfig_BLOCK_NUMBERS_V_read      | out |    1|   ap_fifo  |  simConfig_BLOCK_NUMBERS_V |    pointer   |
+|V_SIZE_dout                         |  in |   32|   ap_fifo  |           V_SIZE           |    pointer   |
+|V_SIZE_empty_n                      |  in |    1|   ap_fifo  |           V_SIZE           |    pointer   |
+|V_SIZE_read                         | out |    1|   ap_fifo  |           V_SIZE           |    pointer   |
+|V_data_V_data_0_din                 | out |   32|   ap_fifo  |       V_data_V_data_0      |    pointer   |
+|V_data_V_data_0_full_n              |  in |    1|   ap_fifo  |       V_data_V_data_0      |    pointer   |
+|V_data_V_data_0_write               | out |    1|   ap_fifo  |       V_data_V_data_0      |    pointer   |
+|V_data_V_data_1_din                 | out |   32|   ap_fifo  |       V_data_V_data_1      |    pointer   |
+|V_data_V_data_1_full_n              |  in |    1|   ap_fifo  |       V_data_V_data_1      |    pointer   |
+|V_data_V_data_1_write               | out |    1|   ap_fifo  |       V_data_V_data_1      |    pointer   |
+|V_data_V_data_2_din                 | out |   32|   ap_fifo  |       V_data_V_data_2      |    pointer   |
+|V_data_V_data_2_full_n              |  in |    1|   ap_fifo  |       V_data_V_data_2      |    pointer   |
+|V_data_V_data_2_write               | out |    1|   ap_fifo  |       V_data_V_data_2      |    pointer   |
+|V_data_V_data_3_din                 | out |   32|   ap_fifo  |       V_data_V_data_3      |    pointer   |
+|V_data_V_data_3_full_n              |  in |    1|   ap_fifo  |       V_data_V_data_3      |    pointer   |
+|V_data_V_data_3_write               | out |    1|   ap_fifo  |       V_data_V_data_3      |    pointer   |
+|C_data_V_data_0_din                 | out |   32|   ap_fifo  |       C_data_V_data_0      |    pointer   |
+|C_data_V_data_0_full_n              |  in |    1|   ap_fifo  |       C_data_V_data_0      |    pointer   |
+|C_data_V_data_0_write               | out |    1|   ap_fifo  |       C_data_V_data_0      |    pointer   |
+|C_data_V_data_1_din                 | out |   32|   ap_fifo  |       C_data_V_data_1      |    pointer   |
+|C_data_V_data_1_full_n              |  in |    1|   ap_fifo  |       C_data_V_data_1      |    pointer   |
+|C_data_V_data_1_write               | out |    1|   ap_fifo  |       C_data_V_data_1      |    pointer   |
+|C_data_V_data_2_din                 | out |   32|   ap_fifo  |       C_data_V_data_2      |    pointer   |
+|C_data_V_data_2_full_n              |  in |    1|   ap_fifo  |       C_data_V_data_2      |    pointer   |
+|C_data_V_data_2_write               | out |    1|   ap_fifo  |       C_data_V_data_2      |    pointer   |
+|C_data_V_data_3_din                 | out |   32|   ap_fifo  |       C_data_V_data_3      |    pointer   |
+|C_data_V_data_3_full_n              |  in |    1|   ap_fifo  |       C_data_V_data_3      |    pointer   |
+|C_data_V_data_3_write               | out |    1|   ap_fifo  |       C_data_V_data_3      |    pointer   |
++------------------------------------+-----+-----+------------+----------------------------+--------------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / true
+4 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 6.00>
+ST_1 : Operation 5 [1/1] (3.00ns)   --->   "%V_SIZE_read = call i32 @_ssdm_op_Read.ap_fifo.i32P(i32* %V_SIZE)"   --->   Operation 5 'read' 'V_SIZE_read' <Predicate = true> <Delay = 3.00> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 27> <Depth = 2> <FIFO>
+ST_1 : Operation 6 [2/2] (3.00ns)   --->   "call fastcc void @getVoltages(i64* %input_V_data, i32 %V_SIZE_read)"   --->   Operation 6 'call' <Predicate = true> <Delay = 3.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 7 [1/1] (3.00ns)   --->   "%simConfig_rowsToSimu = call i27 @_ssdm_op_Read.ap_fifo.i27P(i27* %simConfig_rowsToSimulate_V)" [modules/blockControl/blockControl.cpp:67]   --->   Operation 7 'read' 'simConfig_rowsToSimu' <Predicate = true> <Delay = 3.00> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 27> <Depth = 2> <FIFO>
+ST_1 : Operation 8 [1/1] (3.00ns)   --->   "%simConfig_BLOCK_NUMB = call i27 @_ssdm_op_Read.ap_fifo.i27P(i27* %simConfig_BLOCK_NUMBERS_V)" [modules/blockControl/blockControl.cpp:67]   --->   Operation 8 'read' 'simConfig_BLOCK_NUMB' <Predicate = true> <Delay = 3.00> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 27> <Depth = 2> <FIFO>
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 9 [1/2] (0.00ns)   --->   "call fastcc void @getVoltages(i64* %input_V_data, i32 %V_SIZE_read)"   --->   Operation 9 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 3.00>
+ST_3 : Operation 10 [2/2] (3.00ns)   --->   "call fastcc void @getConductances(i64* %input_V_data, i27 %simConfig_rowsToSimu, i27 %simConfig_BLOCK_NUMB)" [modules/blockControl/blockControl.cpp:67]   --->   Operation 10 'call' <Predicate = true> <Delay = 3.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 11 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i64* %input_V_data, [5 x i8]* @p_str918, i32 0, i32 0, [5 x i8]* @p_str10, i32 0, i32 0, [1 x i8]* @p_str211, [1 x i8]* @p_str211, [1 x i8]* @p_str211, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str211, [1 x i8]* @p_str211) nounwind"   --->   Operation 11 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 12 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* @C_data_V_data_0, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 12 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 13 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* @C_data_V_data_1, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 13 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 14 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* @C_data_V_data_2, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 14 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 15 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* @C_data_V_data_3, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 15 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 16 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* @V_data_V_data_0, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 16 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 17 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* @V_data_V_data_1, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 17 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 18 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* @V_data_V_data_2, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 18 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 19 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* @V_data_V_data_3, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 19 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 20 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %V_SIZE, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [11 x i8]* @ScalarProp_str)"   --->   Operation 20 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 21 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i27* %simConfig_rowsToSimulate_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [11 x i8]* @ScalarProp_str)"   --->   Operation 21 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 22 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i27* %simConfig_BLOCK_NUMBERS_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [11 x i8]* @ScalarProp_str)"   --->   Operation 22 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 23 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* @C_data_V_data_0, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 23 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 24 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* @C_data_V_data_1, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 24 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 25 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* @C_data_V_data_2, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 25 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 26 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* @C_data_V_data_3, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 26 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 27 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* @V_data_V_data_0, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 27 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 28 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* @V_data_V_data_1, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 28 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 29 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* @V_data_V_data_2, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 29 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 30 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* @V_data_V_data_3, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 30 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 31 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i64* %input_V_data, [5 x i8]* @p_str918, i32 0, i32 0, [5 x i8]* @p_str10, i32 0, i32 0, [1 x i8]* @p_str211, [1 x i8]* @p_str211, [1 x i8]* @p_str211, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str211, [1 x i8]* @p_str211) nounwind"   --->   Operation 31 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 32 [1/2] (0.00ns)   --->   "call fastcc void @getConductances(i64* %input_V_data, i27 %simConfig_rowsToSimu, i27 %simConfig_BLOCK_NUMB)" [modules/blockControl/blockControl.cpp:67]   --->   Operation 32 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_4 : Operation 33 [1/1] (0.00ns)   --->   "ret void"   --->   Operation 33 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 0
+- Is one-state seq: 0
+- Is datapath-only: 0
+- Is pipelined: 0
+- Is top level: 0
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ input_V_data]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ simConfig_rowsToSimulate_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+Port [ simConfig_BLOCK_NUMBERS_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+Port [ V_SIZE]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+Port [ V_data_V_data_0]:  wired=1; compound=1; hidden=0; nouse=0; global=1; static=1; extern=0; dir=1; type=3; pingpong=0; private_global=0; linkage=7; visibility=0; IO mode=ap_fifo:ce=0
+Port [ V_data_V_data_1]:  wired=1; compound=1; hidden=0; nouse=0; global=1; static=1; extern=0; dir=1; type=3; pingpong=0; private_global=0; linkage=7; visibility=0; IO mode=ap_fifo:ce=0
+Port [ V_data_V_data_2]:  wired=1; compound=1; hidden=0; nouse=0; global=1; static=1; extern=0; dir=1; type=3; pingpong=0; private_global=0; linkage=7; visibility=0; IO mode=ap_fifo:ce=0
+Port [ V_data_V_data_3]:  wired=1; compound=1; hidden=0; nouse=0; global=1; static=1; extern=0; dir=1; type=3; pingpong=0; private_global=0; linkage=7; visibility=0; IO mode=ap_fifo:ce=0
+Port [ C_data_V_data_0]:  wired=1; compound=1; hidden=0; nouse=0; global=1; static=1; extern=0; dir=1; type=3; pingpong=0; private_global=0; linkage=7; visibility=0; IO mode=ap_fifo:ce=0
+Port [ C_data_V_data_1]:  wired=1; compound=1; hidden=0; nouse=0; global=1; static=1; extern=0; dir=1; type=3; pingpong=0; private_global=0; linkage=7; visibility=0; IO mode=ap_fifo:ce=0
+Port [ C_data_V_data_2]:  wired=1; compound=1; hidden=0; nouse=0; global=1; static=1; extern=0; dir=1; type=3; pingpong=0; private_global=0; linkage=7; visibility=0; IO mode=ap_fifo:ce=0
+Port [ C_data_V_data_3]:  wired=1; compound=1; hidden=0; nouse=0; global=1; static=1; extern=0; dir=1; type=3; pingpong=0; private_global=0; linkage=7; visibility=0; IO mode=ap_fifo:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+V_SIZE_read          (read         ) [ 00100]
+simConfig_rowsToSimu (read         ) [ 00111]
+simConfig_BLOCK_NUMB (read         ) [ 00111]
+StgValue_9           (call         ) [ 00000]
+StgValue_11          (specinterface) [ 00000]
+StgValue_12          (specinterface) [ 00000]
+StgValue_13          (specinterface) [ 00000]
+StgValue_14          (specinterface) [ 00000]
+StgValue_15          (specinterface) [ 00000]
+StgValue_16          (specinterface) [ 00000]
+StgValue_17          (specinterface) [ 00000]
+StgValue_18          (specinterface) [ 00000]
+StgValue_19          (specinterface) [ 00000]
+StgValue_20          (specinterface) [ 00000]
+StgValue_21          (specinterface) [ 00000]
+StgValue_22          (specinterface) [ 00000]
+StgValue_23          (specinterface) [ 00000]
+StgValue_24          (specinterface) [ 00000]
+StgValue_25          (specinterface) [ 00000]
+StgValue_26          (specinterface) [ 00000]
+StgValue_27          (specinterface) [ 00000]
+StgValue_28          (specinterface) [ 00000]
+StgValue_29          (specinterface) [ 00000]
+StgValue_30          (specinterface) [ 00000]
+StgValue_31          (specinterface) [ 00000]
+StgValue_32          (call         ) [ 00000]
+StgValue_33          (ret          ) [ 00000]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="input_V_data">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="input_V_data"/></StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1000" name="simConfig_rowsToSimulate_V">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="simConfig_rowsToSimulate_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1000" name="simConfig_BLOCK_NUMBERS_V">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="simConfig_BLOCK_NUMBERS_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1000" name="V_SIZE">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="V_SIZE"/></StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1000" name="V_data_V_data_0">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="V_data_V_data_0"/></StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1000" name="V_data_V_data_1">
+<pin_list>
+<pin id="11" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="V_data_V_data_1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1000" name="V_data_V_data_2">
+<pin_list>
+<pin id="13" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="V_data_V_data_2"/></StgValue>
+</bind>
+</comp>
+
+<comp id="14" class="1000" name="V_data_V_data_3">
+<pin_list>
+<pin id="15" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="V_data_V_data_3"/></StgValue>
+</bind>
+</comp>
+
+<comp id="16" class="1000" name="C_data_V_data_0">
+<pin_list>
+<pin id="17" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="C_data_V_data_0"/></StgValue>
+</bind>
+</comp>
+
+<comp id="18" class="1000" name="C_data_V_data_1">
+<pin_list>
+<pin id="19" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="C_data_V_data_1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="20" class="1000" name="C_data_V_data_2">
+<pin_list>
+<pin id="21" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="C_data_V_data_2"/></StgValue>
+</bind>
+</comp>
+
+<comp id="22" class="1000" name="C_data_V_data_3">
+<pin_list>
+<pin id="23" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="C_data_V_data_3"/></StgValue>
+</bind>
+</comp>
+
+<comp id="24" class="1001" name="const_24">
+<pin_list>
+<pin id="25" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.ap_fifo.i32P"/></StgValue>
+</bind>
+</comp>
+
+<comp id="26" class="1001" name="const_26">
+<pin_list>
+<pin id="27" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="getVoltages"/></StgValue>
+</bind>
+</comp>
+
+<comp id="28" class="1001" name="const_28">
+<pin_list>
+<pin id="29" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.ap_fifo.i27P"/></StgValue>
+</bind>
+</comp>
+
+<comp id="30" class="1001" name="const_30">
+<pin_list>
+<pin id="31" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="getConductances"/></StgValue>
+</bind>
+</comp>
+
+<comp id="32" class="1001" name="const_32">
+<pin_list>
+<pin id="33" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecInterface"/></StgValue>
+</bind>
+</comp>
+
+<comp id="34" class="1001" name="const_34">
+<pin_list>
+<pin id="35" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str918"/></StgValue>
+</bind>
+</comp>
+
+<comp id="36" class="1001" name="const_36">
+<pin_list>
+<pin id="37" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="38" class="1001" name="const_38">
+<pin_list>
+<pin id="39" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str10"/></StgValue>
+</bind>
+</comp>
+
+<comp id="40" class="1001" name="const_40">
+<pin_list>
+<pin id="41" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str211"/></StgValue>
+</bind>
+</comp>
+
+<comp id="42" class="1001" name="const_42">
+<pin_list>
+<pin id="43" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="ap_fifo_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="44" class="1001" name="const_44">
+<pin_list>
+<pin id="45" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="46" class="1001" name="const_46">
+<pin_list>
+<pin id="47" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="48" class="1001" name="const_48">
+<pin_list>
+<pin id="49" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="50" class="1001" name="const_50">
+<pin_list>
+<pin id="51" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="ScalarProp_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="52" class="1004" name="V_SIZE_read_read_fu_52">
+<pin_list>
+<pin id="53" dir="0" index="0" bw="32" slack="0"/>
+<pin id="54" dir="0" index="1" bw="32" slack="0"/>
+<pin id="55" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="V_SIZE_read/1 "/>
+</bind>
+</comp>
+
+<comp id="58" class="1004" name="simConfig_rowsToSimu_read_fu_58">
+<pin_list>
+<pin id="59" dir="0" index="0" bw="27" slack="0"/>
+<pin id="60" dir="0" index="1" bw="27" slack="0"/>
+<pin id="61" dir="1" index="2" bw="27" slack="2"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="simConfig_rowsToSimu/1 "/>
+</bind>
+</comp>
+
+<comp id="64" class="1004" name="simConfig_BLOCK_NUMB_read_fu_64">
+<pin_list>
+<pin id="65" dir="0" index="0" bw="27" slack="0"/>
+<pin id="66" dir="0" index="1" bw="27" slack="0"/>
+<pin id="67" dir="1" index="2" bw="27" slack="2"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="simConfig_BLOCK_NUMB/1 "/>
+</bind>
+</comp>
+
+<comp id="70" class="1004" name="grp_getConductances_fu_70">
+<pin_list>
+<pin id="71" dir="0" index="0" bw="0" slack="0"/>
+<pin id="72" dir="0" index="1" bw="64" slack="0"/>
+<pin id="73" dir="0" index="2" bw="27" slack="2"/>
+<pin id="74" dir="0" index="3" bw="27" slack="2"/>
+<pin id="75" dir="0" index="4" bw="32" slack="0"/>
+<pin id="76" dir="0" index="5" bw="32" slack="0"/>
+<pin id="77" dir="0" index="6" bw="32" slack="0"/>
+<pin id="78" dir="0" index="7" bw="32" slack="0"/>
+<pin id="79" dir="1" index="8" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="StgValue_10/3 "/>
+</bind>
+</comp>
+
+<comp id="86" class="1004" name="grp_getVoltages_fu_86">
+<pin_list>
+<pin id="87" dir="0" index="0" bw="0" slack="0"/>
+<pin id="88" dir="0" index="1" bw="64" slack="0"/>
+<pin id="89" dir="0" index="2" bw="32" slack="0"/>
+<pin id="90" dir="0" index="3" bw="32" slack="0"/>
+<pin id="91" dir="0" index="4" bw="32" slack="0"/>
+<pin id="92" dir="0" index="5" bw="32" slack="0"/>
+<pin id="93" dir="0" index="6" bw="32" slack="0"/>
+<pin id="94" dir="1" index="7" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="StgValue_6/1 "/>
+</bind>
+</comp>
+
+<comp id="102" class="1005" name="V_SIZE_read_reg_102">
+<pin_list>
+<pin id="103" dir="0" index="0" bw="32" slack="1"/>
+<pin id="104" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opset="V_SIZE_read "/>
+</bind>
+</comp>
+
+<comp id="107" class="1005" name="simConfig_rowsToSimu_reg_107">
+<pin_list>
+<pin id="108" dir="0" index="0" bw="27" slack="2"/>
+<pin id="109" dir="1" index="1" bw="27" slack="2"/>
+</pin_list>
+<bind>
+<opset="simConfig_rowsToSimu "/>
+</bind>
+</comp>
+
+<comp id="112" class="1005" name="simConfig_BLOCK_NUMB_reg_112">
+<pin_list>
+<pin id="113" dir="0" index="0" bw="27" slack="2"/>
+<pin id="114" dir="1" index="1" bw="27" slack="2"/>
+</pin_list>
+<bind>
+<opset="simConfig_BLOCK_NUMB "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="56"><net_src comp="24" pin="0"/><net_sink comp="52" pin=0"/></net>
+
+<net id="57"><net_src comp="6" pin="0"/><net_sink comp="52" pin=1"/></net>
+
+<net id="62"><net_src comp="28" pin="0"/><net_sink comp="58" pin=0"/></net>
+
+<net id="63"><net_src comp="2" pin="0"/><net_sink comp="58" pin=1"/></net>
+
+<net id="68"><net_src comp="28" pin="0"/><net_sink comp="64" pin=0"/></net>
+
+<net id="69"><net_src comp="4" pin="0"/><net_sink comp="64" pin=1"/></net>
+
+<net id="80"><net_src comp="30" pin="0"/><net_sink comp="70" pin=0"/></net>
+
+<net id="81"><net_src comp="0" pin="0"/><net_sink comp="70" pin=1"/></net>
+
+<net id="82"><net_src comp="16" pin="0"/><net_sink comp="70" pin=4"/></net>
+
+<net id="83"><net_src comp="18" pin="0"/><net_sink comp="70" pin=5"/></net>
+
+<net id="84"><net_src comp="20" pin="0"/><net_sink comp="70" pin=6"/></net>
+
+<net id="85"><net_src comp="22" pin="0"/><net_sink comp="70" pin=7"/></net>
+
+<net id="95"><net_src comp="26" pin="0"/><net_sink comp="86" pin=0"/></net>
+
+<net id="96"><net_src comp="0" pin="0"/><net_sink comp="86" pin=1"/></net>
+
+<net id="97"><net_src comp="52" pin="2"/><net_sink comp="86" pin=2"/></net>
+
+<net id="98"><net_src comp="8" pin="0"/><net_sink comp="86" pin=3"/></net>
+
+<net id="99"><net_src comp="10" pin="0"/><net_sink comp="86" pin=4"/></net>
+
+<net id="100"><net_src comp="12" pin="0"/><net_sink comp="86" pin=5"/></net>
+
+<net id="101"><net_src comp="14" pin="0"/><net_sink comp="86" pin=6"/></net>
+
+<net id="105"><net_src comp="52" pin="2"/><net_sink comp="102" pin=0"/></net>
+
+<net id="106"><net_src comp="102" pin="1"/><net_sink comp="86" pin=2"/></net>
+
+<net id="110"><net_src comp="58" pin="2"/><net_sink comp="107" pin=0"/></net>
+
+<net id="111"><net_src comp="107" pin="1"/><net_sink comp="70" pin=2"/></net>
+
+<net id="115"><net_src comp="64" pin="2"/><net_sink comp="112" pin=0"/></net>
+
+<net id="116"><net_src comp="112" pin="1"/><net_sink comp="70" pin=3"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+	Port: input_V_data | {}
+	Port: V_data_V_data_0 | {1 2 }
+	Port: V_data_V_data_1 | {1 2 }
+	Port: V_data_V_data_2 | {1 2 }
+	Port: V_data_V_data_3 | {1 2 }
+	Port: C_data_V_data_0 | {3 4 }
+	Port: C_data_V_data_1 | {3 4 }
+	Port: C_data_V_data_2 | {3 4 }
+	Port: C_data_V_data_3 | {3 4 }
+ - Input state : 
+	Port: blockControl : input_V_data | {1 2 3 4 }
+	Port: blockControl : simConfig_rowsToSimulate_V | {1 }
+	Port: blockControl : simConfig_BLOCK_NUMBERS_V | {1 }
+	Port: blockControl : V_SIZE | {1 }
+	Port: blockControl : V_data_V_data_0 | {}
+	Port: blockControl : V_data_V_data_1 | {}
+	Port: blockControl : V_data_V_data_2 | {}
+	Port: blockControl : V_data_V_data_3 | {}
+	Port: blockControl : C_data_V_data_0 | {}
+	Port: blockControl : C_data_V_data_1 | {}
+	Port: blockControl : C_data_V_data_2 | {}
+	Port: blockControl : C_data_V_data_3 | {}
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|---------------------------------|---------|---------|
+| Operation|         Functional Unit         |    FF   |   LUT   |
+|----------|---------------------------------|---------|---------|
+|   call   |    grp_getConductances_fu_70    |   200   |    82   |
+|          |      grp_getVoltages_fu_86      |   150   |    52   |
+|----------|---------------------------------|---------|---------|
+|          |      V_SIZE_read_read_fu_52     |    0    |    0    |
+|   read   | simConfig_rowsToSimu_read_fu_58 |    0    |    0    |
+|          | simConfig_BLOCK_NUMB_read_fu_64 |    0    |    0    |
+|----------|---------------------------------|---------|---------|
+|   Total  |                                 |   350   |   134   |
+|----------|---------------------------------|---------|---------|
+
+Memories:
+N/A
+
+* Register list:
++----------------------------+--------+
+|                            |   FF   |
++----------------------------+--------+
+|     V_SIZE_read_reg_102    |   32   |
+|simConfig_BLOCK_NUMB_reg_112|   27   |
+|simConfig_rowsToSimu_reg_107|   27   |
++----------------------------+--------+
+|            Total           |   86   |
++----------------------------+--------+
+
+* Multiplexer (MUX) list: 
+|-----------------------|------|------|------|--------||---------||---------|
+|          Comp         |  Pin | Size |  BW  | S x BW ||  Delay  ||   LUT   |
+|-----------------------|------|------|------|--------||---------||---------|
+| grp_getVoltages_fu_86 |  p2  |   2  |  32  |   64   ||    9    |
+|-----------------------|------|------|------|--------||---------||---------|
+|         Total         |      |      |      |   64   ||  1.769  ||    9    |
+|-----------------------|------|------|------|--------||---------||---------|
+
+
+
+* Summary:
++-----------+--------+--------+--------+
+|           |  Delay |   FF   |   LUT  |
++-----------+--------+--------+--------+
+|  Function |    -   |   350  |   134  |
+|   Memory  |    -   |    -   |    -   |
+|Multiplexer|    1   |    -   |    9   |
+|  Register |    -   |   86   |    -   |
++-----------+--------+--------+--------+
+|   Total   |    1   |   436  |   143  |
++-----------+--------+--------+--------+

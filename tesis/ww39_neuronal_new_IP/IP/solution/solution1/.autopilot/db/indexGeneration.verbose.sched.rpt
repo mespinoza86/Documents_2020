@@ -1,0 +1,298 @@
+
+
+================================================================
+== Vivado HLS Report for 'indexGeneration'
+================================================================
+* Date:           Thu Jan  9 23:44:21 2020
+
+* Version:        2016.4 (Build 1756540 on Mon Jan 23 19:31:01 MST 2017)
+* Project:        solution
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      5.32|        4.00|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+---------+-----+---------+---------+
+    |    Latency    |    Interval   | Pipeline|
+    | min |   max   | min |   max   |   Type  |
+    +-----+---------+-----+---------+---------+
+    |    4|  6252501|    4|  6252501|   none  |
+    +-----+---------+-----+---------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------+-----+---------+----------+-----------+-----------+----------+----------+
+        |             |    Latency    | Iteration|  Initiation Interval  |   Trip   |          |
+        |  Loop Name  | min |   max   |  Latency |  achieved |   target  |   Count  | Pipelined|
+        +-------------+-----+---------+----------+-----------+-----------+----------+----------+
+        |- Loop 1     |    3|  6252500| 3 ~ 2501 |          -|          -| 1 ~ 2500 |    no    |
+        | + Loop 1.1  |    1|     2499|         1|          -|          -| 1 ~ 2499 |    no    |
+        +-------------+-----+---------+----------+-----------+-----------+----------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 3
+* Pipeline: 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / (tmp_12_i_i)
+3 --> 
+	3  / (tmp_18_i_i)
+	2  / (!tmp_18_i_i)
+* FSM state operations: 
+
+ <State 1>: 4.57ns
+ST_1: StgValue_4 (12)  [1/1] 0.00ns
+entry:0  call void (...)* @_ssdm_op_SpecInterface(i27* @Vj_idx_V_data_V_0, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_5 (13)  [1/1] 0.00ns
+entry:1  call void (...)* @_ssdm_op_SpecInterface(i27* @Vi_idx_V_data_V_0, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_6 (14)  [1/1] 0.00ns
+entry:2  call void (...)* @_ssdm_op_SpecInterface(i27* @Vj_idx_V_data_V_1, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_7 (15)  [1/1] 0.00ns
+entry:3  call void (...)* @_ssdm_op_SpecInterface(i27* @Vj_idx_V_data_V_2, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_8 (16)  [1/1] 0.00ns
+entry:4  call void (...)* @_ssdm_op_SpecInterface(i27* @Vj_idx_V_data_V_3, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_9 (17)  [1/1] 0.00ns
+entry:5  call void (...)* @_ssdm_op_SpecInterface(i27* @Vi_idx_V_data_V_2, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_10 (18)  [1/1] 0.00ns
+entry:6  call void (...)* @_ssdm_op_SpecInterface(i27* @Vi_idx_V_data_V_1, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_11 (19)  [1/1] 0.00ns
+entry:7  call void (...)* @_ssdm_op_SpecInterface(i27* @Vi_idx_V_data_V_3, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_12 (20)  [1/1] 0.00ns
+entry:8  call void (...)* @_ssdm_op_SpecInterface(i27* %simConfig_BLOCK_NUMBERS_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_13 (21)  [1/1] 0.00ns
+entry:9  call void (...)* @_ssdm_op_SpecInterface(i27* %simConfig_rowEnd_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_14 (22)  [1/1] 0.00ns
+entry:10  call void (...)* @_ssdm_op_SpecInterface(i27* %simConfig_rowBegin_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: simConfig_rowEnd_V_r (23)  [1/1] 3.00ns
+entry:11  %simConfig_rowEnd_V_r = call i27 @_ssdm_op_Read.ap_fifo.i27P(i27* %simConfig_rowEnd_V)
+
+ST_1: simConfig_BLOCK_NUMB (24)  [1/1] 3.00ns
+entry:12  %simConfig_BLOCK_NUMB = call i27 @_ssdm_op_Read.ap_fifo.i27P(i27* %simConfig_BLOCK_NUMBERS_V)
+
+ST_1: StgValue_17 (25)  [1/1] 0.00ns
+entry:13  call void (...)* @_ssdm_op_SpecInterface(i27* @Vj_idx_V_data_V_0, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_18 (26)  [1/1] 0.00ns
+entry:14  call void (...)* @_ssdm_op_SpecInterface(i27* @Vi_idx_V_data_V_0, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_19 (27)  [1/1] 0.00ns
+entry:15  call void (...)* @_ssdm_op_SpecInterface(i27* @Vj_idx_V_data_V_1, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_20 (28)  [1/1] 0.00ns
+entry:16  call void (...)* @_ssdm_op_SpecInterface(i27* @Vj_idx_V_data_V_2, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_21 (29)  [1/1] 0.00ns
+entry:17  call void (...)* @_ssdm_op_SpecInterface(i27* @Vj_idx_V_data_V_3, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_22 (30)  [1/1] 0.00ns
+entry:18  call void (...)* @_ssdm_op_SpecInterface(i27* @Vi_idx_V_data_V_2, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_23 (31)  [1/1] 0.00ns
+entry:19  call void (...)* @_ssdm_op_SpecInterface(i27* @Vi_idx_V_data_V_1, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_24 (32)  [1/1] 0.00ns
+entry:20  call void (...)* @_ssdm_op_SpecInterface(i27* @Vi_idx_V_data_V_3, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: rowOffset_V (33)  [1/1] 3.00ns  loc: modules/V_read/V_read.cpp:6
+entry:21  %rowOffset_V = call i27 @_ssdm_op_Read.ap_fifo.i27P(i27* %simConfig_rowBegin_V)
+
+ST_1: tmp_cast_i_i (34)  [1/1] 0.00ns  loc: modules/V_read/V_read.cpp:6
+entry:22  %tmp_cast_i_i = sext i27 %simConfig_rowEnd_V_r to i28
+
+ST_1: StgValue_27 (35)  [1/1] 1.57ns  loc: modules/V_read/V_read.cpp:6
+entry:23  br label %0
+
+
+ <State 2>: 5.32ns
+ST_2: tmp_data_0_V (37)  [1/1] 0.00ns
+:0  %tmp_data_0_V = phi i27 [ %rowOffset_V, %entry ], [ %rowOffset_V_1, %3 ]
+
+ST_2: tmp_cast_i_i_19 (38)  [1/1] 0.00ns  loc: modules/V_read/V_read.cpp:6
+:1  %tmp_cast_i_i_19 = zext i27 %tmp_data_0_V to i28
+
+ST_2: tmp_12_i_i (39)  [1/1] 2.44ns  loc: modules/V_read/V_read.cpp:6
+:2  %tmp_12_i_i = icmp slt i28 %tmp_cast_i_i_19, %tmp_cast_i_i
+
+ST_2: StgValue_31 (40)  [1/1] 0.00ns  loc: modules/V_read/V_read.cpp:6
+:3  br i1 %tmp_12_i_i, label %1, label %.exit
+
+ST_2: tmp_1_i_i (42)  [1/1] 0.00ns  loc: modules/V_read/V_read.cpp:7
+:0  %tmp_1_i_i = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str9)
+
+ST_2: StgValue_33 (43)  [1/1] 0.00ns  loc: modules/V_read/V_read.cpp:8
+:1  call void (...)* @_ssdm_op_SpecLoopTripCount(i32 1, i32 2500, i32 1250, [1 x i8]* @p_str466) nounwind
+
+ST_2: tmp_data_1_V (44)  [1/1] 2.32ns  loc: modules/V_read/V_read.cpp:11
+:2  %tmp_data_1_V = add i27 %tmp_data_0_V, 1
+
+ST_2: tmp_data_2_V (45)  [1/1] 2.32ns  loc: modules/V_read/V_read.cpp:12
+:3  %tmp_data_2_V = add i27 %tmp_data_0_V, 2
+
+ST_2: tmp_data_3_V (46)  [1/1] 2.32ns  loc: modules/V_read/V_read.cpp:13
+:4  %tmp_data_3_V = add i27 %tmp_data_0_V, 3
+
+ST_2: StgValue_37 (47)  [1/1] 3.00ns  loc: modules/V_read/V_read.cpp:14
+:5  call void @_ssdm_op_Write.ap_fifo.volatile.i27P.i27P.i27P.i27P(i27* @Vi_idx_V_data_V_0, i27* @Vi_idx_V_data_V_1, i27* @Vi_idx_V_data_V_2, i27* @Vi_idx_V_data_V_3, i27 %tmp_data_0_V, i27 %tmp_data_1_V, i27 %tmp_data_2_V, i27 %tmp_data_3_V)
+
+ST_2: StgValue_38 (48)  [1/1] 1.57ns  loc: modules/V_read/V_read.cpp:16
+:6  br label %.preheader.i.i
+
+ST_2: StgValue_39 (72)  [1/1] 0.00ns
+.exit:0  ret void
+
+
+ <State 3>: 3.00ns
+ST_3: p_3_i_i (50)  [1/1] 0.00ns
+.preheader.i.i:0  %p_3_i_i = phi i12 [ %block_V, %2 ], [ 0, %1 ]
+
+ST_3: p_3_cast_i_i (51)  [1/1] 0.00ns  loc: modules/V_read/V_read.cpp:17
+.preheader.i.i:1  %p_3_cast_i_i = zext i12 %p_3_i_i to i27
+
+ST_3: tmp_18_i_i (52)  [1/1] 2.44ns  loc: modules/V_read/V_read.cpp:17
+.preheader.i.i:2  %tmp_18_i_i = icmp slt i27 %p_3_cast_i_i, %simConfig_BLOCK_NUMB
+
+ST_3: StgValue_43 (53)  [1/1] 0.00ns
+.preheader.i.i:3  call void (...)* @_ssdm_op_SpecLoopTripCount(i64 1, i64 2499, i64 1250)
+
+ST_3: block_V (54)  [1/1] 1.84ns  loc: modules/V_read/V_read.cpp:17
+.preheader.i.i:4  %block_V = add i12 %p_3_i_i, 1
+
+ST_3: StgValue_45 (55)  [1/1] 0.00ns  loc: modules/V_read/V_read.cpp:17
+.preheader.i.i:5  br i1 %tmp_18_i_i, label %2, label %3
+
+ST_3: column_V (57)  [1/1] 0.00ns  loc: modules/V_read/V_read.cpp:19
+:0  %column_V = call i14 @_ssdm_op_BitConcatenate.i14.i12.i2(i12 %p_3_i_i, i2 0)
+
+ST_3: tmp_data_0_V_3 (58)  [1/1] 0.00ns  loc: modules/V_read/V_read.cpp:19
+:1  %tmp_data_0_V_3 = zext i14 %column_V to i27
+
+ST_3: tmp_data_1_V_2 (59)  [1/1] 0.00ns  loc: modules/V_read/V_read.cpp:22
+:2  %tmp_data_1_V_2 = or i14 %column_V, 1
+
+ST_3: tmp_data_1_V_3 (60)  [1/1] 0.00ns  loc: modules/V_read/V_read.cpp:22
+:3  %tmp_data_1_V_3 = zext i14 %tmp_data_1_V_2 to i27
+
+ST_3: tmp_data_2_V_2 (61)  [1/1] 0.00ns  loc: modules/V_read/V_read.cpp:23
+:4  %tmp_data_2_V_2 = or i14 %column_V, 2
+
+ST_3: tmp_data_2_V_3 (62)  [1/1] 0.00ns  loc: modules/V_read/V_read.cpp:23
+:5  %tmp_data_2_V_3 = zext i14 %tmp_data_2_V_2 to i27
+
+ST_3: tmp_data_3_V_2 (63)  [1/1] 0.00ns  loc: modules/V_read/V_read.cpp:24
+:6  %tmp_data_3_V_2 = or i14 %column_V, 3
+
+ST_3: tmp_data_3_V_3 (64)  [1/1] 0.00ns  loc: modules/V_read/V_read.cpp:24
+:7  %tmp_data_3_V_3 = zext i14 %tmp_data_3_V_2 to i27
+
+ST_3: StgValue_54 (65)  [1/1] 3.00ns  loc: modules/V_read/V_read.cpp:25
+:8  call void @_ssdm_op_Write.ap_fifo.volatile.i27P.i27P.i27P.i27P(i27* @Vj_idx_V_data_V_0, i27* @Vj_idx_V_data_V_1, i27* @Vj_idx_V_data_V_2, i27* @Vj_idx_V_data_V_3, i27 %tmp_data_0_V_3, i27 %tmp_data_1_V_3, i27 %tmp_data_2_V_3, i27 %tmp_data_3_V_3)
+
+ST_3: StgValue_55 (66)  [1/1] 0.00ns  loc: modules/V_read/V_read.cpp:17
+:9  br label %.preheader.i.i
+
+ST_3: empty (68)  [1/1] 0.00ns  loc: modules/V_read/V_read.cpp:27
+:0  %empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str9, i32 %tmp_1_i_i)
+
+ST_3: rowOffset_V_1 (69)  [1/1] 2.32ns  loc: modules/V_read/V_read.cpp:7
+:1  %rowOffset_V_1 = add i27 %tmp_data_0_V, 4
+
+ST_3: StgValue_58 (70)  [1/1] 0.00ns  loc: modules/V_read/V_read.cpp:7
+:2  br label %0
+
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 4ns.
+
+ <State 1>: 4.57ns
+The critical path consists of the following:
+	fifo read on port 'simConfig_rowBegin_V' (modules/V_read/V_read.cpp:6) [33]  (3 ns)
+	multiplexor before 'phi' operation ('rowOffset.V') with incoming values : ('rowOffset.V', modules/V_read/V_read.cpp:6) ('rowOffset.V', modules/V_read/V_read.cpp:7) [37]  (1.57 ns)
+
+ <State 2>: 5.32ns
+The critical path consists of the following:
+	'phi' operation ('rowOffset.V') with incoming values : ('rowOffset.V', modules/V_read/V_read.cpp:6) ('rowOffset.V', modules/V_read/V_read.cpp:7) [37]  (0 ns)
+	'add' operation ('tmp.data[1].V', modules/V_read/V_read.cpp:11) [44]  (2.32 ns)
+	fifo write on port 'Vi_idx_V_data_V_0' (modules/V_read/V_read.cpp:14) [47]  (3 ns)
+
+ <State 3>: 3ns
+The critical path consists of the following:
+	'phi' operation ('block.V') with incoming values : ('block.V', modules/V_read/V_read.cpp:17) [50]  (0 ns)
+	fifo write on port 'Vj_idx_V_data_V_0' (modules/V_read/V_read.cpp:25) [65]  (3 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

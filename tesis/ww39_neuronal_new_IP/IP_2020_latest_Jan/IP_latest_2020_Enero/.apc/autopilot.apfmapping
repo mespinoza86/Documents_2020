@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="calc.cpp" path="/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP_2020_latest_Jan/modules/calc/calc.cpp"/>
+    <originFiles name="blockControl.cpp" path="/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP_2020_latest_Jan/modules/blockControl/blockControl.cpp"/>
+    <originFiles name="acc.cpp" path="/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP_2020_latest_Jan/modules/acc/acc.cpp"/>
+    <originFiles name="V_read.cpp" path="/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP_2020_latest_Jan/modules/V_read/V_read.cpp"/>
+    <originFiles name="Stream.cpp" path="/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP_2020_latest_Jan/Stream.cpp"/>
+    <originFiles name="I_calc.cpp" path="/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP_2020_latest_Jan/modules/I_calc/I_calc.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="StreamTest.cpp" path="/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP_2020_latest_Jan/StreamTest.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

@@ -1,0 +1,16 @@
+verilog xil_defaultlib "../../../ipstatic/hdl/verilog/Simulate_HW_fptrueOg.v" --include "../../../../../project_HLS/IP_2018v2/IP_2018_v2/solution1/impl/ip/Simulate_HW_0/drivers/Simulate_HW_v1_0/src"
+verilog xil_defaultlib "../../../ipstatic/hdl/verilog/Simulate_HW_faddfbkb.v" --include "../../../../../project_HLS/IP_2018v2/IP_2018_v2/solution1/impl/ip/Simulate_HW_0/drivers/Simulate_HW_v1_0/src"
+verilog xil_defaultlib "../../../ipstatic/hdl/verilog/Simulate_HW_dadd_hbi.v" --include "../../../../../project_HLS/IP_2018v2/IP_2018_v2/solution1/impl/ip/Simulate_HW_0/drivers/Simulate_HW_v1_0/src"
+verilog xil_defaultlib "../../../ipstatic/hdl/verilog/Simulate_HW_fexp_g8j.v" --include "../../../../../project_HLS/IP_2018v2/IP_2018_v2/solution1/impl/ip/Simulate_HW_0/drivers/Simulate_HW_v1_0/src"
+verilog xil_defaultlib "../../../ipstatic/hdl/verilog/Simulate_HW_mux_8jbC.v" --include "../../../../../project_HLS/IP_2018v2/IP_2018_v2/solution1/impl/ip/Simulate_HW_0/drivers/Simulate_HW_v1_0/src"
+verilog xil_defaultlib "../../../ipstatic/hdl/verilog/Simulate_HW_dmul_ibs.v" --include "../../../../../project_HLS/IP_2018v2/IP_2018_v2/solution1/impl/ip/Simulate_HW_0/drivers/Simulate_HW_v1_0/src"
+verilog xil_defaultlib "../../../ipstatic/hdl/verilog/Simulate_HW_fmul_dEe.v" --include "../../../../../project_HLS/IP_2018v2/IP_2018_v2/solution1/impl/ip/Simulate_HW_0/drivers/Simulate_HW_v1_0/src"
+verilog xil_defaultlib "../../../ipstatic/hdl/verilog/Simulate_HW_AXILiteS_s_axi.v" --include "../../../../../project_HLS/IP_2018v2/IP_2018_v2/solution1/impl/ip/Simulate_HW_0/drivers/Simulate_HW_v1_0/src"
+verilog xil_defaultlib "../../../ipstatic/hdl/verilog/Simulate_HW_fpextfYi.v" --include "../../../../../project_HLS/IP_2018v2/IP_2018_v2/solution1/impl/ip/Simulate_HW_0/drivers/Simulate_HW_v1_0/src"
+verilog xil_defaultlib "../../../ipstatic/hdl/verilog/Simulate_HW_fsub_cud.v" --include "../../../../../project_HLS/IP_2018v2/IP_2018_v2/solution1/impl/ip/Simulate_HW_0/drivers/Simulate_HW_v1_0/src"
+verilog xil_defaultlib "../../../ipstatic/hdl/verilog/Simulate_HW.v" --include "../../../../../project_HLS/IP_2018v2/IP_2018_v2/solution1/impl/ip/Simulate_HW_0/drivers/Simulate_HW_v1_0/src"
+verilog xil_defaultlib "../../../ipstatic/hdl/verilog/Loop_ROW_LOOP_proc.v" --include "../../../../../project_HLS/IP_2018v2/IP_2018_v2/solution1/impl/ip/Simulate_HW_0/drivers/Simulate_HW_v1_0/src"
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

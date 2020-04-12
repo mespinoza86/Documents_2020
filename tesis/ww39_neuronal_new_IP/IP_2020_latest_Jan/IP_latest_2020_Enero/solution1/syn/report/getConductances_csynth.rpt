@@ -1,0 +1,165 @@
+
+
+================================================================
+== Vivado HLS Report for 'getConductances'
+================================================================
+* Date:           Sat Jan 11 14:24:36 2020
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        IP_latest_2020_Enero
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     3.000|        4.00|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+----------+-----+----------+---------+
+    |     Latency    |    Interval    | Pipeline|
+    | min |    max   | min |    max   |   Type  |
+    +-----+----------+-----+----------+---------+
+    |    5|  49984999|    5|  49984999|   none  |
+    +-----+----------+-----+----------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------+-----+----------+-----------+-----------+-----------+-----------+----------+
+        |             |     Latency    | Iteration |  Initiation Interval  |    Trip   |          |
+        |  Loop Name  | min |    max   |  Latency  |  achieved |   target  |   Count   | Pipelined|
+        +-------------+-----+----------+-----------+-----------+-----------+-----------+----------+
+        |- Loop 1     |    4|  49984998| 4 ~ 20002 |          -|          -|  1 ~ 2499 |    no    |
+        | + Loop 1.1  |    2|     20000|          2|          -|          -| 1 ~ 10000 |    no    |
+        +-------------+-----+----------+-----------+-----------+-----------+-----------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      -|       -|      -|
+|Expression       |        -|      -|       0|     88|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        -|      -|       -|      -|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|     90|
+|Register         |        -|      -|     173|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        0|      0|     173|    178|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        0|      0|   ~0   |   ~0  |
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-------------------------+----------+-------+---+----+------------+------------+
+    |      Variable Name      | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-------------------------+----------+-------+---+----+------------+------------+
+    |RowOfBlocks_V_fu_159_p2  |     +    |      0|  0|  12|          12|           1|
+    |i_V_fu_178_p2            |     +    |      0|  0|  34|           3|          27|
+    |C_data_V_data_01_status  |    and   |      0|  0|   2|           1|           1|
+    |ap_block_state3          |    and   |      0|  0|   2|           1|           1|
+    |tmp_28_i_fu_169_p2       |   icmp   |      0|  0|  18|          31|          31|
+    |tmp_i_fu_154_p2          |   icmp   |      0|  0|  18|          27|          27|
+    |ap_block_state4          |    or    |      0|  0|   2|           1|           1|
+    +-------------------------+----------+-------+---+----+------------+------------+
+    |Total                    |          |      0|  0|  88|          76|          89|
+    +-------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +--------------------------+----+-----------+-----+-----------+
+    |           Name           | LUT| Input Size| Bits| Total Bits|
+    +--------------------------+----+-----------+-----+-----------+
+    |C_data_V_data_0_blk_n     |   9|          2|    1|          2|
+    |C_data_V_data_1_blk_n     |   9|          2|    1|          2|
+    |C_data_V_data_2_blk_n     |   9|          2|    1|          2|
+    |C_data_V_data_3_blk_n     |   9|          2|    1|          2|
+    |ap_NS_fsm                 |  27|          5|    1|          5|
+    |input_V_data_TDATA_blk_n  |   9|          2|    1|          2|
+    |p_i_reg_121               |   9|          2|   27|         54|
+    |t_V_reg_110               |   9|          2|   12|         24|
+    +--------------------------+----+-----------+-----+-----------+
+    |Total                     |  90|         19|   45|         93|
+    +--------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------------------+----+----+-----+-----------+
+    |          Name         | FF | LUT| Bits| Const Bits|
+    +-----------------------+----+----+-----+-----------+
+    |RowOfBlocks_V_reg_219  |  12|   0|   12|          0|
+    |ap_CS_fsm              |   4|   0|    4|          0|
+    |i_V_reg_237            |  27|   0|   27|          0|
+    |p_i_reg_121            |  27|   0|   27|          0|
+    |ret_V_reg_211          |  27|   0|   31|          4|
+    |t_V_reg_110            |  12|   0|   12|          0|
+    |tmp_12_i_reg_232       |  32|   0|   32|          0|
+    |tmp_reg_227            |  32|   0|   32|          0|
+    +-----------------------+----+----+-----+-----------+
+    |Total                  | 173|   0|  177|          4|
+    +-----------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------------------+-----+-----+------------+---------------------------------+--------------+
+|            RTL Ports            | Dir | Bits|  Protocol  |          Source Object          |    C Type    |
++---------------------------------+-----+-----+------------+---------------------------------+--------------+
+|ap_clk                           |  in |    1| ap_ctrl_hs |         getConductances         | return value |
+|ap_rst                           |  in |    1| ap_ctrl_hs |         getConductances         | return value |
+|ap_start                         |  in |    1| ap_ctrl_hs |         getConductances         | return value |
+|ap_done                          | out |    1| ap_ctrl_hs |         getConductances         | return value |
+|ap_idle                          | out |    1| ap_ctrl_hs |         getConductances         | return value |
+|ap_ready                         | out |    1| ap_ctrl_hs |         getConductances         | return value |
+|input_V_data_TDATA               |  in |   64|    axis    |           input_V_data          |    pointer   |
+|input_V_data_TVALID              |  in |    1|    axis    |           input_V_data          |    pointer   |
+|input_V_data_TREADY              | out |    1|    axis    |           input_V_data          |    pointer   |
+|simConfig_rowsToSimulate_V_read  |  in |   27|   ap_none  | simConfig_rowsToSimulate_V_read |    scalar    |
+|simConfig_BLOCK_NUMBERS_V_read   |  in |   27|   ap_none  |  simConfig_BLOCK_NUMBERS_V_read |    scalar    |
+|C_data_V_data_0_din              | out |   32|   ap_fifo  |         C_data_V_data_0         |    pointer   |
+|C_data_V_data_0_full_n           |  in |    1|   ap_fifo  |         C_data_V_data_0         |    pointer   |
+|C_data_V_data_0_write            | out |    1|   ap_fifo  |         C_data_V_data_0         |    pointer   |
+|C_data_V_data_1_din              | out |   32|   ap_fifo  |         C_data_V_data_1         |    pointer   |
+|C_data_V_data_1_full_n           |  in |    1|   ap_fifo  |         C_data_V_data_1         |    pointer   |
+|C_data_V_data_1_write            | out |    1|   ap_fifo  |         C_data_V_data_1         |    pointer   |
+|C_data_V_data_2_din              | out |   32|   ap_fifo  |         C_data_V_data_2         |    pointer   |
+|C_data_V_data_2_full_n           |  in |    1|   ap_fifo  |         C_data_V_data_2         |    pointer   |
+|C_data_V_data_2_write            | out |    1|   ap_fifo  |         C_data_V_data_2         |    pointer   |
+|C_data_V_data_3_din              | out |   32|   ap_fifo  |         C_data_V_data_3         |    pointer   |
+|C_data_V_data_3_full_n           |  in |    1|   ap_fifo  |         C_data_V_data_3         |    pointer   |
+|C_data_V_data_3_write            | out |    1|   ap_fifo  |         C_data_V_data_3         |    pointer   |
++---------------------------------+-----+-----+------------+---------------------------------+--------------+
+

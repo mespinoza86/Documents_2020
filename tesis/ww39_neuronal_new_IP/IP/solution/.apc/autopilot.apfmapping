@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="I_calc.cpp" path="/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/modules/I_calc/I_calc.cpp"/>
+    <originFiles name="I_calc.hpp" path="/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/modules/I_calc/I_calc.hpp"/>
+    <originFiles name="Stream.cpp" path="/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/Stream.cpp"/>
+    <originFiles name="V_read.cpp" path="/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/modules/V_read/V_read.cpp"/>
+    <originFiles name="V_read.hpp" path="/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/modules/V_read/V_read.hpp"/>
+    <originFiles name="acc.cpp" path="/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/modules/acc/acc.cpp"/>
+    <originFiles name="acc.hpp" path="/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/modules/acc/acc.hpp"/>
+    <originFiles name="accTest.cpp" path="/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/test/accTest.cpp"/>
+    <originFiles name="blockControl.cpp" path="/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/modules/blockControl/blockControl.cpp"/>
+    <originFiles name="blockControl.hpp" path="/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/modules/blockControl/blockControl.hpp"/>
+    <originFiles name="calc.cpp" path="/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/modules/calc/calc.cpp"/>
+    <originFiles name="calc.hpp" path="/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/modules/calc/calc.hpp"/>
+    <originFiles name="stream_templates.hpp" path="/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/templates/stream_templates.hpp"/>
+  </source>
+  <testbench>
+    <originFiles name="Stream.h" path="/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/Stream.h"/>
+    <originFiles name="StreamTest.cpp" path="/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/test/StreamTest.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

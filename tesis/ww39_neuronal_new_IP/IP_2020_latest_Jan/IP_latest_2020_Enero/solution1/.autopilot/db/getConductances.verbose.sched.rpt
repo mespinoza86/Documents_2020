@@ -1,0 +1,179 @@
+
+
+================================================================
+== Vivado HLS Report for 'getConductances'
+================================================================
+* Date:           Sat Jan 11 14:24:31 2020
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        IP_latest_2020_Enero
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     3.000|        4.00|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+----------+-----+----------+---------+
+    |     Latency    |    Interval    | Pipeline|
+    | min |    max   | min |    max   |   Type  |
+    +-----+----------+-----+----------+---------+
+    |    5|  49984999|    5|  49984999|   none  |
+    +-----+----------+-----+----------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------+-----+----------+-----------+-----------+-----------+-----------+----------+
+        |             |     Latency    | Iteration |  Initiation Interval  |    Trip   |          |
+        |  Loop Name  | min |    max   |  Latency  |  achieved |   target  |   Count   | Pipelined|
+        +-------------+-----+----------+-----------+-----------+-----------+-----------+----------+
+        |- Loop 1     |    4|  49984998| 4 ~ 20002 |          -|          -|  1 ~ 2499 |    no    |
+        | + Loop 1.1  |    2|     20000|          2|          -|          -| 1 ~ 10000 |    no    |
+        +-------------+-----+----------+-----------+-----------+-----------+-----------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / (tmp_i)
+3 --> 
+	4  / (tmp_28_i)
+	2  / (!tmp_28_i)
+4 --> 
+	3  / true
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.76>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%simConfig_BLOCK_NUMB = call i27 @_ssdm_op_Read.ap_auto.i27(i27 %simConfig_BLOCK_NUMBERS_V_read)"   --->   Operation 5 'read' 'simConfig_BLOCK_NUMB' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%simConfig_rowsToSimu = call i27 @_ssdm_op_Read.ap_auto.i27(i27 %simConfig_rowsToSimulate_V_read)"   --->   Operation 6 'read' 'simConfig_rowsToSimu' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* @C_data_V_data_0, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 7 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* @C_data_V_data_1, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 8 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* @C_data_V_data_2, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 9 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* @C_data_V_data_3, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 10 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i64* %input_V_data, [5 x i8]* @p_str918, i32 0, i32 0, [5 x i8]* @p_str10, i32 0, i32 0, [1 x i8]* @p_str211, [1 x i8]* @p_str211, [1 x i8]* @p_str211, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str211, [1 x i8]* @p_str211) nounwind"   --->   Operation 11 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%ret_V = call i31 @_ssdm_op_BitConcatenate.i31.i27.i4(i27 %simConfig_BLOCK_NUMB, i4 0)" [modules/blockControl/blockControl.cpp:45]   --->   Operation 12 'bitconcatenate' 'ret_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (1.76ns)   --->   "br label %.preheader143.i" [modules/blockControl/blockControl.cpp:42]   --->   Operation 13 'br' <Predicate = true> <Delay = 1.76>
+
+State 2 <SV = 1> <Delay = 2.45>
+ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%t_V = phi i12 [ 0, %entry ], [ %RowOfBlocks_V, %.preheader143.i.loopexit ]"   --->   Operation 14 'phi' 't_V' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%t_V_cast_i = zext i12 %t_V to i27" [modules/blockControl/blockControl.cpp:42]   --->   Operation 15 'zext' 't_V_cast_i' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 16 [1/1] (2.45ns)   --->   "%tmp_i = icmp slt i27 %t_V_cast_i, %simConfig_rowsToSimu" [modules/blockControl/blockControl.cpp:42]   --->   Operation 16 'icmp' 'tmp_i' <Predicate = true> <Delay = 2.45> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopTripCount(i64 1, i64 2499, i64 1250)"   --->   Operation 17 'speclooptripcount' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 18 [1/1] (1.54ns)   --->   "%RowOfBlocks_V = add i12 %t_V, 1" [modules/blockControl/blockControl.cpp:42]   --->   Operation 18 'add' 'RowOfBlocks_V' <Predicate = true> <Delay = 1.54> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.40> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "br i1 %tmp_i, label %.preheader.i.preheader, label %"getConductances<dataPackage<float, 2>, dataPackage<float, 4>, 27, 4>.exit"" [modules/blockControl/blockControl.cpp:42]   --->   Operation 19 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 20 [1/1] (1.76ns)   --->   "br label %.preheader.i" [modules/blockControl/blockControl.cpp:46]   --->   Operation 20 'br' <Predicate = (tmp_i)> <Delay = 1.76>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "ret void"   --->   Operation 21 'ret' <Predicate = (!tmp_i)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 2.47>
+ST_3 : Operation 22 [1/1] (0.00ns)   --->   "%p_i = phi i27 [ %i_V, %0 ], [ 0, %.preheader.i.preheader ]"   --->   Operation 22 'phi' 'p_i' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 23 [1/1] (0.00ns)   --->   "%tmp_27_cast_cast_i = sext i27 %p_i to i31" [modules/blockControl/blockControl.cpp:46]   --->   Operation 23 'sext' 'tmp_27_cast_cast_i' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 24 [1/1] (2.47ns)   --->   "%tmp_28_i = icmp slt i31 %tmp_27_cast_cast_i, %ret_V" [modules/blockControl/blockControl.cpp:46]   --->   Operation 24 'icmp' 'tmp_28_i' <Predicate = true> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 25 [1/1] (0.00ns)   --->   "br i1 %tmp_28_i, label %0, label %.preheader143.i.loopexit" [modules/blockControl/blockControl.cpp:46]   --->   Operation 25 'br' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 26 [1/1] (0.00ns)   --->   "%tmp_data = call i64 @_ssdm_op_Read.axis.volatile.i64P(i64* %input_V_data)"   --->   Operation 26 'read' 'tmp_data' <Predicate = (tmp_28_i)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_3 : Operation 27 [1/1] (0.00ns)   --->   "%tmp = trunc i64 %tmp_data to i32" [modules/blockControl/blockControl.cpp:49]   --->   Operation 27 'trunc' 'tmp' <Predicate = (tmp_28_i)> <Delay = 0.00>
+ST_3 : Operation 28 [1/1] (0.00ns)   --->   "%tmp_12_i = call i32 @_ssdm_op_PartSelect.i32.i64.i32.i32(i64 %tmp_data, i32 32, i32 63)" [modules/blockControl/blockControl.cpp:49]   --->   Operation 28 'partselect' 'tmp_12_i' <Predicate = (tmp_28_i)> <Delay = 0.00>
+ST_3 : Operation 29 [1/1] (2.40ns)   --->   "%i_V = add i27 4, %p_i" [modules/blockControl/blockControl.cpp:46]   --->   Operation 29 'add' 'i_V' <Predicate = (tmp_28_i)> <Delay = 2.40> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.40> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 30 [1/1] (0.00ns)   --->   "br label %.preheader143.i"   --->   Operation 30 'br' <Predicate = (!tmp_28_i)> <Delay = 0.00>
+
+State 4 <SV = 3> <Delay = 3.00>
+ST_4 : Operation 31 [1/1] (0.00ns)   --->   "%tmp_i_21 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str547)" [modules/blockControl/blockControl.cpp:46]   --->   Operation 31 'specregionbegin' 'tmp_i_21' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 32 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopTripCount(i32 1, i32 10000, i32 0, [1 x i8]* @p_str345) nounwind" [modules/blockControl/blockControl.cpp:47]   --->   Operation 32 'speclooptripcount' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 33 [1/1] (0.00ns)   --->   "%tmp_data_0 = bitcast i32 %tmp to float" [modules/blockControl/blockControl.cpp:49]   --->   Operation 33 'bitcast' 'tmp_data_0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 34 [1/1] (0.00ns)   --->   "%tmp_data_1 = bitcast i32 %tmp_12_i to float" [modules/blockControl/blockControl.cpp:49]   --->   Operation 34 'bitcast' 'tmp_data_1' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 35 [1/1] (0.00ns)   --->   "%tmp_data_5 = call i64 @_ssdm_op_Read.axis.volatile.i64P(i64* %input_V_data)"   --->   Operation 35 'read' 'tmp_data_5' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_4 : Operation 36 [1/1] (0.00ns)   --->   "%tmp_2 = trunc i64 %tmp_data_5 to i32" [modules/blockControl/blockControl.cpp:53]   --->   Operation 36 'trunc' 'tmp_2' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 37 [1/1] (0.00ns)   --->   "%tmp_data_2 = bitcast i32 %tmp_2 to float" [modules/blockControl/blockControl.cpp:53]   --->   Operation 37 'bitcast' 'tmp_data_2' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 38 [1/1] (0.00ns)   --->   "%tmp_16_i = call i32 @_ssdm_op_PartSelect.i32.i64.i32.i32(i64 %tmp_data_5, i32 32, i32 63)" [modules/blockControl/blockControl.cpp:53]   --->   Operation 38 'partselect' 'tmp_16_i' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 39 [1/1] (0.00ns)   --->   "%tmp_data_3 = bitcast i32 %tmp_16_i to float" [modules/blockControl/blockControl.cpp:53]   --->   Operation 39 'bitcast' 'tmp_data_3' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 40 [1/1] (3.00ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.floatP.floatP.floatP.floatP(float* @C_data_V_data_0, float* @C_data_V_data_1, float* @C_data_V_data_2, float* @C_data_V_data_3, float %tmp_data_0, float %tmp_data_1, float %tmp_data_2, float %tmp_data_3)" [modules/blockControl/blockControl.cpp:56]   --->   Operation 40 'write' <Predicate = true> <Delay = 3.00> <Core = "FIFO_SRL">   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_4 : Operation 41 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str547, i32 %tmp_i_21)" [modules/blockControl/blockControl.cpp:57]   --->   Operation 41 'specregionend' 'empty' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 42 [1/1] (0.00ns)   --->   "br label %.preheader.i" [modules/blockControl/blockControl.cpp:46]   --->   Operation 42 'br' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 4ns.
+
+ <State 1>: 1.77ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('RowOfBlocks.V') with incoming values : ('RowOfBlocks.V', modules/blockControl/blockControl.cpp:42) [18]  (1.77 ns)
+
+ <State 2>: 2.46ns
+The critical path consists of the following:
+	'phi' operation ('RowOfBlocks.V') with incoming values : ('RowOfBlocks.V', modules/blockControl/blockControl.cpp:42) [18]  (0 ns)
+	'icmp' operation ('tmp_i', modules/blockControl/blockControl.cpp:42) [20]  (2.46 ns)
+
+ <State 3>: 2.47ns
+The critical path consists of the following:
+	'phi' operation ('i.V') with incoming values : ('i.V', modules/blockControl/blockControl.cpp:46) [27]  (0 ns)
+	'icmp' operation ('tmp_28_i', modules/blockControl/blockControl.cpp:46) [29]  (2.47 ns)
+
+ <State 4>: 3ns
+The critical path consists of the following:
+	fifo write on port 'C_data_V_data_0' (modules/blockControl/blockControl.cpp:56) [44]  (3 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A
