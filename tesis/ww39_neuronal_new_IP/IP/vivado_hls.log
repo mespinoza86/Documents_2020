@@ -1,0 +1,687 @@
+awk: symbol lookup error: awk: undefined symbol: mpfr_z_sub
+INFO: [HLS 200-10] Running '/opt/vivado/Vivado_HLS/2016.4/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'marco' on host 'marco-HP-Notebook' (Linux_x86_64 version 4.15.0-74-generic) on Thu Jan 09 23:42:28 CST 2020
+INFO: [HLS 200-10] On os Ubuntu 16.04.5 LTS
+INFO: [HLS 200-10] In directory '/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP'
+INFO: [HLS 200-10] Opening project '/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/solution'.
+INFO: [HLS 200-10] Adding design file 'modules/I_calc/I_calc.cpp' to the project
+INFO: [HLS 200-10] Adding design file 'modules/I_calc/I_calc.hpp' to the project
+INFO: [HLS 200-10] Adding design file 'Stream.cpp' to the project
+INFO: [HLS 200-10] Adding design file 'modules/V_read/V_read.cpp' to the project
+INFO: [HLS 200-10] Adding design file 'modules/V_read/V_read.hpp' to the project
+INFO: [HLS 200-10] Adding design file 'modules/acc/acc.cpp' to the project
+INFO: [HLS 200-10] Adding design file 'modules/acc/acc.hpp' to the project
+INFO: [HLS 200-10] Adding design file 'test/accTest.cpp' to the project
+INFO: [HLS 200-10] Adding design file 'modules/blockControl/blockControl.cpp' to the project
+INFO: [HLS 200-10] Adding design file 'modules/blockControl/blockControl.hpp' to the project
+INFO: [HLS 200-10] Adding design file 'modules/calc/calc.cpp' to the project
+INFO: [HLS 200-10] Adding design file 'modules/calc/calc.hpp' to the project
+INFO: [HLS 200-10] Adding design file 'templates/stream_templates.hpp' to the project
+INFO: [HLS 200-10] Adding test bench file 'Stream.h' to the project
+INFO: [HLS 200-10] Adding test bench file 'test/StreamTest.cpp' to the project
+INFO: [HLS 200-10] Opening solution '/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP/solution/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 4ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Analyzing design file 'modules/calc/calc.cpp' ... 
+WARNING: [HLS 200-40] In file included from modules/calc/calc.cpp:1:
+In file included from modules/calc/../../Stream.h:8:
+/opt/vivado/Vivado_HLS/2016.4/include/gmp.h:51:9: warning: '__need_size_t' macro redefined
+#define __need_size_t  /* tell gcc stddef.h we only want size_t */
+        ^
+/usr/include/_G_config.h:10:9: note: previous definition is here
+#define __need_size_t
+        ^
+1 warning generated.
+WARNING: [HLS 200-40] 
+INFO: [HLS 200-10] Analyzing design file 'modules/blockControl/blockControl.cpp' ... 
+WARNING: [HLS 200-40] In file included from modules/blockControl/blockControl.cpp:1:
+In file included from modules/blockControl/blockControl.hpp:1:
+In file included from modules/blockControl/../../Stream.h:8:
+/opt/vivado/Vivado_HLS/2016.4/include/gmp.h:51:9: warning: '__need_size_t' macro redefined
+#define __need_size_t  /* tell gcc stddef.h we only want size_t */
+        ^
+/usr/include/_G_config.h:10:9: note: previous definition is here
+#define __need_size_t
+        ^
+1 warning generated.
+WARNING: [HLS 200-40] 
+INFO: [HLS 200-10] Analyzing design file 'test/accTest.cpp' ... 
+WARNING: [HLS 200-40] In file included from test/accTest.cpp:1:
+In file included from test/../modules/acc/acc.hpp:1:
+In file included from test/../modules/acc/../../Stream.h:8:
+/opt/vivado/Vivado_HLS/2016.4/include/gmp.h:51:9: warning: '__need_size_t' macro redefined
+#define __need_size_t  /* tell gcc stddef.h we only want size_t */
+        ^
+/usr/include/_G_config.h:10:9: note: previous definition is here
+#define __need_size_t
+        ^
+1 warning generated.
+WARNING: [HLS 200-40] 
+INFO: [HLS 200-10] Analyzing design file 'modules/acc/acc.cpp' ... 
+WARNING: [HLS 200-40] In file included from modules/acc/acc.cpp:1:
+In file included from modules/acc/acc.hpp:1:
+In file included from modules/acc/../../Stream.h:8:
+/opt/vivado/Vivado_HLS/2016.4/include/gmp.h:51:9: warning: '__need_size_t' macro redefined
+#define __need_size_t  /* tell gcc stddef.h we only want size_t */
+        ^
+/usr/include/_G_config.h:10:9: note: previous definition is here
+#define __need_size_t
+        ^
+1 warning generated.
+WARNING: [HLS 200-40] 
+INFO: [HLS 200-10] Analyzing design file 'modules/V_read/V_read.cpp' ... 
+WARNING: [HLS 200-40] In file included from modules/V_read/V_read.cpp:1:
+In file included from modules/V_read/V_read.hpp:1:
+In file included from modules/V_read/../../Stream.h:8:
+/opt/vivado/Vivado_HLS/2016.4/include/gmp.h:51:9: warning: '__need_size_t' macro redefined
+#define __need_size_t  /* tell gcc stddef.h we only want size_t */
+        ^
+/usr/include/_G_config.h:10:9: note: previous definition is here
+#define __need_size_t
+        ^
+1 warning generated.
+WARNING: [HLS 200-40] 
+INFO: [HLS 200-10] Analyzing design file 'Stream.cpp' ... 
+WARNING: [HLS 200-40] In file included from Stream.cpp:1:
+In file included from ./Stream.h:8:
+/opt/vivado/Vivado_HLS/2016.4/include/gmp.h:51:9: warning: '__need_size_t' macro redefined
+#define __need_size_t  /* tell gcc stddef.h we only want size_t */
+        ^
+/usr/include/_G_config.h:10:9: note: previous definition is here
+#define __need_size_t
+        ^
+1 warning generated.
+WARNING: [HLS 200-40] 
+INFO: [HLS 200-10] Analyzing design file 'modules/I_calc/I_calc.cpp' ... 
+WARNING: [HLS 200-40] In file included from modules/I_calc/I_calc.cpp:1:
+In file included from modules/I_calc/I_calc.hpp:1:
+In file included from modules/I_calc/../../Stream.h:8:
+/opt/vivado/Vivado_HLS/2016.4/include/gmp.h:51:9: warning: '__need_size_t' macro redefined
+#define __need_size_t  /* tell gcc stddef.h we only want size_t */
+        ^
+/usr/include/_G_config.h:10:9: note: previous definition is here
+#define __need_size_t
+        ^
+1 warning generated.
+WARNING: [HLS 200-40] 
+INFO: [HLS 200-10] Validating synthesis directives ...
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:02:36 ; elapsed = 00:01:15 . Memory (MB): peak = 331.758 ; gain = 12.586 ; free physical = 5762 ; free virtual = 11740
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:02:42 ; elapsed = 00:01:22 . Memory (MB): peak = 331.758 ; gain = 12.586 ; free physical = 5612 ; free virtual = 11729
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'simulationConfig<config<27> >' into 'GapJunctionIP' (Stream.cpp:58).
+INFO: [XFORM 203-603] Inlining function 'dataToProcess<dataPackage<float, 4>, hls::stream<dataPackage<float, 4> >, idxArray<4u>, hls::stream<idxArray<4u> > >' into 'writeV2calc' (modules/V_read/V_read.cpp:84).
+INFO: [XFORM 203-603] Inlining function 'accBlockCurrents<dataPackage<float, 4>, hls::stream<dataPackage<float, 4> >, 14, 4>' into 'I_calc' (modules/I_calc/I_calc.cpp:68).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:02:51 ; elapsed = 00:01:31 . Memory (MB): peak = 666.730 ; gain = 347.559 ; free physical = 5266 ; free virtual = 11468
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'getVj<dataPackage<float, 4>, hls::stream<dataPackage<float, 4> > >' into 'calc' (modules/calc/calc.cpp:43) automatically.
+INFO: [XFORM 203-602] Inlining function 'getVi<dataPackage32<float>, hls::stream<dataPackage32<float> > >' into 'calc' (modules/calc/calc.cpp:44) automatically.
+INFO: [XFORM 203-602] Inlining function 'V_calculation<dataPackage<float, 4>, hls::stream<dataPackage<float, 4> >, dataPackage32<float>, 4>' into 'calc' (modules/calc/calc.cpp:45) automatically.
+INFO: [XFORM 203-602] Inlining function 'F_calculation<dataPackage<float, 4>, hls::stream<dataPackage<float, 4> >, dataPackage32<float>, 4>' into 'calc' (modules/calc/calc.cpp:46) automatically.
+INFO: [XFORM 203-602] Inlining function 'readCalcData<dataPackage<float, 4>, hls::stream<dataPackage<float, 4> > >' into 'acc' (modules/acc/acc.cpp:82) automatically.
+INFO: [XFORM 203-602] Inlining function 'readConductance<dataPackage<float, 4>, hls::stream<dataPackage<float, 4> > >' into 'acc' (modules/acc/acc.cpp:83) automatically.
+INFO: [XFORM 203-602] Inlining function 'write<dataPackage<float, 4>, hls::stream<dataPackage<float, 4> >, float>' into 'acc' (modules/acc/acc.cpp:88) automatically.
+INFO: [XFORM 203-602] Inlining function 'tlastAssign<dataPackage32<float>, 14>' into 'getTotalCurrent<dataPackage32<float>, hls::stream<dataPackage32<float> >, dataPackage<float, 4>, 14>' (modules/I_calc/I_calc.cpp:44) automatically.
+INFO: [XFORM 203-602] Inlining function 'initIacc<dataPackage<float, 4> >' into 'I_calc' (modules/I_calc/I_calc.cpp:62) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:02:52 ; elapsed = 00:01:32 . Memory (MB): peak = 725.828 ; gain = 406.656 ; free physical = 5230 ; free virtual = 11431
+INFO: [XFORM 203-1101] Packing variable 'input.V.data' (Stream.cpp:47) into a 64-bit variable.
+WARNING: [XFORM 203-152] Cannot apply array mapping directives with instance name 'input.V.data' (Stream.cpp:47): cannot find another array to be merged with.
+WARNING: [XFORM 203-152] Cannot apply array mapping directives with instance name 'tmp.data': cannot find another array to be merged with.
+WARNING: [XFORM 203-152] Cannot apply array mapping directives with instance name 'tmp.data.11': cannot find another array to be merged with.
+WARNING: [XFORM 203-152] Cannot apply array mapping directives with instance name 'tmp.data': cannot find another array to be merged with.
+WARNING: [XFORM 203-152] Cannot apply array mapping directives with instance name 'tmp.data.9': cannot find another array to be merged with.
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'accumulation<dataPackage<float, 4>, float, 4>' (modules/acc/acc.cpp:18).
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1' (modules/acc/acc.cpp:78) in function 'acc' for pipelining.
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'V_calculation<dataPackage<float, 4>, hls::stream<dataPackage<float, 4> >, dataPackage32<float>, 4>' (modules/calc/calc.cpp:14).
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Blocks_Loop' (modules/I_calc/I_calc.cpp:65) in function 'I_calc' for pipelining.
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'F_calculation<dataPackage<float, 4>, hls::stream<dataPackage<float, 4> >, dataPackage32<float>, 4>' (modules/calc/calc.cpp:22).
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1' (modules/V_read/V_read.cpp:78) in function 'writeV2calc' for pipelining.
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'readVoltages<dataPackage<float, 4>, hls::stream<dataPackage<float, 4> >, 4u, 27>' (modules/V_read/V_read.cpp:32:53).
+WARNING: [XFORM 203-561] Updating loop upper bound from 2500 to 2499 for loop 'Loop-0-0' (modules/V_read/V_read.cpp:18:1) in function 'indexGeneration<idxArray<4u>, hls::stream<idxArray<4u> >, 27>'.
+WARNING: [XFORM 203-561] Updating loop upper bound from 2500 to 2499 for loop 'Blocks_Loop' (modules/I_calc/I_calc.cpp:66:1) in function 'I_calc'.
+WARNING: [XFORM 203-561] Updating loop upper bound from 2500 to 2499 for loop 'Loop-0' (modules/blockControl/blockControl.cpp:43:1) in function 'getConductances<dataPackage<float, 2>, dataPackage<float, 4>, 27, 4>'.
+INFO: [XFORM 203-501] Unrolling loop 'init_Loop' (modules/I_calc/I_calc.cpp:5) in function 'initIacc<dataPackage<float, 4> >' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-1' (modules/acc/acc.cpp:25) in function 'accumulation<dataPackage<float, 4>, float, 4>' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-1.1.1' (modules/acc/acc.cpp:81) in function 'acc' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-1' (modules/calc/calc.cpp:15) in function 'V_calculation<dataPackage<float, 4>, hls::stream<dataPackage<float, 4> >, dataPackage32<float>, 4>' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-1.1.1' (modules/I_calc/I_calc.cpp:21) in function 'I_calc' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-1' (modules/calc/calc.cpp:23) in function 'F_calculation<dataPackage<float, 4>, hls::stream<dataPackage<float, 4> >, dataPackage32<float>, 4>' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-1.1.1' (modules/V_read/V_read.hpp:25) in function 'writeV2calc' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-1.1.2' (modules/V_read/V_read.cpp:49) in function 'writeV2calc' completely.
+WARNING: [XFORM 203-503] Cannot unroll loop 'Loop-1' (modules/V_read/V_read.cpp:34) in function 'readVoltages<dataPackage<float, 4>, hls::stream<dataPackage<float, 4> >, 4u, 27>' completely: variable loop bound.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-1.1' (modules/V_read/V_read.cpp:37) in function 'readVoltages<dataPackage<float, 4>, hls::stream<dataPackage<float, 4> >, 4u, 27>' completely.
+INFO: [XFORM 203-102] Partitioning array 'newData.data' (modules/V_read/V_read.cpp:46) automatically.
+INFO: [XFORM 203-102] Partitioning array 'idx.data.V' (modules/V_read/V_read.cpp:47) automatically.
+INFO: [XFORM 203-102] Partitioning array 'rowData.tlast.V' (modules/V_read/V_read.cpp:72) automatically.
+INFO: [XFORM 203-102] Partitioning array 'Vj.data' (modules/calc/calc.cpp:32) automatically.
+INFO: [XFORM 203-102] Partitioning array 'V_calc.data' (modules/calc/calc.cpp:33) automatically.
+INFO: [XFORM 203-102] Partitioning array 'F_calc.data' (modules/calc/calc.cpp:34) automatically.
+INFO: [XFORM 203-102] Partitioning array 'accArray.data' (modules/acc/acc.cpp:21) automatically.
+INFO: [XFORM 203-102] Partitioning array 'F_vector.data' (modules/acc/acc.cpp:59) automatically.
+INFO: [XFORM 203-102] Partitioning array 'V_vector.data' (modules/acc/acc.cpp:60) automatically.
+INFO: [XFORM 203-102] Partitioning array 'Conductance.data' (modules/acc/acc.cpp:61) automatically.
+INFO: [XFORM 203-102] Partitioning array 'f_acc' (modules/acc/acc.cpp:65) automatically.
+INFO: [XFORM 203-102] Partitioning array 'v_acc' (modules/acc/acc.cpp:66) automatically.
+INFO: [XFORM 203-102] Partitioning array 'newFdata.data' (modules/acc/acc.cpp:71) automatically.
+INFO: [XFORM 203-102] Partitioning array 'newVdata.data' (modules/acc/acc.cpp:72) automatically.
+INFO: [XFORM 203-102] Partitioning array 'F_acc_read.data' (modules/I_calc/I_calc.cpp:51) automatically.
+INFO: [XFORM 203-102] Partitioning array 'V_acc_read.data' (modules/I_calc/I_calc.cpp:52) automatically.
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'F_acc.V.data' .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'V_acc.V.data' .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'Vj_idx.V.data.V' .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'Vi_idx.V.data.V' .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'C_data.V.data' .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'F.V.data' .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'V.V.data' .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'V_data.V.data' .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'processedData.V.data' .
+INFO: [XFORM 203-101] Partitioning array 'F_acc.V.data' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'V_acc.V.data' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'Vj_idx.V.data.V' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'Vi_idx.V.data.V' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'C_data.V.data' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'F.V.data' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'V.V.data' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'V_data.V.data' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'processedData.V.data' in dimension 1 completely.
+INFO: [XFORM 203-602] Inlining function 'getVj<dataPackage<float, 4>, hls::stream<dataPackage<float, 4> > >' into 'calc' (modules/calc/calc.cpp:43) automatically.
+INFO: [XFORM 203-602] Inlining function 'getVi<dataPackage32<float>, hls::stream<dataPackage32<float> > >' into 'calc' (modules/calc/calc.cpp:44) automatically.
+INFO: [XFORM 203-602] Inlining function 'V_calculation<dataPackage<float, 4>, hls::stream<dataPackage<float, 4> >, dataPackage32<float>, 4>' into 'calc' (modules/calc/calc.cpp:45) automatically.
+INFO: [XFORM 203-602] Inlining function 'F_calculation<dataPackage<float, 4>, hls::stream<dataPackage<float, 4> >, dataPackage32<float>, 4>' into 'calc' (modules/calc/calc.cpp:46) automatically.
+INFO: [XFORM 203-602] Inlining function 'readConductance<dataPackage<float, 4>, hls::stream<dataPackage<float, 4> > >' into 'acc' (modules/acc/acc.cpp:83) automatically.
+INFO: [XFORM 203-602] Inlining function 'accumulation<dataPackage<float, 4>, float, 4>' into 'acc' (modules/acc/acc.cpp:84) automatically.
+INFO: [XFORM 203-602] Inlining function 'write<dataPackage<float, 4>, hls::stream<dataPackage<float, 4> >, float>' into 'acc' (modules/acc/acc.cpp:88) automatically.
+INFO: [XFORM 203-602] Inlining function 'tlastAssign<dataPackage32<float>, 14>' into 'getTotalCurrent<dataPackage32<float>, hls::stream<dataPackage32<float> >, dataPackage<float, 4>, 14>' (modules/I_calc/I_calc.cpp:44) automatically.
+INFO: [XFORM 203-602] Inlining function 'initIacc<dataPackage<float, 4> >' into 'I_calc' (modules/I_calc/I_calc.cpp:62) automatically.
+WARNING: [XFORM 203-713] All the elements of global array 'voltagesBackup.i.i' (modules/V_read/V_read.cpp:93) should be updated in process function 'readVoltages<dataPackage<float, 4>, hls::stream<dataPackage<float, 4> >, 4u, 27>' (modules/V_read/V_read.cpp:32:42), otherwise it may not be synthesized correctly.
+INFO: [XFORM 203-712] Applying dataflow to function 'V_read' (modules/V_read/V_read.cpp:90), detected/extracted 4 process function(s):
+	 'V_read.entry201214'
+	 'readVoltages<dataPackage<float, 4>, hls::stream<dataPackage<float, 4> >, 4u, 27>'
+	 'indexGeneration<idxArray<4u>, hls::stream<idxArray<4u> >, 27>'
+	 'writeV2calc'.
+INFO: [XFORM 203-712] Applying dataflow to function 'execute' (Stream.cpp:17), detected/extracted 7 process function(s):
+	 'execute.entry206'
+	 'execute_Block_codeRepl2_proc'
+	 'blockControl'
+	 'V_read'
+	 'calc'
+	 'acc'
+	 'I_calc'.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock in function 'getTotalCurrent<dataPackage32<float>, hls::stream<dataPackage32<float> >, dataPackage<float, 4>, 14>'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:03:03 ; elapsed = 00:01:43 . Memory (MB): peak = 1003.758 ; gain = 684.586 ; free physical = 4955 ; free virtual = 11223
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-1' (modules/V_read/V_read.cpp:70:34) in function 'writeV2calc' : 
+WARNING: [XFORM 203-542] the outer loop is not a perfect loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (modules/calc/calc.cpp:37:39) in function 'calc'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (modules/acc/acc.cpp:75:32) in function 'acc'.
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'RowOfBlocks_Loop' (modules/I_calc/I_calc.cpp:58:102) in function 'I_calc' : 
+WARNING: [XFORM 203-542] more than one sub loop.
+WARNING: [XFORM 203-631] Renaming function 'readVoltages<dataPackage<float, 4>, hls::stream<dataPackage<float, 4> >, 4u, 27>' (modules/V_read/V_read.cpp:32:42) into readVoltages.
+WARNING: [XFORM 203-631] Renaming function 'readCalcData<dataPackage<float, 4>, hls::stream<dataPackage<float, 4> > >' (modules/acc/acc.cpp:7:1) into readCalcData.
+WARNING: [XFORM 203-631] Renaming function 'indexGeneration<idxArray<4u>, hls::stream<idxArray<4u> >, 27>' (modules/V_read/V_read.cpp:6:9) into indexGeneration.
+WARNING: [XFORM 203-631] Renaming function 'getVoltages<dataPackage<float, 2>, dataPackage<float, 4>, 27, 4>' (modules/blockControl/blockControl.cpp:17:49) into getVoltages.
+WARNING: [XFORM 203-631] Renaming function 'getTotalCurrent<dataPackage32<float>, hls::stream<dataPackage32<float> >, dataPackage<float, 4>, 14>' (modules/I_calc/I_calc.cpp:34:9) into getTotalCurrent.
+WARNING: [XFORM 203-631] Renaming function 'getConductances<dataPackage<float, 2>, dataPackage<float, 4>, 27, 4>' (modules/blockControl/blockControl.cpp:42:82) into getConductances.
+WARNING: [XFORM 203-631] Renaming function 'execute_Block_codeRepl2_proc' into execute_Block_codeRe.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:03:11 ; elapsed = 00:01:52 . Memory (MB): peak = 1131.758 ; gain = 812.586 ; free physical = 4758 ; free virtual = 11054
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'GapJunctionIP' ...
+WARNING: [SYN 201-103] Legalizing function name 'execute.entry206' to 'execute_entry206'.
+WARNING: [SYN 201-103] Legalizing function name 'V_read.entry201214' to 'V_read_entry201214'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Implementing module 'execute_entry206' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 112.31 seconds; current allocated memory: 745.763 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.02 seconds; current allocated memory: 745.911 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Implementing module 'execute_Block_codeRe' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 745.974 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.01 seconds; current allocated memory: 746.008 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Implementing module 'getVoltages' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 746.192 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.02 seconds; current allocated memory: 746.330 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Implementing module 'getConductances' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.06 seconds; current allocated memory: 746.504 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.03 seconds; current allocated memory: 746.678 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Implementing module 'blockControl' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.12 seconds; current allocated memory: 746.805 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.03 seconds; current allocated memory: 747.043 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Implementing module 'V_read_entry201214' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.23 seconds; current allocated memory: 747.162 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 747.484 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Implementing module 'readVoltages' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive: Function contains subloop(s) not being unrolled.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.08 seconds; current allocated memory: 747.639 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 747.839 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Implementing module 'indexGeneration' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 748.046 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 748.333 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Implementing module 'writeV2calc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1.1'.
+WARNING: [SCHED 204-68] Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between fifo write on port 'fixedData_V_data' (modules/V_read/V_read.cpp:81) and fifo write on port 'fixedData_V_data' (modules/V_read/V_read.cpp:80).
+WARNING: [SCHED 204-68] Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)
+   between fifo write on port 'fixedData_V_data' (modules/V_read/V_read.cpp:82) and fifo write on port 'fixedData_V_data' (modules/V_read/V_read.cpp:80).
+WARNING: [SCHED 204-68] Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)
+   between fifo write on port 'fixedData_V_data' (modules/V_read/V_read.cpp:83) and fifo write on port 'fixedData_V_data' (modules/V_read/V_read.cpp:80).
+INFO: [SCHED 204-61] Pipelining result: Target II: 1, Final II: 4, Depth: 7.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.28 seconds; current allocated memory: 748.819 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.1 seconds; current allocated memory: 749.307 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Implementing module 'V_read' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.09 seconds; current allocated memory: 749.477 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.08 seconds; current allocated memory: 749.948 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Implementing module 'calc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result: Target II: 2, Final II: 2, Depth: 37.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.36 seconds; current allocated memory: 750.786 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.22 seconds; current allocated memory: 751.557 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Implementing module 'readCalcData' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'readCalcData'.
+INFO: [SCHED 204-61] Pipelining result: Target II: 2, Final II: 1, Depth: 1.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.27 seconds; current allocated memory: 751.691 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.03 seconds; current allocated memory: 751.822 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Implementing module 'acc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result: Target II: 8, Final II: 8, Depth: 30.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.46 seconds; current allocated memory: 752.808 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.38 seconds; current allocated memory: 754.281 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Implementing module 'getTotalCurrent' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.32 seconds; current allocated memory: 754.619 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 754.849 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Implementing module 'I_calc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Blocks_Loop'.
+WARNING: [SCHED 204-68] Unable to enforce a carried constraint (II = 1)
+   between 'fadd' operation ('tmp_54_3_i_i', modules/I_calc/I_calc.cpp:24->modules/I_calc/I_calc.cpp:68) and 'fadd' operation ('tmp_54_3_i_i', modules/I_calc/I_calc.cpp:24->modules/I_calc/I_calc.cpp:68).
+WARNING: [SCHED 204-68] Unable to enforce a carried constraint (II = 2)
+   between 'fadd' operation ('tmp_54_3_i_i', modules/I_calc/I_calc.cpp:24->modules/I_calc/I_calc.cpp:68) and 'fadd' operation ('tmp_54_3_i_i', modules/I_calc/I_calc.cpp:24->modules/I_calc/I_calc.cpp:68).
+WARNING: [SCHED 204-68] Unable to enforce a carried constraint (II = 3)
+   between 'fadd' operation ('tmp_54_3_i_i', modules/I_calc/I_calc.cpp:24->modules/I_calc/I_calc.cpp:68) and 'fadd' operation ('tmp_54_3_i_i', modules/I_calc/I_calc.cpp:24->modules/I_calc/I_calc.cpp:68).
+WARNING: [SCHED 204-68] Unable to enforce a carried constraint (II = 4)
+   between 'fadd' operation ('tmp_54_3_i_i', modules/I_calc/I_calc.cpp:24->modules/I_calc/I_calc.cpp:68) and 'fadd' operation ('tmp_54_3_i_i', modules/I_calc/I_calc.cpp:24->modules/I_calc/I_calc.cpp:68).
+WARNING: [SCHED 204-68] Unable to enforce a carried constraint (II = 7)
+   between 'fadd' operation ('tmp_54_3_i_i', modules/I_calc/I_calc.cpp:24->modules/I_calc/I_calc.cpp:68) and 'fadd' operation ('tmp_54_3_i_i', modules/I_calc/I_calc.cpp:24->modules/I_calc/I_calc.cpp:68).
+INFO: [SCHED 204-61] Pipelining result: Target II: 1, Final II: 8, Depth: 18.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.2 seconds; current allocated memory: 755.557 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.2 seconds; current allocated memory: 756.200 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Implementing module 'execute' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.18 seconds; current allocated memory: 756.473 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.32 seconds; current allocated memory: 757.298 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Implementing module 'GapJunctionIP' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.26 seconds; current allocated memory: 757.486 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 758.014 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'execute_entry206' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'execute_entry206'.
+INFO: [HLS 200-111]  Elapsed time: 0.33 seconds; current allocated memory: 758.248 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'execute_Block_codeRe' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'execute_Block_codeRe'.
+INFO: [HLS 200-111]  Elapsed time: 0.05 seconds; current allocated memory: 758.626 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'getVoltages' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'getVoltages'.
+INFO: [HLS 200-111]  Elapsed time: 0.03 seconds; current allocated memory: 758.969 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'getConductances' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'getConductances'.
+INFO: [HLS 200-111]  Elapsed time: 0.07 seconds; current allocated memory: 759.517 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'blockControl' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'blockControl'.
+INFO: [HLS 200-111]  Elapsed time: 0.12 seconds; current allocated memory: 760.451 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'V_read_entry201214' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'V_read_entry201214'.
+INFO: [HLS 200-111]  Elapsed time: 0.11 seconds; current allocated memory: 761.003 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'readVoltages' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'readVoltages'.
+INFO: [HLS 200-111]  Elapsed time: 0.09 seconds; current allocated memory: 761.628 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'indexGeneration' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'indexGeneration'.
+INFO: [HLS 200-111]  Elapsed time: 0.11 seconds; current allocated memory: 762.445 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'writeV2calc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'writeV2calc'.
+INFO: [HLS 200-111]  Elapsed time: 0.15 seconds; current allocated memory: 763.766 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'V_read' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'V_read_voltagesBackup' to 'V_read_voltagesBabkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'V_read_simConfig_rowBegin_V_3' to 'V_read_simConfig_cud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'V_read_simConfig_rowEnd_V_c' to 'V_read_simConfig_dEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'V_read_simConfig_rowsToSimu' to 'V_read_simConfig_eOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'V_read_simConfig_BLOCK_NUMB_6' to 'V_read_simConfig_fYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'V_read_simConfig_BLOCK_NUMB' to 'V_read_simConfig_g8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'V_read_V_SIZE_channel_i' to 'V_read_V_SIZE_chahbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'V_read_Vi_idx_V_data_V_0' to 'V_read_Vi_idx_V_dibs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'V_read_Vi_idx_V_data_V_1' to 'V_read_Vi_idx_V_djbC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'V_read_Vi_idx_V_data_V_2' to 'V_read_Vi_idx_V_dkbM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'V_read_Vi_idx_V_data_V_3' to 'V_read_Vi_idx_V_dlbW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'V_read_Vj_idx_V_data_V_0' to 'V_read_Vj_idx_V_dmb6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'V_read_Vj_idx_V_data_V_1' to 'V_read_Vj_idx_V_dncg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'V_read_Vj_idx_V_data_V_2' to 'V_read_Vj_idx_V_docq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'V_read_Vj_idx_V_data_V_3' to 'V_read_Vj_idx_V_dpcA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_indexGeneration_U0' to 'start_for_indexGeqcK' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'V_read'.
+INFO: [HLS 200-111]  Elapsed time: 0.24 seconds; current allocated memory: 766.022 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'calc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'GapJunctionIP_fsub_32ns_32ns_32_8_full_dsp' to 'GapJunctionIP_fsurcU' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'GapJunctionIP_fmul_32ns_32ns_32_4_max_dsp' to 'GapJunctionIP_fmusc4' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'GapJunctionIP_fexp_32ns_32ns_32_13_full_dsp' to 'GapJunctionIP_fextde' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'GapJunctionIP_mul_27ns_29ns_56_7' to 'GapJunctionIP_muludo' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'GapJunctionIP_fextde': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'GapJunctionIP_fmusc4': 6 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'GapJunctionIP_fsurcU': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'GapJunctionIP_muludo': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'calc'.
+INFO: [HLS 200-111]  Elapsed time: 0.34 seconds; current allocated memory: 767.775 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'readCalcData' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'readCalcData'.
+INFO: [HLS 200-111]  Elapsed time: 0.32 seconds; current allocated memory: 769.415 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'acc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'GapJunctionIP_fadd_32ns_32ns_32_8_full_dsp' to 'GapJunctionIP_fadvdy' due to the length limit 20
+WARNING: [RTGEN 206-101] RTL name 'GapJunctionIP_fmusc4' is changed to 'GapJunctionIP_fmusc4_x' due to conflict.
+INFO: [SYN 201-210] Renamed object name 'GapJunctionIP_mul_27ns_27ns_54_7' to 'GapJunctionIP_mulwdI' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'GapJunctionIP_fadvdy': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'GapJunctionIP_fmusc4': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'GapJunctionIP_mulwdI': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'acc'.
+INFO: [HLS 200-111]  Elapsed time: 0.27 seconds; current allocated memory: 771.053 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'getTotalCurrent' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'GapJunctionIP_fptrunc_64ns_32_2' to 'GapJunctionIP_fptxdS' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'GapJunctionIP_fpext_32ns_64_1' to 'GapJunctionIP_fpeyd2' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'GapJunctionIP_dadd_64ns_64ns_64_8_full_dsp' to 'GapJunctionIP_dadzec' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'GapJunctionIP_dmul_64ns_64ns_64_9_max_dsp' to 'GapJunctionIP_dmuAem' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'GapJunctionIP_dadzec': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'GapJunctionIP_dmuAem': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'GapJunctionIP_fpeyd2': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'GapJunctionIP_fptxdS': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'getTotalCurrent'.
+INFO: [HLS 200-111]  Elapsed time: 0.46 seconds; current allocated memory: 773.877 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'I_calc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] RTL name 'GapJunctionIP_fadvdy' is changed to 'GapJunctionIP_fadvdy_x' due to conflict.
+INFO: [RTGEN 206-100] Generating core module 'GapJunctionIP_fadvdy': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'I_calc'.
+INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 775.137 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'execute' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'execute_simConfig_rowBegin_V_1' to 'execute_simConfigBew' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'execute_simConfig_rowEnd_V_c' to 'execute_simConfigCeG' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'execute_simConfig_rowsToSimu_6' to 'execute_simConfigDeQ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'execute_simConfig_BLOCK_NUMB_5' to 'execute_simConfigEe0' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'execute_size_channel' to 'execute_size_chanFfa' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'execute_size_channel15' to 'execute_size_chanGfk' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'execute_size_assign_channel' to 'execute_size_assiHfu' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'execute_simConfig_rowsToSimu_5' to 'execute_simConfigIfE' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'execute_simConfig_BLOCK_NUMB_4' to 'execute_simConfigJfO' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'execute_V_data_V_data_0' to 'execute_V_data_V_KfY' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'execute_V_data_V_data_1' to 'execute_V_data_V_Lf8' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'execute_V_data_V_data_2' to 'execute_V_data_V_Mgi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'execute_V_data_V_data_3' to 'execute_V_data_V_Ngs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'execute_C_data_V_data_0' to 'execute_C_data_V_OgC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'execute_C_data_V_data_1' to 'execute_C_data_V_PgM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'execute_C_data_V_data_2' to 'execute_C_data_V_QgW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'execute_C_data_V_data_3' to 'execute_C_data_V_Rg6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'execute_simConfig_rowsToSimu_4' to 'execute_simConfigShg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'execute_simConfig_BLOCK_NUMB_3' to 'execute_simConfigThq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'execute_fixedData_V_data' to 'execute_fixedDataUhA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'execute_fixedData_V_tlast_V' to 'execute_fixedDataVhK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'execute_processedData_V_data' to 'execute_processedWhU' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'execute_processedData_V_data_1' to 'execute_processedXh4' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'execute_processedData_V_data_2' to 'execute_processedYie' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'execute_processedData_V_data_3' to 'execute_processedZio' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'execute_simConfig_rowsToSimu_3' to 'execute_simConfig0iy' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'execute_simConfig_BLOCK_NUMB_2' to 'execute_simConfig1iI' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'execute_simConfig_rowsToSimu_2' to 'execute_simConfig2iS' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'execute_simConfig_BLOCK_NUMB_1' to 'execute_simConfig3i2' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'execute_F_acc_V_data_0' to 'execute_F_acc_V_d4jc' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'execute_F_acc_V_data_1' to 'execute_F_acc_V_d5jm' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'execute_F_acc_V_data_2' to 'execute_F_acc_V_d6jw' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'execute_F_acc_V_data_3' to 'execute_F_acc_V_d7jG' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'execute_V_acc_V_data_0' to 'execute_V_acc_V_d8jQ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'execute_V_acc_V_data_1' to 'execute_V_acc_V_d9j0' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'execute_V_acc_V_data_2' to 'execute_V_acc_V_dbak' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'execute_V_acc_V_data_3' to 'execute_V_acc_V_dbbk' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_execute_Block_codeRe_U0' to 'start_for_executebck' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'execute'.
+INFO: [HLS 200-111]  Elapsed time: 0.46 seconds; current allocated memory: 778.858 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'GapJunctionIP' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'GapJunctionIP/input_V_data' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'GapJunctionIP/output_V_data' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'GapJunctionIP/output_V_tlast_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'GapJunctionIP/size' to 's_axilite & ap_none' (register).
+INFO: [RTGEN 206-500] Setting interface mode on port 'GapJunctionIP/FirstRow' to 's_axilite & ap_none' (register).
+INFO: [RTGEN 206-500] Setting interface mode on port 'GapJunctionIP/LastRow' to 's_axilite & ap_none' (register).
+INFO: [RTGEN 206-500] Setting interface mode on function 'GapJunctionIP' to 's_axilite & ap_ctrl_hs' (register).
+INFO: [RTGEN 206-100] Bundling port 'return', 'size', 'FirstRow' and 'LastRow' to AXI-Lite port AXILiteS.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'GapJunctionIP'.
+INFO: [HLS 200-111]  Elapsed time: 0.97 seconds; current allocated memory: 781.385 MB.
+INFO: [RTMG 210-278] Implementing memory 'V_read_voltagesBabkb_memcore_ram' using block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'V_read_simConfig_eOg' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'V_read_simConfig_fYi' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'V_read_Vi_idx_V_dibs' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'V_read_Vi_idx_V_djbC' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'V_read_Vi_idx_V_dkbM' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'V_read_Vi_idx_V_dlbW' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'V_read_Vj_idx_V_dmb6' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'V_read_Vj_idx_V_dncg' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'V_read_Vj_idx_V_docq' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'V_read_Vj_idx_V_dpcA' using Block RAMs.
+INFO: [RTMG 210-282] Generating pipelined core: 'GapJunctionIP_muludo_MulnS_0'
+INFO: [RTMG 210-282] Generating pipelined core: 'GapJunctionIP_mulwdI_MulnS_1'
+INFO: [RTMG 210-278] Implementing memory 'I_calc_F_temp_data_ram' using block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'execute_simConfigBew' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'execute_simConfigCeG' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'execute_size_assiHfu' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'execute_V_data_V_KfY' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'execute_V_data_V_Lf8' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'execute_V_data_V_Mgi' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'execute_V_data_V_Ngs' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'execute_C_data_V_OgC' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'execute_C_data_V_PgM' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'execute_C_data_V_QgW' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'execute_C_data_V_Rg6' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'execute_fixedDataUhA' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'execute_fixedDataVhK' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'execute_processedWhU' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'execute_processedXh4' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'execute_processedYie' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'execute_processedZio' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'execute_V_V_data_0' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'execute_V_V_data_1' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'execute_V_V_data_2' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'execute_V_V_data_3' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'execute_F_V_data_0' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'execute_F_V_data_1' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'execute_F_V_data_2' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'execute_F_V_data_3' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'execute_F_acc_V_d4jc' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'execute_F_acc_V_d5jm' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'execute_F_acc_V_d6jw' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'execute_F_acc_V_d7jG' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'execute_V_acc_V_d8jQ' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'execute_V_acc_V_d9j0' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'execute_V_acc_V_dbak' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'execute_V_acc_V_dbbk' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_acc_U0' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_calc_U0' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_I_calc_U0' using Shift Registers.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:03:21 ; elapsed = 00:02:03 . Memory (MB): peak = 1195.758 ; gain = 876.586 ; free physical = 4673 ; free virtual = 11021
+INFO: [SYSC 207-301] Generating SystemC RTL for GapJunctionIP.
+INFO: [VHDL 208-304] Generating VHDL RTL for GapJunctionIP.
+INFO: [VLOG 209-307] Generating Verilog RTL for GapJunctionIP.
+INFO: [HLS 200-112] Total elapsed time: 123.27 seconds; peak allocated memory: 781.385 MB.

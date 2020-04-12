@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Tue Apr 23 22:30:51 2019
+# Process ID: 15848
+# Current directory: /home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/project.runs/synth_1
+# Command line: vivado -log Simulate_HW.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Simulate_HW.tcl
+# Log file: /home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/project.runs/synth_1/Simulate_HW.vds
+# Journal file: /home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/project.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source Simulate_HW.tcl -notrace

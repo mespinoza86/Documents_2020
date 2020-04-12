@@ -1,0 +1,324 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Feb  5 23:35:15 2020
+# Process ID: 5810
+# Current directory: /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1
+# Command line: vivado
+# Log file: /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/vivado.log
+# Journal file: /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_1/project_1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP_2020_latest_Jan/IP_latest_2020_Enero/solution1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx_2018/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:23 . Memory (MB): peak = 6395.406 ; gain = 120.555 ; free physical = 182 ; free virtual = 11863
+update_compile_order -fileset sources_1
+make_wrapper -files [get_files /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -top
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+CRITICAL WARNING: [BD 41-1356] Address block </processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM> is not mapped into </axi_dma_0/Data_MM2S>. Please use Address Editor to either map or exclude it.
+CRITICAL WARNING: [BD 41-1356] Address block </processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM> is not mapped into </axi_dma_0/Data_S2MM>. Please use Address Editor to either map or exclude it.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_1/m00_couplers/auto_pc/m_axi_bid'(1) to net 'auto_pc_to_m00_couplers_BID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_1/m00_couplers/auto_pc/m_axi_rid'(1) to net 'auto_pc_to_m00_couplers_RID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to net 'axi_interconnect_1_M00_AXI_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to net 'axi_interconnect_1_M00_AXI_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to net 'axi_interconnect_1_M00_AXI_WID'(1) - Only lower order bits will be connected.
+VHDL Output written to : /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_1/m00_couplers/auto_pc/m_axi_bid'(1) to net 'auto_pc_to_m00_couplers_BID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_1/m00_couplers/auto_pc/m_axi_rid'(1) to net 'auto_pc_to_m00_couplers_RID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to net 'axi_interconnect_1_M00_AXI_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to net 'axi_interconnect_1_M00_AXI_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to net 'axi_interconnect_1_M00_AXI_WID'(1) - Only lower order bits will be connected.
+VHDL Output written to : /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_1/project_1.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+make_wrapper: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 6551.574 ; gain = 0.000 ; free physical = 169 ; free virtual = 11674
+open_bd_design {/home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+Adding cell -- xilinx.com:hls:GapJunctionIP:1.0 - GapJunctionIP_0
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding cell -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_1
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_mmu:2.1 - s00_mmu
+Adding cell -- xilinx.com:ip:axi_mmu:2.1 - s01_mmu
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Successfully read diagram <design_1> from BD file </home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:20 . Memory (MB): peak = 6668.270 ; gain = 116.695 ; free physical = 258 ; free virtual = 11646
+generate_target all [get_files  /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+CRITICAL WARNING: [BD 41-1356] Address block </processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM> is not mapped into </axi_dma_0/Data_MM2S>. Please use Address Editor to either map or exclude it.
+CRITICAL WARNING: [BD 41-1356] Address block </processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM> is not mapped into </axi_dma_0/Data_S2MM>. Please use Address Editor to either map or exclude it.
+Wrote  : </home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_1/m00_couplers/auto_pc/m_axi_bid'(1) to net 'auto_pc_to_m00_couplers_BID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_1/m00_couplers/auto_pc/m_axi_rid'(1) to net 'auto_pc_to_m00_couplers_RID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to net 'axi_interconnect_1_M00_AXI_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to net 'axi_interconnect_1_M00_AXI_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to net 'axi_interconnect_1_M00_AXI_WID'(1) - Only lower order bits will be connected.
+VHDL Output written to : /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_1/m00_couplers/auto_pc/m_axi_bid'(1) to net 'auto_pc_to_m00_couplers_BID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_1/m00_couplers/auto_pc/m_axi_rid'(1) to net 'auto_pc_to_m00_couplers_RID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to net 'axi_interconnect_1_M00_AXI_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to net 'axi_interconnect_1_M00_AXI_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to net 'axi_interconnect_1_M00_AXI_WID'(1) - Only lower order bits will be connected.
+VHDL Output written to : /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_1/project_1.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+WARNING: [IP_Flow 19-519] IP 'design_1_GapJunctionIP_0_0' detected a language mismatch between 'VHDL Simulation Wrapper' and 'Verilog Simulation' output products. Please check with the IP provider to see if this is expected.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block GapJunctionIP_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_1/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_1/s01_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_1/m00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_1/s00_mmu .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_1/s01_mmu .
+Exporting to file /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_1/project_1.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_1/project_1.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+generate_target: Time (s): cpu = 00:00:55 ; elapsed = 00:00:55 . Memory (MB): peak = 6744.004 ; gain = 75.734 ; free physical = 227 ; free virtual = 11510
+catch { config_ip_cache -export [get_ips -all design_1_GapJunctionIP_0_0] }
+catch { config_ip_cache -export [get_ips -all design_1_xbar_0] }
+catch { config_ip_cache -export [get_ips -all design_1_proc_sys_reset_0_0] }
+catch { config_ip_cache -export [get_ips -all design_1_axi_dma_0_0] }
+catch { config_ip_cache -export [get_ips -all design_1_xbar_1] }
+catch { config_ip_cache -export [get_ips -all design_1_processing_system7_0_0] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_0] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_us_0] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_1] }
+catch { config_ip_cache -export [get_ips -all design_1_s00_mmu_0] }
+catch { config_ip_cache -export [get_ips -all design_1_s01_mmu_0] }
+export_ip_user_files -of_objects [get_files /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd]
+create_ip_run: Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 6746.000 ; gain = 1.996 ; free physical = 232 ; free virtual = 11442
+launch_runs -jobs 4 {design_1_GapJunctionIP_0_0_synth_1 design_1_xbar_0_synth_1 design_1_proc_sys_reset_0_0_synth_1 design_1_axi_dma_0_0_synth_1 design_1_xbar_1_synth_1 design_1_processing_system7_0_0_synth_1 design_1_auto_pc_0_synth_1 design_1_auto_us_0_synth_1 design_1_auto_pc_1_synth_1 design_1_s00_mmu_0_synth_1 design_1_s01_mmu_0_synth_1}
+[Wed Feb  5 23:39:50 2020] Launched design_1_GapJunctionIP_0_0_synth_1, design_1_xbar_0_synth_1, design_1_proc_sys_reset_0_0_synth_1, design_1_axi_dma_0_0_synth_1, design_1_xbar_1_synth_1, design_1_processing_system7_0_0_synth_1, design_1_auto_pc_0_synth_1, design_1_auto_us_0_synth_1, design_1_auto_pc_1_synth_1, design_1_s00_mmu_0_synth_1, design_1_s01_mmu_0_synth_1...
+Run output will be captured here:
+design_1_GapJunctionIP_0_0_synth_1: /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_1/project_1.runs/design_1_GapJunctionIP_0_0_synth_1/runme.log
+design_1_xbar_0_synth_1: /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_1/project_1.runs/design_1_xbar_0_synth_1/runme.log
+design_1_proc_sys_reset_0_0_synth_1: /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_1/project_1.runs/design_1_proc_sys_reset_0_0_synth_1/runme.log
+design_1_axi_dma_0_0_synth_1: /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_1/project_1.runs/design_1_axi_dma_0_0_synth_1/runme.log
+design_1_xbar_1_synth_1: /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_1/project_1.runs/design_1_xbar_1_synth_1/runme.log
+design_1_processing_system7_0_0_synth_1: /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_1/project_1.runs/design_1_processing_system7_0_0_synth_1/runme.log
+design_1_auto_pc_0_synth_1: /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_1/project_1.runs/design_1_auto_pc_0_synth_1/runme.log
+design_1_auto_us_0_synth_1: /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_1/project_1.runs/design_1_auto_us_0_synth_1/runme.log
+design_1_auto_pc_1_synth_1: /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_1/project_1.runs/design_1_auto_pc_1_synth_1/runme.log
+design_1_s00_mmu_0_synth_1: /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_1/project_1.runs/design_1_s00_mmu_0_synth_1/runme.log
+design_1_s01_mmu_0_synth_1: /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_1/project_1.runs/design_1_s01_mmu_0_synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 6785.516 ; gain = 39.516 ; free physical = 347 ; free virtual = 11565
+export_simulation -of_objects [get_files /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -directory /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_1/project_1.ip_user_files -ipstatic_source_dir /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_1/project_1.cache/compile_simlib/modelsim} {questa=/home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_1/project_1.cache/compile_simlib/questa} {ies=/home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_1/project_1.cache/compile_simlib/ies} {xcelium=/home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_1/project_1.cache/compile_simlib/xcelium} {vcs=/home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_1/project_1.cache/compile_simlib/vcs} {riviera=/home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_1/project_1.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed Feb  5 23:56:42 2020] Launched design_1_GapJunctionIP_0_0_synth_1, design_1_axi_dma_0_0_synth_1, design_1_auto_pc_0_synth_1, design_1_auto_us_0_synth_1, design_1_auto_pc_1_synth_1, design_1_s00_mmu_0_synth_1, design_1_s01_mmu_0_synth_1...
+Run output will be captured here:
+design_1_GapJunctionIP_0_0_synth_1: /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_1/project_1.runs/design_1_GapJunctionIP_0_0_synth_1/runme.log
+design_1_axi_dma_0_0_synth_1: /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_1/project_1.runs/design_1_axi_dma_0_0_synth_1/runme.log
+design_1_auto_pc_0_synth_1: /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_1/project_1.runs/design_1_auto_pc_0_synth_1/runme.log
+design_1_auto_us_0_synth_1: /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_1/project_1.runs/design_1_auto_us_0_synth_1/runme.log
+design_1_auto_pc_1_synth_1: /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_1/project_1.runs/design_1_auto_pc_1_synth_1/runme.log
+design_1_s00_mmu_0_synth_1: /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_1/project_1.runs/design_1_s00_mmu_0_synth_1/runme.log
+design_1_s01_mmu_0_synth_1: /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_1/project_1.runs/design_1_s01_mmu_0_synth_1/runme.log
+[Wed Feb  5 23:56:44 2020] Launched synth_1...
+Run output will be captured here: /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_1/project_1.runs/synth_1/runme.log
+reset_run synth_1
+reset_run design_1_GapJunctionIP_0_0_synth_1
+reset_run design_1_auto_pc_1_synth_1
+launch_runs synth_1 -jobs 4
+[Thu Feb  6 00:08:46 2020] Launched design_1_GapJunctionIP_0_0_synth_1, design_1_auto_pc_1_synth_1...
+Run output will be captured here:
+design_1_GapJunctionIP_0_0_synth_1: /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_1/project_1.runs/design_1_GapJunctionIP_0_0_synth_1/runme.log
+design_1_auto_pc_1_synth_1: /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_1/project_1.runs/design_1_auto_pc_1_synth_1/runme.log
+[Thu Feb  6 00:08:46 2020] Launched synth_1...
+Run output will be captured here: /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_1/project_1.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Thu Feb  6 00:14:12 2020] Launched impl_1...
+Run output will be captured here: /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_1/project_1.runs/impl_1/runme.log
+close_project
+open_project /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_2/project_2.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP_2020_latest_Jan/IP_latest_2020_Enero/solution1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx_2018/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 6900.441 ; gain = 0.000 ; free physical = 2501 ; free virtual = 11035
+update_compile_order -fileset sources_1
+open_bd_design {/home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_2/project_2.srcs/sources_1/bd/design_1/design_1.bd}
+Adding cell -- xilinx.com:hls:GapJunctionIP:1.0 - GapJunctionIP_0
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_1
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Successfully read diagram <design_1> from BD file </home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_2/project_2.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 6991.484 ; gain = 0.000 ; free physical = 1981 ; free virtual = 10943
+make_wrapper -files [get_files /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_2/project_2.srcs/sources_1/bd/design_1/design_1.bd] -top
+make_wrapper -files [get_files /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_2/project_2.srcs/sources_1/bd/design_1/design_1.bd] -top
+generate_target all [get_files  /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_2/project_2.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [BD 41-1637] Generated targets are already up-to-date for bd-design 'design_1' - hence not re-generating.
+export_ip_user_files -of_objects [get_files /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_2/project_2.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_2/project_2.srcs/sources_1/bd/design_1/design_1.bd]
+export_simulation -of_objects [get_files /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_2/project_2.srcs/sources_1/bd/design_1/design_1.bd] -directory /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_2/project_2.ip_user_files/sim_scripts -ip_user_files_dir /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_2/project_2.ip_user_files -ipstatic_source_dir /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_2/project_2.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_2/project_2.cache/compile_simlib/modelsim} {questa=/home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_2/project_2.cache/compile_simlib/questa} {ies=/home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_2/project_2.cache/compile_simlib/ies} {xcelium=/home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_2/project_2.cache/compile_simlib/xcelium} {vcs=/home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_2/project_2.cache/compile_simlib/vcs} {riviera=/home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_2/project_2.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu Feb  6 00:20:52 2020] Launched synth_1...
+Run output will be captured here: /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_2/project_2.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Thu Feb  6 00:22:52 2020] Launched impl_1...
+Run output will be captured here: /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_2/project_2.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Feb  6 00:32:22 2020] Launched impl_1...
+Run output will be captured here: /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_2/project_2.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 1282 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 7729.113 ; gain = 36.070 ; free physical = 1135 ; free virtual = 10363
+Restored from archive | CPU: 4,540000 secs | Memory: 39,854477 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 7729.113 ; gain = 36.070 ; free physical = 1135 ; free virtual = 10363
+Netlist sorting complete. Time (s): cpu = 00:00:00,01 ; elapsed = 00:00:00,01 . Memory (MB): peak = 7729.113 ; gain = 0.000 ; free physical = 1138 ; free virtual = 10368
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 9 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 5 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 1 instances
+  SRLC32E => SRL16E: 3 instances
+
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Common 17-14] Message 'Designutils 20-3303' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+open_run: Time (s): cpu = 00:00:51 ; elapsed = 00:00:48 . Memory (MB): peak = 7917.680 ; gain = 926.195 ; free physical = 1055 ; free virtual = 10326
+open_report: Time (s): cpu = 00:00:21 ; elapsed = 00:00:16 . Memory (MB): peak = 7968.980 ; gain = 45.246 ; free physical = 828 ; free virtual = 10135
+file copy -force /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_2/project_2.runs/impl_1/design_1_wrapper.sysdef /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_2/project_2.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_2/project_2.sdk -hwspec /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_2/project_2.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_2/project_2.sdk -hwspec /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_2/project_2.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Feb  6 00:37:29 2020...

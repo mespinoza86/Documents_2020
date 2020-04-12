@@ -1,0 +1,214 @@
+10:56:50 INFO  : Launching XSCT server: xsct -n  -interactive /home/marco/Documents/2020/remoteproc2019/SDK_project/temp_xsdb_launch_script.tcl
+10:56:54 INFO  : XSCT server has started successfully.
+10:56:54 INFO  : plnx-install-location is set to ''
+10:56:54 INFO  : Successfully done setting XSCT server connection channel  
+10:56:54 INFO  : Successfully done setting workspace for the tool. 
+10:56:54 INFO  : Successfully done query RDI_DATADIR 
+10:56:55 INFO  : Registering command handlers for Vitis TCF services
+11:29:29 INFO  : Successfully done sdx_reload_mss "/home/marco/Documents/2020/remoteproc2019/SDK_project/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss"
+11:29:29 INFO  : Successfully done sdx_reload_mss "/home/marco/Documents/2020/remoteproc2019/SDK_project/zed/ps7_cortexa9_1/freertos10_xilinx_domain/bsp/system.mss"
+11:29:40 INFO  : (SwPlaform) Successfully done setParamInSpec 
+11:29:43 INFO  : (SwPlaform) Successfully done setParamInSpec 
+11:29:49 INFO  : (SwPlaform) Successfully done setParamInSpec 
+11:29:56 INFO  : (SwPlaform) Successfully done setParamInSpec 
+11:30:06 INFO  : (SwPlaform) Successfully done setParamInSpec 
+11:30:08 INFO  : (SwPlaform) Successfully done setParamInSpec 
+11:30:20 INFO  : (SwPlaform) Successfully done setParamInSpec 
+11:30:21 INFO  : Successfully done sdx_reload_mss "/home/marco/Documents/2020/remoteproc2019/SDK_project/zed/ps7_cortexa9_1/freertos10_xilinx_domain/bsp/system.mss"
+11:30:21 INFO  : No changes in MSS file content so sources will not be generated.
+11:30:29 INFO  : (SwPlaform) Successfully done setParamInSpec 
+11:30:37 INFO  : (SwPlaform) Successfully done setParamInSpec 
+11:30:47 INFO  : (SwPlaform) Successfully done setParamInSpec 
+11:30:50 INFO  : (SwPlaform) Successfully done setParamInSpec 
+11:30:55 INFO  : (SwPlaform) Successfully done setParamInSpec 
+11:31:53 INFO  : (SwPlaform) Successfully done setParamInSpec 
+11:32:18 INFO  : (SwPlaform) Successfully done setParamInSpec 
+11:32:23 INFO  : (SwPlaform) Successfully done setParamInSpec 
+11:32:29 INFO  : (SwPlaform) Successfully done setParamInSpec 
+11:32:30 INFO  : (SwPlaform) Successfully done setParamInSpec 
+11:32:45 INFO  : (SwPlaform) Successfully done setParamInSpec 
+11:32:55 INFO  : (SwPlaform) Successfully done setParamInSpec 
+11:32:55 INFO  : (SwPlaform) Successfully done setParamInSpec 
+11:33:02 INFO  : (SwPlaform) Successfully done setParamInSpec 
+11:33:02 INFO  : Successfully done sdx_reload_mss "/home/marco/Documents/2020/remoteproc2019/SDK_project/zed/ps7_cortexa9_1/freertos10_xilinx_domain/bsp/system.mss"
+11:33:02 INFO  : No changes in MSS file content so sources will not be generated.
+11:33:35 INFO  : (SwPlaform) Successfully done setParamInSpec 
+11:33:38 INFO  : Successfully done sdx_reload_mss "/home/marco/Documents/2020/remoteproc2019/SDK_project/zed/ps7_cortexa9_1/freertos10_xilinx_domain/bsp/system.mss"
+11:33:38 INFO  : No changes in MSS file content so sources will not be generated.
+11:33:54 INFO  : (SwPlaform) Successfully done setParamInSpec 
+11:34:06 INFO  : (SwPlaform) Successfully done setParamInSpec 
+11:34:11 INFO  : (SwPlaform) Successfully done setParamInSpec 
+11:35:42 INFO  : (SwPlaform) Successfully done setParamInSpec 
+11:35:51 INFO  : (SwPlaform) Successfully done setParamInSpec 
+11:35:58 INFO  : (SwPlaform) Successfully done setParamInSpec 
+11:36:02 INFO  : Successfully done sdx_reload_mss "/home/marco/Documents/2020/remoteproc2019/SDK_project/zed/ps7_cortexa9_1/freertos10_xilinx_domain/bsp/system.mss"
+11:36:02 INFO  : No changes in MSS file content so sources will not be generated.
+11:36:56 INFO  : (SwPlaform) Successfully done setParamInSpec 
+11:36:59 INFO  : (SwPlaform) Successfully done setParamInSpec 
+11:37:07 INFO  : (SwPlaform) Successfully done setParamInSpec 
+11:37:13 INFO  : (SwPlaform) Successfully done setParamInSpec 
+11:38:21 INFO  : Successfully done sdx_reload_mss "/home/marco/Documents/2020/remoteproc2019/SDK_project/zed/ps7_cortexa9_1/freertos10_xilinx_domain/bsp/system.mss"
+11:38:21 INFO  : No changes in MSS file content so sources will not be generated.
+11:38:35 INFO  : (SwPlaform) Successfully done setParamInSpec 
+11:38:37 INFO  : (SwPlaform) Successfully done setParamInSpec 
+11:38:49 INFO  : (SwPlatform) Successfully done update_mss 
+11:38:49 INFO  : Successfully done sdx_reload_mss "/home/marco/Documents/2020/remoteproc2019/SDK_project/zed/ps7_cortexa9_1/freertos10_xilinx_domain/bsp/system.mss"
+11:41:47 INFO  : Checking for BSP changes to sync application flags for project 'remoteproc2019'...
+11:41:48 INFO  : Updating application flags with new BSP settings...
+11:41:49 INFO  : Successfully updated application flags for project remoteproc2019.
+19:05:53 INFO  : Launching XSCT server: xsct -n  -interactive /home/marco/Documents/2020/remoteproc2019/SDK_project/temp_xsdb_launch_script.tcl
+19:05:57 INFO  : XSCT server has started successfully.
+19:05:57 INFO  : Registering command handlers for Vitis TCF services
+19:05:58 INFO  : Successfully done setting XSCT server connection channel  
+19:05:58 INFO  : plnx-install-location is set to ''
+19:05:58 INFO  : Successfully done setting workspace for the tool. 
+19:05:58 INFO  : Successfully done query RDI_DATADIR 
+17:13:55 INFO  : Launching XSCT server: xsct -n  -interactive /home/marco/Documents/2020/remoteproc2019/SDK_project/temp_xsdb_launch_script.tcl
+17:13:59 INFO  : Registering command handlers for Vitis TCF services
+17:14:00 INFO  : XSCT server has started successfully.
+17:14:00 INFO  : Successfully done setting XSCT server connection channel  
+17:14:00 INFO  : plnx-install-location is set to ''
+17:14:00 INFO  : Successfully done setting workspace for the tool. 
+17:14:00 INFO  : Successfully done query RDI_DATADIR 
+22:35:55 ERROR : Failed to openhw "/home/marco/Documents/2020/remoteproc2019/SDK_project/zed/export/zed/hw/zed.xsa"
+Reason: boost::filesystem::current_path: No such file or directory
+22:36:23 ERROR : Failed to openhw "/home/marco/Documents/2020/remoteproc2019/SDK_project/zed/export/zed/hw/zed.xsa"
+Reason: boost::filesystem::current_path: No such file or directory
+22:36:56 ERROR : Failed to openhw "/home/marco/Documents/2020/remoteproc2019/SDK_project/zed/export/zed/hw/zed.xsa"
+Reason: boost::filesystem::current_path: No such file or directory
+22:37:51 ERROR : Failed to openhw "/opt/XilinxVitis_2019v2/Vitis/2019.2/data/embeddedsw/lib/fixed_hwplatforms/zed.xsa"
+Reason: boost::filesystem::current_path: No such file or directory
+22:37:51 ERROR : Failed to openhw "/opt/XilinxVitis_2019v2/Vitis/2019.2/data/embeddedsw/lib/fixed_hwplatforms/zed.xsa"
+Reason: boost::filesystem::current_path: No such file or directory
+22:37:52 ERROR : Failed to openhw "/opt/XilinxVitis_2019v2/Vitis/2019.2/data/embeddedsw/lib/fixed_hwplatforms/zed.xsa"
+Reason: boost::filesystem::current_path: No such file or directory
+22:37:52 ERROR : Failed to openhw "/opt/XilinxVitis_2019v2/Vitis/2019.2/data/embeddedsw/lib/fixed_hwplatforms/zed.xsa"
+Reason: boost::filesystem::current_path: No such file or directory
+22:38:01 ERROR : Failed to openhw "/opt/XilinxVitis_2019v2/Vitis/2019.2/data/embeddedsw/lib/fixed_hwplatforms/zed.xsa"
+Reason: boost::filesystem::current_path: No such file or directory
+22:38:01 ERROR : Failed to openhw "/opt/XilinxVitis_2019v2/Vitis/2019.2/data/embeddedsw/lib/fixed_hwplatforms/zed.xsa"
+Reason: boost::filesystem::current_path: No such file or directory
+22:38:01 ERROR : Failed to openhw "/opt/XilinxVitis_2019v2/Vitis/2019.2/data/embeddedsw/lib/fixed_hwplatforms/zed.xsa"
+Reason: boost::filesystem::current_path: No such file or directory
+22:38:01 ERROR : Failed to openhw "/opt/XilinxVitis_2019v2/Vitis/2019.2/data/embeddedsw/lib/fixed_hwplatforms/zed.xsa"
+Reason: boost::filesystem::current_path: No such file or directory
+22:38:01 ERROR : Failed to openhw "/opt/XilinxVitis_2019v2/Vitis/2019.2/data/embeddedsw/lib/fixed_hwplatforms/zed.xsa"
+Reason: boost::filesystem::current_path: No such file or directory
+22:38:01 ERROR : Failed to openhw "/opt/XilinxVitis_2019v2/Vitis/2019.2/data/embeddedsw/lib/fixed_hwplatforms/zed.xsa"
+Reason: boost::filesystem::current_path: No such file or directory
+22:38:01 ERROR : Failed to openhw "/opt/XilinxVitis_2019v2/Vitis/2019.2/data/embeddedsw/lib/fixed_hwplatforms/zed.xsa"
+Reason: boost::filesystem::current_path: No such file or directory
+22:38:01 ERROR : Failed to openhw "/opt/XilinxVitis_2019v2/Vitis/2019.2/data/embeddedsw/lib/fixed_hwplatforms/zed.xsa"
+Reason: boost::filesystem::current_path: No such file or directory
+22:38:01 ERROR : Failed to openhw "/opt/XilinxVitis_2019v2/Vitis/2019.2/data/embeddedsw/lib/fixed_hwplatforms/zed.xsa"
+Reason: boost::filesystem::current_path: No such file or directory
+22:38:01 ERROR : Failed to openhw "/opt/XilinxVitis_2019v2/Vitis/2019.2/data/embeddedsw/lib/fixed_hwplatforms/zed.xsa"
+Reason: boost::filesystem::current_path: No such file or directory
+22:38:01 ERROR : Failed to openhw "/opt/XilinxVitis_2019v2/Vitis/2019.2/data/embeddedsw/lib/fixed_hwplatforms/zed.xsa"
+Reason: boost::filesystem::current_path: No such file or directory
+22:38:01 ERROR : Failed to openhw "/opt/XilinxVitis_2019v2/Vitis/2019.2/data/embeddedsw/lib/fixed_hwplatforms/zed.xsa"
+Reason: boost::filesystem::current_path: No such file or directory
+22:38:01 ERROR : Failed to openhw "/opt/XilinxVitis_2019v2/Vitis/2019.2/data/embeddedsw/lib/fixed_hwplatforms/zed.xsa"
+Reason: boost::filesystem::current_path: No such file or directory
+22:38:01 ERROR : Failed to openhw "/opt/XilinxVitis_2019v2/Vitis/2019.2/data/embeddedsw/lib/fixed_hwplatforms/zed.xsa"
+Reason: boost::filesystem::current_path: No such file or directory
+22:38:01 ERROR : Failed to openhw "/opt/XilinxVitis_2019v2/Vitis/2019.2/data/embeddedsw/lib/fixed_hwplatforms/zed.xsa"
+Reason: boost::filesystem::current_path: No such file or directory
+22:38:01 ERROR : Failed to openhw "/opt/XilinxVitis_2019v2/Vitis/2019.2/data/embeddedsw/lib/fixed_hwplatforms/zed.xsa"
+Reason: boost::filesystem::current_path: No such file or directory
+22:38:01 ERROR : Failed to openhw "/opt/XilinxVitis_2019v2/Vitis/2019.2/data/embeddedsw/lib/fixed_hwplatforms/zed.xsa"
+Reason: boost::filesystem::current_path: No such file or directory
+22:38:01 ERROR : Failed to openhw "/opt/XilinxVitis_2019v2/Vitis/2019.2/data/embeddedsw/lib/fixed_hwplatforms/zed.xsa"
+Reason: boost::filesystem::current_path: No such file or directory
+22:38:01 ERROR : Failed to openhw "/opt/XilinxVitis_2019v2/Vitis/2019.2/data/embeddedsw/lib/fixed_hwplatforms/zed.xsa"
+Reason: boost::filesystem::current_path: No such file or directory
+22:38:12 ERROR : Failed to openhw "/home/marco/Documents/2020/remoteproc2019/SDK_project/zed/export/zed/hw/zed.xsa"
+Reason: boost::filesystem::current_path: No such file or directory
+22:38:15 ERROR : Failed to openhw "/home/marco/Documents/2020/remoteproc2019/SDK_project/zed/export/zed/hw/zed.xsa"
+Reason: boost::filesystem::current_path: No such file or directory
+22:38:22 ERROR : Failed to openhw "/home/marco/Documents/2020/remoteproc2019/SDK_project/zed/export/zed/hw/zed.xsa"
+Reason: boost::filesystem::current_path: No such file or directory
+22:38:24 ERROR : Failed to openhw "/home/marco/Documents/2020/remoteproc2019/SDK_project/zed/export/zed/hw/zed.xsa"
+Reason: boost::filesystem::current_path: No such file or directory
+22:38:25 ERROR : Failed to openhw "/home/marco/Documents/2020/remoteproc2019/SDK_project/zed/export/zed/hw/zed.xsa"
+Reason: boost::filesystem::current_path: No such file or directory
+22:38:25 ERROR : Failed to openhw "/home/marco/Documents/2020/remoteproc2019/SDK_project/zed/export/zed/hw/zed.xsa"
+Reason: boost::filesystem::current_path: No such file or directory
+22:38:26 ERROR : Failed to openhw "/home/marco/Documents/2020/remoteproc2019/SDK_project/zed/export/zed/hw/zed.xsa"
+Reason: boost::filesystem::current_path: No such file or directory
+22:38:27 ERROR : Failed to openhw "/home/marco/Documents/2020/remoteproc2019/SDK_project/zed/export/zed/hw/zed.xsa"
+Reason: boost::filesystem::current_path: No such file or directory
+22:38:28 ERROR : Failed to openhw "/home/marco/Documents/2020/remoteproc2019/SDK_project/zed/export/zed/hw/zed.xsa"
+Reason: boost::filesystem::current_path: No such file or directory
+22:38:28 ERROR : Failed to openhw "/home/marco/Documents/2020/remoteproc2019/SDK_project/zed/export/zed/hw/zed.xsa"
+Reason: boost::filesystem::current_path: No such file or directory
+22:38:29 ERROR : Failed to openhw "/home/marco/Documents/2020/remoteproc2019/SDK_project/zed/export/zed/hw/zed.xsa"
+Reason: boost::filesystem::current_path: No such file or directory
+22:38:30 ERROR : Failed to openhw "/home/marco/Documents/2020/remoteproc2019/SDK_project/zed/export/zed/hw/zed.xsa"
+Reason: boost::filesystem::current_path: No such file or directory
+22:39:04 ERROR : Failed to openhw "/home/marco/Documents/2020/remoteproc2019/SDK_project/zed/export/zed/hw/zed.xsa"
+Reason: boost::filesystem::current_path: No such file or directory
+22:39:11 ERROR : Failed to openhw "/home/marco/Documents/2020/remoteproc2019/SDK_project/zed/export/zed/hw/zed.xsa"
+Reason: boost::filesystem::current_path: No such file or directory
+22:39:11 ERROR : Failed to openhw "/home/marco/Documents/2020/remoteproc2019/SDK_project/zed/export/zed/hw/zed.xsa"
+Reason: boost::filesystem::current_path: No such file or directory
+22:40:19 ERROR : Failed to openhw "/home/marco/Documents/2020/remoteproc2019/SDK_project/zed/export/zed/hw/zed.xsa"
+Reason: boost::filesystem::current_path: No such file or directory
+22:40:27 ERROR : Failed to openhw "/home/marco/Documents/2020/remoteproc2019/SDK_project/zed/export/zed/hw/zed.xsa"
+Reason: boost::filesystem::current_path: No such file or directory
+22:40:27 ERROR : Failed to openhw "/home/marco/Documents/2020/remoteproc2019/SDK_project/zed/export/zed/hw/zed.xsa"
+Reason: boost::filesystem::current_path: No such file or directory
+22:40:28 ERROR : Failed to openhw "/home/marco/Documents/2020/remoteproc2019/SDK_project/zed/export/zed/hw/zed.xsa"
+Reason: boost::filesystem::current_path: No such file or directory
+22:41:00 ERROR : Failed to openhw "/home/marco/Documents/2020/remoteproc2019/SDK_project/zed/export/zed/hw/zed.xsa"
+Reason: boost::filesystem::current_path: No such file or directory
+22:42:23 ERROR : Failed to openhw "/home/marco/Documents/2020/remoteproc2019/SDK_project/zed/export/zed/hw/zed.xsa"
+Reason: boost::filesystem::current_path: No such file or directory
+22:43:06 ERROR : Failed to openhw "/home/marco/Documents/2020/remoteproc2019/SDK_project/zed/export/zed/hw/zed.xsa"
+Reason: boost::filesystem::current_path: No such file or directory
+22:44:07 ERROR : Failed to openhw "/opt/XilinxVitis_2019v2/Vitis/2019.2/data/embeddedsw/lib/fixed_hwplatforms/zed.xsa"
+Reason: boost::filesystem::current_path: No such file or directory
+22:44:07 ERROR : Failed to openhw "/opt/XilinxVitis_2019v2/Vitis/2019.2/data/embeddedsw/lib/fixed_hwplatforms/zed.xsa"
+Reason: boost::filesystem::current_path: No such file or directory
+22:44:07 ERROR : Failed to openhw "/opt/XilinxVitis_2019v2/Vitis/2019.2/data/embeddedsw/lib/fixed_hwplatforms/zed.xsa"
+Reason: boost::filesystem::current_path: No such file or directory
+22:44:07 ERROR : Failed to openhw "/opt/XilinxVitis_2019v2/Vitis/2019.2/data/embeddedsw/lib/fixed_hwplatforms/zed.xsa"
+Reason: boost::filesystem::current_path: No such file or directory
+22:44:36 ERROR : Failed to openhw "/home/marco/Documents/2020/remoteproc2019/SDK_project/zed/export/zed/hw/zed.xsa"
+Reason: boost::filesystem::current_path: No such file or directory
+22:59:01 INFO  : Launching XSCT server: xsct -n  -interactive /home/marco/Documents/2020/remoteproc2019/SDK_project/temp_xsdb_launch_script.tcl
+22:59:08 INFO  : XSCT server has started successfully.
+22:59:08 INFO  : plnx-install-location is set to ''
+22:59:08 INFO  : Successfully done query RDI_DATADIR 
+22:59:08 INFO  : Successfully done setting XSCT server connection channel  
+22:59:08 INFO  : Successfully done setting workspace for the tool. 
+22:59:09 INFO  : Registering command handlers for Vitis TCF services
+23:13:14 INFO  : Launching XSCT server: xsct -n  -interactive /home/marco/Documents/2020/remoteproc2019/SDK_project/temp_xsdb_launch_script.tcl
+23:13:18 INFO  : XSCT server has started successfully.
+23:13:18 INFO  : plnx-install-location is set to ''
+23:13:18 INFO  : Successfully done setting XSCT server connection channel  
+23:13:18 INFO  : Successfully done query RDI_DATADIR 
+23:13:18 INFO  : Successfully done setting workspace for the tool. 
+23:13:18 INFO  : Registering command handlers for Vitis TCF services
+23:15:11 INFO  : Launching XSCT server: xsct -n  -interactive /home/marco/Documents/2020/remoteproc2019/SDK_project/temp_xsdb_launch_script.tcl
+23:15:18 INFO  : XSCT server has started successfully.
+23:15:18 INFO  : Successfully done setting XSCT server connection channel  
+23:15:18 INFO  : plnx-install-location is set to ''
+23:15:19 INFO  : Successfully done setting workspace for the tool. 
+23:15:19 INFO  : Successfully done query RDI_DATADIR 
+23:15:19 INFO  : Registering command handlers for Vitis TCF services
+21:34:10 INFO  : Launching XSCT server: xsct -n  -interactive /home/marco/Documents/2020/remoteproc2019/SDK_project/temp_xsdb_launch_script.tcl
+21:34:14 INFO  : XSCT server has started successfully.
+21:34:14 INFO  : Successfully done setting XSCT server connection channel  
+21:34:14 INFO  : plnx-install-location is set to ''
+21:34:14 INFO  : Successfully done query RDI_DATADIR 
+21:34:14 INFO  : Successfully done setting workspace for the tool. 
+21:34:14 INFO  : Registering command handlers for Vitis TCF services
+21:38:06 INFO  : Generated template bif file for FSBL
+11:10:53 INFO  : Launching XSCT server: xsct -n  -interactive /home/marco/Documents/2020/remoteproc2019/SDK_project/temp_xsdb_launch_script.tcl
+11:10:58 INFO  : Registering command handlers for Vitis TCF services
+11:10:58 INFO  : XSCT server has started successfully.
+11:10:58 INFO  : Successfully done setting XSCT server connection channel  
+11:10:58 INFO  : Successfully done setting workspace for the tool. 
+11:10:59 INFO  : plnx-install-location is set to ''
+11:10:59 INFO  : Successfully done query RDI_DATADIR 

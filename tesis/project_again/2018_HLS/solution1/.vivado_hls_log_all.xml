@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Register 'nextSavedData_7' is power-on initialization." projectName="solution1" solutionName="solution1" date="2019-11-10T20:56:42.344-0600" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'nextSavedData_6' is power-on initialization." projectName="solution1" solutionName="solution1" date="2019-11-10T20:56:41.870-0600" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'nextSavedData_5' is power-on initialization." projectName="solution1" solutionName="solution1" date="2019-11-10T20:56:41.863-0600" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'nextSavedData_4' is power-on initialization." projectName="solution1" solutionName="solution1" date="2019-11-10T20:56:41.857-0600" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'nextSavedData_3' is power-on initialization." projectName="solution1" solutionName="solution1" date="2019-11-10T20:56:41.845-0600" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'nextSavedData_2' is power-on initialization." projectName="solution1" solutionName="solution1" date="2019-11-10T20:56:41.840-0600" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'nextSavedData_1' is power-on initialization." projectName="solution1" solutionName="solution1" date="2019-11-10T20:56:41.835-0600" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'nextSavedData_0' is power-on initialization." projectName="solution1" solutionName="solution1" date="2019-11-10T20:56:41.827-0600" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'vertical' is power-on initialization." projectName="solution1" solutionName="solution1" date="2019-11-10T20:56:41.819-0600" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'V_acc_7' is power-on initialization." projectName="solution1" solutionName="solution1" date="2019-11-10T20:56:41.815-0600" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'F_acc_7' is power-on initialization." projectName="solution1" solutionName="solution1" date="2019-11-10T20:56:41.811-0600" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'savedData_7' is power-on initialization." projectName="solution1" solutionName="solution1" date="2019-11-10T20:56:41.801-0600" type="Warning"/>
+      </synLog>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

@@ -1,0 +1,17 @@
+The target system is: FreeRTOS -  - arm
+The host system is: Linux - 4.15.0-74-generic - x86_64
+Determining if files stdatomic.h exist passed with the following output:
+Change Dir: /home/marco/Documents/2020/tesis/BareMetal_Tutorial/SDK_default/RTOS_AMPexample_bsp/ps7_cortexa9_1/libsrc/libmetal_v1_4/build_libmetal/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_290a6/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_290a6.dir/build.make CMakeFiles/cmTC_290a6.dir/build
+gmake[1]: Entering directory '/home/marco/Documents/2020/tesis/BareMetal_Tutorial/SDK_default/RTOS_AMPexample_bsp/ps7_cortexa9_1/libsrc/libmetal_v1_4/build_libmetal/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_290a6.dir/CheckIncludeFiles.c.obj
+/opt/vivado2018/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/bin/arm-none-eabi-gcc   -O2 -c -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUSE_AMP=1 -I/home/marco/Documents/2020/tesis/BareMetal_Tutorial/SDK_default/RTOS_AMPexample_bsp/ps7_cortexa9_1/include -c   -o CMakeFiles/cmTC_290a6.dir/CheckIncludeFiles.c.obj   -c /home/marco/Documents/2020/tesis/BareMetal_Tutorial/SDK_default/RTOS_AMPexample_bsp/ps7_cortexa9_1/libsrc/libmetal_v1_4/build_libmetal/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_290a6
+/opt/vivado2018/SDK/2018.3/tps/lnx64/cmake-3.3.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_290a6.dir/link.txt --verbose=1
+/opt/vivado2018/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/bin/arm-none-eabi-gcc  -O2 -c -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUSE_AMP=1 -I/home/marco/Documents/2020/tesis/BareMetal_Tutorial/SDK_default/RTOS_AMPexample_bsp/ps7_cortexa9_1/include -c    CMakeFiles/cmTC_290a6.dir/CheckIncludeFiles.c.obj  -o cmTC_290a6  
+arm-none-eabi-gcc: warning: CMakeFiles/cmTC_290a6.dir/CheckIncludeFiles.c.obj: linker input file unused because linking not done
+gmake[1]: Leaving directory '/home/marco/Documents/2020/tesis/BareMetal_Tutorial/SDK_default/RTOS_AMPexample_bsp/ps7_cortexa9_1/libsrc/libmetal_v1_4/build_libmetal/CMakeFiles/CMakeTmp'
+
+

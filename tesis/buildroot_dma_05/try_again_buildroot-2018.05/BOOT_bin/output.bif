@@ -1,0 +1,7 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]/home/marco/Documents/tesis/others/vivado_2019_Version/vivado_2019_Version.sdk/FSBL/Debug/FSBL.elf
+	/home/marco/Documents/tesis/others/vivado_2019_Version/vivado_2019_Version.runs/impl_1/design_1_wrapper.bit
+	/home/marco/Documents/tesis/buildroot_dma_05/try_again_buildroot-2018.05/buildroot-2018.05/output/images/u-boot.elf
+}

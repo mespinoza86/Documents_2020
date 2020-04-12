@@ -1,0 +1,6 @@
+00:36:39 INFO  : Registering command handlers for SDK TCF services
+00:36:43 INFO  : Launching XSCT server: xsct -n -interactive /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_2/project_2.sdk/temp_xsdb_launch_script.tcl
+00:36:49 INFO  : XSCT server has started successfully.
+00:36:49 INFO  : Successfully done setting XSCT server connection channel  
+00:36:51 INFO  : Processing command line option -hwspec /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_2/project_2.sdk/design_1_wrapper.hdf.
+00:36:51 INFO  : Successfully done setting SDK workspace  

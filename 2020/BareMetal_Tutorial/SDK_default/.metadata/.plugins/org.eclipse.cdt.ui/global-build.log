@@ -1,0 +1,299 @@
+21:33:27 **** Incremental Build of configuration Debug for project RTOS_AMPexample ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+
+21:33:28 Build Finished (took 1s.80ms)
+
+21:33:29 **** Incremental Build of configuration Release for project RTOS_AMPexample ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helper.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/helper.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../RTOS_AMPexample_bsp/ps7_cortexa9_1/include -MMD -MP -MF"src/helper.d" -MT"src/helper.o" -o "src/helper.o" "../src/helper.c"
+Finished building: ../src/helper.c
+ 
+Building file: ../src/platform_info.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/platform_info.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../RTOS_AMPexample_bsp/ps7_cortexa9_1/include -MMD -MP -MF"src/platform_info.d" -MT"src/platform_info.o" -o "src/platform_info.o" "../src/platform_info.c"
+Finished building: ../src/platform_info.c
+ 
+Building file: ../src/rpmsg-echo.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/rpmsg-echo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../RTOS_AMPexample_bsp/ps7_cortexa9_1/include -MMD -MP -MF"src/rpmsg-echo.d" -MT"src/rpmsg-echo.o" -o "src/rpmsg-echo.o" "../src/rpmsg-echo.c"
+../src/rpmsg-echo.c: In function 'processing':
+../src/rpmsg-echo.c:102:20: warning: passing argument 1 of 'platform_init' makes integer from pointer without a cast [-Wint-conversion]
+  if (platform_init(NULL, NULL, &platform)) {
+                    ^~~~
+In file included from ../src/rpmsg-echo.c:9:0:
+../src/platform_info.h:57:5: note: expected 'int' but argument is of type 'void *'
+ int platform_init(int argc, char *argv[], void **platform);
+     ^~~~~~~~~~~~~
+Finished building: ../src/rpmsg-echo.c
+ 
+Building file: ../src/rsc_table.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/rsc_table.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../RTOS_AMPexample_bsp/ps7_cortexa9_1/include -MMD -MP -MF"src/rsc_table.d" -MT"src/rsc_table.o" -o "src/rsc_table.o" "../src/rsc_table.c"
+Finished building: ../src/rsc_table.c
+ 
+Building file: ../src/zynq_a9_rproc.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/zynq_a9_rproc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../RTOS_AMPexample_bsp/ps7_cortexa9_1/include -MMD -MP -MF"src/zynq_a9_rproc.d" -MT"src/zynq_a9_rproc.o" -o "src/zynq_a9_rproc.o" "../src/zynq_a9_rproc.c"
+Finished building: ../src/zynq_a9_rproc.c
+ 
+Building target: RTOS_AMPexample.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../RTOS_AMPexample_bsp/ps7_cortexa9_1/lib -o "RTOS_AMPexample.elf"  ./src/helper.o ./src/platform_info.o ./src/rpmsg-echo.o ./src/rsc_table.o ./src/zynq_a9_rproc.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-lmetal,-lopen_amp,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-lmetal,-lgcc,-lc,--end-group
+Finished building target: RTOS_AMPexample.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size RTOS_AMPexample.elf  |tee "RTOS_AMPexample.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 134460	1052200	  92656	1279316	 138554	RTOS_AMPexample.elf
+Finished building: RTOS_AMPexample.elf.size
+ 
+21:33:38 **** Auto Build of configuration Debug for project RTOS_AMPexample ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+21:23:05 **** Auto Build of configuration Debug for project RTOS_AMPexample ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building target: RTOS_AMPexample.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../RTOS_AMPexample_bsp/ps7_cortexa9_1/lib -o "RTOS_AMPexample.elf"  ./src/helper.o ./src/platform_info.o ./src/rpmsg-echo.o ./src/rsc_table.o ./src/zynq_a9_rproc.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-lmetal,-lopen_amp,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-lmetal,-lgcc,-lc,--end-group
+Finished building target: RTOS_AMPexample.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size RTOS_AMPexample.elf  |tee "RTOS_AMPexample.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 137500	1052200	  92656	1282356	 139134	RTOS_AMPexample.elf
+Finished building: RTOS_AMPexample.elf.size
+ 
+22:04:23 **** Auto Build of configuration Debug for project RTOS_AMPexample ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helper.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helper.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../RTOS_AMPexample_bsp/ps7_cortexa9_1/include -MMD -MP -MF"src/helper.d" -MT"src/helper.o" -o "src/helper.o" "../src/helper.c"
+Finished building: ../src/helper.c
+ 
+Building file: ../src/platform_info.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_info.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../RTOS_AMPexample_bsp/ps7_cortexa9_1/include -MMD -MP -MF"src/platform_info.d" -MT"src/platform_info.o" -o "src/platform_info.o" "../src/platform_info.c"
+Finished building: ../src/platform_info.c
+ 
+Building file: ../src/rpmsg-echo.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rpmsg-echo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../RTOS_AMPexample_bsp/ps7_cortexa9_1/include -MMD -MP -MF"src/rpmsg-echo.d" -MT"src/rpmsg-echo.o" -o "src/rpmsg-echo.o" "../src/rpmsg-echo.c"
+../src/rpmsg-echo.c: In function 'processing':
+../src/rpmsg-echo.c:102:20: warning: passing argument 1 of 'platform_init' makes integer from pointer without a cast [-Wint-conversion]
+  if (platform_init(NULL, NULL, &platform)) {
+                    ^~~~
+In file included from ../src/rpmsg-echo.c:9:0:
+../src/platform_info.h:57:5: note: expected 'int' but argument is of type 'void *'
+ int platform_init(int argc, char *argv[], void **platform);
+     ^~~~~~~~~~~~~
+Finished building: ../src/rpmsg-echo.c
+ 
+Building file: ../src/rsc_table.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rsc_table.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../RTOS_AMPexample_bsp/ps7_cortexa9_1/include -MMD -MP -MF"src/rsc_table.d" -MT"src/rsc_table.o" -o "src/rsc_table.o" "../src/rsc_table.c"
+Finished building: ../src/rsc_table.c
+ 
+Building file: ../src/zynq_a9_rproc.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/zynq_a9_rproc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../RTOS_AMPexample_bsp/ps7_cortexa9_1/include -MMD -MP -MF"src/zynq_a9_rproc.d" -MT"src/zynq_a9_rproc.o" -o "src/zynq_a9_rproc.o" "../src/zynq_a9_rproc.c"
+Finished building: ../src/zynq_a9_rproc.c
+ 
+Building target: RTOS_AMPexample.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../RTOS_AMPexample_bsp/ps7_cortexa9_1/lib -o "RTOS_AMPexample.elf"  ./src/helper.o ./src/platform_info.o ./src/rpmsg-echo.o ./src/rsc_table.o ./src/zynq_a9_rproc.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-lmetal,-lopen_amp,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-lmetal,-lgcc,-lc,--end-group
+Finished building target: RTOS_AMPexample.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size RTOS_AMPexample.elf  |tee "RTOS_AMPexample.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 137500	1052200	  92656	1282356	 139134	RTOS_AMPexample.elf
+Finished building: RTOS_AMPexample.elf.size
+ 
+22:04:42 **** Auto Build of configuration Debug for project RTOS_AMPexample ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building target: RTOS_AMPexample.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../RTOS_AMPexample_bsp/ps7_cortexa9_1/lib -o "RTOS_AMPexample.elf"  ./src/helper.o ./src/platform_info.o ./src/rpmsg-echo.o ./src/rsc_table.o ./src/zynq_a9_rproc.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-lmetal,-lopen_amp,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-lmetal,-lgcc,-lc,--end-group
+Finished building target: RTOS_AMPexample.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size RTOS_AMPexample.elf  |tee "RTOS_AMPexample.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 137500	1052200	  92656	1282356	 139134	RTOS_AMPexample.elf
+Finished building: RTOS_AMPexample.elf.size
+ 
+20:49:57 **** Auto Build of configuration Debug for project RTOS_AMPexample ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/rsc_table.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rsc_table.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../RTOS_AMPexample_bsp/ps7_cortexa9_1/include -MMD -MP -MF"src/rsc_table.d" -MT"src/rsc_table.o" -o "src/rsc_table.o" "../src/rsc_table.c"
+Finished building: ../src/rsc_table.c
+ 
+Building target: RTOS_AMPexample.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../RTOS_AMPexample_bsp/ps7_cortexa9_1/lib -o "RTOS_AMPexample.elf"  ./src/helper.o ./src/platform_info.o ./src/rpmsg-echo.o ./src/rsc_table.o ./src/zynq_a9_rproc.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-lmetal,-lopen_amp,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-lmetal,-lgcc,-lc,--end-group
+Finished building target: RTOS_AMPexample.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size RTOS_AMPexample.elf  |tee "RTOS_AMPexample.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 137500	1052200	  92656	1282356	 139134	RTOS_AMPexample.elf
+Finished building: RTOS_AMPexample.elf.size
+ 
+20:54:49 **** Auto Build of configuration Debug for project RTOS_AMPexample ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/rpmsg-echo.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rpmsg-echo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../RTOS_AMPexample_bsp/ps7_cortexa9_1/include -MMD -MP -MF"src/rpmsg-echo.d" -MT"src/rpmsg-echo.o" -o "src/rpmsg-echo.o" "../src/rpmsg-echo.c"
+../src/rpmsg-echo.c: In function 'processing':
+../src/rpmsg-echo.c:102:20: warning: passing argument 1 of 'platform_init' makes integer from pointer without a cast [-Wint-conversion]
+  if (platform_init(NULL, NULL, &platform)) {
+                    ^~~~
+In file included from ../src/rpmsg-echo.c:9:0:
+../src/platform_info.h:57:5: note: expected 'int' but argument is of type 'void *'
+ int platform_init(int argc, char *argv[], void **platform);
+     ^~~~~~~~~~~~~
+Finished building: ../src/rpmsg-echo.c
+ 
+Building target: RTOS_AMPexample.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../RTOS_AMPexample_bsp/ps7_cortexa9_1/lib -o "RTOS_AMPexample.elf"  ./src/helper.o ./src/platform_info.o ./src/rpmsg-echo.o ./src/rsc_table.o ./src/zynq_a9_rproc.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-lmetal,-lopen_amp,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-lmetal,-lgcc,-lc,--end-group
+Finished building target: RTOS_AMPexample.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size RTOS_AMPexample.elf  |tee "RTOS_AMPexample.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 137500	1052200	  92656	1282356	 139134	RTOS_AMPexample.elf
+Finished building: RTOS_AMPexample.elf.size
+ 
+20:55:00 **** Auto Build of configuration Debug for project RTOS_AMPexample ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/rpmsg-echo.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rpmsg-echo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../RTOS_AMPexample_bsp/ps7_cortexa9_1/include -MMD -MP -MF"src/rpmsg-echo.d" -MT"src/rpmsg-echo.o" -o "src/rpmsg-echo.o" "../src/rpmsg-echo.c"
+../src/rpmsg-echo.c: In function 'processing':
+../src/rpmsg-echo.c:102:20: warning: passing argument 1 of 'platform_init' makes integer from pointer without a cast [-Wint-conversion]
+  if (platform_init(NULL, NULL, &platform)) {
+                    ^~~~
+In file included from ../src/rpmsg-echo.c:9:0:
+../src/platform_info.h:57:5: note: expected 'int' but argument is of type 'void *'
+ int platform_init(int argc, char *argv[], void **platform);
+     ^~~~~~~~~~~~~
+Finished building: ../src/rpmsg-echo.c
+ 
+Building target: RTOS_AMPexample.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../RTOS_AMPexample_bsp/ps7_cortexa9_1/lib -o "RTOS_AMPexample.elf"  ./src/helper.o ./src/platform_info.o ./src/rpmsg-echo.o ./src/rsc_table.o ./src/zynq_a9_rproc.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-lmetal,-lopen_amp,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-lmetal,-lgcc,-lc,--end-group
+Finished building target: RTOS_AMPexample.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size RTOS_AMPexample.elf  |tee "RTOS_AMPexample.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 137500	1052200	  92656	1282356	 139134	RTOS_AMPexample.elf
+Finished building: RTOS_AMPexample.elf.size
+ 
+20:55:22 **** Auto Build of configuration Debug for project RTOS_AMPexample ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helper.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helper.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../RTOS_AMPexample_bsp/ps7_cortexa9_1/include -MMD -MP -MF"src/helper.d" -MT"src/helper.o" -o "src/helper.o" "../src/helper.c"
+Finished building: ../src/helper.c
+ 
+Building target: RTOS_AMPexample.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../RTOS_AMPexample_bsp/ps7_cortexa9_1/lib -o "RTOS_AMPexample.elf"  ./src/helper.o ./src/platform_info.o ./src/rpmsg-echo.o ./src/rsc_table.o ./src/zynq_a9_rproc.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-lmetal,-lopen_amp,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-lmetal,-lgcc,-lc,--end-group
+Finished building target: RTOS_AMPexample.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size RTOS_AMPexample.elf  |tee "RTOS_AMPexample.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 137500	1052200	  92656	1282356	 139134	RTOS_AMPexample.elf
+Finished building: RTOS_AMPexample.elf.size
+ 
+21:26:24 **** Auto Build of configuration Debug for project RTOS_AMPexample ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building target: RTOS_AMPexample.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../RTOS_AMPexample_bsp/ps7_cortexa9_1/lib -o "RTOS_AMPexample.elf"  ./src/helper.o ./src/platform_info.o ./src/rpmsg-echo.o ./src/rsc_table.o ./src/zynq_a9_rproc.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-lmetal,-lopen_amp,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-lmetal,-lgcc,-lc,--end-group
+Finished building target: RTOS_AMPexample.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size RTOS_AMPexample.elf  |tee "RTOS_AMPexample.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 137500	1052200	  92656	1282356	 139134	RTOS_AMPexample.elf
+Finished building: RTOS_AMPexample.elf.size
+ 
+21:26:47 **** Auto Build of configuration Debug for project RTOS_AMPexample ****
+make pre-build main-build 
+/opt/vivado2018/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/bin/ld: RTOS_AMPexample.elf section `.resource_table' will not fit in region `ps7_ddr_0_S_AXI_BASEADDR'
+a9-linaro-pre-build-step
+/opt/vivado2018/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/bin/ld: address 0x308000 of RTOS_AMPexample.elf section `.mmu_tbl' is not within region `ps7_ddr_0_S_AXI_BASEADDR'
+/opt/vivado2018/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/bin/ld: address 0x308000 of RTOS_AMPexample.elf section `.mmu_tbl' is not within region `ps7_ddr_0_S_AXI_BASEADDR'
+/opt/vivado2018/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/bin/ld: region `ps7_ddr_0_S_AXI_BASEADDR' overflowed by 1174016 bytes
+collect2: error: ld returned 1 exit status
+make: *** [RTOS_AMPexample.elf] Error 1
+ 
+Building target: RTOS_AMPexample.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../RTOS_AMPexample_bsp/ps7_cortexa9_1/lib -o "RTOS_AMPexample.elf"  ./src/helper.o ./src/platform_info.o ./src/rpmsg-echo.o ./src/rsc_table.o ./src/zynq_a9_rproc.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-lmetal,-lopen_amp,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-lmetal,-lgcc,-lc,--end-group
+makefile:39: recipe for target 'RTOS_AMPexample.elf' failed
+21:31:07 **** Auto Build of configuration Debug for project RTOS_AMPexample ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building target: RTOS_AMPexample.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../RTOS_AMPexample_bsp/ps7_cortexa9_1/lib -o "RTOS_AMPexample.elf"  ./src/helper.o ./src/platform_info.o ./src/rpmsg-echo.o ./src/rsc_table.o ./src/zynq_a9_rproc.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-lmetal,-lopen_amp,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-lmetal,-lgcc,-lc,--end-group
+Finished building target: RTOS_AMPexample.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size RTOS_AMPexample.elf  |tee "RTOS_AMPexample.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 137500	1052200	  92656	1282356	 139134	RTOS_AMPexample.elf
+Finished building: RTOS_AMPexample.elf.size
+ 
+21:31:29 **** Auto Build of configuration Debug for project RTOS_AMPexample ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/platform_info.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_info.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../RTOS_AMPexample_bsp/ps7_cortexa9_1/include -MMD -MP -MF"src/platform_info.d" -MT"src/platform_info.o" -o "src/platform_info.o" "../src/platform_info.c"
+Finished building: ../src/platform_info.c
+ 
+Building target: RTOS_AMPexample.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../RTOS_AMPexample_bsp/ps7_cortexa9_1/lib -o "RTOS_AMPexample.elf"  ./src/helper.o ./src/platform_info.o ./src/rpmsg-echo.o ./src/rsc_table.o ./src/zynq_a9_rproc.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-lmetal,-lopen_amp,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-lmetal,-lgcc,-lc,--end-group
+Finished building target: RTOS_AMPexample.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size RTOS_AMPexample.elf  |tee "RTOS_AMPexample.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 137500	1052200	  92656	1282356	 139134	RTOS_AMPexample.elf
+Finished building: RTOS_AMPexample.elf.size
+ 

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Feb  6 00:14:17 2020
+# Process ID: 24154
+# Current directory: /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_1/project_1.runs/impl_1
+# Command line: vivado -log GapJunctionIP.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source GapJunctionIP.tcl -notrace
+# Log file: /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_1/project_1.runs/impl_1/GapJunctionIP.vdi
+# Journal file: /home/marco/Documents/tesis/ww39_neuronal_new_IP/2020_newIP_project1/project_1/project_1.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source GapJunctionIP.tcl -notrace

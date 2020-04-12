@@ -1,0 +1,134 @@
+INFO: [HLS 200-10] Running '/opt/vivado2018/Vivado/2018.3/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'marco' on host 'marco-HP-Notebook' (Linux_x86_64 version 4.15.0-66-generic) on Sun Nov 10 20:56:17 CST 2019
+INFO: [HLS 200-10] On os Ubuntu 16.04.5 LTS
+INFO: [HLS 200-10] In directory '/home/marco/Documents/tesis/project_again/2018_HLS'
+INFO: [HLS 200-10] Opening project '/home/marco/Documents/tesis/project_again/2018_HLS/solution1'.
+INFO: [HLS 200-10] Adding design file 'Stream.cpp' to the project
+INFO: [HLS 200-10] Adding design file 'Stream.h' to the project
+INFO: [HLS 200-10] Adding test bench file 'StreamTest.cpp' to the project
+INFO: [HLS 200-10] Opening solution '/home/marco/Documents/tesis/project_again/2018_HLS/solution1/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 6ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Stream.cpp' ... 
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables: Stream.cpp:10:15
+WARNING: [HLS 200-471] Dataflow form checks found 1 issue(s) in file Stream.cpp
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 442.008 ; gain = 0.137 ; free physical = 2281 ; free virtual = 9744
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 442.008 ; gain = 0.137 ; free physical = 2281 ; free virtual = 9744
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 442.008 ; gain = 0.137 ; free physical = 2276 ; free virtual = 9743
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 442.008 ; gain = 0.137 ; free physical = 2275 ; free virtual = 9742
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'ROW_LOOP' (Stream.cpp:32) in function 'Simulate_HW' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'READ_V_LOOP' (Stream.cpp:42) in function 'Simulate_HW' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'CALCULATE_LOOP_1' (Stream.cpp:53) in function 'Simulate_HW' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'CALCULATE_LOOP_2' (Stream.cpp:56) in function 'Simulate_HW' completely with a factor of 8.
+INFO: [XFORM 203-101] Partitioning array 'nextSavedData'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'savedData'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'F_acc'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'V_acc'  in dimension 1 completely.
+INFO: [XFORM 203-712] Applying dataflow to function 'Simulate_HW', detected/extracted 1 process function(s): 
+	 'Loop_ROW_LOOP_proc19'.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (Stream.cpp:57:5) to (Stream.cpp:75:2) in function 'Loop_ROW_LOOP_proc19'... converting 17 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 569.871 ; gain = 128.000 ; free physical = 2250 ; free virtual = 9719
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 569.871 ; gain = 128.000 ; free physical = 2250 ; free virtual = 9717
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'Simulate_HW' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Loop_ROW_LOOP_proc19' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'ROW_LOOP'.
+INFO: [SCHED 204-61] Unable to satisfy pipeline directive: Unable to pipeline the region.
+INFO: [SCHED 204-61] Pipelining loop 'I_LOOP'.
+WARNING: [SCHED 204-68] The II Violation in module 'Loop_ROW_LOOP_proc19': Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between 'store' operation (Stream.cpp:83) of variable 'tmp_8', Stream.cpp:83 on static variable 'vertical' and 'load' operation ('vertical_load_2', Stream.cpp:83) on static variable 'vertical'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 2, Depth = 44.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 15.77 seconds; current allocated memory: 90.593 MB.
+INFO: [HLS 200-434] Only 1 loops out of a total 2 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 4.57 seconds; current allocated memory: 102.567 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Simulate_HW' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 3.55 seconds; current allocated memory: 102.744 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.08 seconds; current allocated memory: 102.905 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Loop_ROW_LOOP_proc19' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Register 'blockNumber' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'savedData_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'F_acc_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'V_acc_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'savedData_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'F_acc_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'V_acc_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'savedData_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'F_acc_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'V_acc_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'savedData_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'F_acc_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'V_acc_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'savedData_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'F_acc_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'V_acc_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'savedData_5' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'F_acc_5' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'V_acc_5' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'savedData_6' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'F_acc_6' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'V_acc_6' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'savedData_7' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'F_acc_7' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'V_acc_7' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'vertical' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'nextSavedData_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'nextSavedData_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'nextSavedData_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'nextSavedData_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'nextSavedData_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'nextSavedData_5' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'nextSavedData_6' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'nextSavedData_7' is power-on initialization.
+INFO: [RTGEN 206-100] Generating core module 'Simulate_HW_dadd_64ns_64ns_64_16_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'Simulate_HW_dmul_64ns_64ns_64_17_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'Simulate_HW_faddfsub_32ns_32ns_32_10_full_dsp_1': 7 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'Simulate_HW_fexp_32ns_32ns_32_31_full_dsp_1': 10 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'Simulate_HW_fmul_32ns_32ns_32_7_max_dsp_1': 13 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'Simulate_HW_fpext_32ns_64_3_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'Simulate_HW_fptrunc_64ns_32_5_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'Simulate_HW_fsub_32ns_32ns_32_10_full_dsp_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'Simulate_HW_mux_83_32_1_1': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Loop_ROW_LOOP_proc19'.
+INFO: [HLS 200-111]  Elapsed time: 0.96 seconds; current allocated memory: 115.038 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Simulate_HW' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'Simulate_HW/input_V_data' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'Simulate_HW/input_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'Simulate_HW/output_V_data' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'Simulate_HW/output_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'Simulate_HW/size' to 's_axilite & ap_none' (register).
+INFO: [RTGEN 206-500] Setting interface mode on function 'Simulate_HW' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return' and 'size' to AXI-Lite port AXILiteS.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Simulate_HW'.
+INFO: [HLS 200-111]  Elapsed time: 4.38 seconds; current allocated memory: 134.414 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 633.871 ; gain = 192.000 ; free physical = 2299 ; free virtual = 9660
+INFO: [SYSC 207-301] Generating SystemC RTL for Simulate_HW.
+INFO: [VHDL 208-304] Generating VHDL RTL for Simulate_HW.
+INFO: [VLOG 209-307] Generating Verilog RTL for Simulate_HW.
+INFO: [HLS 200-112] Total elapsed time: 30.47 seconds; peak allocated memory: 134.414 MB.

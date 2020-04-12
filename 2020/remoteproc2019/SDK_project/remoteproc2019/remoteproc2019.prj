@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="remoteproc2019" location="/home/marco/Documents/2020/remoteproc2019/SDK_project/remoteproc2019" platform="/home/marco/Documents/2020/remoteproc2019/SDK_project/zed/export/zed/zed.xpfm" platformUID="xilinx:zed:design_1:0.0(custom)" systemProject="remoteproc2019_system" sysConfig="zed" runtime="cpp" cpu="freertos10_xilinx_domain" cpuInstance="ps7_cortexa9_1" os="freertos10_xilinx" mssSignature="e3f1870af655348e93cfab10643b7219">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.1964935263">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.1070679983" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="openamp_echo_test" hasBspSettings="true"/>
+</sdkproject:SdkProject>

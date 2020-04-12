@@ -1,0 +1,565 @@
+awk: symbol lookup error: awk: undefined symbol: mpfr_z_sub
+INFO: [HLS 200-10] Running '/opt/vivado/Vivado_HLS/2016.4/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'marco' on host 'marco-HP-Notebook' (Linux_x86_64 version 4.15.0-47-generic) on Tue Apr 23 22:30:14 CST 2019
+INFO: [HLS 200-10] On os Ubuntu 16.04.5 LTS
+INFO: [HLS 200-10] In directory '/home/marco/Documents/tesis/project_again/HLS'
+INFO: [HLS 200-10] Opening project '/home/marco/Documents/tesis/project_again/HLS/solution1'.
+INFO: [HLS 200-10] Opening solution '/home/marco/Documents/tesis/project_again/HLS/solution1/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 6ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [IMPL 213-8] Exporting RTL as an IP in IP-XACT.
+awk: symbol lookup error: awk: undefined symbol: mpfr_z_sub
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/vivado/Vivado/2016.4/data/ip'.
+WARNING: [IP_Flow 19-4832] The IP name 'Simulate_HW_ap_fsub_8_full_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Simulate_HW_ap_fsub_8_full_dsp_32'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'Simulate_HW_ap_fsub_8_full_dsp_32'...
+WARNING: [IP_Flow 19-4832] The IP name 'Simulate_HW_ap_fptrunc_3_no_dsp_64' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Simulate_HW_ap_fptrunc_3_no_dsp_64'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'Simulate_HW_ap_fptrunc_3_no_dsp_64'...
+WARNING: [IP_Flow 19-4832] The IP name 'Simulate_HW_ap_dadd_14_full_dsp_64' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Simulate_HW_ap_dadd_14_full_dsp_64'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'Simulate_HW_ap_dadd_14_full_dsp_64'...
+WARNING: [IP_Flow 19-4832] The IP name 'Simulate_HW_ap_fexp_29_full_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Simulate_HW_ap_fexp_29_full_dsp_32'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'Simulate_HW_ap_fexp_29_full_dsp_32'...
+WARNING: [IP_Flow 19-4832] The IP name 'Simulate_HW_ap_fmul_5_max_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Simulate_HW_ap_fmul_5_max_dsp_32'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'Simulate_HW_ap_fmul_5_max_dsp_32'...
+WARNING: [IP_Flow 19-4832] The IP name 'Simulate_HW_ap_faddfsub_8_full_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Simulate_HW_ap_faddfsub_8_full_dsp_32'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'Simulate_HW_ap_faddfsub_8_full_dsp_32'...
+WARNING: [IP_Flow 19-4832] The IP name 'Simulate_HW_ap_fpext_1_no_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Simulate_HW_ap_fpext_1_no_dsp_32'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'Simulate_HW_ap_fpext_1_no_dsp_32'...
+WARNING: [IP_Flow 19-4832] The IP name 'Simulate_HW_ap_dmul_15_max_dsp_64' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Simulate_HW_ap_dmul_15_max_dsp_64'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'Simulate_HW_ap_dmul_15_max_dsp_64'...
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/vivado/Vivado/2016.4/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 23 22:30:29 2019...
+awk: symbol lookup error: awk: undefined symbol: mpfr_z_sub
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source run_vivadosyn.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/vivado/Vivado/2016.4/data/ip'.
+WARNING: [IP_Flow 19-4832] The IP name 'Simulate_HW_ap_fsub_8_full_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Simulate_HW_ap_fsub_8_full_dsp_32'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'Simulate_HW_ap_fsub_8_full_dsp_32'...
+WARNING: [IP_Flow 19-4832] The IP name 'Simulate_HW_ap_fptrunc_3_no_dsp_64' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Simulate_HW_ap_fptrunc_3_no_dsp_64'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'Simulate_HW_ap_fptrunc_3_no_dsp_64'...
+WARNING: [IP_Flow 19-4832] The IP name 'Simulate_HW_ap_dadd_14_full_dsp_64' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Simulate_HW_ap_dadd_14_full_dsp_64'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'Simulate_HW_ap_dadd_14_full_dsp_64'...
+WARNING: [IP_Flow 19-4832] The IP name 'Simulate_HW_ap_fexp_29_full_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Simulate_HW_ap_fexp_29_full_dsp_32'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'Simulate_HW_ap_fexp_29_full_dsp_32'...
+WARNING: [IP_Flow 19-4832] The IP name 'Simulate_HW_ap_fmul_5_max_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Simulate_HW_ap_fmul_5_max_dsp_32'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'Simulate_HW_ap_fmul_5_max_dsp_32'...
+WARNING: [IP_Flow 19-4832] The IP name 'Simulate_HW_ap_faddfsub_8_full_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Simulate_HW_ap_faddfsub_8_full_dsp_32'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'Simulate_HW_ap_faddfsub_8_full_dsp_32'...
+WARNING: [IP_Flow 19-4832] The IP name 'Simulate_HW_ap_fpext_1_no_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Simulate_HW_ap_fpext_1_no_dsp_32'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'Simulate_HW_ap_fpext_1_no_dsp_32'...
+WARNING: [IP_Flow 19-4832] The IP name 'Simulate_HW_ap_dmul_15_max_dsp_64' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Simulate_HW_ap_dmul_15_max_dsp_64'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'Simulate_HW_ap_dmul_15_max_dsp_64'...
+awk: symbol lookup error: awk: undefined symbol: mpfr_z_sub
+[Tue Apr 23 22:30:51 2019] Launched synth_1...
+Run output will be captured here: /home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/project.runs/synth_1/runme.log
+[Tue Apr 23 22:30:51 2019] Waiting for synth_1 to finish...
+
+*** Running vivado
+    with args -log Simulate_HW.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Simulate_HW.tcl
+
+awk: symbol lookup error: awk: undefined symbol: mpfr_z_sub
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source Simulate_HW.tcl -notrace
+Command: synth_design -top Simulate_HW -part xc7z020clg484-1 -no_iobuf -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 15851 
+awk: symbol lookup error: awk: undefined symbol: mpfr_z_sub
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1114.531 ; gain = 179.086 ; free physical = 979 ; free virtual = 12911
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Simulate_HW' [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/Simulate_HW.v:12]
+INFO: [Synth 8-638] synthesizing module 'Simulate_HW_AXILiteS_s_axi' [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/Simulate_HW_AXILiteS_s_axi.v:9]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/Simulate_HW_AXILiteS_s_axi.v:194]
+INFO: [Synth 8-256] done synthesizing module 'Simulate_HW_AXILiteS_s_axi' (1#1) [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/Simulate_HW_AXILiteS_s_axi.v:9]
+INFO: [Synth 8-638] synthesizing module 'Loop_ROW_LOOP_proc' [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/Loop_ROW_LOOP_proc.v:10]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/Loop_ROW_LOOP_proc.v:416]
+INFO: [Synth 8-638] synthesizing module 'Simulate_HW_faddfbkb' [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/Simulate_HW_faddfbkb.v:11]
+INFO: [Synth 8-638] synthesizing module 'Simulate_HW_ap_faddfsub_8_full_dsp_32' [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/project.srcs/sources_1/ip/Simulate_HW_ap_faddfsub_8_full_dsp_32/synth/Simulate_HW_ap_faddfsub_8_full_dsp_32.vhd:74]
+INFO: [Synth 8-3491] module 'floating_point_v7_1_3' declared at '/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/project.srcs/sources_1/ip/Simulate_HW_ap_fsub_8_full_dsp_32/hdl/floating_point_v7_1_vh_rfs.vhd:91604' bound to instance 'U0' of component 'floating_point_v7_1_3' [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/project.srcs/sources_1/ip/Simulate_HW_ap_faddfsub_8_full_dsp_32/synth/Simulate_HW_ap_faddfsub_8_full_dsp_32.vhd:202]
+INFO: [Synth 8-256] done synthesizing module 'Simulate_HW_ap_faddfsub_8_full_dsp_32' (19#1) [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/project.srcs/sources_1/ip/Simulate_HW_ap_faddfsub_8_full_dsp_32/synth/Simulate_HW_ap_faddfsub_8_full_dsp_32.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'Simulate_HW_faddfbkb' (20#1) [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/Simulate_HW_faddfbkb.v:11]
+INFO: [Synth 8-638] synthesizing module 'Simulate_HW_fsub_cud' [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/Simulate_HW_fsub_cud.v:11]
+INFO: [Synth 8-638] synthesizing module 'Simulate_HW_ap_fsub_8_full_dsp_32' [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/project.srcs/sources_1/ip/Simulate_HW_ap_fsub_8_full_dsp_32/synth/Simulate_HW_ap_fsub_8_full_dsp_32.vhd:72]
+INFO: [Synth 8-3491] module 'floating_point_v7_1_3' declared at '/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/project.srcs/sources_1/ip/Simulate_HW_ap_fsub_8_full_dsp_32/hdl/floating_point_v7_1_vh_rfs.vhd:91604' bound to instance 'U0' of component 'floating_point_v7_1_3' [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/project.srcs/sources_1/ip/Simulate_HW_ap_fsub_8_full_dsp_32/synth/Simulate_HW_ap_fsub_8_full_dsp_32.vhd:197]
+INFO: [Synth 8-256] done synthesizing module 'Simulate_HW_ap_fsub_8_full_dsp_32' (21#1) [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/project.srcs/sources_1/ip/Simulate_HW_ap_fsub_8_full_dsp_32/synth/Simulate_HW_ap_fsub_8_full_dsp_32.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'Simulate_HW_fsub_cud' (22#1) [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/Simulate_HW_fsub_cud.v:11]
+INFO: [Synth 8-638] synthesizing module 'Simulate_HW_fmul_dEe' [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/Simulate_HW_fmul_dEe.v:11]
+INFO: [Synth 8-638] synthesizing module 'Simulate_HW_ap_fmul_5_max_dsp_32' [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/project.srcs/sources_1/ip/Simulate_HW_ap_fmul_5_max_dsp_32/synth/Simulate_HW_ap_fmul_5_max_dsp_32.vhd:72]
+INFO: [Synth 8-3491] module 'floating_point_v7_1_3' declared at '/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/project.srcs/sources_1/ip/Simulate_HW_ap_fsub_8_full_dsp_32/hdl/floating_point_v7_1_vh_rfs.vhd:91604' bound to instance 'U0' of component 'floating_point_v7_1_3' [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/project.srcs/sources_1/ip/Simulate_HW_ap_fmul_5_max_dsp_32/synth/Simulate_HW_ap_fmul_5_max_dsp_32.vhd:197]
+INFO: [Synth 8-256] done synthesizing module 'Simulate_HW_ap_fmul_5_max_dsp_32' (30#1) [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/project.srcs/sources_1/ip/Simulate_HW_ap_fmul_5_max_dsp_32/synth/Simulate_HW_ap_fmul_5_max_dsp_32.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'Simulate_HW_fmul_dEe' (31#1) [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/Simulate_HW_fmul_dEe.v:11]
+INFO: [Synth 8-638] synthesizing module 'Simulate_HW_fptrueOg' [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/Simulate_HW_fptrueOg.v:11]
+INFO: [Synth 8-638] synthesizing module 'Simulate_HW_ap_fptrunc_3_no_dsp_64' [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/project.srcs/sources_1/ip/Simulate_HW_ap_fptrunc_3_no_dsp_64/synth/Simulate_HW_ap_fptrunc_3_no_dsp_64.vhd:70]
+INFO: [Synth 8-3491] module 'floating_point_v7_1_3' declared at '/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/project.srcs/sources_1/ip/Simulate_HW_ap_fsub_8_full_dsp_32/hdl/floating_point_v7_1_vh_rfs.vhd:91604' bound to instance 'U0' of component 'floating_point_v7_1_3' [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/project.srcs/sources_1/ip/Simulate_HW_ap_fptrunc_3_no_dsp_64/synth/Simulate_HW_ap_fptrunc_3_no_dsp_64.vhd:193]
+INFO: [Synth 8-256] done synthesizing module 'Simulate_HW_ap_fptrunc_3_no_dsp_64' (37#1) [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/project.srcs/sources_1/ip/Simulate_HW_ap_fptrunc_3_no_dsp_64/synth/Simulate_HW_ap_fptrunc_3_no_dsp_64.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'Simulate_HW_fptrueOg' (38#1) [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/Simulate_HW_fptrueOg.v:11]
+INFO: [Synth 8-638] synthesizing module 'Simulate_HW_fpextfYi' [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/Simulate_HW_fpextfYi.v:11]
+INFO: [Synth 8-638] synthesizing module 'Simulate_HW_ap_fpext_1_no_dsp_32' [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/project.srcs/sources_1/ip/Simulate_HW_ap_fpext_1_no_dsp_32/synth/Simulate_HW_ap_fpext_1_no_dsp_32.vhd:70]
+INFO: [Synth 8-3491] module 'floating_point_v7_1_3' declared at '/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/project.srcs/sources_1/ip/Simulate_HW_ap_fsub_8_full_dsp_32/hdl/floating_point_v7_1_vh_rfs.vhd:91604' bound to instance 'U0' of component 'floating_point_v7_1_3' [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/project.srcs/sources_1/ip/Simulate_HW_ap_fpext_1_no_dsp_32/synth/Simulate_HW_ap_fpext_1_no_dsp_32.vhd:193]
+INFO: [Synth 8-256] done synthesizing module 'Simulate_HW_ap_fpext_1_no_dsp_32' (39#1) [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/project.srcs/sources_1/ip/Simulate_HW_ap_fpext_1_no_dsp_32/synth/Simulate_HW_ap_fpext_1_no_dsp_32.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'Simulate_HW_fpextfYi' (40#1) [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/Simulate_HW_fpextfYi.v:11]
+INFO: [Synth 8-638] synthesizing module 'Simulate_HW_fexp_g8j' [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/Simulate_HW_fexp_g8j.v:11]
+INFO: [Synth 8-638] synthesizing module 'Simulate_HW_ap_fexp_29_full_dsp_32' [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/project.srcs/sources_1/ip/Simulate_HW_ap_fexp_29_full_dsp_32/synth/Simulate_HW_ap_fexp_29_full_dsp_32.vhd:70]
+INFO: [Synth 8-3491] module 'floating_point_v7_1_3' declared at '/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/project.srcs/sources_1/ip/Simulate_HW_ap_fsub_8_full_dsp_32/hdl/floating_point_v7_1_vh_rfs.vhd:91604' bound to instance 'U0' of component 'floating_point_v7_1_3' [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/project.srcs/sources_1/ip/Simulate_HW_ap_fexp_29_full_dsp_32/synth/Simulate_HW_ap_fexp_29_full_dsp_32.vhd:193]
+INFO: [Synth 8-256] done synthesizing module 'Simulate_HW_ap_fexp_29_full_dsp_32' (52#1) [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/project.srcs/sources_1/ip/Simulate_HW_ap_fexp_29_full_dsp_32/synth/Simulate_HW_ap_fexp_29_full_dsp_32.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'Simulate_HW_fexp_g8j' (53#1) [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/Simulate_HW_fexp_g8j.v:11]
+INFO: [Synth 8-638] synthesizing module 'Simulate_HW_dadd_hbi' [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/Simulate_HW_dadd_hbi.v:11]
+INFO: [Synth 8-638] synthesizing module 'Simulate_HW_ap_dadd_14_full_dsp_64' [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/project.srcs/sources_1/ip/Simulate_HW_ap_dadd_14_full_dsp_64/synth/Simulate_HW_ap_dadd_14_full_dsp_64.vhd:72]
+INFO: [Synth 8-3491] module 'floating_point_v7_1_3' declared at '/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/project.srcs/sources_1/ip/Simulate_HW_ap_fsub_8_full_dsp_32/hdl/floating_point_v7_1_vh_rfs.vhd:91604' bound to instance 'U0' of component 'floating_point_v7_1_3' [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/project.srcs/sources_1/ip/Simulate_HW_ap_dadd_14_full_dsp_64/synth/Simulate_HW_ap_dadd_14_full_dsp_64.vhd:197]
+INFO: [Synth 8-256] done synthesizing module 'Simulate_HW_ap_dadd_14_full_dsp_64' (64#1) [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/project.srcs/sources_1/ip/Simulate_HW_ap_dadd_14_full_dsp_64/synth/Simulate_HW_ap_dadd_14_full_dsp_64.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'Simulate_HW_dadd_hbi' (65#1) [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/Simulate_HW_dadd_hbi.v:11]
+INFO: [Synth 8-638] synthesizing module 'Simulate_HW_dmul_ibs' [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/Simulate_HW_dmul_ibs.v:11]
+INFO: [Synth 8-638] synthesizing module 'Simulate_HW_ap_dmul_15_max_dsp_64' [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/project.srcs/sources_1/ip/Simulate_HW_ap_dmul_15_max_dsp_64/synth/Simulate_HW_ap_dmul_15_max_dsp_64.vhd:72]
+INFO: [Synth 8-3491] module 'floating_point_v7_1_3' declared at '/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/project.srcs/sources_1/ip/Simulate_HW_ap_fsub_8_full_dsp_32/hdl/floating_point_v7_1_vh_rfs.vhd:91604' bound to instance 'U0' of component 'floating_point_v7_1_3' [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/project.srcs/sources_1/ip/Simulate_HW_ap_dmul_15_max_dsp_64/synth/Simulate_HW_ap_dmul_15_max_dsp_64.vhd:197]
+INFO: [Synth 8-256] done synthesizing module 'Simulate_HW_ap_dmul_15_max_dsp_64' (67#1) [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/project.srcs/sources_1/ip/Simulate_HW_ap_dmul_15_max_dsp_64/synth/Simulate_HW_ap_dmul_15_max_dsp_64.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'Simulate_HW_dmul_ibs' (68#1) [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/Simulate_HW_dmul_ibs.v:11]
+INFO: [Synth 8-638] synthesizing module 'Simulate_HW_mux_8jbC' [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/Simulate_HW_mux_8jbC.v:11]
+INFO: [Synth 8-256] done synthesizing module 'Simulate_HW_mux_8jbC' (69#1) [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/Simulate_HW_mux_8jbC.v:11]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/Loop_ROW_LOOP_proc.v:7297]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/Loop_ROW_LOOP_proc.v:7299]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/Loop_ROW_LOOP_proc.v:7301]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/Loop_ROW_LOOP_proc.v:7303]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/Loop_ROW_LOOP_proc.v:7305]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/Loop_ROW_LOOP_proc.v:7307]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/Loop_ROW_LOOP_proc.v:7309]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/Loop_ROW_LOOP_proc.v:7311]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/Loop_ROW_LOOP_proc.v:7389]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/Loop_ROW_LOOP_proc.v:7391]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/Loop_ROW_LOOP_proc.v:7393]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/Loop_ROW_LOOP_proc.v:7395]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/Loop_ROW_LOOP_proc.v:7397]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/Loop_ROW_LOOP_proc.v:7399]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/Loop_ROW_LOOP_proc.v:7401]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/Loop_ROW_LOOP_proc.v:7403]
+INFO: [Synth 8-256] done synthesizing module 'Loop_ROW_LOOP_proc' (70#1) [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/Loop_ROW_LOOP_proc.v:10]
+INFO: [Synth 8-256] done synthesizing module 'Simulate_HW' (71#1) [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/Simulate_HW.v:12]
+WARNING: [Synth 8-3331] design flt_dec_op_lat__parameterized0 has unconnected port DEC_OP_STATE[11]
+WARNING: [Synth 8-3331] design flt_dec_op_lat__parameterized0 has unconnected port DEC_OP_STATE[10]
+WARNING: [Synth 8-3331] design flt_dec_op_lat__parameterized0 has unconnected port DEC_OP_STATE[9]
+WARNING: [Synth 8-3331] design flt_dec_op_lat__parameterized0 has unconnected port DEC_OP_STATE[8]
+WARNING: [Synth 8-3331] design flt_dec_op_lat__parameterized0 has unconnected port DIVIDE_BY_ZERO_IN
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1351 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1351 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1351 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1351 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1351 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1349 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1349 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1349 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1349 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1349 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1353 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1353 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1353 has unconnected port SINIT
+WARNING: [Synth 8-3331] design carry_chain__parameterized39 has unconnected port B[18]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1345 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1345 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1345 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1345 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1345 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1343 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1343 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1343 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1343 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1343 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1347 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1347 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1347 has unconnected port SINIT
+WARNING: [Synth 8-3331] design carry_chain__parameterized38 has unconnected port B[18]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1341 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1341 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1341 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1339 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1339 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1339 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1339 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1339 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1337 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1337 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1337 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1337 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1337 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1335 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1335 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1335 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1335 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1335 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1333 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1333 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1333 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1333 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1333 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1331 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1331 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1331 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1331 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1331 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1329 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1329 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1329 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1329 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1329 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1327 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1327 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1327 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1327 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1327 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1315 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1315 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1315 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1313 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1313 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1313 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1311 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1311 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1311 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1309 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1309 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1309 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1325 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1325 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1325 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1325 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1325 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1323 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1323 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1323 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1323 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1323 has unconnected port SINIT
+WARNING: [Synth 8-3331] design flt_round_bit__parameterized2 has unconnected port NORMALIZE[1]
+WARNING: [Synth 8-3331] design flt_round_bit__parameterized2 has unconnected port FIXED_POINT
+WARNING: [Synth 8-3331] design flt_round_bit__parameterized2 has unconnected port FIX_MANT_SIGN
+WARNING: [Synth 8-3331] design flt_round_bit__parameterized2 has unconnected port SIGN
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1321 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1321 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1321 has unconnected port SINIT
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1351.570 ; gain = 416.125 ; free physical = 723 ; free virtual = 12673
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1351.570 ; gain = 416.125 ; free physical = 744 ; free virtual = 12673
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 3329 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/Simulate_HW.xdc]
+Finished Parsing XDC File [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/Simulate_HW.xdc]
+Parsing XDC File [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/project.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/marco/Documents/tesis/project_again/HLS/solution1/solution1/impl/verilog/project.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 277 instances were transformed.
+  FDE => FDRE: 277 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.56 . Memory (MB): peak = 1816.086 ; gain = 19.000 ; free physical = 357 ; free virtual = 12344
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:47 ; elapsed = 00:00:44 . Memory (MB): peak = 1816.086 ; gain = 880.641 ; free physical = 360 ; free virtual = 12341
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:47 ; elapsed = 00:00:44 . Memory (MB): peak = 1816.086 ; gain = 880.641 ; free physical = 360 ; free virtual = 12341
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for Loop_ROW_LOOP_proc_U0/Simulate_HW_dadd_hbi_U38/Simulate_HW_ap_dadd_14_full_dsp_64_u. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Loop_ROW_LOOP_proc_U0/Simulate_HW_dmul_ibs_U39/Simulate_HW_ap_dmul_15_max_dsp_64_u. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Loop_ROW_LOOP_proc_U0/Simulate_HW_dmul_ibs_U40/Simulate_HW_ap_dmul_15_max_dsp_64_u. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Loop_ROW_LOOP_proc_U0/Simulate_HW_faddfbkb_U1/Simulate_HW_ap_faddfsub_8_full_dsp_32_u. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Loop_ROW_LOOP_proc_U0/Simulate_HW_faddfbkb_U2/Simulate_HW_ap_faddfsub_8_full_dsp_32_u. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Loop_ROW_LOOP_proc_U0/Simulate_HW_faddfbkb_U3/Simulate_HW_ap_faddfsub_8_full_dsp_32_u. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Loop_ROW_LOOP_proc_U0/Simulate_HW_faddfbkb_U4/Simulate_HW_ap_faddfsub_8_full_dsp_32_u. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Loop_ROW_LOOP_proc_U0/Simulate_HW_faddfbkb_U5/Simulate_HW_ap_faddfsub_8_full_dsp_32_u. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Loop_ROW_LOOP_proc_U0/Simulate_HW_faddfbkb_U6/Simulate_HW_ap_faddfsub_8_full_dsp_32_u. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Loop_ROW_LOOP_proc_U0/Simulate_HW_faddfbkb_U7/Simulate_HW_ap_faddfsub_8_full_dsp_32_u. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Loop_ROW_LOOP_proc_U0/Simulate_HW_fexp_g8j_U28/Simulate_HW_ap_fexp_29_full_dsp_32_u. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Loop_ROW_LOOP_proc_U0/Simulate_HW_fexp_g8j_U29/Simulate_HW_ap_fexp_29_full_dsp_32_u. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Loop_ROW_LOOP_proc_U0/Simulate_HW_fexp_g8j_U30/Simulate_HW_ap_fexp_29_full_dsp_32_u. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Loop_ROW_LOOP_proc_U0/Simulate_HW_fexp_g8j_U31/Simulate_HW_ap_fexp_29_full_dsp_32_u. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Loop_ROW_LOOP_proc_U0/Simulate_HW_fexp_g8j_U32/Simulate_HW_ap_fexp_29_full_dsp_32_u. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Loop_ROW_LOOP_proc_U0/Simulate_HW_fexp_g8j_U33/Simulate_HW_ap_fexp_29_full_dsp_32_u. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Loop_ROW_LOOP_proc_U0/Simulate_HW_fexp_g8j_U34/Simulate_HW_ap_fexp_29_full_dsp_32_u. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Loop_ROW_LOOP_proc_U0/Simulate_HW_fexp_g8j_U35/Simulate_HW_ap_fexp_29_full_dsp_32_u. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Loop_ROW_LOOP_proc_U0/Simulate_HW_fexp_g8j_U36/Simulate_HW_ap_fexp_29_full_dsp_32_u. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Loop_ROW_LOOP_proc_U0/Simulate_HW_fexp_g8j_U37/Simulate_HW_ap_fexp_29_full_dsp_32_u. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Loop_ROW_LOOP_proc_U0/Simulate_HW_fmul_dEe_U12/Simulate_HW_ap_fmul_5_max_dsp_32_u. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Loop_ROW_LOOP_proc_U0/Simulate_HW_fmul_dEe_U13/Simulate_HW_ap_fmul_5_max_dsp_32_u. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Loop_ROW_LOOP_proc_U0/Simulate_HW_fmul_dEe_U14/Simulate_HW_ap_fmul_5_max_dsp_32_u. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Loop_ROW_LOOP_proc_U0/Simulate_HW_fmul_dEe_U15/Simulate_HW_ap_fmul_5_max_dsp_32_u. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Loop_ROW_LOOP_proc_U0/Simulate_HW_fmul_dEe_U16/Simulate_HW_ap_fmul_5_max_dsp_32_u. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Loop_ROW_LOOP_proc_U0/Simulate_HW_fmul_dEe_U17/Simulate_HW_ap_fmul_5_max_dsp_32_u. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Loop_ROW_LOOP_proc_U0/Simulate_HW_fmul_dEe_U18/Simulate_HW_ap_fmul_5_max_dsp_32_u. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Loop_ROW_LOOP_proc_U0/Simulate_HW_fmul_dEe_U19/Simulate_HW_ap_fmul_5_max_dsp_32_u. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Loop_ROW_LOOP_proc_U0/Simulate_HW_fmul_dEe_U20/Simulate_HW_ap_fmul_5_max_dsp_32_u. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Loop_ROW_LOOP_proc_U0/Simulate_HW_fmul_dEe_U21/Simulate_HW_ap_fmul_5_max_dsp_32_u. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Loop_ROW_LOOP_proc_U0/Simulate_HW_fmul_dEe_U22/Simulate_HW_ap_fmul_5_max_dsp_32_u. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Loop_ROW_LOOP_proc_U0/Simulate_HW_fmul_dEe_U23/Simulate_HW_ap_fmul_5_max_dsp_32_u. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Loop_ROW_LOOP_proc_U0/Simulate_HW_fmul_dEe_U24/Simulate_HW_ap_fmul_5_max_dsp_32_u. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Loop_ROW_LOOP_proc_U0/Simulate_HW_fpextfYi_U26/Simulate_HW_ap_fpext_1_no_dsp_32_u. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Loop_ROW_LOOP_proc_U0/Simulate_HW_fpextfYi_U27/Simulate_HW_ap_fpext_1_no_dsp_32_u. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Loop_ROW_LOOP_proc_U0/Simulate_HW_fptrueOg_U25/Simulate_HW_ap_fptrunc_3_no_dsp_64_u. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Loop_ROW_LOOP_proc_U0/Simulate_HW_fsub_cud_U10/Simulate_HW_ap_fsub_8_full_dsp_32_u. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Loop_ROW_LOOP_proc_U0/Simulate_HW_fsub_cud_U11/Simulate_HW_ap_fsub_8_full_dsp_32_u. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Loop_ROW_LOOP_proc_U0/Simulate_HW_fsub_cud_U8/Simulate_HW_ap_fsub_8_full_dsp_32_u. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Loop_ROW_LOOP_proc_U0/Simulate_HW_fsub_cud_U9/Simulate_HW_ap_fsub_8_full_dsp_32_u. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:47 ; elapsed = 00:00:45 . Memory (MB): peak = 1816.086 ; gain = 880.641 ; free physical = 360 ; free virtual = 12341
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "det_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state_int_up" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "chunk_is_zero_ip" won't be mapped to RAM because address size (36) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "rom". This will be implemented in logic
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "rom". This will be implemented in logic
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "rom". This will be implemented in logic
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "rom". This will be implemented in logic
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "rom". This will be implemented in logic
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "rom". This will be implemented in logic
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lrg_almost_over" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lrg_almost_over" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "det_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state_int_up" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5544] ROM "exitcond_fu_1705_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "tmp_3_fu_1334_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "tmp_4_fu_1339_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "tmp_last_V_fu_1823_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond_fu_1705_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "tmp_3_fu_1334_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "tmp_4_fu_1339_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "tmp_last_V_fu_1823_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Common 17-14] Message 'Synth 8-5544' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:57 ; elapsed = 00:00:55 . Memory (MB): peak = 1816.086 ; gain = 880.641 ; free physical = 162 ; free virtual = 12339
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+------------------------+------------+----------+
+|      |RTL Partition           |Replication |Instances |
++------+------------------------+------------+----------+
+|1     |Loop_ROW_LOOP_proc__GB0 |           1|     46943|
+|2     |Loop_ROW_LOOP_proc__GB1 |           1|     10667|
+|3     |Loop_ROW_LOOP_proc__GB2 |           1|     11713|
+|4     |Loop_ROW_LOOP_proc__GB3 |           1|     14887|
+|5     |Loop_ROW_LOOP_proc__GB4 |           1|     21891|
+|6     |Loop_ROW_LOOP_proc__GB5 |           1|     25599|
+|7     |Loop_ROW_LOOP_proc__GB6 |           1|     30719|
+|8     |Loop_ROW_LOOP_proc__GB7 |           1|     30607|
+|9     |Simulate_HW__GC0        |           1|       422|
++------+------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 4 processes.
+awk: symbol lookup error: awk: undefined symbol: mpfr_z_sub
+awk: symbol lookup error: awk: undefined symbol: mpfr_z_sub
+awk: symbol lookup error: awk: undefined symbol: mpfr_z_sub
+awk: symbol lookup error: awk: undefined symbol: mpfr_z_sub
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------

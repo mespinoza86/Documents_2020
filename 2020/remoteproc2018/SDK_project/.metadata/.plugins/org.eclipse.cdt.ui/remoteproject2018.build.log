@@ -1,0 +1,51 @@
+21:45:42 **** Build of configuration Debug for project remoteproject2018 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helper.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helper.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../remoteproject2018_bsp/ps7_cortexa9_1/include -MMD -MP -MF"src/helper.d" -MT"src/helper.o" -o "src/helper.o" "../src/helper.c"
+Finished building: ../src/helper.c
+ 
+Building file: ../src/platform_info.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_info.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../remoteproject2018_bsp/ps7_cortexa9_1/include -MMD -MP -MF"src/platform_info.d" -MT"src/platform_info.o" -o "src/platform_info.o" "../src/platform_info.c"
+Finished building: ../src/platform_info.c
+ 
+Building file: ../src/rpmsg-echo.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rpmsg-echo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../remoteproject2018_bsp/ps7_cortexa9_1/include -MMD -MP -MF"src/rpmsg-echo.d" -MT"src/rpmsg-echo.o" -o "src/rpmsg-echo.o" "../src/rpmsg-echo.c"
+../src/rpmsg-echo.c: In function 'processing':
+../src/rpmsg-echo.c:100:20: warning: passing argument 1 of 'platform_init' makes integer from pointer without a cast [-Wint-conversion]
+  if (platform_init(NULL, NULL, &platform)) {
+                    ^~~~
+In file included from ../src/rpmsg-echo.c:9:0:
+../src/platform_info.h:57:5: note: expected 'int' but argument is of type 'void *'
+ int platform_init(int argc, char *argv[], void **platform);
+     ^~~~~~~~~~~~~
+Finished building: ../src/rpmsg-echo.c
+ 
+Building file: ../src/rsc_table.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rsc_table.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../remoteproject2018_bsp/ps7_cortexa9_1/include -MMD -MP -MF"src/rsc_table.d" -MT"src/rsc_table.o" -o "src/rsc_table.o" "../src/rsc_table.c"
+Finished building: ../src/rsc_table.c
+ 
+Building file: ../src/zynq_a9_rproc.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/zynq_a9_rproc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../remoteproject2018_bsp/ps7_cortexa9_1/include -MMD -MP -MF"src/zynq_a9_rproc.d" -MT"src/zynq_a9_rproc.o" -o "src/zynq_a9_rproc.o" "../src/zynq_a9_rproc.c"
+Finished building: ../src/zynq_a9_rproc.c
+ 
+Building target: remoteproject2018.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../remoteproject2018_bsp/ps7_cortexa9_1/lib -o "remoteproject2018.elf"  ./src/helper.o ./src/platform_info.o ./src/rpmsg-echo.o ./src/rsc_table.o ./src/zynq_a9_rproc.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-lmetal,-lopen_amp,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-lmetal,-lgcc,-lc,--end-group
+Finished building target: remoteproject2018.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size remoteproject2018.elf  |tee "remoteproject2018.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 138832	1052200	  88576	1279608	 138678	remoteproject2018.elf
+Finished building: remoteproject2018.elf.size
+ 
+
+21:45:43 Build Finished (took 1s.130ms)
+

@@ -1,0 +1,1363 @@
+TRACE::2020-02-22.21:35:30::SCWPlatform::Trying to open the hw design at /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:30::SCWPlatform::DSA given /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:30::SCWPlatform::DSA absoulate path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:32::SCWPlatform::DSA directory /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw
+TRACE::2020-02-22.21:35:32::SCWPlatform:: Platform Path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:32::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2020-02-22.21:35:32::SCWPlatform::Do not have an existing db opened. 
+TRACE::2020-02-22.21:35:34::SCWPlatform::Opened new HwDB with name design_1_wrapper_1
+TRACE::2020-02-22.21:35:34::SCWWriter::formatted JSON is {
+	"platformName":	"zed_1",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"zed_1",
+	"platHandOff":	"/opt/XilinxVitis_2019v2/Vitis/2019.2/data/embeddedsw/lib/fixed_hwplatforms/zed.xsa",
+	"platIntHandOff":	"<platformDir>/hw/zed.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	""
+}
+TRACE::2020-02-22.21:35:34::SCWWriter::formatted JSON is {
+	"platformName":	"zed_1",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"zed_1",
+	"platHandOff":	"/opt/XilinxVitis_2019v2/Vitis/2019.2/data/embeddedsw/lib/fixed_hwplatforms/zed.xsa",
+	"platIntHandOff":	"<platformDir>/hw/zed.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"zed_1",
+	"systems":	[{
+			"systemName":	"zed_1",
+			"systemDesc":	"zed_1",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"zed_1"
+		}]
+}
+TRACE::2020-02-22.21:35:34::SCWPlatform::Boot application domains not present, creating them
+TRACE::2020-02-22.21:35:34::SCWDomain::checking for install qemu data   : 
+TRACE::2020-02-22.21:35:34::SCWDomain:: Using the QEMU Data from install at  : /opt/XilinxVitis_2019v2/Vitis/2019.2/data/emulation/platforms/zynq/qemu/
+TRACE::2020-02-22.21:35:34::SCWDomain:: Using the QEMU args  from install at  : /opt/XilinxVitis_2019v2/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2020-02-22.21:35:34::SCWPlatform::Trying to open the hw design at /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:34::SCWPlatform::DSA given /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:34::SCWPlatform::DSA absoulate path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:34::SCWPlatform::DSA directory /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw
+TRACE::2020-02-22.21:35:34::SCWPlatform:: Platform Path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:34::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2020-02-22.21:35:34::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-02-22.21:35:34::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-02-22.21:35:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-22.21:35:34::SCWPlatform::Trying to open the hw design at /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:34::SCWPlatform::DSA given /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:34::SCWPlatform::DSA absoulate path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:34::SCWPlatform::DSA directory /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw
+TRACE::2020-02-22.21:35:34::SCWPlatform:: Platform Path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:34::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2020-02-22.21:35:34::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-02-22.21:35:34::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-02-22.21:35:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-22.21:35:34::SCWPlatform::Boot application domain added for zynq_fsbl
+TRACE::2020-02-22.21:35:34::SCWPlatform::Generating the sources  .
+TRACE::2020-02-22.21:35:34::SCWBDomain::Generating boot domain sources.
+TRACE::2020-02-22.21:35:34::SCWBDomain:: Generating the zynq_fsbl Application.
+TRACE::2020-02-22.21:35:34::SCWPlatform::Trying to open the hw design at /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:34::SCWPlatform::DSA given /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:34::SCWPlatform::DSA absoulate path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:34::SCWPlatform::DSA directory /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw
+TRACE::2020-02-22.21:35:34::SCWPlatform:: Platform Path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:34::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2020-02-22.21:35:34::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-02-22.21:35:34::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-02-22.21:35:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-22.21:35:34::SCWMssOS::Checking the sw design at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-22.21:35:34::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2020-02-22.21:35:34::SCWMssOS::No sw design opened at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-22.21:35:34::SCWMssOS::mss does not exists at /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-22.21:35:34::SCWMssOS::Creating sw design at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-22.21:35:34::SCWMssOS::Adding the swdes entry, created swdb /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-22.21:35:34::SCWMssOS::updating the scw layer changes to swdes at   /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-22.21:35:34::SCWMssOS::Writing mss at /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-22.21:35:34::SCWMssOS::Completed writing the mss file at /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp
+TRACE::2020-02-22.21:35:34::SCWMssOS::Picking up changes from newly written mss file into SCW Layer. 
+TRACE::2020-02-22.21:35:34::SCWMssOS::Updated the changes from newly written mss file into SCW Layer. 
+TRACE::2020-02-22.21:35:34::SCWBDomain::Completed writing the mss file at /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp
+TRACE::2020-02-22.21:35:39::SCWPlatform::Generating sources Done.
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to open the hw design at /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA given /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA absoulate path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA directory /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Platform Path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-22.21:35:39::SCWMssOS::Checking the sw design at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::DEBUG:  swdes dump  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|/home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss||
+
+KEYINFO::2020-02-22.21:35:39::SCWMssOS::Could not open the swdb for /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+KEYINFO::2020-02-22.21:35:39::SCWMssOS::Could not open the sw design at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+ERROR: [Hsi 55-1558] Software Design /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss is not found
+
+TRACE::2020-02-22.21:35:39::SCWMssOS::Cleared the swdb table entry
+TRACE::2020-02-22.21:35:39::SCWMssOS::No sw design opened at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::mss exists loading the mss file  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::Opened the sw design from mss  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::Adding the swdes entry /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2020-02-22.21:35:39::SCWMssOS::updating the scw layer about changes
+TRACE::2020-02-22.21:35:39::SCWMssOS::Opened the sw design.  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to open the hw design at /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA given /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA absoulate path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA directory /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Platform Path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-22.21:35:39::SCWMssOS::Checking the sw design at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::DEBUG:  swdes dump  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-22.21:35:39::SCWMssOS::Sw design exists and opened at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to open the hw design at /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA given /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA absoulate path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA directory /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Platform Path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-22.21:35:39::SCWMssOS::Checking the sw design at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::DEBUG:  swdes dump  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-22.21:35:39::SCWMssOS::Sw design exists and opened at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to open the hw design at /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA given /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA absoulate path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA directory /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Platform Path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-22.21:35:39::SCWMssOS::Checking the sw design at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::DEBUG:  swdes dump  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-22.21:35:39::SCWMssOS::Sw design exists and opened at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWWriter::formatted JSON is {
+	"platformName":	"zed_1",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"zed_1",
+	"platHandOff":	"/opt/XilinxVitis_2019v2/Vitis/2019.2/data/embeddedsw/lib/fixed_hwplatforms/zed.xsa",
+	"platIntHandOff":	"<platformDir>/hw/zed.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"zed_1",
+	"systems":	[{
+			"systemName":	"zed_1",
+			"systemDesc":	"zed_1",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"zed_1",
+			"sysActiveDom":	"zynq_fsbl",
+			"sysDefaultDom":	"",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"47a20f0ac42e8cf7f20ba7d8d4a89297",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.2", "xilrsa:1.5"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to open the hw design at /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA given /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA absoulate path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA directory /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Platform Path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-22.21:35:39::SCWMssOS::Checking the sw design at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::DEBUG:  swdes dump  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-22.21:35:39::SCWMssOS::Sw design exists and opened at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to open the hw design at /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA given /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA absoulate path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA directory /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Platform Path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-22.21:35:39::SCWMssOS::Checking the sw design at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::DEBUG:  swdes dump  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-22.21:35:39::SCWMssOS::Sw design exists and opened at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to open the hw design at /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA given /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA absoulate path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA directory /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Platform Path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-22.21:35:39::SCWMssOS::Checking the sw design at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::DEBUG:  swdes dump  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-22.21:35:39::SCWMssOS::Sw design exists and opened at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWWriter::formatted JSON is {
+	"platformName":	"zed_1",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"zed_1",
+	"platHandOff":	"/opt/XilinxVitis_2019v2/Vitis/2019.2/data/embeddedsw/lib/fixed_hwplatforms/zed.xsa",
+	"platIntHandOff":	"<platformDir>/hw/zed.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"zed_1",
+	"systems":	[{
+			"systemName":	"zed_1",
+			"systemDesc":	"zed_1",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"zed_1",
+			"sysActiveDom":	"zynq_fsbl",
+			"sysDefaultDom":	"",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"47a20f0ac42e8cf7f20ba7d8d4a89297",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.2", "xilrsa:1.5"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2020-02-22.21:35:39::SCWDomain::checking for install qemu data   : 
+TRACE::2020-02-22.21:35:39::SCWDomain:: Using the QEMU Data from install at  : /opt/XilinxVitis_2019v2/Vitis/2019.2/data/emulation/platforms/zynq/qemu/
+TRACE::2020-02-22.21:35:39::SCWDomain:: Using the QEMU args  from install at  : /opt/XilinxVitis_2019v2/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to open the hw design at /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA given /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA absoulate path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA directory /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Platform Path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to open the hw design at /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA given /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA absoulate path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA directory /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Platform Path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-22.21:35:39::SCWMssOS::Checking the sw design at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::DEBUG:  swdes dump  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-22.21:35:39::SCWMssOS::No sw design opened at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::mss does not exists at /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::Creating sw design at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::Adding the swdes entry, created swdb /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::updating the scw layer changes to swdes at   /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::Writing mss at /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::Completed writing the mss file at /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp
+TRACE::2020-02-22.21:35:39::SCWMssOS::Picking up changes from newly written mss file into SCW Layer. 
+TRACE::2020-02-22.21:35:39::SCWMssOS::Updated the changes from newly written mss file into SCW Layer. 
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to open the hw design at /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA given /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA absoulate path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA directory /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Platform Path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-22.21:35:39::SCWMssOS::Checking the sw design at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::DEBUG:  swdes dump  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss|/home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss||
+/home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-22.21:35:39::SCWMssOS::Sw design exists and opened at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to open the hw design at /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA given /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA absoulate path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA directory /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Platform Path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-22.21:35:39::SCWMssOS::Checking the sw design at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::DEBUG:  swdes dump  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss|/home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss||
+/home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-22.21:35:39::SCWMssOS::Sw design exists and opened at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to open the hw design at /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA given /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA absoulate path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA directory /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Platform Path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-22.21:35:39::SCWMssOS::Checking the sw design at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::DEBUG:  swdes dump  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss|/home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss||
+/home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-22.21:35:39::SCWMssOS::Sw design exists and opened at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to open the hw design at /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA given /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA absoulate path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA directory /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Platform Path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-22.21:35:39::SCWMssOS::Checking the sw design at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::DEBUG:  swdes dump  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss|/home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss||
+/home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-22.21:35:39::SCWMssOS::Sw design exists and opened at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to open the hw design at /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA given /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA absoulate path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA directory /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Platform Path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-22.21:35:39::SCWMssOS::Checking the sw design at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::DEBUG:  swdes dump  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss|/home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss||
+/home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-22.21:35:39::SCWMssOS::Sw design exists and opened at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to open the hw design at /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA given /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA absoulate path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA directory /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Platform Path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-22.21:35:39::SCWMssOS::Checking the sw design at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::DEBUG:  swdes dump  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss|/home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss||
+/home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-22.21:35:39::SCWMssOS::Sw design exists and opened at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWWriter::formatted JSON is {
+	"platformName":	"zed_1",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"zed_1",
+	"platHandOff":	"/opt/XilinxVitis_2019v2/Vitis/2019.2/data/embeddedsw/lib/fixed_hwplatforms/zed.xsa",
+	"platIntHandOff":	"<platformDir>/hw/zed.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"zed_1",
+	"systems":	[{
+			"systemName":	"zed_1",
+			"systemDesc":	"zed_1",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"zed_1",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"47a20f0ac42e8cf7f20ba7d8d4a89297",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.2", "xilrsa:1.5"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"/opt/XilinxVitis_2019v2/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"/opt/XilinxVitis_2019v2/Vitis/2019.2/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.2", "xilrsa:1.5"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to open the hw design at /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA given /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA absoulate path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA directory /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Platform Path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-22.21:35:39::SCWMssOS::Checking the sw design at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::DEBUG:  swdes dump  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss|/home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss||
+/home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-22.21:35:39::SCWMssOS::Sw design exists and opened at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::Completed writing the mss file at /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp
+TRACE::2020-02-22.21:35:39::SCWMssOS::Forcing BSP Sources regeneration.
+LOG::2020-02-22.21:35:39::SCWPlatform::Started generating the artifacts platform zed_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Sanity checking of platform is completed
+LOG::2020-02-22.21:35:39::SCWPlatform::Started generating the artifacts for system configuration zed_1
+LOG::2020-02-22.21:35:39::SCWSystem::Checking the domain zynq_fsbl
+LOG::2020-02-22.21:35:39::SCWSystem::Doing application build for :  zynq_fsbl
+TRACE::2020-02-22.21:35:39::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2020-02-22.21:35:39::SCWDomain::Skipping the build for domain :  zynq_fsbl
+LOG::2020-02-22.21:35:39::SCWSystem::Checking the domain standalone_domain
+LOG::2020-02-22.21:35:39::SCWSystem::Not a boot domain 
+LOG::2020-02-22.21:35:39::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2020-02-22.21:35:39::SCWDomain::Generating domain artifcats
+TRACE::2020-02-22.21:35:39::SCWMssOS::Generating standalone artifcats
+TRACE::2020-02-22.21:35:39::SCWMssOS::Copying the qemu file from  /opt/XilinxVitis_2019v2/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt To /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/export/zed_1/sw/zed_1/qemu/
+TRACE::2020-02-22.21:35:39::SCWMssOS::Copying the qemu file from  /opt/XilinxVitis_2019v2/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt To /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/export/zed_1/sw/zed_1/standalone_domain/qemu/
+TRACE::2020-02-22.21:35:39::SCWMssOS:: Copying the user libraries. 
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to open the hw design at /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA given /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA absoulate path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA directory /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Platform Path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-22.21:35:39::SCWMssOS::Checking the sw design at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::DEBUG:  swdes dump  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss|/home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss||
+/home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+KEYINFO::2020-02-22.21:35:39::SCWMssOS::Could not open the swdb for /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+KEYINFO::2020-02-22.21:35:39::SCWMssOS::Could not open the sw design at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+ERROR: [Hsi 55-1558] Software Design /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss is not found
+
+TRACE::2020-02-22.21:35:39::SCWMssOS::Cleared the swdb table entry
+TRACE::2020-02-22.21:35:39::SCWMssOS::No sw design opened at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::mss exists loading the mss file  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::Opened the sw design from mss  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::Adding the swdes entry /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2020-02-22.21:35:39::SCWMssOS::updating the scw layer about changes
+TRACE::2020-02-22.21:35:39::SCWMssOS::Opened the sw design.  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::Completed writing the mss file at /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp
+TRACE::2020-02-22.21:35:39::SCWMssOS::Mss edits present, copying mssfile into export location /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2020-02-22.21:35:39::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2020-02-22.21:35:39::SCWDomain::Skipping the build for domain :  standalone_domain
+TRACE::2020-02-22.21:35:39::SCWMssOS::skipping the bsp build ... 
+TRACE::2020-02-22.21:35:39::SCWMssOS::Copying to export directory.
+TRACE::2020-02-22.21:35:39::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2020-02-22.21:35:39::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+TRACE::2020-02-22.21:35:39::SCWMssOS:: Completed Standalone Artifacts creation 
+LOG::2020-02-22.21:35:39::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2020-02-22.21:35:39::SCWSystem::Completed Processing the sysconfig zed_1
+LOG::2020-02-22.21:35:39::SCWPlatform::Completed generating the artifacts for system configuration zed_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Started preparing the platform 
+TRACE::2020-02-22.21:35:39::SCWSystem::Writing the bif file for system config zed_1
+TRACE::2020-02-22.21:35:39::SCWSystem::dir created 
+TRACE::2020-02-22.21:35:39::SCWSystem::Writing the bif 
+TRACE::2020-02-22.21:35:39::SCWPlatform::Started writing the spfm file 
+TRACE::2020-02-22.21:35:39::SCWPlatform::Started writing the xpfm file 
+TRACE::2020-02-22.21:35:39::SCWPlatform::Completed generating the platform
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to open the hw design at /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA given /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA absoulate path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA directory /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Platform Path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-22.21:35:39::SCWMssOS::Checking the sw design at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::DEBUG:  swdes dump  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+/home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-22.21:35:39::SCWMssOS::Sw design exists and opened at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to open the hw design at /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA given /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA absoulate path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA directory /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Platform Path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-22.21:35:39::SCWMssOS::Checking the sw design at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::DEBUG:  swdes dump  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+/home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-22.21:35:39::SCWMssOS::Sw design exists and opened at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to open the hw design at /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA given /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA absoulate path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA directory /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Platform Path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-22.21:35:39::SCWMssOS::Checking the sw design at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::DEBUG:  swdes dump  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+/home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-22.21:35:39::SCWMssOS::Sw design exists and opened at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to open the hw design at /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA given /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA absoulate path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA directory /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Platform Path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-22.21:35:39::SCWMssOS::Checking the sw design at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::DEBUG:  swdes dump  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+/home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-22.21:35:39::SCWMssOS::Sw design exists and opened at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to open the hw design at /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA given /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA absoulate path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA directory /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Platform Path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-22.21:35:39::SCWMssOS::Checking the sw design at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::DEBUG:  swdes dump  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+/home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-22.21:35:39::SCWMssOS::Sw design exists and opened at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to open the hw design at /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA given /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA absoulate path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA directory /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Platform Path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-22.21:35:39::SCWMssOS::Checking the sw design at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::DEBUG:  swdes dump  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+/home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-22.21:35:39::SCWMssOS::Sw design exists and opened at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWWriter::formatted JSON is {
+	"platformName":	"zed_1",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"zed_1",
+	"platHandOff":	"/opt/XilinxVitis_2019v2/Vitis/2019.2/data/embeddedsw/lib/fixed_hwplatforms/zed.xsa",
+	"platIntHandOff":	"<platformDir>/hw/zed.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"zed_1",
+	"systems":	[{
+			"systemName":	"zed_1",
+			"systemDesc":	"zed_1",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"zed_1",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"47a20f0ac42e8cf7f20ba7d8d4a89297",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.2", "xilrsa:1.5"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"/opt/XilinxVitis_2019v2/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"/opt/XilinxVitis_2019v2/Vitis/2019.2/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"47a20f0ac42e8cf7f20ba7d8d4a89297",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.2", "xilrsa:1.5"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2020-02-22.21:35:39::SCWPlatform::updated the xpfm file.
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to open the hw design at /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA given /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA absoulate path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA directory /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Platform Path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-22.21:35:39::SCWMssOS::Checking the sw design at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::DEBUG:  swdes dump  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+/home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-22.21:35:39::SCWMssOS::Sw design exists and opened at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to open the hw design at /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA given /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA absoulate path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA directory /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Platform Path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-22.21:35:39::SCWMssOS::Checking the sw design at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::DEBUG:  swdes dump  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+/home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-22.21:35:39::SCWMssOS::Sw design exists and opened at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to open the hw design at /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA given /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA absoulate path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA directory /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Platform Path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-22.21:35:39::SCWMssOS::Checking the sw design at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::DEBUG:  swdes dump  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+/home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-22.21:35:39::SCWMssOS::Sw design exists and opened at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to open the hw design at /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA given /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA absoulate path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA directory /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Platform Path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-22.21:35:39::SCWMssOS::Checking the sw design at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::DEBUG:  swdes dump  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+/home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-22.21:35:39::SCWMssOS::Sw design exists and opened at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to open the hw design at /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA given /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA absoulate path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA directory /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Platform Path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-22.21:35:39::SCWMssOS::Checking the sw design at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::DEBUG:  swdes dump  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+/home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-22.21:35:39::SCWMssOS::Sw design exists and opened at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to open the hw design at /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA given /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA absoulate path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA directory /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Platform Path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-22.21:35:39::SCWMssOS::Checking the sw design at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::DEBUG:  swdes dump  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+/home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-22.21:35:39::SCWMssOS::Sw design exists and opened at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to open the hw design at /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA given /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA absoulate path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA directory /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Platform Path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-22.21:35:39::SCWMssOS::Checking the sw design at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::DEBUG:  swdes dump  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+/home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-22.21:35:39::SCWMssOS::Sw design exists and opened at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWWriter::formatted JSON is {
+	"platformName":	"zed_1",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"zed_1",
+	"platHandOff":	"/opt/XilinxVitis_2019v2/Vitis/2019.2/data/embeddedsw/lib/fixed_hwplatforms/zed.xsa",
+	"platIntHandOff":	"<platformDir>/hw/zed.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"zed_1",
+	"systems":	[{
+			"systemName":	"zed_1",
+			"systemDesc":	"zed_1",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"zed_1",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"47a20f0ac42e8cf7f20ba7d8d4a89297",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.2", "xilrsa:1.5"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"/opt/XilinxVitis_2019v2/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"/opt/XilinxVitis_2019v2/Vitis/2019.2/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"47a20f0ac42e8cf7f20ba7d8d4a89297",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.2", "xilrsa:1.5"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to open the hw design at /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA given /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA absoulate path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA directory /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Platform Path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-22.21:35:39::SCWMssOS::Checking the sw design at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::DEBUG:  swdes dump  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+/home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-22.21:35:39::SCWMssOS::Sw design exists and opened at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to open the hw design at /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA given /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA absoulate path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA directory /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Platform Path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-22.21:35:39::SCWMssOS::Checking the sw design at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::DEBUG:  swdes dump  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+/home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-22.21:35:39::SCWMssOS::Sw design exists and opened at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to open the hw design at /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA given /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA absoulate path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA directory /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Platform Path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-22.21:35:39::SCWMssOS::Checking the sw design at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::DEBUG:  swdes dump  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+/home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-22.21:35:39::SCWMssOS::Sw design exists and opened at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to open the hw design at /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA given /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA absoulate path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA directory /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Platform Path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-22.21:35:39::SCWMssOS::Checking the sw design at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::DEBUG:  swdes dump  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+/home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-22.21:35:39::SCWMssOS::Sw design exists and opened at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to open the hw design at /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA given /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA absoulate path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA directory /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Platform Path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-22.21:35:39::SCWMssOS::Checking the sw design at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::DEBUG:  swdes dump  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+/home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-22.21:35:39::SCWMssOS::Sw design exists and opened at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to open the hw design at /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA given /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA absoulate path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA directory /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Platform Path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-22.21:35:39::SCWMssOS::Checking the sw design at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::DEBUG:  swdes dump  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+/home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-22.21:35:39::SCWMssOS::Sw design exists and opened at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to open the hw design at /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA given /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA absoulate path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA directory /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Platform Path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-22.21:35:39::SCWMssOS::Checking the sw design at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::DEBUG:  swdes dump  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+/home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-22.21:35:39::SCWMssOS::Sw design exists and opened at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to open the hw design at /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA given /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA absoulate path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA directory /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Platform Path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-22.21:35:39::SCWMssOS::Checking the sw design at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::DEBUG:  swdes dump  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+/home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-22.21:35:39::SCWMssOS::Sw design exists and opened at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWWriter::formatted JSON is {
+	"platformName":	"zed_1",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"zed_1",
+	"platHandOff":	"/opt/XilinxVitis_2019v2/Vitis/2019.2/data/embeddedsw/lib/fixed_hwplatforms/zed.xsa",
+	"platIntHandOff":	"<platformDir>/hw/zed.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"zed_1",
+	"systems":	[{
+			"systemName":	"zed_1",
+			"systemDesc":	"zed_1",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"zed_1",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"47a20f0ac42e8cf7f20ba7d8d4a89297",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.2", "xilrsa:1.5"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"/opt/XilinxVitis_2019v2/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"/opt/XilinxVitis_2019v2/Vitis/2019.2/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"47a20f0ac42e8cf7f20ba7d8d4a89297",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.2", "xilrsa:1.5"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2020-02-22.21:35:39::SCWPlatform::Started generating the artifacts platform zed_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Sanity checking of platform is completed
+LOG::2020-02-22.21:35:39::SCWPlatform::Started generating the artifacts for system configuration zed_1
+LOG::2020-02-22.21:35:39::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2020-02-22.21:35:39::SCWDomain::Generating domain artifcats
+TRACE::2020-02-22.21:35:39::SCWMssOS::Generating standalone artifcats
+TRACE::2020-02-22.21:35:39::SCWMssOS::Copying the qemu file from  /opt/XilinxVitis_2019v2/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt To /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/export/zed_1/sw/zed_1/qemu/
+TRACE::2020-02-22.21:35:39::SCWMssOS::Copying the qemu file from  /opt/XilinxVitis_2019v2/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt To /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/export/zed_1/sw/zed_1/standalone_domain/qemu/
+TRACE::2020-02-22.21:35:39::SCWMssOS:: Copying the user libraries. 
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to open the hw design at /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA given /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA absoulate path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA directory /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Platform Path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-22.21:35:39::SCWMssOS::Checking the sw design at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::DEBUG:  swdes dump  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+/home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-22.21:35:39::SCWMssOS::Sw design exists and opened at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::Completed writing the mss file at /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp
+TRACE::2020-02-22.21:35:39::SCWMssOS::Mss edits present, copying mssfile into export location /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2020-02-22.21:35:39::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2020-02-22.21:35:39::SCWDomain::Building the domain as part of full build :  standalone_domain
+TRACE::2020-02-22.21:35:39::SCWMssOS::skipping the bsp build ... 
+TRACE::2020-02-22.21:35:39::SCWMssOS::Copying to export directory.
+TRACE::2020-02-22.21:35:39::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2020-02-22.21:35:39::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+TRACE::2020-02-22.21:35:39::SCWMssOS:: Completed Standalone Artifacts creation 
+LOG::2020-02-22.21:35:39::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2020-02-22.21:35:39::SCWSystem::Completed Processing the sysconfig zed_1
+LOG::2020-02-22.21:35:39::SCWPlatform::Completed generating the artifacts for system configuration zed_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Started preparing the platform 
+TRACE::2020-02-22.21:35:39::SCWSystem::Writing the bif file for system config zed_1
+TRACE::2020-02-22.21:35:39::SCWSystem::dir created 
+TRACE::2020-02-22.21:35:39::SCWSystem::Writing the bif 
+TRACE::2020-02-22.21:35:39::SCWPlatform::Started writing the spfm file 
+TRACE::2020-02-22.21:35:39::SCWPlatform::Started writing the xpfm file 
+TRACE::2020-02-22.21:35:39::SCWPlatform::Completed generating the platform
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to open the hw design at /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA given /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA absoulate path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA directory /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Platform Path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-22.21:35:39::SCWMssOS::Checking the sw design at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::DEBUG:  swdes dump  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+/home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-22.21:35:39::SCWMssOS::Sw design exists and opened at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to open the hw design at /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA given /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA absoulate path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA directory /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Platform Path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-22.21:35:39::SCWMssOS::Checking the sw design at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::DEBUG:  swdes dump  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+/home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-22.21:35:39::SCWMssOS::Sw design exists and opened at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to open the hw design at /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA given /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA absoulate path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA directory /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Platform Path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-22.21:35:39::SCWMssOS::Checking the sw design at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::DEBUG:  swdes dump  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+/home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-22.21:35:39::SCWMssOS::Sw design exists and opened at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to open the hw design at /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA given /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA absoulate path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA directory /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Platform Path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-22.21:35:39::SCWMssOS::Checking the sw design at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::DEBUG:  swdes dump  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+/home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-22.21:35:39::SCWMssOS::Sw design exists and opened at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to open the hw design at /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA given /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA absoulate path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA directory /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Platform Path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-22.21:35:39::SCWMssOS::Checking the sw design at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::DEBUG:  swdes dump  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+/home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-22.21:35:39::SCWMssOS::Sw design exists and opened at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to open the hw design at /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA given /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA absoulate path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform::DSA directory /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Platform Path /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/hw/zed.xsa
+TRACE::2020-02-22.21:35:39::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2020-02-22.21:35:39::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-02-22.21:35:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-02-22.21:35:39::SCWMssOS::Checking the sw design at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWMssOS::DEBUG:  swdes dump  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+/home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-02-22.21:35:39::SCWMssOS::Sw design exists and opened at  /home/marco/Documents/2020/remoteproc2019/SDK_project/zed_1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-02-22.21:35:39::SCWWriter::formatted JSON is {
+	"platformName":	"zed_1",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"zed_1",
+	"platHandOff":	"/opt/XilinxVitis_2019v2/Vitis/2019.2/data/embeddedsw/lib/fixed_hwplatforms/zed.xsa",
+	"platIntHandOff":	"<platformDir>/hw/zed.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"zed_1",
+	"systems":	[{
+			"systemName":	"zed_1",
+			"systemDesc":	"zed_1",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"zed_1",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"47a20f0ac42e8cf7f20ba7d8d4a89297",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.2", "xilrsa:1.5"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"/opt/XilinxVitis_2019v2/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"/opt/XilinxVitis_2019v2/Vitis/2019.2/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"47a20f0ac42e8cf7f20ba7d8d4a89297",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.2", "xilrsa:1.5"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2020-02-22.21:35:39::SCWPlatform::updated the xpfm file.

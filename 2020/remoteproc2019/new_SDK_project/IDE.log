@@ -1,0 +1,57 @@
+16:39:52 INFO  : Launching XSCT server: xsct -n  -interactive /home/marco/Documents/2020/remoteproc2019/new_SDK_project/temp_xsdb_launch_script.tcl
+16:39:56 INFO  : Registering command handlers for Vitis TCF services
+16:39:57 INFO  : XSCT server has started successfully.
+16:39:57 INFO  : Successfully done setting XSCT server connection channel  
+16:39:57 INFO  : plnx-install-location is set to ''
+16:39:57 INFO  : Successfully done setting workspace for the tool. 
+16:39:57 INFO  : Successfully done query RDI_DATADIR 
+16:43:52 INFO  : Successfully done sdx_reload_mss "/home/marco/Documents/2020/remoteproc2019/new_SDK_project/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss"
+16:43:52 INFO  : Successfully done sdx_reload_mss "/home/marco/Documents/2020/remoteproc2019/new_SDK_project/zed/ps7_cortexa9_1/freertos10_xilinx_domain/bsp/system.mss"
+16:44:05 INFO  : (SwPlaform) Successfully done setParamInSpec 
+16:46:22 INFO  : (SwPlaform) Successfully done setParamInSpec 
+16:46:38 INFO  : (SwPlaform) Successfully done setParamInSpec 
+16:46:42 INFO  : (SwPlaform) Successfully done setParamInSpec 
+16:46:52 INFO  : (SwPlaform) Successfully done setParamInSpec 
+16:47:04 INFO  : (SwPlaform) Successfully done setParamInSpec 
+16:47:11 INFO  : (SwPlaform) Successfully done setParamInSpec 
+16:47:35 INFO  : (SwPlaform) Successfully done setParamInSpec 
+16:47:36 INFO  : (SwPlaform) Successfully done setParamInSpec 
+16:47:51 INFO  : (SwPlaform) Successfully done setParamInSpec 
+16:47:57 INFO  : (SwPlaform) Successfully done setParamInSpec 
+16:47:59 INFO  : (SwPlaform) Successfully done setParamInSpec 
+16:48:08 INFO  : Successfully done sdx_reload_mss "/home/marco/Documents/2020/remoteproc2019/new_SDK_project/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss"
+16:48:08 INFO  : No changes in MSS file content so sources will not be generated.
+16:48:28 INFO  : (SwPlaform) Successfully done setParamInSpec 
+16:48:38 INFO  : (SwPlaform) Successfully done setParamInSpec 
+16:48:41 INFO  : (SwPlaform) Successfully done setParamInSpec 
+16:48:42 INFO  : (SwPlatform) Successfully done update_mss 
+16:48:42 INFO  : Successfully done sdx_reload_mss "/home/marco/Documents/2020/remoteproc2019/new_SDK_project/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss"
+16:50:39 INFO  : Checking for BSP changes to sync application flags for project 'orgremoteproc2019'...
+18:06:39 INFO  : Launching XSCT server: xsct -n  -interactive /home/marco/Documents/2020/remoteproc2019/new_SDK_project/temp_xsdb_launch_script.tcl
+18:06:43 INFO  : XSCT server has started successfully.
+18:06:43 INFO  : Registering command handlers for Vitis TCF services
+18:06:43 INFO  : plnx-install-location is set to ''
+18:06:43 INFO  : Successfully done setting XSCT server connection channel  
+18:06:43 INFO  : Successfully done setting workspace for the tool. 
+18:06:43 INFO  : Successfully done query RDI_DATADIR 
+18:07:19 INFO  : Successfully done sdx_reload_mss "/home/marco/Documents/2020/remoteproc2019/new_SDK_project/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss"
+18:07:20 INFO  : Successfully done sdx_reload_mss "/home/marco/Documents/2020/remoteproc2019/new_SDK_project/zed/ps7_cortexa9_1/freertos10_xilinx_domain/bsp/system.mss"
+18:08:37 INFO  : Successfully done sdx_reload_mss "/home/marco/Documents/2020/remoteproc2019/new_SDK_project/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss"
+18:08:37 INFO  : No changes in MSS file content so sources will not be generated.
+18:09:01 INFO  : Removed '/home/marco/Documents/2020/remoteproc2019/new_SDK_project/zed/export/zed' from custom platform repositories.
+18:10:25 INFO  : Successfully done sdx_reload_mss "/home/marco/Documents/2020/remoteproc2019/new_SDK_project/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss"
+18:10:25 INFO  : Successfully done sdx_reload_mss "/home/marco/Documents/2020/remoteproc2019/new_SDK_project/zed/ps7_cortexa9_1/freertos10_xilinx_domain/bsp/system.mss"
+18:10:45 INFO  : (SwPlaform) Successfully done setParamInSpec 
+18:10:48 INFO  : (SwPlaform) Successfully done setParamInSpec 
+18:10:54 INFO  : (SwPlaform) Successfully done setParamInSpec 
+18:11:05 INFO  : (SwPlaform) Successfully done setParamInSpec 
+18:11:20 INFO  : (SwPlatform) Successfully done update_mss 
+18:11:20 INFO  : Successfully done sdx_reload_mss "/home/marco/Documents/2020/remoteproc2019/new_SDK_project/zed/ps7_cortexa9_1/freertos10_xilinx_domain/bsp/system.mss"
+18:11:30 INFO  : (SwPlatform) Successfully done update_mss 
+18:11:30 INFO  : No changes in MSS file content so sources will not be generated.
+18:12:43 INFO  : Checking for BSP changes to sync application flags for project 'orgremoteproc2019'...
+18:12:45 INFO  : Updating application flags with new BSP settings...
+18:12:45 INFO  : Successfully updated application flags for project orgremoteproc2019.
+18:13:12 INFO  : Checking for BSP changes to sync application flags for project 'orgremoteproc2019'...
+18:13:26 INFO  : Checking for BSP changes to sync application flags for project 'orgremoteproc2019'...
+18:25:45 INFO  : Checking for BSP changes to sync application flags for project 'orgremoteproc2019'...

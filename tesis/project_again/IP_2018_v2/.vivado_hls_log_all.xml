@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Register 'vertical' is power-on initialization." projectName="IP_2018_v2" solutionName="solution1" date="2019-11-10T14:23:24.361-0600" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'V_acc_7' is power-on initialization." projectName="IP_2018_v2" solutionName="solution1" date="2019-11-10T14:23:23.757-0600" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'F_acc_7' is power-on initialization." projectName="IP_2018_v2" solutionName="solution1" date="2019-11-10T14:23:23.752-0600" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'V_acc_6' is power-on initialization." projectName="IP_2018_v2" solutionName="solution1" date="2019-11-10T14:23:23.749-0600" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'F_acc_6' is power-on initialization." projectName="IP_2018_v2" solutionName="solution1" date="2019-11-10T14:23:23.739-0600" type="Warning"/>
+      </synLog>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

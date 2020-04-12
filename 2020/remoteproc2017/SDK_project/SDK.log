@@ -1,0 +1,16 @@
+22:24:40 INFO  : Registering command handlers for SDK TCF services
+22:24:43 INFO  : Launching XSCT server: xsct -n -interactive /home/marco/Documents/2020/remoteproc2017/SDK_project/temp_xsdb_launch_script.tcl
+22:24:44 INFO  : XSCT server has started successfully.
+22:24:44 INFO  : Successfully done setting XSCT server connection channel  
+22:24:45 INFO  : Successfully done setting SDK workspace  
+22:29:10 INFO  : Refreshed build settings on project remoteproc2017
+22:51:16 ERROR : (XSDB Server)Hangup
+
+22:52:13 INFO  : Registering command handlers for SDK TCF services
+22:52:14 INFO  : Launching XSCT server: xsct -n -interactive /home/marco/Documents/2020/remoteproc2017/SDK_project/temp_xsdb_launch_script.tcl
+22:52:16 INFO  : XSCT server has started successfully.
+22:52:16 INFO  : Successfully done setting XSCT server connection channel  
+22:52:17 INFO  : Successfully done setting SDK workspace  
+22:59:11 INFO  : Refreshed build settings on project remoteproc2017
+21:49:38 ERROR : (XSDB Server)Terminated
+

@@ -1,0 +1,17 @@
+
+*** Running vivado
+    with args -log design_1_GapJunctionIP_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_GapJunctionIP_0_0.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source design_1_GapJunctionIP_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/marco/Documents/tesis/ww39_neuronal_new_IP/IP_2020_latest_Jan/IP_latest_2020_Enero/solution1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx_2018/Vivado/2018.3/data/ip'.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_1_GapJunctionIP_0_0, cache-ID = 67f00677793534a6.
+config_ip_cache: Time (s): cpu = 00:00:09 ; elapsed = 00:00:26 . Memory (MB): peak = 1364.148 ; gain = 0.000 ; free physical = 3185 ; free virtual = 11144
+INFO: [Common 17-206] Exiting Vivado at Thu Feb  6 00:09:47 2020...
